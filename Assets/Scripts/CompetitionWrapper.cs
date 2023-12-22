@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class CompetitionWrapper : MonoBehaviour
@@ -27,5 +29,10 @@ public class CompetitionWrapper : MonoBehaviour
         // loads scene
         Config.MenuConfig();
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void SetTeamName(int i){
+        TMP_InputField input = GetComponent<TMP_InputField>();
+        Competition.SetTeamName(i, input.text);
     }
 }

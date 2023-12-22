@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Build.Player;
 using UnityEngine;
 
 public class FinalResults : MonoBehaviour
@@ -20,7 +19,7 @@ public class FinalResults : MonoBehaviour
         score_1 = CountScore(1);
         string t_score_1 = team1 + "\t" + score_1;
         score_2 = CountScore(2);
-        string t_score_2 = team1 + "\t" + score_2;
+        string t_score_2 = team2 + "\t" + score_2;
         if (score_1 < score_2){
             winner_team_text.text = "¡" + team2 + " gana!";
             score_text.text = t_score_2 + "\n" + t_score_1;

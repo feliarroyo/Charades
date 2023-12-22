@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public static class Competition
 {
     public static List<Category> categories = new();
-    public static int teams = 1;
-    public static List<string> teamNames = new();
+    public static int teams = 2;
+    public static List<string> teamNames = new() {"empty", "Equipo 1", "Equipo 2"};
     public static Dictionary<int, List<int> > scores = new();
     public static int currentCategory = 0;
     public static int currentTeam = 1;
@@ -57,7 +57,7 @@ public static class Competition
             currentCategory++;
             Debug.Log("Equipo " + currentTeam + " juega. Numero de categoria " + currentCategory);
             if (currentCategory == categories.Count) {
-                SceneManager.LoadScene("MainMenu"); // should be results or something
+                SceneManager.LoadScene("FinalResults"); // should be results or something
                 return;
             }
         }
@@ -76,6 +76,10 @@ public static class Competition
     }
 
     public static string GetNextTeamName(){
-        return "Equipo " + currentTeam.ToString();//teamNames[currentTeam];
+        return teamNames[currentTeam];
+    }
+
+    public static void SetTeamName(int i, string name){
+        teamNames[i] = name;
     }
 }
