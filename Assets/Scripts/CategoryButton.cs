@@ -7,22 +7,21 @@ using UnityEngine.UI;
 public class CategoryButton : MonoBehaviour
 {
     public TextMeshProUGUI categoryName;
-
     public Button buttonImage;
     public TextAsset jsonCategory;
     private Category category;
-    private ColorBlock unselected, selected;
+    private ColorBlock unselectedColor, selectedColor;
     // Start is called before the first frame update
     void Start()
     {
         category = JSONReader.GetCategory(jsonCategory);
         categoryName.text = category.category;
-        unselected = SetColor(unselected, Color.white);
-        selected = SetColor(selected, Color.green);
+        unselectedColor = SetColor(unselectedColor, Color.white);
+        selectedColor = SetColor(selectedColor, Color.green);
         if (Competition.ContainsCategory(category))
-            buttonImage.colors = selected;
+            buttonImage.colors = selectedColor;
         else
-            buttonImage.colors = unselected;
+            buttonImage.colors = unselectedColor;
         
     }
 
@@ -34,10 +33,10 @@ public class CategoryButton : MonoBehaviour
 
     public void SetCategory() {
         Competition.AddCategory(category);
-        if (buttonImage.colors.Equals(unselected))
-            buttonImage.colors = selected;
+        if (buttonImage.colors.Equals(unselectedColor))
+            buttonImage.colors = selectedColor;
         else
-            buttonImage.colors = unselected;
+            buttonImage.colors = unselectedColor;
     }
 
     private ColorBlock SetColor(ColorBlock cb, Color color){

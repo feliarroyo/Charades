@@ -6,20 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: 87f0bb9cddf84534580fa2276301bd85
-  - enabled: 1
-    path: Assets/Scenes/GameBegin.unity
-    guid: 3e77f4655015dab48ae152abaa092903
-  - enabled: 1
-    path: Assets/Scenes/Game.unity
-    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
-  - enabled: 1
-    path: Assets/Scenes/GameEnd.unity
-    guid: baa7a50ecc363e84b90657fd81142866
   - enabled: 1
     path: Assets/Scenes/CategorySelect.unity
     guid: c088cf4e3df63aa479df74c827103ba5
+  - enabled: 1
+    path: Assets/Scenes/Presentation.unity
+    guid: 8df77a1373265dd4b8348ea16abdce15
+  - enabled: 1
+    path: Assets/Scenes/Countdown.unity
+    guid: 3e77f4655015dab48ae152abaa092903
+  - enabled: 1
+    path: Assets/Scenes/Round.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/RoundResults.unity
+    guid: 2565ea17665c1ce498416254ffd2e106
+  - enabled: 1
+    path: Assets/Scenes/FinalResults.unity
+    guid: baa7a50ecc363e84b90657fd81142866
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 31fad63eb2ab9c64d8c9fac0810575a8
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 2166c1dd68a198d4ab8af89a28688a0f, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 720e03a12e9c35b4badd59f2637061e2, type: 2}

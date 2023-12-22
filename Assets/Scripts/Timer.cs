@@ -10,20 +10,18 @@ public class Timer : MonoBehaviour
     private static float timeLeft;
     public static bool timerOn;
     public TextMeshProUGUI timerText;
-    public bool hasEndSound = false;
-    public AudioClip endSound;
-
-    internal static bool TimesUp()
-    {
-        return (timeLeft == 0.0f);
-    }
+    public bool hasEndSound = false, hasTickSound = false;
+    public AudioClip tickSound, endSound;
+    private AudioSource soundPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
         timerOn = true;
         timeLeft = time;
+        soundPlayer = GameObject.Find("SoundEffects").GetComponent<AudioSource>();
         timerText = GameObject.Find("Time").GetComponent<TextMeshProUGUI>();
+        soundPlayer.PlayOneShot(tickSound);
     }
 
     // Update is called once per frame
@@ -35,17 +33,22 @@ public class Timer : MonoBehaviour
                 UpdateTimer(timeLeft);
             }
             else {
-                Debug.Log("Time up.");
-                if (hasEndSound) GetComponent<AudioSource>().PlayOneShot(endSound);
+                if (hasEndSound) soundPlayer.PlayOneShot(endSound);
                 timeLeft = 0;
                 timerOn = false;
             }
         }
     }
 
+    internal static bool TimeIsUp()
+    {
+        return (timeLeft == 0.0f);
+    }
+
     void UpdateTimer(float currentTime){
         currentTime += 1;
         float seconds = Mathf.FloorToInt(currentTime % 60);
+        if (hasTickSound && (seconds.ToString() != timerText.text) && (seconds.ToString() != "0")) soundPlayer.PlayOneShot(tickSound);
         timerText.text = seconds.ToString();
     }
 }

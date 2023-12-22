@@ -19,6 +19,7 @@ public class Pause : MonoBehaviour
     }
 
     public void PauseGame(){
+        // Pauses if not paused and vice versa
         if (isPaused){
             Time.timeScale = 1;
             PauseUI.SetActive(false);
@@ -31,6 +32,7 @@ public class Pause : MonoBehaviour
     }
 
     void OnMouseDown(){
+        // When clicked, pause the game
         Debug.Log("Click registered");
         PauseGame();
     }

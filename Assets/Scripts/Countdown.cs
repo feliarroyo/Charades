@@ -14,7 +14,7 @@ public class Countdown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Timer.TimesUp())
-            SceneManager.LoadScene("Game");
+        if (Timer.TimeIsUp())
+            SceneManager.LoadScene("Round");
     }
 }
