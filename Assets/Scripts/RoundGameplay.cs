@@ -14,6 +14,7 @@ public class RoundGameplay : MonoBehaviour
     public TextMeshProUGUI prompt_text, hits_text; //, gyro_test;
     public SoundEffectPlayer[] sounds;
     public static Category current_category;
+    public Timer timer;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class RoundGameplay : MonoBehaviour
         current_category = Competition.GetCategory();
         prompts = current_category.questions;
         GetNewPrompt();
+        timer = GameObject.Find("Time").GetComponent<Timer>();
     }
 
     // Update is called once per frame
@@ -37,7 +39,7 @@ public class RoundGameplay : MonoBehaviour
     {
         if (Pause.isPaused)
             return;
-        else if (Timer.TimeIsUp() || Input.GetKey(KeyCode.W))
+        else if (timer.TimeIsUp() || Input.GetKey(KeyCode.W))
             StartCoroutine(EndGame());
         // Each frame, we check the tilting of the phone. If tilted enough up, it gives the point. In the opposite case, it does not.
         Vector3 inclinacion = new(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);

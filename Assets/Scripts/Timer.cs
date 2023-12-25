@@ -7,8 +7,8 @@ using System;
 public class Timer : MonoBehaviour
 {
     public int time = 60;
-    private static float timeLeft;
-    public static bool timerOn;
+    private float timeLeft;
+    public bool timerOn;
     public TextMeshProUGUI timerText;
     public bool hasEndSound = false, hasTickSound = false;
     public AudioClip tickSound, endSound;
@@ -22,6 +22,7 @@ public class Timer : MonoBehaviour
         soundPlayer = GameObject.Find("SoundEffects").GetComponent<AudioSource>();
         timerText = GameObject.Find("Time").GetComponent<TextMeshProUGUI>();
         soundPlayer.PlayOneShot(tickSound);
+        UpdateTimer(timeLeft);
     }
 
     // Update is called once per frame
@@ -34,20 +35,21 @@ public class Timer : MonoBehaviour
             }
             else {
                 if (hasEndSound) soundPlayer.PlayOneShot(endSound);
+                Debug.Log("El tiempo se encuentra apagado");
                 timeLeft = 0;
                 timerOn = false;
             }
         }
     }
 
-    internal static bool TimeIsUp()
+    internal bool TimeIsUp()
     {
-        return (timeLeft == 0.0f);
+        return timeLeft == 0.0f;
     }
 
     void UpdateTimer(float currentTime){
         currentTime += 1;
-        float seconds = Mathf.FloorToInt(currentTime % 60);
+        float seconds = Mathf.FloorToInt(currentTime % (time + 1));
         if (hasTickSound && (seconds.ToString() != timerText.text) && (seconds.ToString() != "0")) soundPlayer.PlayOneShot(tickSound);
         timerText.text = seconds.ToString();
     }
