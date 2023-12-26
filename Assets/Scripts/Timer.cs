@@ -53,4 +53,9 @@ public class Timer : MonoBehaviour
         if (hasTickSound && (seconds.ToString() != timerText.text) && (seconds.ToString() != "0")) soundPlayer.PlayOneShot(tickSound);
         timerText.text = seconds.ToString();
     }
+
+    public void SetTime(int newTime){
+        time = newTime;
+        timeLeft = newTime;
+    }
 }

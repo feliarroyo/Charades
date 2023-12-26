@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Config : MonoBehaviour
@@ -49,5 +50,22 @@ public class Config : MonoBehaviour
                 roundDuration = (int) value;
                 return;
         }
+    }
+
+    public static float GetValue(string parameter){
+        switch (parameter){
+            case "music":
+                return musicVolume;
+            case "sound":
+                return soundVolume;
+            case "timer":
+                Config.WriteTimer();
+                return roundDuration;
+        }
+        return -1f;
+    }
+
+    public static void WriteTimer(){
+        GameObject.Find("TimeLabel").GetComponent<TextMeshProUGUI>().text = roundDuration.ToString();
     }
 }

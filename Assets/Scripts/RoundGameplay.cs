@@ -32,6 +32,8 @@ public class RoundGameplay : MonoBehaviour
         prompts = current_category.questions;
         GetNewPrompt();
         timer = GameObject.Find("Time").GetComponent<Timer>();
+        Debug.Log("New Duration: " + Config.roundDuration);
+        timer.SetTime(Config.roundDuration);
     }
 
     // Update is called once per frame
