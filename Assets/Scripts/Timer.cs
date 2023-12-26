@@ -21,7 +21,6 @@ public class Timer : MonoBehaviour
         timeLeft = time;
         soundPlayer = GameObject.Find("SoundEffects").GetComponent<AudioSource>();
         timerText = GameObject.Find("Time").GetComponent<TextMeshProUGUI>();
-        soundPlayer.PlayOneShot(tickSound);
         UpdateTimer(timeLeft);
     }
 
