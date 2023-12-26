@@ -12,7 +12,6 @@ public class FinalResults : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        music.PlayTrack();
         Config.MenuConfig();
         string team1 = Competition.teamNames[1];
         string team2 = Competition.teamNames[2];

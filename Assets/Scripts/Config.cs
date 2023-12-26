@@ -13,7 +13,8 @@ public class Config : MonoBehaviour
     {
         GameObject.Find("Music").GetComponent<AudioSource>().volume = musicVolume;
         GameObject.Find("SoundEffects").GetComponent<AudioSource>().volume = soundVolume;
-        MenuConfig();
+        if (!GameObject.Find("Music").GetComponent<AudioSource>().isPlaying)
+            MenuConfig();
     }
 
     // Update is called once per frame
