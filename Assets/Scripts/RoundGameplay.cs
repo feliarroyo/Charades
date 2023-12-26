@@ -109,7 +109,6 @@ public class RoundGameplay : MonoBehaviour
         sounds[2].PlayClip();
         Score.score = score;
         yield return new WaitForSeconds(3f);
-        Config.MenuConfig();
         SceneManager.LoadScene("RoundResults");
     }
 }

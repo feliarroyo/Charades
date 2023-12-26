@@ -20,19 +20,27 @@ public class CompetitionWrapper : MonoBehaviour
     public void LoadSceneIfCategories(string sceneName){
         // loads scene only if there is at least one category loaded
         if (Competition.HasCategories()){
-            Config.GameplayConfig();
             SceneManager.LoadScene(sceneName);
         }
     }
 
     public void LoadNextScene(string sceneName){
         // loads scene
-        Config.MenuConfig();
         SceneManager.LoadScene(sceneName);
     }
 
     public void SetTeamName(int i){
         TMP_InputField input = GetComponent<TMP_InputField>();
         Competition.SetTeamName(i, input.text);
+    }
+
+    public void SetMenuConfig(){
+        Config.MenuConfig();
+    }
+
+    public void SetGameplayConfigIfCategories(){
+        if (Competition.HasCategories()){
+            Config.GameplayConfig();
+        }
     }
 }
