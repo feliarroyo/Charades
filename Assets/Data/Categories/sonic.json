@@ -1,6 +1,6 @@
 {
   "category": "Sonic the Hedgehog",
-  "description": "¡Averigua cuántos personajes de la icónica franquicia de SEGA conoces!",
+  "description": "¡Averigua cuántos personajes, juegos, y zonas de la icónica franquicia de SEGA conocés!",
   "questions": [
     "Sonic the Hedgehog",
     "Classic Sonic",
@@ -54,6 +54,23 @@
     "Dark Gaia",
     "Mephiles",
     "Infinite",
-    "Sage"
+    "Sage",
+    "Sonic & Knuckles",
+    "Sonic Adventure",
+    "Sonic Heroes",
+    "Sonic Advance",
+    "Sonic Rush",
+    "Sonic Unleashed",
+    "Sonic Colors",
+    "Sonic Generations",
+    "Sonic Lost World",
+    "Sonic Forces",
+    "Sonic Frontiers",
+    "Sonic Superstars",
+    "Green Hill Zone",
+    "Chemical Plant Zone",
+    "Sky Sanctuary Zone",
+    "Planet Wisp",
+    "Windy Hill Zone"
   ]
 }
