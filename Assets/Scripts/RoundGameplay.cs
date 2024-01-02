@@ -15,12 +15,14 @@ public class RoundGameplay : MonoBehaviour
     public SoundEffectPlayer[] sounds;
     public static Category current_category;
     public Timer timer;
+    public bool isGameOver;
 
     // Start is called before the first frame update
     void Start()
     {
         Config.GameplayConfig();
         Pause.isPaused = false;
+        isGameOver = false;
         Score.answers.Clear();
         prompts = new();
         isActive = true;
@@ -87,9 +89,11 @@ public class RoundGameplay : MonoBehaviour
     }
 
     private void GetNewPrompt(){
-        isActive = true;
-        cam.backgroundColor = DefaultColor;
-        prompt_text.text = prompts[Random.Range(0, prompts.Count)];
+        if (!isGameOver){
+            isActive = true;
+            cam.backgroundColor = DefaultColor;
+            prompt_text.text = prompts[Random.Range(0, prompts.Count)];
+        }
     }
 
     private void UpdateScore()
@@ -103,8 +107,11 @@ public class RoundGameplay : MonoBehaviour
     }
 
     public IEnumerator EndGame(){
+        isGameOver = true;
         Pause.isPaused = true;
         cam.backgroundColor = Color.magenta;
+        if (isActive)
+            Score.answers.Add(prompt_text.text, false);
         prompt_text.text = "¡Tiempo!";
         sounds[2].PlayClip();
         Score.score = score;

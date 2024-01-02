@@ -12,20 +12,20 @@ public class FinalResults : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Config.MenuConfig();
+        //Config.MenuConfig();
         string team1 = Competition.teamNames[1];
         string team2 = Competition.teamNames[2];
         score_1 = CountScore(1);
-        string t_score_1 = team1 + "\t" + score_1;
+        string t_score_1 = team1 + "\t\t" + score_1;
         score_2 = CountScore(2);
-        string t_score_2 = team2 + "\t" + score_2;
+        string t_score_2 = team2 + "\t\t" + score_2;
         if (score_1 < score_2){
             winner_team_text.text = "¡" + team2 + " gana!";
-            score_text.text = t_score_2 + "\n" + t_score_1;
+            score_text.text = "<color=green>" + t_score_2 + "</color>\n" + t_score_1;
         }
         else if (score_1 > score_2){
             winner_team_text.text = "¡" + team1 + " gana!";
-            score_text.text = t_score_1 + "\n" + t_score_2;
+            score_text.text = "<color=green>" + t_score_1 + "</color>\n" + t_score_2;
         }
         else {
             winner_team_text.text = "¡Empate!";

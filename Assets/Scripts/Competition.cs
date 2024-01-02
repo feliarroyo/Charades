@@ -61,6 +61,7 @@ public static class Competition
                 return;
             }
         }
+        MusicPlayer.StopMusic();
         SceneManager.LoadScene("Presentation");
     }
 

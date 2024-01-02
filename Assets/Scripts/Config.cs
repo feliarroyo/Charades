@@ -33,7 +33,11 @@ public class Config : MonoBehaviour
     public static void GameplayConfig(){
     // settings for gameplay (landscape / no sleep nor music)
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
-        Screen.orientation = ScreenOrientation.LandscapeLeft;
+        Screen.autorotateToLandscapeLeft = true;
+        Screen.autorotateToLandscapeRight = true;
+        Screen.autorotateToPortrait = false;
+        Screen.autorotateToPortraitUpsideDown = false;
+        Screen.orientation = ScreenOrientation.AutoRotation;
         GameObject.Find("Music").GetComponent<AudioSource>().Stop();
     }
 

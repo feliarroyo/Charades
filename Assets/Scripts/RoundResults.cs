@@ -24,7 +24,6 @@ public class RoundResults : MonoBehaviour
     }
 
     public void ContinueGame(){
-        MusicPlayer.StopMusic();
         Competition.RegisterScore(Score.score);
     }
 
