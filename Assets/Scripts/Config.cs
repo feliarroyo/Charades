@@ -37,6 +37,7 @@ public class Config : MonoBehaviour
         Screen.autorotateToLandscapeRight = true;
         Screen.autorotateToPortrait = false;
         Screen.autorotateToPortraitUpsideDown = false;
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
         Screen.orientation = ScreenOrientation.AutoRotation;
         GameObject.Find("Music").GetComponent<AudioSource>().Stop();
     }
