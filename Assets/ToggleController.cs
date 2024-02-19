@@ -8,11 +8,13 @@ public class ToggleController : MonoBehaviour
 {
     public string parameter = "default";
     public Toggle toggle = null;
-    public TextMeshProUGUI text = null; // TMPro that shows value, if needed
     // Start is called before the first frame update
     void Start()
     {
-        toggle.isOn = Config.showScreenButtons;
+        if (parameter=="button")
+            toggle.isOn = Config.showScreenButtons;
+        else 
+            toggle.isOn = Config.useMotionControls;
     }
 
     // Update is called once per frame
@@ -22,6 +24,14 @@ public class ToggleController : MonoBehaviour
     }
 
     public void SetValue(){
-        Config.SetToggle(toggle.isOn);
+        if (parameter=="button")
+            Config.SetToggle(toggle.isOn);
+        else
+            Config.SetMotionToggle(toggle.isOn);
+        if (!Config.showScreenButtons && !Config.useMotionControls)
+            if (parameter=="motion")
+                GameObject.Find("Button Toggle").GetComponent<Toggle>().isOn = true;
+            else
+                GameObject.Find("Motion Toggle").GetComponent<Toggle>().isOn = true;
     }
 }

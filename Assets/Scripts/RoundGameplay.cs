@@ -49,7 +49,8 @@ public class RoundGameplay : MonoBehaviour
         Vector3 inclinacion = new(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
         //gyro_test.text = inclinacion.ToString();
         
-        
+        if (!Config.useMotionControls)
+            return;
         if ((inclinacion.x > 0.3f) || (inclinacion.x < -0.3f) || (inclinacion.z > 0.9f) || (inclinacion.z < -0.9f))
             return;
         else if ((inclinacion.z > 0.7f) || Input.GetKey(KeyCode.E))

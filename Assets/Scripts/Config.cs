@@ -10,6 +10,7 @@ public class Config : MonoBehaviour
     public static int roundDuration = 60;
     public static float answerWaitDuration = 2f;
     public static bool showScreenButtons = false;
+    public static bool useMotionControls = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -72,6 +73,10 @@ public class Config : MonoBehaviour
 
     public static void SetToggle(bool newValue){
         showScreenButtons=newValue;
+    }
+
+    public static void SetMotionToggle(bool newValue){
+        useMotionControls=newValue;
     }
 
     public static float GetValue(string parameter){
