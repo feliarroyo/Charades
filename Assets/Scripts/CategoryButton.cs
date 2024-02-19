@@ -39,6 +39,10 @@ public class CategoryButton : MonoBehaviour
             buttonImage.colors = unselectedColor;
     }
 
+    public void SetCategory_unselected(){
+        buttonImage.colors = unselectedColor;
+    }
+
     private ColorBlock SetColor(ColorBlock cb, Color color){
         cb = buttonImage.colors;
         cb.normalColor = color;

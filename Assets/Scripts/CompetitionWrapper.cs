@@ -13,6 +13,13 @@ public class CompetitionWrapper : MonoBehaviour
         Competition.AddCategory(cat);
     }
 
+    public void ClearCategories(){
+        Competition.ClearCategories(); 
+        foreach (CategoryButton cg in FindObjectsOfType<CategoryButton>()) {
+            cg.SetCategory_unselected();
+        }
+    }
+
     public void StartCompetition(){
         Competition.StartCompetition();
     }

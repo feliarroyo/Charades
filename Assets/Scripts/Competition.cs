@@ -23,6 +23,10 @@ public static class Competition
             return 0;
     }
 
+    public static void ClearCategories(){
+        categories.Clear();
+    }
+
     public static bool ContainsCategory(Category cat){
         return categories.Contains(cat);
     }

@@ -4,15 +4,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SliderController : MonoBehaviour
+public class ToggleController : MonoBehaviour
 {
     public string parameter = "default";
-    public Slider slider = null;
+    public Toggle toggle = null;
     public TextMeshProUGUI text = null; // TMPro that shows value, if needed
     // Start is called before the first frame update
     void Start()
     {
-        slider.value = Config.GetValue(parameter);
+        toggle.isOn = Config.showScreenButtons;
     }
 
     // Update is called once per frame
@@ -22,8 +22,6 @@ public class SliderController : MonoBehaviour
     }
 
     public void SetValue(){
-        Config.SetValue(parameter, slider.value);
-        if (text != null)
-            text.text = (Mathf.Round(slider.value *10.0f) * 0.1f ).ToString();
+        Config.SetToggle(toggle.isOn);
     }
 }

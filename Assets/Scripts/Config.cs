@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class Config : MonoBehaviour
 {
-    public static float musicVolume = 1;
-    public static float soundVolume = 1;
+    public static float musicVolume = 0.5f;
+    public static float soundVolume = 0.5f;
     public static int roundDuration = 60;
+    public static float answerWaitDuration = 2f;
+    public static bool showScreenButtons = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,13 +35,20 @@ public class Config : MonoBehaviour
     public static void GameplayConfig(){
     // settings for gameplay (landscape / no sleep nor music)
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        GameObject.Find("Music").GetComponent<AudioSource>().Stop();
+        if (Screen.orientation == ScreenOrientation.LandscapeRight)
+            Screen.orientation = ScreenOrientation.LandscapeRight;
+        else
+            Screen.orientation = ScreenOrientation.LandscapeLeft;
+    }
+
+    public static void PreparationConfig(){
         Screen.autorotateToLandscapeLeft = true;
         Screen.autorotateToLandscapeRight = true;
         Screen.autorotateToPortrait = false;
         Screen.autorotateToPortraitUpsideDown = false;
         Screen.orientation = ScreenOrientation.LandscapeLeft;
-        Screen.orientation = ScreenOrientation.AutoRotation;
-        GameObject.Find("Music").GetComponent<AudioSource>().Stop();
+        Screen.orientation = ScreenOrientation.AutoRotation;        
     }
 
     public static void SetValue(string parameter, float value){
@@ -55,7 +64,14 @@ public class Config : MonoBehaviour
             case "timer":
                 roundDuration = (int) value;
                 return;
+            case "waitTimer":
+                answerWaitDuration = value;
+                return;
         }
+    }
+
+    public static void SetToggle(bool newValue){
+        showScreenButtons=newValue;
     }
 
     public static float GetValue(string parameter){
@@ -65,13 +81,19 @@ public class Config : MonoBehaviour
             case "sound":
                 return soundVolume;
             case "timer":
-                Config.WriteTimer();
+                Config.WriteTimer("TimeLabel");
                 return roundDuration;
+            case "waitTimer":
+                Config.WriteTimer("WaitTimeLabel");
+                return answerWaitDuration;
         }
         return -1f;
     }
 
-    public static void WriteTimer(){
-        GameObject.Find("TimeLabel").GetComponent<TextMeshProUGUI>().text = roundDuration.ToString();
+    public static void WriteTimer(string name){
+        if (name=="TimeLabel")
+            GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = roundDuration.ToString();
+        else
+            GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = (Mathf.Round(answerWaitDuration*10.0f) * 0.1f ).ToString();
     }
 }

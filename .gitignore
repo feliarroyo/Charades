@@ -72,3 +72,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/Data/Categories/imr.json
 Assets/Data/Categories/imr.json.meta
+Assets/Data/Categories/undertalers.json
+Assets/Data/Categories/undertalers.png
+Assets/Data/Categories/undertalers.json.meta
+Assets/Data/Categories/undertalers.png.meta

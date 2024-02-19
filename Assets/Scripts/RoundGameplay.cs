@@ -60,7 +60,7 @@ public class RoundGameplay : MonoBehaviour
 
     public void Pass(bool givePoint){
         // Changes the text of the prompt and gives a point on TRUE.
-        if (!isActive)
+        if (!isActive | Pause.isPaused | isGameOver)
             return;
         if (givePoint)
             UpdateScore();
@@ -84,11 +84,13 @@ public class RoundGameplay : MonoBehaviour
             prompt_text.text = "Paso";
             sounds[1].PlayClip();
         }
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(Config.answerWaitDuration);
         this.GetNewPrompt();
     }
 
     private void GetNewPrompt(){
+        if (prompts.Count == 0) // if no more questions, restart prompt pool
+            prompts = current_category.questions; 
         if (!isGameOver){
             isActive = true;
             cam.backgroundColor = DefaultColor;
