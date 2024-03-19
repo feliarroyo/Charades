@@ -13,6 +13,8 @@ public static class Competition
     public static int currentTeam = 1;
     private const int max_teams = 4;
 
+    public static List<Category> lastGameCategories = new();
+
     public static int AddCategory(Category cat){
         if (!categories.Contains(cat)){
             categories.Add(cat);
@@ -81,6 +83,8 @@ public static class Competition
     }
 
     public static string GetNextTeamName(){
+        if (teams==1)
+            {return "que adivines";}
         return teamNames[currentTeam];
     }
 

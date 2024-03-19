@@ -5,12 +5,8 @@ using UnityEngine;
 
 public class JSONReader : MonoBehaviour
 {
+    // obtains category data from a given JSON file
     public static Category GetCategory(TextAsset jsonFile){
         return JsonUtility.FromJson<Category>(jsonFile.text);
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

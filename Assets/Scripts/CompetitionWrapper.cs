@@ -28,6 +28,7 @@ public class CompetitionWrapper : MonoBehaviour
         // loads scene only if there is at least one category loaded
         if (Competition.HasCategories()){
             SceneManager.LoadScene(sceneName);
+            Competition.lastGameCategories = Competition.categories;
         }
     }
 

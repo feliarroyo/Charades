@@ -44,12 +44,12 @@ public class Config : MonoBehaviour
     }
 
     public static void PreparationConfig(){
-        Screen.autorotateToLandscapeLeft = true;
-        Screen.autorotateToLandscapeRight = true;
-        Screen.autorotateToPortrait = false;
-        Screen.autorotateToPortraitUpsideDown = false;
+        //Screen.autorotateToLandscapeLeft = true;
+        //Screen.autorotateToLandscapeRight = true;
+        //Screen.autorotateToPortrait = false;
+        //Screen.autorotateToPortraitUpsideDown = false;
         Screen.orientation = ScreenOrientation.LandscapeLeft;
-        Screen.orientation = ScreenOrientation.AutoRotation;        
+        //Screen.orientation = ScreenOrientation.AutoRotation;        
     }
 
     public static void SetValue(string parameter, float value){
