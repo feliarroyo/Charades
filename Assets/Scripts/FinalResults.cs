@@ -53,6 +53,9 @@ public class FinalResults : MonoBehaviour
         
     }
 
+    public void Return(){
+        Config.MenuConfig();
+    }
     public int CountScore(int team){
         int i = 0;
         foreach (int j in Competition.scores[team]){

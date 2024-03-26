@@ -4956,6 +4956,8 @@ GameObject:
   - component: {fileID: 753790386}
   - component: {fileID: 753790385}
   - component: {fileID: 753790388}
+  - component: {fileID: 753790389}
+  - component: {fileID: 753790390}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5025,6 +5027,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03494e463109154f92d66a72e5a77d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &753790389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753790384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c56de04ef2c3d429726c0c1ab22590, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgMusic: {fileID: 753790390}
+--- !u!114 &753790390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753790384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a77642cf8a0d2994cafac698227594c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 504aee50614eaec46bc2828295c3125a, type: 3}
 --- !u!1001 &778359235
 PrefabInstance:
   m_ObjectHideFlags: 0

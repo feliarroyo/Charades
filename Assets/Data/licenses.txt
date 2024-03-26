@@ -1,0 +1,7 @@
+Licensed assets were used for the following sprites:
+- Categories (Countries, Literature, Anatomy, Movies, Videogames, Sound, English Music, Hispanic Music, Summer, Harry Potter, Indie Games): Justin's 16x16 Icon Pack
+- Categories (Food, Undertale): Coins & Gems & Chests & More
+- Categories (Jobs, Minecraft): GARDENS , 16x16 icon pack
+- Categories (Animals): 16xBird
+- Categories (Sports): Pixel Sports Asset Pack
+- Checkmark: Complete GUI Essential Pack Free Version

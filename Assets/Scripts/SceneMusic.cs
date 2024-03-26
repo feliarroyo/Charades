@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
+public class SceneMusic : MonoBehaviour
 {
-    public MusicPlayer menuMusic;
+    public MusicPlayer bgMusic;
     // Start is called before the first frame update
     void Start()
     {
-        if (!GameObject.Find("Music").GetComponent<AudioSource>().clip.Equals(menuMusic.clip))
-            menuMusic.PlayTrack();
+        if (!GameObject.Find("Music").GetComponent<AudioSource>().clip.Equals(bgMusic.clip))
+            bgMusic.PlayTrack();
     }
 
     // Update is called once per frame
