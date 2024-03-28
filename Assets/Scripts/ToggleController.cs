@@ -11,10 +11,11 @@ public class ToggleController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (parameter=="button")
-            toggle.isOn = Config.showScreenButtons;
-        else 
-            toggle.isOn = Config.useMotionControls;
+        bool value = false;
+        if (PlayerPrefs.GetInt(parameter, 1)==1){
+            value = true;
+        }
+        toggle.isOn = value;
     }
 
     // Update is called once per frame
@@ -24,12 +25,12 @@ public class ToggleController : MonoBehaviour
     }
 
     public void SetValue(){
-        if (parameter=="button")
+        if (parameter=="showScreenButtons")
             Config.SetToggle(toggle.isOn);
         else
             Config.SetMotionToggle(toggle.isOn);
-        if (!Config.showScreenButtons && !Config.useMotionControls)
-            if (parameter=="motion")
+        if (PlayerPrefs.GetInt("showScreenButtons")!=1 && PlayerPrefs.GetInt("useMotionControls")!=1)
+            if (parameter=="useMotionControls")
                 GameObject.Find("Button Toggle").GetComponent<Toggle>().isOn = true;
             else
                 GameObject.Find("Motion Toggle").GetComponent<Toggle>().isOn = true;

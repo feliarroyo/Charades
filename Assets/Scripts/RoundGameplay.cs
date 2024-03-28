@@ -34,8 +34,8 @@ public class RoundGameplay : MonoBehaviour
         prompts = current_category.questions;
         GetNewPrompt();
         timer = GameObject.Find("Time").GetComponent<Timer>();
-        Debug.Log("New Duration: " + Config.roundDuration);
-        timer.SetTime(Config.roundDuration);
+        Debug.Log("New Duration: " + PlayerPrefs.GetInt("roundDuration"));
+        timer.SetTime(PlayerPrefs.GetInt("roundDuration"));
     }
 
     // Update is called once per frame
@@ -49,7 +49,7 @@ public class RoundGameplay : MonoBehaviour
         Vector3 inclinacion = new(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
         //gyro_test.text = inclinacion.ToString();
         
-        if (!Config.useMotionControls)
+        if (PlayerPrefs.GetInt("useMotionControls", 0) != 1)
             return;
         if ((inclinacion.x > 0.3f) || (inclinacion.x < -0.3f) || (inclinacion.z > 0.9f) || (inclinacion.z < -0.9f))
             return;
@@ -85,7 +85,7 @@ public class RoundGameplay : MonoBehaviour
             prompt_text.text = "Paso";
             sounds[1].PlayClip();
         }
-        yield return new WaitForSeconds(Config.answerWaitDuration);
+        yield return new WaitForSeconds(PlayerPrefs.GetFloat("answerWaitDuration", 2f));
         this.GetNewPrompt();
     }
 

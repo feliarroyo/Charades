@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.Windows;
 
-public class CategorySelect : MonoBehaviour
+public class Credits : MonoBehaviour
 {
-    public MusicPlayer music;
+    
     // Start is called before the first frame update
     void Start()
     {
-        Competition.SetTeamName(1, PlayerPrefs.GetString("Team1", "Equipo 1"));
-        Competition.SetTeamName(2, PlayerPrefs.GetString("Team2", "Equipo 2"));
+ 
     }
 
     // Update is called once per frame

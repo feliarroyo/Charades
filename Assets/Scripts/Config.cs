@@ -5,17 +5,11 @@ using UnityEngine;
 
 public class Config : MonoBehaviour
 {
-    public static float musicVolume = 0.5f;
-    public static float soundVolume = 0.5f;
-    public static int roundDuration = 60;
-    public static float answerWaitDuration = 2f;
-    public static bool showScreenButtons = false;
-    public static bool useMotionControls = true;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("Music").GetComponent<AudioSource>().volume = musicVolume;
-        GameObject.Find("SoundEffects").GetComponent<AudioSource>().volume = soundVolume;
+        GameObject.Find("Music").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("musicVolume", 0.5f);
+        GameObject.Find("SoundEffects").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("soundVolume", 0.5f);
         if (!GameObject.Find("Music").GetComponent<AudioSource>().isPlaying)
             MenuConfig();
     }
@@ -55,50 +49,54 @@ public class Config : MonoBehaviour
     public static void SetValue(string parameter, float value){
         switch (parameter){
             case "music":
-                musicVolume = value;
-                GameObject.Find("Music").GetComponent<AudioSource>().volume = musicVolume;
+                PlayerPrefs.SetFloat("musicVolume", value);
+                GameObject.Find("Music").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("musicVolume", 0.5f);
                 return;
             case "sound":
-                soundVolume = value;
-                GameObject.Find("SoundEffects").GetComponent<AudioSource>().volume = soundVolume;
+                PlayerPrefs.SetFloat("soundVolume", value);
+                GameObject.Find("SoundEffects").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("soundVolume", 0.5f);
                 return;
             case "timer":
-                roundDuration = (int) value;
+                PlayerPrefs.SetInt("roundDuration", (int) value);
                 return;
             case "waitTimer":
-                answerWaitDuration = value;
+                PlayerPrefs.SetFloat("answerWaitDuration", value);
                 return;
         }
     }
 
     public static void SetToggle(bool newValue){
-        showScreenButtons=newValue;
+        int newInt = 0;
+        if (newValue) newInt++;
+        PlayerPrefs.SetInt("showScreenButtons", newInt);
     }
 
     public static void SetMotionToggle(bool newValue){
-        useMotionControls=newValue;
+        int newInt = 0;
+        if (newValue) newInt++;
+        PlayerPrefs.SetInt("useMotionControls", newInt);
     }
 
     public static float GetValue(string parameter){
         switch (parameter){
             case "music":
-                return musicVolume;
+                return PlayerPrefs.GetFloat("musicVolume", 0.5f);
             case "sound":
-                return soundVolume;
+                return PlayerPrefs.GetFloat("soundVolume", 0.5f);
             case "timer":
                 Config.WriteTimer("TimeLabel");
-                return roundDuration;
+                return PlayerPrefs.GetInt("roundDuration", 60);
             case "waitTimer":
                 Config.WriteTimer("WaitTimeLabel");
-                return answerWaitDuration;
+                return PlayerPrefs.GetFloat("answerWaitDuration", 2f);
         }
         return -1f;
     }
 
     public static void WriteTimer(string name){
         if (name=="TimeLabel")
-            GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = roundDuration.ToString();
+            GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetInt("roundDuration", 60).ToString();
         else
-            GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = (Mathf.Round(answerWaitDuration*10.0f) * 0.1f ).ToString();
+            GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = (Mathf.Round(PlayerPrefs.GetFloat("answerWaitDuration", 2f) * 10.0f) * 0.1f ).ToString();
     }
 }

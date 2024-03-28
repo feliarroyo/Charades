@@ -9,7 +9,10 @@ public class ButtonScheme : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(Config.showScreenButtons);
+        bool showButtons = false;
+        if (PlayerPrefs.GetInt("showScreenButtons", 1) == 1)
+            showButtons = true;
+        gameObject.SetActive(showButtons);
     }
 
     // Update is called once per frame

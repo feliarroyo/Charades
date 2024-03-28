@@ -31,13 +31,13 @@ public class teamSelector : MonoBehaviour
     public void changeTeams(){
         if (areTeamsEnabled == 0) { // enables teams
             areTeamsEnabled++;
-            Competition.teams = 2;
+            PlayerPrefs.SetInt("teams", 2);
             text_space.text = labels[areTeamsEnabled];
             button_image.sprite = button_sprites[areTeamsEnabled];
         }
         else { // disables teams
             areTeamsEnabled--;
-            Competition.teams = 1;
+            PlayerPrefs.SetInt("teams", 1);
             text_space.text = labels[areTeamsEnabled];
             button_image.sprite = button_sprites[areTeamsEnabled];
         }

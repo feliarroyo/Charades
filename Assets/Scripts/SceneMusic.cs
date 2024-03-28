@@ -9,7 +9,11 @@ public class SceneMusic : MonoBehaviour
     void Start()
     {
         if (!GameObject.Find("Music").GetComponent<AudioSource>().clip.Equals(bgMusic.clip))
+        {
+            Debug.Log("CLIP FOUND");
             bgMusic.PlayTrack();
+            GameObject.Find("Music").GetComponent<AudioSource>().Play();
+        }
     }
 
     // Update is called once per frame

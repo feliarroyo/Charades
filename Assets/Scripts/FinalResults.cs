@@ -54,8 +54,9 @@ public class FinalResults : MonoBehaviour
     }
 
     public void Return(){
-        Config.MenuConfig();
+        //MusicPlayer.StopMusic();
     }
+
     public int CountScore(int team){
         int i = 0;
         foreach (int j in Competition.scores[team]){

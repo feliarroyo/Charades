@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50522ae36977434fa395277973f02c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parameter: button
+  parameter: showScreenButtons
   toggle: {fileID: 1235779486}
 --- !u!1 &1410810953
 GameObject:
@@ -2334,7 +2334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f50522ae36977434fa395277973f02c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parameter: motion
+  parameter: useMotionControls
   toggle: {fileID: 2027996363}
 --- !u!114 &2027996363
 MonoBehaviour:
@@ -2513,6 +2513,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6156752957330768753, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791666603056473446, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791666603056473446, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
+      propertyPath: m_UseSpriteMesh
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8890247131123111088, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
