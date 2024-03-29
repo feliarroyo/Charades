@@ -85,7 +85,10 @@ public class RoundGameplay : MonoBehaviour
             prompt_text.text = "Paso";
             sounds[1].PlayClip();
         }
-        yield return new WaitForSeconds(PlayerPrefs.GetFloat("answerWaitDuration", 2f));
+        float answerWait = PlayerPrefs.GetFloat("answerWaitDuration", 2f);
+        yield return new WaitForSeconds(0.5f);
+        hits_text.color = new Color(255, 255, 255, 255);
+        yield return new WaitForSeconds(answerWait - 0.5f);
         this.GetNewPrompt();
     }
 
@@ -103,6 +106,7 @@ public class RoundGameplay : MonoBehaviour
     // remove current word from the pool, and return a new word within the pile
     {
         score++;
+        hits_text.color = new Color(255, 187, 0, 255);
         if (score == 1) 
             hits_text.text = "1 acierto";
         else 

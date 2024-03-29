@@ -10,7 +10,6 @@ public class SceneMusic : MonoBehaviour
     {
         if (!GameObject.Find("Music").GetComponent<AudioSource>().clip.Equals(bgMusic.clip))
         {
-            Debug.Log("CLIP FOUND");
             bgMusic.PlayTrack();
             GameObject.Find("Music").GetComponent<AudioSource>().Play();
         }

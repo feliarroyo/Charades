@@ -227,7 +227,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
   m_text: v0.9.1
+=======
+  m_text: v0.X.X
+>>>>>>> Stashed changes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 44327c6b9386fcd408916804de0a419f, type: 2}
   m_sharedMaterial: {fileID: 8879610365256406112, guid: 44327c6b9386fcd408916804de0a419f, type: 2}
@@ -805,6 +809,7 @@ GameObject:
   - component: {fileID: 753790385}
   - component: {fileID: 753790389}
   - component: {fileID: 753790388}
+  - component: {fileID: 753790390}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -888,6 +893,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 504aee50614eaec46bc2828295c3125a, type: 3}
+--- !u!114 &753790390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753790384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca6dd4bbb7b2164cbd8aa3666c08c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  versionText: {fileID: 89140737}
 --- !u!1 &803633338
 GameObject:
   m_ObjectHideFlags: 0

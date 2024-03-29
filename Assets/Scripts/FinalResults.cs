@@ -17,7 +17,7 @@ public class FinalResults : MonoBehaviour
         score_1 = CountScore(1);
         
         // Set text (Solo mode)
-        if (teamSelector.areTeamsEnabled == 0){
+        if (PlayerPrefs.GetInt("teams", 1) == 1){
             winner_team_text.text = "¡Fin del juego!";
             score_text.text = "Puntaje\t\t" + score_1;
             return;

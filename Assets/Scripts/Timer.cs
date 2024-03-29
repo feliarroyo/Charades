@@ -33,6 +33,7 @@ public class Timer : MonoBehaviour
                 UpdateTimer(timeLeft);
             }
             else {
+                timerText.color = new Color(255, 255, 255, 255);
                 if (hasEndSound) soundPlayer.PlayOneShot(endSound);
                 Debug.Log("El tiempo se encuentra apagado");
                 timeLeft = 0;
@@ -51,6 +52,9 @@ public class Timer : MonoBehaviour
         float seconds = Mathf.FloorToInt(currentTime % (time + 1));
         if (hasTickSound && (seconds.ToString() != timerText.text) && (seconds.ToString() != "0")) soundPlayer.PlayOneShot(tickSound);
         timerText.text = seconds.ToString();
+        if (seconds == 5) {
+            timerText.color = new Color(1f, 0.39f, 0f, 1f);
+        }
     }
 
     public void SetTime(int newTime){
