@@ -35,7 +35,7 @@ public class RoundGameplay : MonoBehaviour
         GetNewPrompt();
         timer = GameObject.Find("Time").GetComponent<Timer>();
         Debug.Log("New Duration: " + PlayerPrefs.GetInt("roundDuration"));
-        timer.SetTime(PlayerPrefs.GetInt("roundDuration"));
+        timer.SetTime(PlayerPrefs.GetInt("roundDuration", 60));
     }
 
     // Update is called once per frame
@@ -49,7 +49,7 @@ public class RoundGameplay : MonoBehaviour
         Vector3 inclinacion = new(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
         //gyro_test.text = inclinacion.ToString();
         
-        if (PlayerPrefs.GetInt("useMotionControls", 0) != 1)
+        if (PlayerPrefs.GetInt("useMotionControls", 1) != 1)
             return;
         if ((inclinacion.x > 0.3f) || (inclinacion.x < -0.3f) || (inclinacion.z > 0.9f) || (inclinacion.z < -0.9f))
             return;
