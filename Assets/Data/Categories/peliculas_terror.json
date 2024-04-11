@@ -1,6 +1,7 @@
 {
   "category": "Películas de terror",
   "description": "¿Cuantos películas y asesinos horroríficos podrás adivinar?",
+  "iconName": "peliculas_terror",
   "questions": [
     "Alien",
     "Criatura de la noche (Let the Right One In)",

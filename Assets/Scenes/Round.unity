@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 6366bf443c4749e4e882fab24adccdad, type: 3}
+  clip: {fileID: 8300000, guid: 9f64b3753592bb3418c8eb3fcf47af63, type: 3}
 --- !u!114 &222939319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: df61f0daa02a3534099e2ee32c04b687, type: 3}
+  clip: {fileID: 8300000, guid: 32bbd7b70d2c29f418344d0f749dbaff, type: 3}
 --- !u!114 &222939320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: dfaf00ac57d121447b35386bab267bef, type: 3}
+  clip: {fileID: 8300000, guid: e430b7f9d36e2734ba34230058e5117d, type: 3}
 --- !u!1 &470284593
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,7 +474,7 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 0
   m_HDR: 1
-  m_AllowMSAA: 0
+  m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 0
@@ -525,9 +525,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1120475500}
   - {fileID: 1865105667}
   - {fileID: 1302213693}
-  - {fileID: 1120475500}
   m_Father: {fileID: 1636494915}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -673,11 +673,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 833421103}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 500}
+  m_AnchoredPosition: {x: 0, y: 260}
   m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1120475501
@@ -866,6 +866,7 @@ GameObject:
   - component: {fileID: 1302213695}
   - component: {fileID: 1302213694}
   - component: {fileID: 1302213697}
+  - component: {fileID: 1302213698}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -887,7 +888,7 @@ RectTransform:
   m_Children:
   - {fileID: 1499656089}
   m_Father: {fileID: 833421103}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -938,9 +939,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1997148635}
-        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
-        m_MethodName: PauseGame
+      - m_Target: {fileID: 1302213698}
+        m_TargetAssemblyTypeName: SoundEffectPlayer, Assembly-CSharp
+        m_MethodName: PlayClip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -950,9 +951,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1302213697}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
+      - m_Target: {fileID: 1997148635}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+        m_MethodName: UnpauseToTransition
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1012,6 +1013,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49975578b721e34e98df22118634f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1302213698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302213692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: daaca9d10257b904ea17b02d7e0034cf, type: 3}
 --- !u!1 &1330686723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,11 +1667,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 60
+  criticalTime: 5
   timerOn: 0
   timerText: {fileID: 1582746989}
   hasEndSound: 0
-  hasTickSound: 0
-  tickSound: {fileID: 0}
+  hasTickSound: 1
+  tickSound: {fileID: 8300000, guid: df245b4c8e44caf4aa4a36b6cbe622f4, type: 3}
   endSound: {fileID: 0}
 --- !u!1 &1636494911
 GameObject:
@@ -1710,7 +1725,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 1960}
+  m_ReferenceResolution: {x: 1960, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1727,8 +1742,8 @@ Canvas:
   m_GameObject: {fileID: 1636494911}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -1737,7 +1752,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1636494915
 RectTransform:
@@ -1772,6 +1787,7 @@ GameObject:
   - component: {fileID: 1865105670}
   - component: {fileID: 1865105669}
   - component: {fileID: 1865105668}
+  - component: {fileID: 1865105671}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -1793,7 +1809,7 @@ RectTransform:
   m_Children:
   - {fileID: 1395486596}
   m_Father: {fileID: 833421103}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1844,6 +1860,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1865105671}
+        m_TargetAssemblyTypeName: SoundEffectPlayer, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1997148635}
         m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: PauseGame
@@ -1894,6 +1922,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865105666}
   m_CullTransparentMesh: 1
+--- !u!114 &1865105671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865105666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 88c0d8f6504195b408a364a3e17806ce, type: 3}
 --- !u!1 &1900714806
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,6 +2159,7 @@ GameObject:
   - component: {fileID: 1997148636}
   - component: {fileID: 1997148635}
   - component: {fileID: 1997148637}
+  - component: {fileID: 1997148638}
   m_Layer: 5
   m_Name: Pause Button
   m_TagString: Untagged
@@ -2166,6 +2208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseUI: {fileID: 1636494911}
+  sceneLoader: {fileID: 1302213697}
 --- !u!61 &1997148636
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2222,3 +2265,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1997148638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997148631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: daaca9d10257b904ea17b02d7e0034cf, type: 3}

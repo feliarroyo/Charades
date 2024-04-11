@@ -1,6 +1,7 @@
 {
   "category": "Sonidos",
   "description": "A actuar y hacer gestos: ¡Esto es dígalo con mimica!",
+  "iconName": "sonidos",
   "questions": [
     "Vaca",
     "Perro",

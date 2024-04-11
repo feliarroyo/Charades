@@ -1,6 +1,7 @@
 {
   "category": "Plantas contra Zombis",
   "description": "¿Hay zombis en tu jardín? ¡Adivina plantas y zombis del clásico juego de PopCap!",
+  "iconName": "pvz",
   "questions": [
     "Girasol (Sunflower)",
     "Margarita (Marigold)",

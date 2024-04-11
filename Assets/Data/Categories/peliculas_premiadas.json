@@ -1,6 +1,7 @@
 {
   "category": "Películas premiadas",
   "description": "Adivina películas galardonadas en los Óscar.",
+  "iconName": "peliculas_premiadas",
   "questions": [
     "12 años de esclavitud (12 Years a Slave)",
     "1917",

@@ -1,6 +1,7 @@
 {
-  "category": "Disney (Canciones)",
+  "category": "Canciones de Disney",
   "description": "Adivina los clásicos de las películas de Disney. Modo difícil: ¡Cantando!",
+  "iconName": "disney_canciones",
   "questions": [
     "Supercalifragilisticoespialidoso - Mary Poppins",
     "Busca lo más vital - El libro de la selva",

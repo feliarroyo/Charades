@@ -1,6 +1,7 @@
 {
-  "category": "Disney (Series)",
+  "category": "Series de Disney",
   "description": "¡Series originales Disney Channel y Disney XD!",
+  "iconName": "disney_series",
   "questions": [
     "Winnie the Pooh",
     "Chip y Dale",

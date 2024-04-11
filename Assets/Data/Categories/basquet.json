@@ -1,6 +1,7 @@
 {
   "category": "Básquetbol",
   "description": "¡Adivina jugadores, equipos y más del baloncesto!",
+  "iconName": "basquet",
   "questions": [
     "Base",
     "Escolta",

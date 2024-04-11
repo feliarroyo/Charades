@@ -1,6 +1,7 @@
 {
   "category": "Dragon Ball",
   "description": "¡Adivina personajes como Goku y sus amigos y enemigos!",
+  "iconName": "dragonball",
   "questions": [
     "Androide Número 16",
     "Androide Número 17",
@@ -65,7 +66,7 @@
     "Garlic Jr.",
     "Hildegarn",
     "Janemba",
-    "Kaiō Shin del Este",
+    "Kaio Shin del Este",
     "Metal Cooler",
     "Uub",
     "Pan",

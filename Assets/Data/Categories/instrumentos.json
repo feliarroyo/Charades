@@ -1,6 +1,7 @@
 {
   "category": "Instrumentos musicales",
   "description": "¡Que suene la música! Adivina los instrumentos o guitarrea hasta que le pegues.",
+  "iconName": "instrumentos",
   "questions": [
     "Acordeón",
     "Armónica",
@@ -34,6 +35,8 @@
     "Dulzaina",
     "Ferrete",
     "Flauta",
+    "Flauta dulce",
+    "Flauta traversa",
     "Flautín",
     "Fuelle",
     "Gaita",
@@ -58,8 +61,6 @@
     "Trompeta",
     "Ukelele",
     "Viola",
-    "Violoncello",
-    "Violoncelo",
     "Violonchelo",
     "Violín",
     "Órgano"

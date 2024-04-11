@@ -1,6 +1,7 @@
 {
   "category": "Los Simpson",
   "description": "¡Adivina los personajes de la familia más famosa del mundo!",
+  "iconName": "simpson",
   "questions": [
     "Homero Simpson",
     "Bart Simpson",

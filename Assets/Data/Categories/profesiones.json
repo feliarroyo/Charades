@@ -1,6 +1,7 @@
 {
   "category": "Profesiones",
   "description": "Adivina entre los diferentes oficios.",
+  "iconName": "profesiones",
   "questions": [
     "Abogado",
     "Académico",

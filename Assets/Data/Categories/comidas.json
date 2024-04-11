@@ -1,6 +1,7 @@
 {
   "category": "Comidas",
   "description": "¡Adivina platillos, ingredientes y postres!",
+  "iconName": "comidas",
   "questions": [
     "Aceite",
     "Aceituna",

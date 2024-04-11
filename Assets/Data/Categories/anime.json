@@ -1,6 +1,7 @@
 {
   "category": "Anime",
   "description": "¡Adivina series animadas japonesas!",
+  "iconName": "anime",
   "questions": [
     "Shinjeki no Kyojin (Attack on Titan)",
     "Death Note",

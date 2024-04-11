@@ -1,6 +1,7 @@
 {
   "category": "Literatura",
   "description": "¡Adivina nombres de famosas obras literarias de a lo largo del tiempo!",
+  "iconName": "literatura",
   "questions": [
     "Los juegos del hambre",
     "Harry Potter",

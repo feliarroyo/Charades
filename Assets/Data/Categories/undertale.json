@@ -1,6 +1,7 @@
 {
   "category": "UNDERTALE",
   "description": "¡Adivina personajes y más de UNDERTALE y DELTARUNE!",
+  "iconName": "undertale",
   "questions": [
     "Frisk",
     "Chara",

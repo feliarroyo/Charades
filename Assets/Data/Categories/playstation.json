@@ -1,6 +1,7 @@
 {
   "category": "PlayStation",
   "description": "¡Adivina los nombres de algunos de los juegos más populares de la historia!",
+  "iconName": "playstation",
   "questions": [
       "Ape Escape",
       "Assassin's Creed",

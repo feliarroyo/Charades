@@ -1,6 +1,7 @@
 {
   "category": "Verano",
   "description": "¡Adiviná cosas relacionadas al calor y a las fiestas de fin de año!",
+  "iconName": "verano",
   "questions": [
     "Sol",
     "Vacaciones",

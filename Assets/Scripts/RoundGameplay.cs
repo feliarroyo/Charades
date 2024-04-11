@@ -12,7 +12,7 @@ public class RoundGameplay : MonoBehaviour
     public static List<string> prompts;    
     private static bool isActive;
     public TextMeshProUGUI prompt_text, hits_text; //, gyro_test;
-    public SoundEffectPlayer[] sounds;
+    public SoundEffectPlayer[] sounds; // 0 = correct, 1 = pass prompt, 2 = finish
     public static Category current_category;
     public Timer timer;
     public bool isGameOver;
@@ -31,7 +31,7 @@ public class RoundGameplay : MonoBehaviour
         hits_text = GameObject.Find("Points").GetComponent<TextMeshProUGUI>();
         score = 0;
         current_category = Competition.GetCategory();
-        prompts = current_category.questions;
+        prompts = new(current_category.questions);
         GetNewPrompt();
         timer = GameObject.Find("Time").GetComponent<Timer>();
         Debug.Log("New Duration: " + PlayerPrefs.GetInt("roundDuration"));
@@ -66,7 +66,7 @@ public class RoundGameplay : MonoBehaviour
         if (givePoint)
             UpdateScore();
         isActive = false;
-        StartCoroutine(ChangeScreen(givePoint));;
+        StartCoroutine(ChangeScreen(givePoint));
     }
 
     private IEnumerator ChangeScreen(bool givePoint = false)
@@ -74,7 +74,7 @@ public class RoundGameplay : MonoBehaviour
     {
         
         prompts.Remove(prompt_text.text);
-        Score.answers.Add(prompt_text.text, givePoint);
+        Score.answers.Add((prompt_text.text, givePoint));
         if (givePoint){
             cam.backgroundColor = Color.green;
             prompt_text.text = "Bien";
@@ -85,7 +85,7 @@ public class RoundGameplay : MonoBehaviour
             prompt_text.text = "Paso";
             sounds[1].PlayClip();
         }
-        float answerWait = PlayerPrefs.GetFloat("answerWaitDuration", 2f);
+        float answerWait = PlayerPrefs.GetFloat("answerWaitDuration", 1f);
         yield return new WaitForSeconds(0.5f);
         hits_text.color = new Color(255, 255, 255, 255);
         yield return new WaitForSeconds(answerWait - 0.5f);
@@ -93,11 +93,14 @@ public class RoundGameplay : MonoBehaviour
     }
 
     private void GetNewPrompt(){
-        if (prompts.Count == 0) // if no more questions, restart prompt pool
-            prompts = current_category.questions; 
+        Debug.Log("Prompt Count: " + prompts.Count);
+        if (prompts.Count == 0){ // if no more questions, restart prompt pool
+            prompts = new(current_category.questions);
+        }   
         if (!isGameOver){
             isActive = true;
             cam.backgroundColor = DefaultColor;
+            Debug.Log("After Prompt Count: " + prompts.Count);
             prompt_text.text = prompts[Random.Range(0, prompts.Count)];
         }
     }
@@ -115,10 +118,15 @@ public class RoundGameplay : MonoBehaviour
 
     public IEnumerator EndGame(){
         isGameOver = true;
+        if (PlayerPrefs.GetInt("showScreenButtons", 1) == 1) {
+            GameObject.Find("Pause Button").SetActive(false);
+            GameObject.Find("Hit Button").SetActive(false);
+            GameObject.Find("Pass Button").SetActive(false);
+        }
         Pause.isPaused = true;
         cam.backgroundColor = Color.magenta;
         if (isActive)
-            Score.answers.Add(prompt_text.text, false);
+            Score.answers.Add((prompt_text.text, false));
         prompt_text.text = "¡Tiempo!";
         sounds[2].PlayClip();
         Score.score = score;

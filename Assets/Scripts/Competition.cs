@@ -11,21 +11,23 @@ public static class Competition
     public static int currentCategory = 0;
     public static int currentTeam = 1;
     private const int max_teams = 4;
+    public static GameObject cleanCatButton = null;
 
     public static List<Category> lastGameCategories = new();
 
-    public static int AddCategory(Category cat){
-        if (!categories.Contains(cat)){
+    public static void AddCategory(Category cat){
+        if (!categories.Contains(cat))
             categories.Add(cat);
-            return 1;
-        }
         else
             categories.Remove(cat);
-            return 0;
+        if (cleanCatButton != null)
+            cleanCatButton.SetActive(categories.Count > 0);
     }
 
     public static void ClearCategories(){
         categories.Clear();
+        cleanCatButton = GameObject.Find("Limpiar");
+        cleanCatButton.SetActive(false);
     }
 
     public static bool ContainsCategory(Category cat){

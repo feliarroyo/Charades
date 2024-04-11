@@ -1,6 +1,7 @@
 {
   "category": "Personajes",
   "description": "¡Adiviná personajes de cuentos, series, películas y más!",
+  "iconName": "personajes",
   "questions": [
       "Blanca Nieves",
       "Pinocho",

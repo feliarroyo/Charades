@@ -1,6 +1,7 @@
 {
   "category": "DC Comics",
   "description": "Adivina superhéroes de la compañía de Batman y Superman.",
+  "iconName": "dccomics",
   "questions": [
       "Alfred",
       "Aquaman",

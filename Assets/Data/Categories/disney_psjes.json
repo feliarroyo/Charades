@@ -1,6 +1,7 @@
 {
-  "category": "Disney (Personajes)",
+  "category": "Personajes de Disney",
   "description": "¡Series originales Disney Channel y Disney XD!",
+  "iconName": "disney_psjes",
   "questions": [
       "Blanca Nieves",
       "Pinocho",

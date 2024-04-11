@@ -1,6 +1,7 @@
 {
   "category": "Sonic the Hedgehog",
   "description": "¡Averigua cuántos personajes, juegos, y zonas de la icónica franquicia de SEGA conocés!",
+  "iconName": "sonic",
   "questions": [
     "Sonic the Hedgehog",
     "Classic Sonic",

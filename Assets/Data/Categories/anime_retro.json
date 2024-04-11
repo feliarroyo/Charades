@@ -1,6 +1,7 @@
 {
-  "category": "Anime (Retro)",
+  "category": "Anime retro",
   "description": "Adivina series animadas japonesas del pasado: Magic Kids, Locomotion y Toonami, etc.",
+  "iconName": "anime_retro",
   "questions": [
       "Arjuna",
       "Astro Boy",

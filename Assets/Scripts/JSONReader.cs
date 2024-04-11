@@ -9,4 +9,8 @@ public class JSONReader : MonoBehaviour
     public static Category GetCategory(TextAsset jsonFile){
         return JsonUtility.FromJson<Category>(jsonFile.text);
     }
+
+    public static Category GetCategory(string jsonFile){
+        return JsonUtility.FromJson<Category>(jsonFile);
+    }
 }

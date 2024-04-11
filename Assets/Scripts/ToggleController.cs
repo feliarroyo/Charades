@@ -8,14 +8,19 @@ public class ToggleController : MonoBehaviour
 {
     public string parameter = "default";
     public Toggle toggle = null;
+
+    public SoundEffectPlayer pressSound;
+    private bool playSound;
     // Start is called before the first frame update
     void Start()
     {
+        playSound = false;
         bool value = false;
         if (PlayerPrefs.GetInt(parameter, 1)==1){
             value = true;
         }
         toggle.isOn = value;
+        playSound = true;
     }
 
     // Update is called once per frame
@@ -25,6 +30,8 @@ public class ToggleController : MonoBehaviour
     }
 
     public void SetValue(){
+        if (playSound)
+            pressSound.PlayClip();
         if (parameter=="showScreenButtons")
             Config.SetToggle(toggle.isOn);
         else

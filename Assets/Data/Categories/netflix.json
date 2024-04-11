@@ -1,6 +1,7 @@
 {
   "category": "Netflix",
   "description": "Adivina algunas de las series más conocidas del servicio de streaming.",
+  "iconName": "netflix",
   "questions": [
     "Stranger Things",
     "The Crown",

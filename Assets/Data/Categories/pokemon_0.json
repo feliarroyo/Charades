@@ -1,6 +1,7 @@
 {
   "category": "Pokémon (GB/GBC)",
   "description": "Adivina los Pokémon de las regiones de Kanto y Johto. (Rojo/Azul/Amarillo, Oro/Plata/Cristal)",
+  "iconName": "pokemon_0",
   "questions": [
     "Bulbasaur",
     "Ivysaur",

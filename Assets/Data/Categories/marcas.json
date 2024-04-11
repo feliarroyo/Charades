@@ -1,6 +1,7 @@
 {
   "category": "Marcas",
   "description": "Marcas de ropa, de autos, ¡de lo que te imagines!",
+  "iconName": "marcas",
   "questions": [
       "20th Century Fox",
       "7Up",

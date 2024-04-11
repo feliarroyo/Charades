@@ -1,6 +1,7 @@
 {
-  "category": "Disney (Películas)",
+  "category": "Películas de Disney",
   "description": "Películas animadas del cine y clásicos originales del Disney Channel, ¡adivínalas todas!",
+  "iconName": "disney_pelis",
   "questions": [
     "Blanca Nieves y los siete enanos",
     "Pinocho",

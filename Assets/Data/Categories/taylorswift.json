@@ -1,6 +1,7 @@
 {
   "category": "Taylor Swift",
   "description": "¡Canciones de la cantante pop más exitosa en la actualidad!",
+  "iconName": "taylorswift",
   "questions": [
     "New Romantics",
     "Wonderland",

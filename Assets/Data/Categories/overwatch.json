@@ -1,6 +1,7 @@
 {
   "category": "Overwatch",
   "description": "El mundo necesita más gente que adivine héroes. (y mapas, etc.)",
+  "iconName": "overwatch",
   "questions": [
     "D.Va",
     "Doomfist",

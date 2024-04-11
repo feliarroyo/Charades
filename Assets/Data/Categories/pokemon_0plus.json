@@ -1,6 +1,7 @@
 {
   "category": "Pokémon (G1 a G3)",
   "description": "Adivina los Pokémon de las regiones de Kanto, Johto y Hoenn. (Rojo/Azul/Amarillo, Oro/Plata/Cristal, Rubí/Zafiro/Esmeralda)",
+  "iconName": "pokemon_0plus",
   "questions": [
     "Bulbasaur",
     "Ivysaur",

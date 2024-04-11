@@ -1,6 +1,7 @@
 {
   "category": "Animales",
   "description": "¿Qué tanto conoces del reino animal?",
+  "iconName": "animales",
   "questions": [
     "Abeja",
     "Águila",

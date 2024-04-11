@@ -5,9 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    private static string lastScene = "MainMenu";
     public void LoadScene(string sceneName){
-        SceneManager.LoadScene(sceneName);
+        lastScene = SceneManager.GetActiveScene().name;
+        StartCoroutine(LoadSceneAsync(sceneName));
+        //SceneManager.LoadScene(sceneName);
     }
+
+    IEnumerator LoadSceneAsync(string sceneName){
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    public void LoadLastScene(){
+        StartCoroutine(LoadLastSceneAsync());
+    }
+    IEnumerator LoadLastSceneAsync(){
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(lastScene);
+        lastScene = SceneManager.GetActiveScene().name;
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
 
     public void QuitGame(){
         AndroidJavaObject activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");

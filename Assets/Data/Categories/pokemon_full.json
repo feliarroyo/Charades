@@ -1,6 +1,7 @@
 {
   "category": "Pokémon (Todos)",
   "description": "Solo para los verdaderos Maestros Pokémon, adivina Pokémon de CUALQUIER generación.",
+  "iconName": "pokemon_full",
   "questions": [
     "Bulbasaur",
     "Ivysaur",

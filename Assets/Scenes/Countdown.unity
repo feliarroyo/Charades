@@ -333,7 +333,6 @@ GameObject:
   - component: {fileID: 983605857}
   - component: {fileID: 983605860}
   - component: {fileID: 983605859}
-  - component: {fileID: 983605858}
   m_Layer: 5
   m_Name: Advice Text
   m_TagString: Untagged
@@ -361,25 +360,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -3}
   m_SizeDelta: {x: 681.9, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &983605858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983605856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4deed33bd07fb0f4d8c7e546db860458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  time: 3
-  timerOn: 0
-  timerText: {fileID: 983605859}
-  hasEndSound: 1
-  hasTickSound: 1
-  tickSound: {fileID: 8300000, guid: df61f0daa02a3534099e2ee32c04b687, type: 3}
-  endSound: {fileID: 8300000, guid: 7ebc0c4bf8122d14096ed50c30a3c4ec, type: 3}
 --- !u!114 &983605859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -643,12 +623,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 3
+  criticalTime: 5
   timerOn: 0
   timerText: {fileID: 1808871574}
   hasEndSound: 1
   hasTickSound: 1
-  tickSound: {fileID: 8300000, guid: df61f0daa02a3534099e2ee32c04b687, type: 3}
-  endSound: {fileID: 8300000, guid: 7ebc0c4bf8122d14096ed50c30a3c4ec, type: 3}
+  tickSound: {fileID: 8300000, guid: df245b4c8e44caf4aa4a36b6cbe622f4, type: 3}
+  endSound: {fileID: 8300000, guid: 499079f925e5c4a40bea6b37b7d9d8c2, type: 3}
 --- !u!114 &1808871574
 MonoBehaviour:
   m_ObjectHideFlags: 0

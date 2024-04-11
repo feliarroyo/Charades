@@ -1,6 +1,7 @@
 {
   "category": "Lo que sea",
   "description": "Pueden tocar enunciados de cualquier categoría. ¡Suerte!",
+  "iconName": "remix",
   "questions": [
     "Abeja",
     "Araña",

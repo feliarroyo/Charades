@@ -14,7 +14,7 @@ public class CompetitionWrapper : MonoBehaviour
     }
 
     public void ClearCategories(){
-        Competition.ClearCategories(); 
+        Competition.ClearCategories();
         foreach (CategoryButton cg in FindObjectsOfType<CategoryButton>()) {
             cg.SetCategory_unselected();
         }
@@ -29,7 +29,10 @@ public class CompetitionWrapper : MonoBehaviour
         if (Competition.HasCategories()){
             SceneManager.LoadScene(sceneName);
             Competition.lastGameCategories = Competition.categories;
+            GameObject.Find("Jugar").GetComponent<SoundEffectPlayer>().PlayClip();
+            return;
         }
+        GameObject.Find("Volver").GetComponent<SoundEffectPlayer>().PlayClip();
     }
 
     public void LoadNextScene(string sceneName){

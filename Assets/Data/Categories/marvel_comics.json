@@ -1,6 +1,7 @@
 {
-  "category": "Marvel",
+  "category": "Marvel Comics",
   "description": "Adivina superhéroes de Marvel, ya sea de las películas, las series o los comics.",
+  "iconName": "marvel_comics",
   "questions": [
     "Abominación",
     "Agente Coulson",

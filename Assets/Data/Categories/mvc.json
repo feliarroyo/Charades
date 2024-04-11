@@ -1,6 +1,7 @@
 {
   "category": "Marvel vs. Capcom",
   "description": "Adivina héroes y villanos de la famosa saga de juegos de lucha.",
+  "iconName": "mvc",
   "questions": [
     "Capitán América",
     "La Pantera Negra (Black Panther)",

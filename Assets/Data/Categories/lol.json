@@ -1,6 +1,7 @@
 {
   "category": "League of Legends",
   "description": "Pucha que hay campeones en este juego.",
+  "iconName": "lol",
   "questions": [
     "Aatrox",
     "Ahri",

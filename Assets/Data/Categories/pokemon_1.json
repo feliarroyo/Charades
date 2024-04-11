@@ -1,6 +1,7 @@
 {
   "category": "Pokémon (GBA/DS)",
   "description": "Adivina los Pokémon de las regiones de Hoenn, Sinnoh y Unova. (Rubí/Zafiro/Esmeralda, Diamante/Perla/Platino, Blanco/Negro)",
+  "iconName": "pokemon_1",
   "questions": [
     "Treecko",
     "Grovyle",

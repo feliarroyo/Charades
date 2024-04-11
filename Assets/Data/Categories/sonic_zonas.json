@@ -1,6 +1,7 @@
 {
   "category": "Sonic (Zonas)",
   "description": "¡Adivina zonas de las aventuras del famoso erizo azul!",
+  "iconName": "sonic_zonas",
   "questions": [
     "Green Hill Zone",
     "Marble Zone",

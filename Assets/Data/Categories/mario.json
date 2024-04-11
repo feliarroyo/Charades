@@ -1,6 +1,7 @@
 {
   "category": "Super Mario",
   "description": "¡Averigua cuánto conoces de la icónica franquicia del plomero!",
+  "iconName": "mario",
   "questions": [
     "Mario",
     "Luigi",

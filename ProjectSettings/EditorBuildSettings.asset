@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 87f0bb9cddf84534580fa2276301bd85
   - enabled: 1
     path: Assets/Scenes/CategorySelect.unity
-    guid: c088cf4e3df63aa479df74c827103ba5
+    guid: d9678b4fa61df8b42bd04613a6fcff15
   - enabled: 1
     path: Assets/Scenes/Presentation.unity
     guid: 8df77a1373265dd4b8348ea16abdce15
@@ -32,6 +32,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 004163fdf8e13344995999d07a42dfe5
+  - enabled: 1
+    path: Assets/Scenes/CustomCreator.unity
+    guid: 5ff255bf49d17fb4094eddbdc4ecaa63
+  - enabled: 1
+    path: Assets/Scenes/CustomMenu.unity
+    guid: 02907332e9a88004790f1d35171fb26c
+  - enabled: 1
+    path: Assets/Scenes/EditCustomMenu.unity
+    guid: e6de11f3805510241aaca7de8e4285d1
+  - enabled: 1
+    path: Assets/Scenes/CustomEditor.unity
+    guid: c75179e890151624a88b45fab898fbf9
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 2166c1dd68a198d4ab8af89a28688a0f, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 720e03a12e9c35b4badd59f2637061e2, type: 2}

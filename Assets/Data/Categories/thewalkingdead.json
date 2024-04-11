@@ -1,6 +1,7 @@
 {
   "category": "The Walking Dead",
   "description": "¡Adivina supervivientes y no tan supervivientes del comic y la serie!",
+  "iconName": "thewalkingdead",
   "questions": [
     "Carl Grimes",
     "Rick Grimes",

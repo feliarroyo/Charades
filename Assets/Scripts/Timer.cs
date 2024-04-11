@@ -7,6 +7,7 @@ using System;
 public class Timer : MonoBehaviour
 {
     public int time = 60;
+    public int criticalTime = 5; // when should beep sounds be played
     private float timeLeft;
     public bool timerOn;
     public TextMeshProUGUI timerText;
@@ -34,7 +35,9 @@ public class Timer : MonoBehaviour
             }
             else {
                 timerText.color = new Color(255, 255, 255, 255);
-                if (hasEndSound) soundPlayer.PlayOneShot(endSound);
+                if (hasEndSound) {
+                    soundPlayer.PlayOneShot(endSound);
+                }
                 Debug.Log("El tiempo se encuentra apagado");
                 timeLeft = 0;
                 timerOn = false;
@@ -50,7 +53,8 @@ public class Timer : MonoBehaviour
     void UpdateTimer(float currentTime){
         currentTime += 1;
         float seconds = Mathf.FloorToInt(currentTime % (time + 1));
-        if (hasTickSound && (seconds.ToString() != timerText.text) && (seconds.ToString() != "0")) soundPlayer.PlayOneShot(tickSound);
+        if (hasTickSound && (seconds.ToString() != timerText.text) && (seconds.ToString() != "0") && (seconds <= criticalTime)) 
+            soundPlayer.PlayOneShot(tickSound);
         timerText.text = seconds.ToString();
         if (seconds == 5) {
             timerText.color = new Color(1f, 0.39f, 0f, 1f);

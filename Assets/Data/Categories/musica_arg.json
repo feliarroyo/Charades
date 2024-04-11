@@ -1,6 +1,7 @@
 {
   "category": "Música en español",
   "description": "¡Adivina entre las 50 canciones del Top 50 de Spotify para el año 2023 en Argentina!",
+  "iconName": "musica_arg",
   "questions": [
     "La Morocha - Luck Ra, BM",
     "La_Original.mp3 - Emilia, TINI",

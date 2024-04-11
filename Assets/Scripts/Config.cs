@@ -8,10 +8,9 @@ public class Config : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        MenuConfig();
         GameObject.Find("Music").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("musicVolume", 0.5f);
         GameObject.Find("SoundEffects").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("soundVolume", 0.5f);
-        if (!GameObject.Find("Music").GetComponent<AudioSource>().isPlaying)
-            MenuConfig();
     }
 
     // Update is called once per frame
@@ -22,9 +21,10 @@ public class Config : MonoBehaviour
 
     public static void MenuConfig(){
     // settings for Menu interaction (portrait / allow sleep / music playing)
-        Screen.sleepTimeout = SleepTimeout.SystemSetting;
         Screen.orientation = ScreenOrientation.Portrait;
-        GameObject.Find("Music").GetComponent<AudioSource>().Play();
+        Screen.sleepTimeout = SleepTimeout.SystemSetting;
+        if (!GameObject.Find("Music").GetComponent<AudioSource>().isPlaying)
+            GameObject.Find("Music").GetComponent<AudioSource>().Play();
     }
     
     public static void GameplayConfig(){
@@ -62,6 +62,9 @@ public class Config : MonoBehaviour
             case "waitTimer":
                 PlayerPrefs.SetFloat("answerWaitDuration", value);
                 return;
+            case "quality":
+                PlayerPrefs.SetInt("quality", (int) value);
+                return;
         }
     }
 
@@ -89,14 +92,24 @@ public class Config : MonoBehaviour
             case "waitTimer":
                 Config.WriteTimer("WaitTimeLabel");
                 return PlayerPrefs.GetFloat("answerWaitDuration", 2f);
+            case "quality":
+                Config.WriteTimer("QualityLabel");
+                return PlayerPrefs.GetInt("quality", 2);
         }
         return -1f;
     }
 
     public static void WriteTimer(string name){
-        if (name=="TimeLabel")
-            GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetInt("roundDuration", 60).ToString();
-        else
-            GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = (Mathf.Round(PlayerPrefs.GetFloat("answerWaitDuration", 2f) * 10.0f) * 0.1f ).ToString();
+        switch (name) {
+            case "TimeLabel":
+                GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetInt("roundDuration", 60).ToString();
+                break;
+            case "WaitTimeLabel":
+                GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = (Mathf.Round(PlayerPrefs.GetFloat("answerWaitDuration", 1f) * 10.0f) * 0.1f ).ToString();
+                break;
+            case "QualityLabel":
+                GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = QualitySliderController.ValueNames(PlayerPrefs.GetInt("quality", 2));
+                break;
+        }
     }
 }

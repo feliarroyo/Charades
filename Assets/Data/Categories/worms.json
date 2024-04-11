@@ -1,6 +1,7 @@
 {
   "category": "Worms Armageddon",
   "description": "Adivina las armas del icónico juego de estrategia de gusanitos.",
+  "iconName": "worms",
   "questions": [
     "Jet Pack",
     "Baja Gravedad",

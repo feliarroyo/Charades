@@ -708,7 +708,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 964153554}
-  - component: {fileID: 964153552}
   - component: {fileID: 964153555}
   m_Layer: 0
   m_Name: Credits
@@ -717,19 +716,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &964153552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964153551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a77642cf8a0d2994cafac698227594c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 40d78d40398ce914d9c94593889e0756, type: 3}
 --- !u!4 &964153554
 Transform:
   m_ObjectHideFlags: 0
@@ -855,10 +841,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<size=36>Desarrollo: \r</size>\nFelipe Arroyo\r\n\r\n<size=36>Botones:\r</size>\n\r\"Complete
     GUI Essential Pack Free Version\" \nby Crusenho: \r\nhttps://crusenho.itch.io/complete-ui-essential-pack\r\nCC
-    BY 4.0 - License link:\nhttps://creativecommons.org/licenses/by/4.0/\r\n\r\n<size=36>\xCDconos:\r</size>\n\r\nHechos
-    por m\xED: \n<size=18>Marcas, Friends, Disney (Series), Anime, Anime retro, DC
-    Comics, \nTaylor Swift, Super Smash Bros., Jackbox Games, Selecci\xF3n argentina,
-    \nCualquier cosa\r\n</size>\n\r\"Justin's 16x16 Icon Pack\" by Justin Arnold\r\nhttps://zeromatrix.itch.io/rpgiab-icons\r\nCC
+    BY 4.0 - License link:\nhttps://creativecommons.org/licenses/by/4.0/\r\n\r\n<size=36>M\xFAsica:\r</size>\nThree
+    Red Hearts: Prepare to Dev by Abstraction\nhttps://tallbeard.itch.io/music-loop-bundle\n\n<size=36>Sonidos:\r</size>\nRETRO
+    SOUNDS by DaSk\n\n<size=36>\xCDconos:\r</size>\n\r\nHechos por m\xED: \n<size=18>Marcas,
+    Friends, Disney (Series), Anime, Anime retro, DC Comics, \nTaylor Swift, Super
+    Smash Bros., Jackbox Games, Selecci\xF3n argentina, \nCualquier cosa\r\n</size>\n\r\"Justin's
+    16x16 Icon Pack\" by Justin Arnold\r\nhttps://zeromatrix.itch.io/rpgiab-icons\r\nCC
     BY 4.0 - License link:\nhttps://creativecommons.org/licenses/by/4.0/\r\nUsado
     en: \n<size=18>Pa\xEDses, Literatura, Anatom\xEDa, Pel\xEDculas, Videojuegos,
     Sonidos, \nM\xFAsica pop yanki, M\xFAsica en espa\xF1ol, Verano, Harry Potter,
@@ -1075,6 +1063,7 @@ GameObject:
   - component: {fileID: 1586770807}
   - component: {fileID: 1586770810}
   - component: {fileID: 1586770811}
+  - component: {fileID: 1586770812}
   m_Layer: 5
   m_Name: Return Button
   m_TagString: Untagged
@@ -1159,6 +1148,18 @@ MonoBehaviour:
           m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1586770812}
+        m_TargetAssemblyTypeName: SoundEffectPlayer, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1586770808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,6 +1222,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49975578b721e34e98df22118634f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1586770812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586770804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 88c0d8f6504195b408a364a3e17806ce, type: 3}
 --- !u!1 &1642346358
 GameObject:
   m_ObjectHideFlags: 0

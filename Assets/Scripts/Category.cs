@@ -9,11 +9,11 @@ public class Category : IEquatable<Category>
     public string category;
     public string description;
     public List<string> questions;
+    public string iconName;
     
-    public bool Equals(Category c)
-    {
-    if (c == null)
-        return false;
-    return c.category.Equals(category);
+    public bool Equals(Category c) {
+        if (c == null)
+            return false;
+        return c.category.Equals(category);
     }
 }

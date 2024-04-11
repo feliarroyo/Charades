@@ -1,6 +1,7 @@
 {
     "category": "Super Smash Bros.",
     "description": "¡Adivina personajes, escenarios y objetos de la franquicia de Nintendo!",
+    "iconName": "smash",
     "questions": [
       "Mario",
       "Metal Mario",

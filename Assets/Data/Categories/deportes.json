@@ -1,6 +1,7 @@
 {
   "category": "Deportes",
   "description": "Deportes, equipos y deportistas más reconocidos.",
+  "iconName": "deportes",
   "questions": [
     "Fútbol",
     "Básquetbol",

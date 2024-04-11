@@ -31,11 +31,11 @@ public class RoundResults : MonoBehaviour
         // Returns a list of prompts shown; skipped prompts shown in grey
         string answers = "";
         foreach (var a in Score.answers){
-            if (a.Value == true)
+            if (a.Item2 == true)
                 answers +="<color=\"white\">";
             else
                 answers +="<color=\"grey\">";
-            answers += a.Key + "\n";
+            answers += a.Item1 + "\n";
         }
         return answers;
     }

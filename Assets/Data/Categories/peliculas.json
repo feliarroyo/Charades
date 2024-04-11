@@ -1,6 +1,7 @@
 {
   "category": "Películas",
   "description": "¡Adivina diversos títulos tanto clásicos como modernos del cine!",
+  "iconName": "peliculas",
   "questions": [
     "Sueño de fuga",
     "El padrino",

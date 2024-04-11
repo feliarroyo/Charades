@@ -164,7 +164,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6658161952963734987}
   - {fileID: 4279923770301055431}
@@ -352,6 +352,7 @@ MonoBehaviour:
   categoryName: {fileID: 3200011650523168855}
   buttonImage: {fileID: 6658161952963734988}
   jsonCategory: {fileID: 4900000, guid: 5b5e22f4df9dd9244a29c4bde8500357, type: 3}
+  categoryImage: {fileID: 6144615688965575287}
 --- !u!114 &4845955393690333533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: a02c25a22612d57478dee3da3f1a7dc8, type: 3}
+  clip: {fileID: 8300000, guid: 88c0d8f6504195b408a364a3e17806ce, type: 3}
 --- !u!1 &6658161954136392185
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +432,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3839fe82a268ea24fa0bae46a08da85a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: abec4b1d51cbeda4aad2c6dbcd330586, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

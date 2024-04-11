@@ -1,6 +1,7 @@
 {
   "category": "Series de televisión",
   "description": "Adivina esas series que te maratoneas durante los fines de semana.",
+  "iconName": "series",
   "questions": [
     "Breaking Bad",
     "Avatar: La leyenda de Aang",

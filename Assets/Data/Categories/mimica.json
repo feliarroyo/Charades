@@ -1,6 +1,7 @@
 {
   "category": "Mimica",
   "description": "A actuar y hacer gestos: ¡Esto es dígalo con mimica!",
+  "iconName": "mimica",
   "questions": [
     "Abrazar",
     "Agitar",

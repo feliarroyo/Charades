@@ -1,6 +1,7 @@
 {
   "category": "Selección argentina",
   "description": "¡Adiviná jugadores y entrenadores de la selección de fútbol argentina!",
+  "iconName": "futbol_selargentina",
   "questions": [
     "Juan Musso",
     "Facundo Medina",

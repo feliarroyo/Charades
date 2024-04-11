@@ -1,6 +1,7 @@
 {
   "category": "Países",
   "description": "¿Cuántos países del mundo conocés?",
+  "iconName": "paises",
   "questions": [
     "Afganistán",
     "Albania",
