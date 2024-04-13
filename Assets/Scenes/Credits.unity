@@ -839,8 +839,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<size=36>Desarrollo: \r</size>\nFelipe Arroyo\r\n\r\n<size=36>Botones:\r</size>\n\r\"Complete
-    GUI Essential Pack Free Version\" \nby Crusenho: \r\nhttps://crusenho.itch.io/complete-ui-essential-pack\r\nCC
+  m_text: "<size=36>Desarrollo: \r</size>\nFelipe Arroyo\r\n\r\n<size=36>Testing:
+    \r</size>\nAlex Tassi\r\n\n<size=36>Botones:\r</size>\n\r\"Complete GUI Essential
+    Pack Free Version\" \nby Crusenho: \r\nhttps://crusenho.itch.io/complete-ui-essential-pack\r\nCC
     BY 4.0 - License link:\nhttps://creativecommons.org/licenses/by/4.0/\r\n\r\n<size=36>M\xFAsica:\r</size>\nThree
     Red Hearts: Prepare to Dev by Abstraction\nhttps://tallbeard.itch.io/music-loop-bundle\n\n<size=36>Sonidos:\r</size>\nRETRO
     SOUNDS by DaSk\n\n<size=36>\xCDconos:\r</size>\n\r\nHechos por m\xED: \n<size=18>Marcas,
@@ -1136,18 +1137,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1586770811}
-        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: MainMenu
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1586770812}
         m_TargetAssemblyTypeName: SoundEffectPlayer, Assembly-CSharp
         m_MethodName: PlayClip
@@ -1158,6 +1147,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1586770811}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1586770808

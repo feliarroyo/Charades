@@ -7,6 +7,7 @@ public class SoundEffectPlayer : MonoBehaviour
     public AudioClip clip;
 
     public void PlayClip(){
-        GameObject.Find("SoundEffects").GetComponent<AudioSource>().PlayOneShot(clip);
+        if (!SceneLoader.IsLoading())
+            GameObject.Find("SoundEffects").GetComponent<AudioSource>().PlayOneShot(clip);
     }
 }

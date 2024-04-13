@@ -12,15 +12,31 @@ public class CategoryEditor : CategoryCreator
     //List<string> questions;
     public static Category originalCategory;
     public string origFileName;
+    public bool wereChangesMade = false;
+    public static bool isInitializing = true;
     
     // Start is called before the first frame update
     void Start()
     {
-        //if (questions == null)
-            InitializeValues();
+        InitializeValues();
+    }
+
+    public void SetChangesWereMade(bool wereChangesMade){
+        this.wereChangesMade = wereChangesMade;
+    }
+
+    public new void AddQuestion(){
+        base.AddQuestion();
+        wereChangesMade = true;
+    }
+
+    public new void RemoveQuestion(string prompt){
+        base.RemoveQuestion(prompt);
+        wereChangesMade = true;
     }
 
     public new void InitializeValues(){
+        isInitializing = true;
         category = originalCategory.category;
         description = originalCategory.description;
         questions = new List<string>();
@@ -36,6 +52,7 @@ public class CategoryEditor : CategoryCreator
         }
         category_text.transform.parent.transform.parent.GetComponent<TMP_InputField>().text = originalCategory.category;
         desc_text.transform.parent.transform.parent.GetComponent<TMP_InputField>().text = originalCategory.description;
+        DeleteablePromptController.canDelete = true;
         foreach (string s in originalCategory.questions) {
             AddToQuestionList(s);
         }
@@ -44,6 +61,8 @@ public class CategoryEditor : CategoryCreator
         iconDropdown.options = iconList;
         if (iconToSet != null)
             SetImage(iconToSet);
+        wereChangesMade = false;
+        isInitializing = false;
     }
 
     // Creates json file of the new category.
@@ -71,17 +90,23 @@ public class CategoryEditor : CategoryCreator
         sceneLoader.LoadLastScene();
     }
 
+    public new void YouSureUnsaved(bool yes) {
+        string origCat, origDesc;
+        origCat = originalCategory.category;
+        origDesc = originalCategory.description;
+        Debug.Log(category == origDesc);
+
+        if (!wereChangesMade){
+            sceneLoader.LoadLastScene();
+            return;
+        }
+        UnsavedUI.SetActive(yes);
+    }
+
     public void DeleteFile() {
         string filePath = Application.persistentDataPath + "/customCategories/" + origFileName + ".json";
         File.Delete(filePath);
         sceneLoader.LoadLastScene();
-    }
-
-    IEnumerator ShowWarningText(string warning){
-        warning_text.enabled = true;
-        warning_text.text = warning;
-        yield return new WaitForSeconds(2f);
-        warning_text.enabled = false;
     }
 
     // Update is called once per frame

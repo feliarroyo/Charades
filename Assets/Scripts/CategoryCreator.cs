@@ -12,6 +12,11 @@ public class CategoryCreator : MonoBehaviour
     protected List<string> questions;
     public SceneLoader sceneLoader;
     public SoundEffectPlayer successSound, failSound;
+    public GameObject promptPrefab;
+    public GameObject promptParent;
+    public static int warningsRunning = 0;
+    public GameObject UnsavedUI, DeleteUI;
+    public TMP_InputField promptInputField;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +36,7 @@ public class CategoryCreator : MonoBehaviour
             iconList.Add(od);
         }
         iconDropdown.options = iconList;
+        warningsRunning = 0;
     }
 
     public void SetImage(string name){
@@ -42,28 +48,26 @@ public class CategoryCreator : MonoBehaviour
             AddToQuestionList(newQuestion);
         else
             StartCoroutine(ShowWarningText("No se puede agregar un enunciado vacío."));
-        question_text.text = "";
+        promptInputField.text = "";
     }
 
-    public void RemoveQuestion(){
-        string deleteQuestion = question_text.text;
-        if (questions.Contains(deleteQuestion)){
-            questions.Remove(deleteQuestion);
-            questionlist_text.text = "";
-            foreach (string s in questions) {
-                questionlist_text.text += s + "\n";
-            }
-        }
+    public void RemoveQuestion(string prompt){
+        if (questions.Contains(prompt))
+            questions.Remove(prompt);
         else
-            StartCoroutine(ShowWarningText("No hay un enunciado \"" + deleteQuestion + "\" en esta categoría."));
+            StartCoroutine(ShowWarningText("No hay un enunciado \"" + prompt + "\" en esta categoría."));
     }
 
     public void AddToQuestionList(string prompt){
-        if (questions.Contains(prompt))
+        if (questions.Contains(prompt)){
+            StartCoroutine(ShowWarningText("Este enunciado ya fue agregado."));
             return;
+        }
         questions.Add(prompt);
         Debug.Log("Question: \"" + prompt + "\" added.");
-        questionlist_text.text += prompt + "\n";
+        GameObject newQuestion = Instantiate(promptPrefab, promptParent.transform);
+        newQuestion.GetComponentInChildren<DeleteablePrompt>().SetValue(prompt); // set name;
+        newQuestion.GetComponentInChildren<DeleteablePrompt>().EnableDeleting(!DeleteablePromptController.canDelete); // set cross on/off
     }
 
     public void SetName(){
@@ -125,11 +129,26 @@ public class CategoryCreator : MonoBehaviour
     }
 
     IEnumerator ShowWarningText(string warning){
+        warningsRunning++;
         warning_text.enabled = true;
         warning_text.text = warning;
-        yield return new WaitForSeconds(2f);
-        warning_text.enabled = false;
+        yield return new WaitForSeconds(3f);
+        warningsRunning--;
+        if (warningsRunning == 0)
+            warning_text.enabled = false;
     }
+
+    public void YouSure(bool yes) {
+        DeleteUI.SetActive(yes);
+    }
+    public void YouSureUnsaved(bool yes) {
+        if ((questions.Count == 0) && (description.Length <= 1) && (category.Length <= 1)){
+            sceneLoader.LoadLastScene();
+            return;
+        }
+        UnsavedUI.SetActive(yes);
+    }
+
 
     // Update is called once per frame
     void Update()
