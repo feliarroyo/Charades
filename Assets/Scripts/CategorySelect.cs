@@ -11,6 +11,7 @@ public class CategorySelect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Config.MenuConfig();
         Competition.SetTeamName(1, PlayerPrefs.GetString("Team1", "Equipo 1"));
         Competition.SetTeamName(2, PlayerPrefs.GetString("Team2", "Equipo 2"));
         //categoryButtonPrefab.transform.parent = customParent.transform;

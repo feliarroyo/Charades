@@ -1,6 +1,6 @@
 {
   "category": "Pokémon (G1 a G4)",
-  "description": "Adivina los Pokémon de las regiones de Kanto, Johto, Hoenn y Sinnoh. (Rojo/Azul/Amarillo, Oro/Plata/Cristal, Rubí/Zafiro/Esmeralda, Diamante/Perla/Platino)",
+  "description": "¡Adivina los nombres de entre los 493 Pokémon descubiertos en Sinnoh!",
   "iconName": "pokemon_1minus",
   "questions": [
     "Bulbasaur",
