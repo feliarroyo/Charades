@@ -1733,7 +1733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1884908920021447532, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_Value
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1884908920021447532, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_MaxValue
