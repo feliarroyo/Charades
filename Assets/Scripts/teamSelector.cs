@@ -55,9 +55,4 @@ public class teamSelector : MonoBehaviour
         this.changeColor();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -15,12 +15,6 @@ public class ButtonScheme : MonoBehaviour
         gameObject.SetActive(showButtons);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void OnMouseDown(){
         GameObject.Find("GameLogic").GetComponent<RoundGameplay>().Pass(passType);
     }

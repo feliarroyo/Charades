@@ -12,8 +12,8 @@ public class CategorySelect : MonoBehaviour
     void Start()
     {
         Config.MenuConfig();
-        Competition.SetTeamName(1, PlayerPrefs.GetString("Team1", "Equipo 1"));
-        Competition.SetTeamName(2, PlayerPrefs.GetString("Team2", "Equipo 2"));
+        Competition.SetTeamName(0, PlayerPrefs.GetString("Team1", "Equipo 1"));
+        Competition.SetTeamName(1, PlayerPrefs.GetString("Team2", "Equipo 2"));
         //categoryButtonPrefab.transform.parent = customParent.transform;
         string savePath = Application.persistentDataPath + "/customCategories";
         CategoryCreator.CreateCustomDirectory(savePath);
@@ -25,9 +25,4 @@ public class CategorySelect : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -15,10 +15,4 @@ public class ScrollViewController : MonoBehaviour
     public void saveOffset(){
         PlayerPrefs.SetFloat(ScrollTag, gameObject.transform.position.y);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

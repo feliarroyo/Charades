@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,10 @@ using UnityEngine.SceneManagement;
 public static class Competition
 {
     public static List<Category> categories = new();
-    public static List<string> teamNames = new() {"empty", "Equipo 1", "Equipo 2"};
+    public static List<string> teamNames = new() {"Equipo 1", "Equipo 2"};
     public static Dictionary<int, List<int> > scores = new();
     public static int currentCategory = 0;
-    public static int currentTeam = 1;
+    public static int currentTeam = 0;
     private const int max_teams = 4;
     public static GameObject cleanCatButton = null;
 
@@ -39,10 +40,9 @@ public static class Competition
     }
 
     public static void StartCompetition(){
-        Debug.Log("LLAMA A StartCompetition");
         currentCategory = 0;
-        currentTeam = 1;
-        for (int i = 1; i <= PlayerPrefs.GetInt("teams", 1); i++){
+        currentTeam = 0;
+        for (int i = 0; i < PlayerPrefs.GetInt("teams", 1); i++){
             scores[i] = new List<int>();
         }
     }
@@ -57,14 +57,14 @@ public static class Competition
     }
 
     public static void SetNextGame(){
-        if (currentTeam < PlayerPrefs.GetInt("teams", 1))
+        if (currentTeam < PlayerPrefs.GetInt("teams", 1)-1)
             currentTeam++;
         else {
-            currentTeam = 1;
+            currentTeam = 0;
             currentCategory++;
             Debug.Log("Equipo " + currentTeam + " juega. Numero de categoria " + currentCategory);
             if (currentCategory == categories.Count) {
-                SceneManager.LoadScene("FinalResults"); // should be results or something
+                SceneManager.LoadScene("FinalResults");
                 return;
             }
         }
@@ -77,19 +77,24 @@ public static class Competition
         if ((cur_teams > max_teams) || (cur_teams < 1))
             return false;
         PlayerPrefs.SetInt("teams", cur_teams);
-        for (int i = 1; i <= n; i++){
-            teamNames.Add("Equipo " + n);
+        for (int i = 0; i < n; i++){
+            teamNames.Add("Equipo " + (i+1));
         }
         return true;
     }
 
     public static string GetNextTeamName(){
         if (PlayerPrefs.GetInt("teams", 1)==1)
-            {return "que adivines";}
+            return "que adivines";
         return teamNames[currentTeam];
     }
 
     public static void SetTeamName(int i, string name){
-        teamNames[i] = name;
+        try {
+            teamNames[i] = name;
+        }
+        catch (Exception e){
+            Debug.Log(e);
+        }
     }
 }

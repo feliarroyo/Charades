@@ -17,12 +17,6 @@ public class RoundResults : MonoBehaviour
         score_text.text = FillInScore();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ContinueGame(){
         Competition.RegisterScore(Score.score);
     }

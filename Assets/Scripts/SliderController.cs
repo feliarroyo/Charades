@@ -15,12 +15,6 @@ public class SliderController : MonoBehaviour
         slider.value = Config.GetValue(parameter);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SetValue(){
         Config.SetValue(parameter, slider.value);
         if (text != null)

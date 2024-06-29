@@ -13,12 +13,6 @@ public class QualitySliderController : SliderController
         slider.value = Config.GetValue(parameter);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public new void SetValue(){
         Config.SetValue(parameter, slider.value);
         QualitySettings.SetQualityLevel((int) slider.value);

@@ -8,11 +8,6 @@ public class DeleteablePrompt : MonoBehaviour
 {
     public TextMeshProUGUI prompt;
     public GameObject cross;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     public void SetValue(string value){
         prompt.text = value;
@@ -28,10 +23,5 @@ public class DeleteablePrompt : MonoBehaviour
 
     public void EnableDeleting(bool canDelete){
         cross.SetActive(canDelete);
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

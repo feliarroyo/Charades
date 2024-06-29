@@ -148,11 +148,4 @@ public class CategoryCreator : MonoBehaviour
         }
         UnsavedUI.SetActive(yes);
     }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

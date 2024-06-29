@@ -14,10 +14,4 @@ public class SceneMusic : MonoBehaviour
             GameObject.Find("Music").GetComponent<AudioSource>().Play();
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

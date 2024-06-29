@@ -28,12 +28,6 @@ public class CategoryButton : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SetCategory() {
         if (!singleSelect)
             Competition.AddCategory(category);

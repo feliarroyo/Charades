@@ -1,9 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Class used to avoid destroying GameObjects between scenes.
 public class DontDestroy : MonoBehaviour
 {
     public static HashSet<string> instances = new();
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +19,4 @@ public class DontDestroy : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

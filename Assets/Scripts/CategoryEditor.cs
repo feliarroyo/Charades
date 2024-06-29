@@ -109,9 +109,4 @@ public class CategoryEditor : CategoryCreator
         sceneLoader.LoadLastScene();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

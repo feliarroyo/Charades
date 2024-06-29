@@ -23,12 +23,6 @@ public class ToggleController : MonoBehaviour
         playSound = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void SetValue(){
         if (playSound)
             pressSound.PlayClip();

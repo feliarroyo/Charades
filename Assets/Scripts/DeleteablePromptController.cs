@@ -29,9 +29,4 @@ public class DeleteablePromptController : MonoBehaviour
         canDelete = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

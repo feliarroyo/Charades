@@ -38,7 +38,6 @@ public class Timer : MonoBehaviour
                 if (hasEndSound) {
                     soundPlayer.PlayOneShot(endSound);
                 }
-                Debug.Log("El tiempo se encuentra apagado");
                 timeLeft = 0;
                 timerOn = false;
             }

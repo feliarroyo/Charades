@@ -11,9 +11,4 @@ public class CleanCategoryButton : MonoBehaviour
         gameObject.SetActive(Competition.categories.Count != 0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
