@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public static class Competition
 {
+    public static int gameType = 0;
+
+    public static Category categoryQP = new();
     public static List<Category> categories = new();
     public static List<string> teamNames = new() {"Equipo 1", "Equipo 2"};
     public static Dictionary<int, List<int> > scores = new();
@@ -17,12 +20,19 @@ public static class Competition
     public static List<Category> lastGameCategories = new();
 
     public static void AddCategory(Category cat){
-        if (!categories.Contains(cat))
-            categories.Add(cat);
-        else
-            categories.Remove(cat);
-        if (cleanCatButton != null)
-            cleanCatButton.SetActive(categories.Count > 0);
+        switch (Competition.gameType){
+            case 0:
+                categoryQP = cat;
+                break;
+            default:
+                if (!categories.Contains(cat))
+                    categories.Add(cat);
+                else
+                    categories.Remove(cat);
+                if (cleanCatButton != null)
+                    cleanCatButton.SetActive(categories.Count > 0);
+                break;
+        }
     }
 
     public static void ClearCategories(){
@@ -36,7 +46,28 @@ public static class Competition
     }
 
     public static Category GetCategory(){
-        return categories[currentCategory];
+        switch (gameType){
+            case 0:
+                return categoryQP;
+            case 1:
+                return categories[currentCategory];
+            case 2:
+            default:
+                return new Category(){
+                    category="Mash-Up",
+                    description="¡Pueden tocar enunciados de cualquiera de las categorías seleccionadas!",
+                    iconName="remix",
+                    questions=GetAllPrompts()
+                };
+        };
+    }
+    
+    private static List<string> GetAllPrompts(){
+        List<string> res = new();
+        foreach (Category c in categories){
+            res.AddRange(c.questions);
+        }
+        return res;
     }
 
     public static void StartCompetition(){
@@ -53,7 +84,12 @@ public static class Competition
     }
 
     public static bool HasCategories(){
-        return categories.Count != 0;
+        switch (Competition.gameType){
+            case 0:
+                return true;
+            default:
+                return categories.Count != 0;
+        }
     }
 
     public static void SetNextGame(){
@@ -63,7 +99,7 @@ public static class Competition
             currentTeam = 0;
             currentCategory++;
             Debug.Log("Equipo " + currentTeam + " juega. Numero de categoria " + currentCategory);
-            if (currentCategory == categories.Count) {
+            if ((currentCategory == categories.Count) || (gameType != 1)) {
                 SceneManager.LoadScene("FinalResults");
                 return;
             }
@@ -96,5 +132,9 @@ public static class Competition
         catch (Exception e){
             Debug.Log(e);
         }
+    }
+
+    public static void SetGameType(int id){
+        gameType = id;
     }
 }

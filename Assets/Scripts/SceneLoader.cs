@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
 {
     private static string lastScene = "MainMenu";
     private static bool isLoading = false;
+    private bool ready = false;
     public void LoadScene(string sceneName){
         if (isLoading)
             return;
@@ -14,6 +15,36 @@ public class SceneLoader : MonoBehaviour
         StartCoroutine(LoadSceneAsync(sceneName));
         //SceneManager.LoadScene(sceneName);
     }
+    
+    void Start(){
+        ready = false;
+    }
+
+    public void PreloadScene(string sceneName){
+        ready = false;
+        StartCoroutine(PreloadSceneAsync(sceneName));
+    }
+    IEnumerator PreloadSceneAsync(string sceneName){
+        yield return null;
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+        asyncLoad.allowSceneActivation = false;
+        isLoading = true;
+        while (!asyncLoad.isDone)
+        {
+            if (asyncLoad.progress >= 0.9f)
+            {
+                isLoading = false;
+                if (ready == true)
+                    asyncLoad.allowSceneActivation = true;
+            }
+            yield return null;
+        }
+    }
+
+    public void loadPreloaded(){
+        ready = true;
+    }
+
 
     IEnumerator LoadSceneAsync(string sceneName){
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);

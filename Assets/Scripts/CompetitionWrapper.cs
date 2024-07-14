@@ -54,4 +54,8 @@ public class CompetitionWrapper : MonoBehaviour
             Config.GameplayConfig();
         }
     }
+
+    public void SetGameType(int gameType){
+        Competition.SetGameType(gameType);
+    }
 }

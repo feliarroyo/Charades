@@ -9,7 +9,7 @@ public class RoundGameplay : MonoBehaviour
     private static Color DefaultColor = new(0.1921569f,0.3019608f,0.4745098f,1f);
     public int score;
     public static Camera cam;
-    public static List<string> prompts;    
+    public static List<string> prompts;
     private static bool isActive;
     public TextMeshProUGUI prompt_text, hits_text; //, gyro_test;
     public SoundEffectPlayer[] sounds; // 0 = correct, 1 = pass prompt, 2 = finish

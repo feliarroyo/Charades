@@ -8,7 +8,8 @@ public class CleanCategoryButton : MonoBehaviour
     void Start()
     {
         Competition.cleanCatButton = gameObject;
-        gameObject.SetActive(Competition.categories.Count != 0);
+        // Only active when more than one category is selected; unused in Quick Play
+        gameObject.SetActive((Competition.categories.Count != 0) && (Competition.gameType != 0));
     }
 
 }

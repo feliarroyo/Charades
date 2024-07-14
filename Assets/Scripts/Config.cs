@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Config : MonoBehaviour
 {
+    public static bool customMenu = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,14 +14,9 @@ public class Config : MonoBehaviour
         GameObject.Find("SoundEffects").GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("soundVolume", 0.5f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    
-    }
-
     public static void MenuConfig(){
     // settings for Menu interaction (portrait / allow sleep / music playing)
+        
         Screen.orientation = ScreenOrientation.Portrait;
         Screen.sleepTimeout = SleepTimeout.SystemSetting;
         if (!GameObject.Find("Music").GetComponent<AudioSource>().isPlaying)

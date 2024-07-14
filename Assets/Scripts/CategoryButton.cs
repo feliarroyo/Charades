@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CategoryButton : MonoBehaviour
 {
@@ -16,12 +17,15 @@ public class CategoryButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Loads category data from file
         category = JSONReader.GetCategory(jsonCategory);
         categoryName.text = category.category;
         categoryImage.sprite = Resources.Load<Sprite>(category.iconName);
+        // Define colors for different states
         unselectedColor = SetColor(unselectedColor, Color.white);
         selectedColor = SetColor(selectedColor, Color.green);
-        if (Competition.ContainsCategory(category))
+        // Initialize color value depending on previous game state and game type
+        if ((Competition.ContainsCategory(category)) && (Competition.gameType != 0))
             buttonImage.colors = selectedColor;
         else
             buttonImage.colors = unselectedColor;
@@ -31,10 +35,18 @@ public class CategoryButton : MonoBehaviour
     public void SetCategory() {
         if (!singleSelect)
             Competition.AddCategory(category);
-        if (buttonImage.colors.Equals(unselectedColor))
-            buttonImage.colors = selectedColor;
-        else
-            buttonImage.colors = unselectedColor;
+        switch (Competition.gameType){
+            case 0:
+                Competition.StartCompetition();
+                SceneManager.LoadScene("Presentation");
+                break;
+            default:
+                if (buttonImage.colors.Equals(unselectedColor))
+                    buttonImage.colors = selectedColor;
+                else
+                    buttonImage.colors = unselectedColor;
+                break;
+        }
     }
 
     public void SetCategoryAsEdit() {

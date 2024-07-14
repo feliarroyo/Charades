@@ -13,12 +13,20 @@ public class Presentation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        current_category = Competition.GetCategory();
         team_text.text = "¡Es el turno de " + Competition.GetNextTeamName() + "!";
-        title_text.text = current_category.category;
-        desc_text.text = current_category.description;
-        categoryImage.sprite = Resources.Load<Sprite>(current_category.iconName);
-        
+        switch (Competition.gameType){
+            case 2: // Mash-Up mode
+                title_text.text = "Mash-Up";
+                desc_text.text = "¡Pueden tocar enunciados de cualquiera de las categorías seleccionadas!";
+                categoryImage.sprite = Resources.Load<Sprite>("remix");
+                break;
+            default: // Other modes
+                current_category = Competition.GetCategory();
+                title_text.text = current_category.category;
+                desc_text.text = current_category.description;
+                categoryImage.sprite = Resources.Load<Sprite>(current_category.iconName);
+                break;
+        }
     }
 
 }
