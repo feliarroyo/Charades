@@ -14,19 +14,15 @@ public class Presentation : MonoBehaviour
     void Start()
     {
         team_text.text = "¡Es el turno de " + Competition.GetNextTeamName() + "!";
-        switch (Competition.gameType){
-            case 2: // Mash-Up mode
-                title_text.text = "Mash-Up";
-                desc_text.text = "¡Pueden tocar enunciados de cualquiera de las categorías seleccionadas!";
-                categoryImage.sprite = Resources.Load<Sprite>("remix");
-                break;
-            default: // Other modes
-                current_category = Competition.GetCategory();
-                title_text.text = current_category.category;
-                desc_text.text = current_category.description;
-                categoryImage.sprite = Resources.Load<Sprite>(current_category.iconName);
-                break;
-        }
+        // Mash-Up mode (uses standard presentation when only one category is selected)
+        LoadCurrentCategory();
+    }
+
+    private void LoadCurrentCategory(){
+        current_category = Competition.GetCategory();
+        title_text.text = current_category.category;
+        desc_text.text = current_category.description;
+        categoryImage.sprite = Resources.Load<Sprite>(current_category.iconName);
     }
 
 }

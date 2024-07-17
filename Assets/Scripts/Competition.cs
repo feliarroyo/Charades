@@ -8,6 +8,9 @@ public static class Competition
 {
     public static int gameType = 0;
 
+    // keeps track of the prompts of each category used in a session
+    // in order to avoid repeating them when playing a category repeatedly
+    public static Dictionary<string, List<string> > sessionCategories = new();
     public static Category categoryQP = new();
     public static List<Category> categories = new();
     public static List<string> teamNames = new() {"Equipo 1", "Equipo 2"};
@@ -53,21 +56,39 @@ public static class Competition
                 return categories[currentCategory];
             case 2:
             default:
+                if (categories.Count == 1) // with only one category uses standard presentation
+                    return categories[0];
                 return new Category(){
                     category="Mash-Up",
                     description="¡Pueden tocar enunciados de cualquiera de las categorías seleccionadas!",
-                    iconName="remix",
-                    questions=GetAllPrompts()
+                    iconName="pregunta",
+                    questions=new()
                 };
         };
     }
-    
-    private static List<string> GetAllPrompts(){
-        List<string> res = new();
-        foreach (Category c in categories){
-            res.AddRange(c.questions);
+
+    // Gets a prompt list from the session records, to avoid repeated prompts
+    public static List<string> GetPrompts(Category c){
+        Debug.Log("Session categories: " + sessionCategories);
+        if (!sessionCategories.ContainsKey(c.category)){
+            sessionCategories[c.category] = c.questions;
+            Debug.Log("New category for the session! Initializing new session category");
         }
+        return sessionCategories[c.category];
+        
+    }
+    
+    public static Dictionary<string, List<string> > GetMashUpPrompts(){
+        Dictionary<string, List<string> > res = new();
+        foreach (Category c in categories)
+            res[c.category] = GetPrompts(c);
         return res;
+    }
+
+    public static Category GetRandomMashUpCategory(){
+        Category nextCategory = categories[UnityEngine.Random.Range(0, categories.Count)];
+        return nextCategory;
+
     }
 
     public static void StartCompetition(){

@@ -20,4 +20,8 @@ public class GameButton : MonoBehaviour
     public void SetCurrentMode(){
         Config.customMenu = setsCustom;
     }
+
+    public void SetCurrentEditMode(){
+        Config.creatingCategory = setsCustom;
+    }
 }

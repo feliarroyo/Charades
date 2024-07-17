@@ -924,7 +924,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1882,7 +1882,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -2184,7 +2184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6156752957330768753, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -34.195
+      value: -34.195007
       objectReference: {fileID: 0}
     - target: {fileID: 6156752957330768753, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2324,7 +2324,7 @@ RectTransform:
   - {fileID: 1535896487}
   - {fileID: 857159624}
   m_Father: {fileID: 1130224084}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -3613,7 +3613,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000061035156, y: -778.77}
-  m_SizeDelta: {x: 212, y: 212}
+  m_SizeDelta: {x: 400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &818365762
 MonoBehaviour:
@@ -4049,7 +4049,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26.500061, y: -3029}
+  m_AnchoredPosition: {x: -26.500061, y: -3027}
   m_SizeDelta: {x: 1662.0269, y: 3924.7183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &884730551
@@ -4515,7 +4515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6156752957330768753, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6156752957330768753, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5072,8 +5072,8 @@ RectTransform:
   - {fileID: 148563685}
   - {fileID: 2096998932}
   - {fileID: 510001477}
-  - {fileID: 990000796}
   - {fileID: 607816257}
+  - {fileID: 990000796}
   - {fileID: 1188939154}
   m_Father: {fileID: 2053268573}
   m_RootOrder: 1

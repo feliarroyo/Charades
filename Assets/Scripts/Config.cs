@@ -6,6 +6,7 @@ using UnityEngine;
 public class Config : MonoBehaviour
 {
     public static bool customMenu = true;
+    public static bool creatingCategory = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -87,7 +88,7 @@ public class Config : MonoBehaviour
                 return PlayerPrefs.GetInt("roundDuration", 60);
             case "waitTimer":
                 Config.WriteTimer("WaitTimeLabel");
-                return PlayerPrefs.GetFloat("answerWaitDuration", 2f);
+                return PlayerPrefs.GetFloat("answerWaitDuration", 1f);
             case "quality":
                 Config.WriteTimer("QualityLabel");
                 return PlayerPrefs.GetInt("quality", 2);

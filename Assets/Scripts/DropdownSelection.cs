@@ -10,7 +10,7 @@ public class DropdownSelection : MonoBehaviour
     // Start is called before the first frame update
 
     public void ConditionalPlayClip() {
-        if (!CategoryEditor.isInitializing)
+        if (!CategoryCreator.isInitializing)
             soundEffectPlayer.PlayClip();
     }
 

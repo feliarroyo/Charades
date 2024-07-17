@@ -6,16 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class RoundGameplay : MonoBehaviour
 {
-    private static Color DefaultColor = new(0.1921569f,0.3019608f,0.4745098f,1f);
+    protected static Color DefaultColor = new(0.1921569f,0.3019608f,0.4745098f,1f);
     public int score;
     public static Camera cam;
     public static List<string> prompts;
-    private static bool isActive;
+    protected static bool isActive;
     public TextMeshProUGUI prompt_text, hits_text; //, gyro_test;
     public SoundEffectPlayer[] sounds; // 0 = correct, 1 = pass prompt, 2 = finish
     public static Category current_category;
     public Timer timer;
     public bool isGameOver;
+
+    // Mash-Up only
+    public static Dictionary<string, List<string> > mashupPrompts;
+    public static Category currentMashUpCategory;
 
     // Start is called before the first frame update
     void Start()
@@ -24,18 +28,30 @@ public class RoundGameplay : MonoBehaviour
         Pause.isPaused = false;
         isGameOver = false;
         Score.answers.Clear();
-        prompts = new();
         isActive = true;
         cam = FindObjectOfType<Camera>().GetComponent<Camera>();
         prompt_text = GameObject.Find("Prompt").GetComponent<TextMeshProUGUI>();
         hits_text = GameObject.Find("Points").GetComponent<TextMeshProUGUI>();
         score = 0;
-        current_category = Competition.GetCategory();
-        prompts = new(current_category.questions);
-        GetNewPrompt();
+        InitializePrompts();
         timer = GameObject.Find("Time").GetComponent<Timer>();
         Debug.Log("New Duration: " + PlayerPrefs.GetInt("roundDuration"));
         timer.SetTime(PlayerPrefs.GetInt("roundDuration", 60));
+    }
+
+    private void InitializePrompts(){
+        switch (Competition.gameType){
+            case 2:
+                mashupPrompts = Competition.GetMashUpPrompts();
+                GetNewPrompt();
+                break;
+            default:
+                current_category = Competition.GetCategory();
+                prompts = Competition.GetPrompts(current_category);
+                Debug.Log("Current session has this # of prompts: " + prompts.Count);
+                GetNewPrompt();
+                break;
+        }
     }
 
     // Update is called once per frame
@@ -43,8 +59,9 @@ public class RoundGameplay : MonoBehaviour
     {
         if (Pause.isPaused)
             return;
-        else if (timer.TimeIsUp() || Input.GetKey(KeyCode.W))
+        else if (timer.TimeIsUp())
             StartCoroutine(EndGame());
+        
         // Each frame, we check the tilting of the phone. If tilted enough up, it gives the point. In the opposite case, it does not.
         Vector3 inclinacion = new(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
         //gyro_test.text = inclinacion.ToString();
@@ -53,9 +70,9 @@ public class RoundGameplay : MonoBehaviour
             return;
         if ((inclinacion.x > 0.3f) || (inclinacion.x < -0.3f) || (inclinacion.z > 0.9f) || (inclinacion.z < -0.9f))
             return;
-        else if ((inclinacion.z > 0.7f) || Input.GetKey(KeyCode.E))
+        else if ((inclinacion.z > 0.7f) || Input.GetKey(KeyCode.Mouse0))
             Pass(true);
-        else if ((inclinacion.z < -0.7f) || Input.GetKey(KeyCode.Q))
+        else if ((inclinacion.z < -0.7f) || Input.GetKey(KeyCode.Mouse1))
             Pass(false);
     }
 
@@ -72,8 +89,7 @@ public class RoundGameplay : MonoBehaviour
     private IEnumerator ChangeScreen(bool givePoint = false)
     // remove current word from the pool, and return a new word within the pile
     {
-        
-        prompts.Remove(prompt_text.text);
+        RemovePromptFromPool();
         Score.answers.Add((prompt_text.text, givePoint));
         if (givePoint){
             cam.backgroundColor = Color.green;
@@ -92,16 +108,43 @@ public class RoundGameplay : MonoBehaviour
         this.GetNewPrompt();
     }
 
+    private void RemovePromptFromPool(){
+        switch (Competition.gameType){
+            case 2:
+                mashupPrompts[currentMashUpCategory.category].Remove(prompt_text.text);
+                break;
+            default:
+                prompts.Remove(prompt_text.text);
+                break;
+        }
+    }
+
     private void GetNewPrompt(){
-        Debug.Log("Prompt Count: " + prompts.Count);
-        if (prompts.Count == 0){ // if no more questions, restart prompt pool
-            prompts = new(current_category.questions);
-        }   
-        if (!isGameOver){
-            isActive = true;
-            cam.backgroundColor = DefaultColor;
-            Debug.Log("After Prompt Count: " + prompts.Count);
-            prompt_text.text = prompts[Random.Range(0, prompts.Count)];
+        switch (Competition.gameType){
+            case 2:
+                currentMashUpCategory = Competition.GetRandomMashUpCategory();
+                string nextCat = currentMashUpCategory.category;
+                if (mashupPrompts[nextCat].Count == 0){ // if no more questions, restart prompt pool
+                    mashupPrompts[nextCat] = new(currentMashUpCategory.questions);
+                    Debug.Log("Come in!");
+                }   
+                if (!isGameOver){
+                    isActive = true;
+                    cam.backgroundColor = DefaultColor;
+                    Debug.Log("After Prompt Count: " + mashupPrompts[nextCat].Count);
+                    prompt_text.text = mashupPrompts[nextCat][Random.Range(0, mashupPrompts[nextCat].Count)];
+                }
+                break;
+            default:
+                if (prompts.Count == 0){ // if no more questions, restart prompt pool
+                    prompts = new(current_category.questions);
+                }   
+                if (!isGameOver){
+                    isActive = true;
+                    cam.backgroundColor = DefaultColor;
+                    prompt_text.text = prompts[Random.Range(0, prompts.Count)];
+                }
+                break;
         }
     }
 
@@ -130,7 +173,21 @@ public class RoundGameplay : MonoBehaviour
         prompt_text.text = "¡Tiempo!";
         sounds[2].PlayClip();
         Score.score = score;
+        RecordUsedPrompts();
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene("RoundResults");
+    }
+
+    private void RecordUsedPrompts(){
+        switch (Competition.gameType){
+            case 2:
+                foreach (string c in mashupPrompts.Keys){
+                    Competition.sessionCategories[c] = mashupPrompts[c];
+                }
+                break;
+            default:
+                Competition.sessionCategories[current_category.category] = prompts;
+                break;
+        }
     }
 }

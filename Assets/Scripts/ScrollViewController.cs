@@ -9,10 +9,12 @@ public class ScrollViewController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.transform.position = new Vector2(gameObject.transform.position.x, PlayerPrefs.GetFloat(ScrollTag, 0));
+        Debug.Log("Current ScrollTag: " + PlayerPrefs.GetFloat(ScrollTag, 0));
+        gameObject.transform.position = new Vector2(gameObject.transform.position.x, PlayerPrefs.GetFloat(ScrollTag, 656));
     }
     
     public void saveOffset(){
+        Debug.Log(gameObject.transform.position.y);
         PlayerPrefs.SetFloat(ScrollTag, gameObject.transform.position.y);
     }
 }

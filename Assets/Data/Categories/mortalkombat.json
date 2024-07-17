@@ -1,7 +1,7 @@
 {
   "category": "Mortal Kombat",
   "description": "Adivina quién es ese kombatiente del sangriento juego de lucha.",
-  "iconName": "peliculas_terror",
+  "iconName": "calavera",
   "questions": [
     "Goro",
     "Johnny Cage",
@@ -62,7 +62,6 @@
     "Hotaru",
     "Kira",
     "Kobra",
-    "Monster",
     "Onaga",
     "Shujinko",
     "Daegon",

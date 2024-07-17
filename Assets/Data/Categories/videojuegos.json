@@ -1,7 +1,7 @@
 {
   "category": "Videojuegos",
   "description": "¡Adivina los nombres de algunos de los juegos más populares de la historia!",
-  "iconName": "videojuegos",
+  "iconName": "palanca",
   "questions": [
     "Minecraft",
     "Grand Theft Auto",

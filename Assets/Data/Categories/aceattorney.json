@@ -1,7 +1,7 @@
 {
   "category": "Ace Attorney",
   "description": "¡Protesto! ¡Adivina personajes de la famosa saga de abogados!",
-  "iconName": "aceattorney",
+  "iconName": "apuntar",
   "questions": [
     "Phoenix Wright",
     "Maya Fey",

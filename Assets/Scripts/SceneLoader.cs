@@ -86,10 +86,11 @@ public class SceneLoader : MonoBehaviour
         return isLoading;
     }
     public void QuitGame(){
-        if (isLoading)
-            return;
-        AndroidJavaObject activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
-        activity.Call<bool>("moveTaskToBack", true);
-        // Application.Quit(); // if on PC
+        if (Application.platform == RuntimePlatform.Android){
+            AndroidJavaObject activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity");
+            activity.Call<bool>("moveTaskToBack", true);
+        }
+        else
+            Application.Quit();
     }
 }

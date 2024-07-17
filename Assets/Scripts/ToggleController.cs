@@ -14,6 +14,10 @@ public class ToggleController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if ((Application.platform == RuntimePlatform.WindowsPlayer) || (Application.platform == RuntimePlatform.WindowsEditor)){
+            gameObject.SetActive(false);
+            return;
+        }
         playSound = false;
         bool value = false;
         if (PlayerPrefs.GetInt(parameter, 1)==1){

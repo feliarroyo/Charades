@@ -14,10 +14,7 @@ public class DeleteablePrompt : MonoBehaviour
     }
     public void RemovePrompt(){
         string currentScene = SceneManager.GetActiveScene().name;
-        if (currentScene == "CustomCreator")
-            GameObject.Find("CategoryCreator").GetComponent<CategoryCreator>().RemoveQuestion(prompt.text);
-        else
-            GameObject.Find("CategoryEditor").GetComponent<CategoryEditor>().RemoveQuestion(prompt.text);
+        GameObject.Find("CategoryCreator").GetComponent<CategoryCreator>().RemoveQuestion(prompt.text);
         Destroy(gameObject);
     }
 

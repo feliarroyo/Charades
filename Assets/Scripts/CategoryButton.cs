@@ -50,7 +50,7 @@ public class CategoryButton : MonoBehaviour
     }
 
     public void SetCategoryAsEdit() {
-        CategoryEditor.originalCategory = this.category;
+        CategoryCreator.originalCategory = this.category;
     }
 
     public void SetSingleSelect(){
@@ -65,7 +65,7 @@ public class CategoryButton : MonoBehaviour
         cb = buttonImage.colors;
         cb.normalColor = color;
         cb.selectedColor = color;
-        cb.highlightedColor = color;
+        //cb.highlightedColor = color;
         return cb;
     }
 }
