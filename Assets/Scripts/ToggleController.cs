@@ -31,9 +31,9 @@ public class ToggleController : MonoBehaviour
         if (playSound)
             pressSound.PlayClip();
         if (parameter=="showScreenButtons")
-            Config.SetToggle(toggle.isOn);
+            Config.SetScreenControls(toggle.isOn);
         else
-            Config.SetMotionToggle(toggle.isOn);
+            Config.SetMotionControls(toggle.isOn);
         if (PlayerPrefs.GetInt("showScreenButtons",1)!=1 && PlayerPrefs.GetInt("useMotionControls", 1)!=1)
             if (parameter=="useMotionControls")
                 GameObject.Find("Button Toggle").GetComponent<Toggle>().isOn = true;

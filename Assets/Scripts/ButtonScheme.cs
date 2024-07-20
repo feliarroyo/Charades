@@ -10,12 +10,15 @@ public class ButtonScheme : MonoBehaviour
     void Start()
     {
         bool showButtons = false;
+
         if (PlayerPrefs.GetInt("showScreenButtons", 1) == 1)
             showButtons = true;
         gameObject.SetActive(showButtons);
     }
 
     void OnMouseDown(){
+        if ((Application.platform == RuntimePlatform.WindowsPlayer) || (Application.platform == RuntimePlatform.WindowsEditor))
+            return;
         GameObject.Find("GameLogic").GetComponent<RoundGameplay>().Pass(passType);
     }
 }

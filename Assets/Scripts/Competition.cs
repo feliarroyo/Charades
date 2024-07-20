@@ -48,6 +48,12 @@ public static class Competition
         return categories.Contains(cat);
     }
 
+    public static void RemoveCategory(Category cat){
+        if (ContainsCategory(cat)) {
+            categories.Remove(cat);
+        }
+    }
+
     public static Category GetCategory(){
         switch (gameType){
             case 0:
@@ -71,7 +77,7 @@ public static class Competition
     public static List<string> GetPrompts(Category c){
         Debug.Log("Session categories: " + sessionCategories);
         if (!sessionCategories.ContainsKey(c.category)){
-            sessionCategories[c.category] = c.questions;
+            sessionCategories[c.category] = new(c.questions);
             Debug.Log("New category for the session! Initializing new session category");
         }
         return sessionCategories[c.category];
@@ -149,6 +155,7 @@ public static class Competition
     public static void SetTeamName(int i, string name){
         try {
             teamNames[i] = name;
+            PlayerPrefs.SetString("Team" + (i+1), name);
         }
         catch (Exception e){
             Debug.Log(e);

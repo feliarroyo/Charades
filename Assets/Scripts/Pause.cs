@@ -16,7 +16,8 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown("escape"))
+            PauseGame();
     }
 
     public void PauseGame(){

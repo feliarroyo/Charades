@@ -15,7 +15,7 @@ public class CategoryCreator : MonoBehaviour
     public GameObject promptPrefab;
     public GameObject promptParent;
     public static int warningsRunning = 0;
-    public GameObject UnsavedUI, DeleteUI;
+    public GameObject UnsavedUI, DeleteUI, DeleteCategoryButton;
     public TMP_InputField promptInputField;
 
     // Editor mode related
@@ -47,6 +47,7 @@ public class CategoryCreator : MonoBehaviour
                     iconList.Add(od);
                 }
                 iconDropdown.options = iconList;
+                DeleteCategoryButton.SetActive(false);
                 warningsRunning = 0;
                 break;
             case false:
@@ -54,6 +55,7 @@ public class CategoryCreator : MonoBehaviour
                 category = originalCategory.category;
                 description = originalCategory.description;
                 string iconToSet = null;
+                DeleteCategoryButton.SetActive(true);
                 foreach (Object icon in iconArray)
                 {
                     TMP_Dropdown.OptionData od = new TMP_Dropdown.OptionData(icon.name, (Sprite)icon);
@@ -125,11 +127,13 @@ public class CategoryCreator : MonoBehaviour
     public void SetName()
     {
         category = category_text.text;
+        wereChangesMade = true;
     }
 
     public void SetDescription()
     {
         description = desc_text.text;
+        wereChangesMade = true;
     }
 
     public bool isCategoryAllowed()
@@ -186,14 +190,14 @@ public class CategoryCreator : MonoBehaviour
         string origPath = savePath;
         savePath += "/" + category.Replace(' ', '_') + ".json";
         Debug.Log(savePath);
-        if (Config.creatingCategory)
+        if (!Config.creatingCategory)
             origPath += "/" + origFileName + ".json";
         else
             origPath = savePath;
         using StreamWriter streamWriter = new StreamWriter(origPath);
         streamWriter.Write(categoryString);
         streamWriter.Close();
-        if (Config.creatingCategory)
+        if (!Config.creatingCategory)
             File.Move(origPath, savePath);
         sceneLoader.LoadLastScene();
     }
@@ -201,6 +205,7 @@ public class CategoryCreator : MonoBehaviour
     // Used to delete a category's json file when it is removed.
     public void DeleteFile()
     {
+        Competition.RemoveCategory(originalCategory);
         string filePath = Application.persistentDataPath + "/customCategories/" + origFileName + ".json";
         File.Delete(filePath);
         sceneLoader.LoadLastScene();
@@ -239,9 +244,9 @@ public class CategoryCreator : MonoBehaviour
     {
         switch (Config.creatingCategory)
         {
-            case false:
-                return ((questions.Count == 0) && (description.Length <= 1) && (category.Length <= 1));
             case true:
+                return ((questions.Count == 0) && (description.Length <= 1) && (category.Length <= 1));
+            case false:
                 return (!wereChangesMade);
 
         }

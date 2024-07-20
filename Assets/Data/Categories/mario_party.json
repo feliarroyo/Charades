@@ -1,7 +1,7 @@
 {
   "category": "Mario Party",
   "description": "¡A probar suerte! Adivina personajes, objetos, mapas y más de la saga de juegos de fiesta.",
-  "iconName": "estrella",
+  "iconName": "dado",
   "questions": [
     "Mario",
     "Luigi",

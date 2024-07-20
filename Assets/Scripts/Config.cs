@@ -65,13 +65,13 @@ public class Config : MonoBehaviour
         }
     }
 
-    public static void SetToggle(bool newValue){
+    public static void SetScreenControls(bool newValue){
         int newInt = 0;
         if (newValue) newInt++;
         PlayerPrefs.SetInt("showScreenButtons", newInt);
     }
 
-    public static void SetMotionToggle(bool newValue){
+    public static void SetMotionControls(bool newValue){
         int newInt = 0;
         if (newValue) newInt++;
         PlayerPrefs.SetInt("useMotionControls", newInt);

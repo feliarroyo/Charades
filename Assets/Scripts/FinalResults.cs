@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class FinalResults : MonoBehaviour
 {
-    public TextMeshProUGUI winner_team_text, score_text;
+    public TextMeshProUGUI winner_team_text, name_text, score_text;
     private List<int> scores;
     private bool tiedGame;
     private int winnerIndex, winnerScore;
@@ -20,12 +20,12 @@ public class FinalResults : MonoBehaviour
 
     private void WriteScreen(){
         if (PlayerPrefs.GetInt("teams", 1) == 1) // Single-player game
-            WriteText("¡Fin del juego!", $"Puntaje\t\t{scores[0]}");
+            WriteText("¡Fin del juego!", "Puntaje", $"{scores[0]}");
         else {
             if (tiedGame)
-                WriteText("¡Empate!", $"{GetTeamScoreText(0)}\n{GetTeamScoreText(1)}");
+                WriteText("¡Empate!", $"{GetAllTeamNameText()}", $"{GetAllTeamScoreText()}");
             else
-                WriteText($"¡{Competition.teamNames[winnerIndex]} gana!", GetAllTeamScoreText());
+                WriteText($"¡{Competition.teamNames[winnerIndex]} gana!", $"{GetAllTeamNameText()}",$"{GetAllTeamScoreText()}");
         }
     }
 
@@ -37,16 +37,31 @@ public class FinalResults : MonoBehaviour
             return $"{GetTeamScoreText(0)}\n{GetTeamScoreText(1)}";
     }
 
+    private string GetAllTeamNameText(){
+        if (scores[0] < scores[1])
+            return $"{GetTeamNameText(1)}\n{GetTeamNameText(0)}";
+        else
+            return $"{GetTeamNameText(0)}\n{GetTeamNameText(1)}";
+    }
+
     // Returns score text formatted to be written per team.
     private string GetTeamScoreText(int i){
         bool isWinner = scores[i]==winnerScore;
-        return $"{Competition.teamNames[i]}\t\t{(isWinner? $"<color=green>{scores[i]}</color>" : $"{scores[i]}")}";
+        return $"{(isWinner? $"<color=green>{scores[i]}</color>" : $"{scores[i]}")}";
+    }
+
+    private string GetTeamNameText(int i){
+        bool isWinner = scores[i]==winnerScore;
+        return $"{(isWinner? $"<color=green>{Competition.teamNames[i]}</color>" : $"{Competition.teamNames[i]}")}";
+
+        
     }
     
     // Writes winner and score texts.
-    private void WriteText(string winner, string score){
+    private void WriteText(string winner, string name, string score){
         winner_team_text.text = winner;
         score_text.text = score;
+        name_text.text = name;
     }
 
     // Gets every team's scores.

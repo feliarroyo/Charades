@@ -1,7 +1,7 @@
 {
   "category": "Jackbox Games",
   "description": "¡Adivina juegos y elementos de los paquetes para fiesta de Jackbox Games!",
-  "iconName": "jackbox",
+  "iconName": "jbgames",
   "questions": [
     "You Don't Know Jack",
     "Drawful",

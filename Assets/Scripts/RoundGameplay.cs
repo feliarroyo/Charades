@@ -65,14 +65,19 @@ public class RoundGameplay : MonoBehaviour
         // Each frame, we check the tilting of the phone. If tilted enough up, it gives the point. In the opposite case, it does not.
         Vector3 inclinacion = new(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
         //gyro_test.text = inclinacion.ToString();
-        
+        if ((Application.platform == RuntimePlatform.WindowsPlayer) || (Application.platform == RuntimePlatform.WindowsEditor)){
+            if (Input.GetButton("Pass"))
+                Pass(true);
+            else if (Input.GetButton("Fail"))
+                Pass(false);
+        }
         if (PlayerPrefs.GetInt("useMotionControls", 1) != 1)
             return;
         if ((inclinacion.x > 0.3f) || (inclinacion.x < -0.3f) || (inclinacion.z > 0.9f) || (inclinacion.z < -0.9f))
             return;
-        else if ((inclinacion.z > 0.7f) || Input.GetKey(KeyCode.Mouse0))
+        else if (inclinacion.z > 0.7f)
             Pass(true);
-        else if ((inclinacion.z < -0.7f) || Input.GetKey(KeyCode.Mouse1))
+        else if (inclinacion.z < -0.7f)
             Pass(false);
     }
 
@@ -138,10 +143,12 @@ public class RoundGameplay : MonoBehaviour
             default:
                 if (prompts.Count == 0){ // if no more questions, restart prompt pool
                     prompts = new(current_category.questions);
+                    Debug.Log("Session restarted has this # of prompts: " + prompts.Count);
                 }   
                 if (!isGameOver){
                     isActive = true;
                     cam.backgroundColor = DefaultColor;
+                    Debug.Log("It's not over! # of prompts: " + prompts.Count);
                     prompt_text.text = prompts[Random.Range(0, prompts.Count)];
                 }
                 break;
