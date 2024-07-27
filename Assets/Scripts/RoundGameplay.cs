@@ -175,8 +175,10 @@ public class RoundGameplay : MonoBehaviour
         }
         Pause.isPaused = true;
         cam.backgroundColor = Color.magenta;
-        if (isActive)
+        if (isActive){
             Score.answers.Add((prompt_text.text, false));
+            RemovePromptFromPool();
+        }
         prompt_text.text = "¡Tiempo!";
         sounds[2].PlayClip();
         Score.score = score;
