@@ -6,16 +6,17 @@ using UnityEngine;
 
 public class FinalResults : MonoBehaviour
 {
-    public TextMeshProUGUI winner_team_text, name_text, score_text;
+    public TextMeshProUGUI winner_team_text, name_text, score_text, changeCatText;
     private List<int> scores;
     private bool tiedGame;
     private int winnerIndex, winnerScore;
+    private const string changeCategoryName = "Cambiar categorías";
 
     // Start is called before the first frame update
     void Start()
     {
         CountAllScores();
-        WriteScreen();       
+        WriteScreen();    
     }
 
     private void WriteScreen(){
@@ -27,6 +28,10 @@ public class FinalResults : MonoBehaviour
             else
                 WriteText($"¡{Competition.teamNames[winnerIndex]} gana!", $"{GetAllTeamNameText()}",$"{GetAllTeamScoreText()}");
         }
+        // Change button text on QP
+        changeCatText.text = changeCategoryName;
+        if (Competition.gameType == 0)
+            changeCatText.text = changeCategoryName.TrimEnd('s');
     }
 
     // currently hard-coded for two teams, change for potentially larger numbers of teams.

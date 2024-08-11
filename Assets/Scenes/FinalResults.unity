@@ -852,6 +852,7 @@ MonoBehaviour:
   winner_team_text: {fileID: 1933946656}
   name_text: {fileID: 1272891162}
   score_text: {fileID: 1966445342}
+  changeCatText: {fileID: 959903674}
 --- !u!1 &1039560099
 GameObject:
   m_ObjectHideFlags: 0

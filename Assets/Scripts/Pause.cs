@@ -16,12 +16,13 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown(KeyCode.Escape))
             PauseGame();
     }
 
     public void PauseGame(){
         // Pauses if not paused and vice versa
+        gameObject.GetComponent<SoundEffectPlayer>().PlayClip();
         if (isPaused){
             Time.timeScale = 1;
             PauseUI.SetActive(false);
@@ -45,7 +46,6 @@ public class Pause : MonoBehaviour
 
     void OnMouseDown(){
         // When clicked, pause the game
-        gameObject.GetComponent<SoundEffectPlayer>().PlayClip();
         PauseGame();
     }
 }
