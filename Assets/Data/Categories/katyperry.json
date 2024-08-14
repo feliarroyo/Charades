@@ -1,7 +1,7 @@
 {
     "category": "Katy Perry",
     "description": "Canciones de una de las cantantes más emblemáticas de la década de 2010.",
-    "iconName": "notas_pop",
+    "iconName": "fuegos_artificiales",
     "questions": [
         "Lost",
         "Ur So Gay",
@@ -86,6 +86,7 @@
         "Tucked",
         "What Makes a Woman",
         "Electric",
-        "Woman's World"
+        "Woman's World",
+        "Lifetimes"
     ]
 }
