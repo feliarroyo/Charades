@@ -1,7 +1,7 @@
 {
   "category": "Overwatch",
   "description": "El mundo necesita más gente que adivine héroes. (y mapas, etc.)",
-  "iconName": "overwatch",
+  "iconName": "gorila",
   "questions": [
     "D.Va",
     "Doomfist",
@@ -89,6 +89,8 @@
     "La jugada de la partida (Play of the Game)",
     "MEKA",
     "Hammond",
-    "B.O.B."
+    "B.O.B.",
+    "Venture",
+    "Juno"
   ]
 }

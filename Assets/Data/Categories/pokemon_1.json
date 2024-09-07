@@ -1,7 +1,7 @@
 {
   "category": "Pokémon (GBA/DS)",
   "description": "Adivina los Pokémon de las regiones de Hoenn, Sinnoh y Unova.",
-  "iconName": "pokemon_1",
+  "iconName": "pokebola_1",
   "questions": [
     "Treecko",
     "Grovyle",

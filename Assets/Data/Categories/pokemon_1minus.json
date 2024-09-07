@@ -1,7 +1,7 @@
 {
   "category": "Pokémon (G1 a G4)",
   "description": "¡Adivina los nombres de entre los 493 Pokémon descubiertos en Sinnoh!",
-  "iconName": "pokemon_1minus",
+  "iconName": "huevo",
   "questions": [
     "Bulbasaur",
     "Ivysaur",
