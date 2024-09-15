@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.IO;
+using Unity.VisualScripting;
+using System;
+using UnityEngine.UI;
 
 public class CategoryCreator : MonoBehaviour
 {
-    public TextMeshProUGUI category_text, desc_text, question_text, warning_text, questionlist_text;
+    public TextMeshProUGUI category_text, desc_text, question_text, warning_text, questionlist_text, promptcount_text, promptcount_text2;
     public TMP_Dropdown iconDropdown;
+    public static string iconName;
+    public static Image iconImage;
     protected string category, description;
     protected List<string> questions;
     public SceneLoader sceneLoader;
     public SoundEffectPlayer successSound, failSound;
     public GameObject promptPrefab;
     public GameObject promptParent;
+    public GameObject iconButtonPrefab, iconParent;
     public static int warningsRunning = 0;
-    public GameObject UnsavedUI, DeleteUI, DeleteCategoryButton;
+    public GameObject UnsavedUI, DeleteUI, DeleteCategoryButton, PromptUI, IconUI;
     public TMP_InputField promptInputField;
 
     // Editor mode related
@@ -23,48 +29,57 @@ public class CategoryCreator : MonoBehaviour
     public string origFileName;
     public bool wereChangesMade = false;
     public static bool isInitializing = true;
+    public static bool changeCanvas = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        iconImage = GameObject.Find("iconImage").GetComponent<Image>();
         //if (questions == null)
         InitializeValues();
+        IconInstantiate();
+    }
+
+    void Update(){
+        if (changeCanvas)
+            ShowIconCanvas(false);
+        changeCanvas = false;
+    }
+
+    private void IconInstantiate()
+    {
+        UnityEngine.Object[] iconArray = Resources.LoadAll("", typeof(Sprite));
+        iconName = "default";
+            foreach (UnityEngine.Object icon in iconArray)
+                {
+                    if ((originalCategory != null) && (icon.name == originalCategory.iconName))
+                        SetImage(icon.name, (Sprite) icon);
+                    GameObject newGameObject = Instantiate(iconButtonPrefab, iconParent.transform);
+                    Debug.Log(icon.name);
+                    newGameObject.GetComponent<Icon>().SetSprite(icon.name, (Sprite)icon);
+                }
     }
 
     public void InitializeValues()
     {
         questions = new List<string>();
-        Object[] iconArray = Resources.LoadAll("", typeof(Sprite));
+        UnityEngine.Object[] iconArray = Resources.LoadAll("", typeof(Sprite));
         List<TMP_Dropdown.OptionData> iconList = new();
         switch (Config.creatingCategory)
         {
             case true:
                 category = "";
                 description = "";
-                foreach (Object icon in iconArray)
-                {
-                    TMP_Dropdown.OptionData od = new TMP_Dropdown.OptionData(icon.name, (Sprite)icon);
-                    iconList.Add(od);
-                }
-                iconDropdown.options = iconList;
                 DeleteCategoryButton.SetActive(false);
                 warningsRunning = 0;
+                promptcount_text.text = "0";
+                promptcount_text2.text = "0";
                 break;
             case false:
                 isInitializing = true;
                 category = originalCategory.category;
                 description = originalCategory.description;
-                string iconToSet = null;
                 DeleteCategoryButton.SetActive(true);
-                foreach (Object icon in iconArray)
-                {
-                    TMP_Dropdown.OptionData od = new TMP_Dropdown.OptionData(icon.name, (Sprite)icon);
-                    iconList.Add(od);
-                    if (icon.name == originalCategory.iconName)
-                    {
-                        iconToSet = icon.name;
-                    }
-                }
                 category_text.transform.parent.transform.parent.GetComponent<TMP_InputField>().text = originalCategory.category;
                 desc_text.transform.parent.transform.parent.GetComponent<TMP_InputField>().text = originalCategory.description;
                 DeleteablePromptController.canDelete = true;
@@ -74,17 +89,21 @@ public class CategoryCreator : MonoBehaviour
                 }
                 origFileName = originalCategory.category.Replace(' ', '_');
                 // TBA: put option in opened file as selected option
-                iconDropdown.options = iconList;
-                if (iconToSet != null)
-                    SetImage(iconToSet);
                 wereChangesMade = false;
                 isInitializing = false;
                 break;
         }
     }
-    public void SetImage(string name)
+    public static void SetImage(string name, Image image)
     {
-        iconDropdown.value = iconDropdown.options.FindIndex(option => option.text == name);
+        iconName = name;
+        iconImage.sprite = image.sprite;
+    }
+
+    public static void SetImage(string name, Sprite sprite)
+    {
+        iconName = name;
+        iconImage.sprite = sprite;
     }
     public void AddQuestion()
     {
@@ -105,6 +124,8 @@ public class CategoryCreator : MonoBehaviour
         {
             questions.Remove(prompt);
             wereChangesMade = true;
+            promptcount_text.text = questions.Count.ToString();
+            promptcount_text2.text = questions.Count.ToString();
         }
         else
             StartCoroutine(ShowWarningText("No hay un enunciado \"" + prompt + "\" en esta categoría."));
@@ -118,6 +139,7 @@ public class CategoryCreator : MonoBehaviour
             return;
         }
         questions.Add(prompt);
+        promptcount_text.text = questions.Count.ToString();
         Debug.Log("Question: \"" + prompt + "\" added.");
         GameObject newQuestion = Instantiate(promptPrefab, promptParent.transform);
         newQuestion.GetComponentInChildren<DeleteablePrompt>().SetValue(prompt); // set name;
@@ -175,13 +197,12 @@ public class CategoryCreator : MonoBehaviour
             return;
         }
         successSound.PlayClip();
-        string icon = iconDropdown.captionImage.sprite.name;
-        Debug.Log("category: " + category + " description: " + description + " icon: " + icon + "\nquestions" + questions);
+        Debug.Log("category: " + category + " description: " + description + " icon: " + iconName + "\nquestions" + questions);
         Category newCustomCategory = new Category()
         {
             category = this.category,
             description = this.description,
-            iconName = icon,
+            iconName = CategoryCreator.iconName,
             questions = this.questions
         };
         string categoryString = JsonUtility.ToJson(newCustomCategory);
@@ -237,6 +258,16 @@ public class CategoryCreator : MonoBehaviour
             return;
         }
         UnsavedUI.SetActive(yes);
+    }
+
+    public void ShowCanvas(bool setActive){
+        PromptUI.SetActive(setActive);
+        promptcount_text.text = questions.Count.ToString();
+        promptcount_text2.text = questions.Count.ToString();
+    }
+
+    public void ShowIconCanvas(bool setActive){
+        IconUI.SetActive(setActive);
     }
 
     // Checks if it should ask the player if they're sure about leaving without changes
