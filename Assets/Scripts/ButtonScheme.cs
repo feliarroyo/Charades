@@ -11,7 +11,7 @@ public class ButtonScheme : MonoBehaviour
     {
         bool showButtons = false;
 
-        if (PlayerPrefs.GetInt("showScreenButtons", 1) == 1)
+        if (PlayerPrefs.GetInt(Const.PREF_SHOWSCREENBUTTONS, 1) == 1)
             showButtons = true;
         gameObject.SetActive(showButtons);
     }

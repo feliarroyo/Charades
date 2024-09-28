@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    private static string lastScene = "MainMenu";
+    private static string lastScene = Const.SCENE_MAINMENU;
     private static bool isLoading = false;
     private bool ready = false;
     public void LoadScene(string sceneName){

@@ -38,7 +38,7 @@ public class CategoryButton : MonoBehaviour
         switch (Competition.gameType){
             case 0:
                 Competition.StartCompetition();
-                SceneManager.LoadScene("Presentation");
+                SceneManager.LoadScene(Const.SCENE_PRESENT);
                 break;
             default:
                 if (buttonImage.colors.Equals(unselectedColor))

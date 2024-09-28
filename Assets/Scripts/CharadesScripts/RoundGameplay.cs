@@ -71,7 +71,7 @@ public class RoundGameplay : MonoBehaviour
             else if (Input.GetButton("Fail"))
                 Pass(false);
         }
-        if (PlayerPrefs.GetInt("useMotionControls", 1) != 1)
+        if (PlayerPrefs.GetInt(Const.PREF_USEMOTIONCONTROLS, 1) != 1)
             return;
         if ((inclinacion.x > 0.3f) || (inclinacion.x < -0.3f) || (inclinacion.z > 0.9f) || (inclinacion.z < -0.9f))
             return;
@@ -106,7 +106,7 @@ public class RoundGameplay : MonoBehaviour
             prompt_text.text = "Paso";
             sounds[1].PlayClip();
         }
-        float answerWait = PlayerPrefs.GetFloat("answerWaitDuration", 1f);
+        float answerWait = PlayerPrefs.GetFloat(Const.PREF_WAITDURATION, 1f);
         yield return new WaitForSeconds(0.5f);
         hits_text.color = new Color(255, 255, 255, 255);
         yield return new WaitForSeconds(answerWait - 0.5f);
@@ -168,7 +168,7 @@ public class RoundGameplay : MonoBehaviour
 
     public IEnumerator EndGame(){
         isGameOver = true;
-        if (PlayerPrefs.GetInt("showScreenButtons", 1) == 1) {
+        if (PlayerPrefs.GetInt(Const.PREF_SHOWSCREENBUTTONS, 1) == 1) {
             GameObject.Find("Pause Button").SetActive(false);
             GameObject.Find("Hit Button").SetActive(false);
             GameObject.Find("Pass Button").SetActive(false);

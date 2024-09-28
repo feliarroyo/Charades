@@ -20,8 +20,8 @@ public class ControlSelector : MonoBehaviour
     }
 
     private int GetCurrentIndex(){
-        if (PlayerPrefs.GetInt("showScreenButtons",1) == 1){
-            if (PlayerPrefs.GetInt("useMotionControls", 1) == 1)
+        if (PlayerPrefs.GetInt(Const.PREF_SHOWSCREENBUTTONS,1) == 1){
+            if (PlayerPrefs.GetInt(Const.PREF_USEMOTIONCONTROLS, 1) == 1)
                 return 0;
             else
                 return 1;

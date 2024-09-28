@@ -12,7 +12,7 @@ public class Countdown : MonoBehaviour
     {
         Config.GameplayConfig();
         timer = GameObject.Find("Time").GetComponent<Timer>();
-        if (PlayerPrefs.GetInt("showScreenButtons", 1) == 1){
+        if (PlayerPrefs.GetInt(Const.PREF_SHOWSCREENBUTTONS, 1) == 1){
             button1.SetActive(true);
             button2.SetActive(true);
         }
@@ -26,6 +26,6 @@ public class Countdown : MonoBehaviour
         if (Input.deviceOrientation == DeviceOrientation.LandscapeRight)
             Screen.orientation = ScreenOrientation.LandscapeRight;
         if (timer.TimeIsUp())
-            SceneManager.LoadScene("Round");
+            SceneManager.LoadScene(Const.SCENE_CHARADES);
     }
 }

@@ -13,7 +13,7 @@ public static class Competition
     public static Dictionary<string, List<string> > sessionCategories = new();
     public static Category categoryQP = new();
     public static List<Category> categories = new();
-    public static List<string> teamNames = new() {"Equipo 1", "Equipo 2"};
+    public static List<string> teamNames = new() {Const.DEFAULT_TEAM1, Const.DEFAULT_TEAM2};
     public static Dictionary<int, List<int> > scores = new();
     public static int currentCategory = 0;
     public static int currentTeam = 0;
@@ -65,9 +65,9 @@ public static class Competition
                 if (categories.Count == 1) // with only one category uses standard presentation
                     return categories[0];
                 return new Category(){
-                    category="Mash-Up",
-                    description="¡Pueden tocar enunciados de cualquiera de las categorías seleccionadas!",
-                    iconName="pregunta",
+                    category=Const.MASHUP_NAME,
+                    description=Const.MASHUP_DESC,
+                    iconName=Const.MASHUP_ICON,
                     questions=new()
                 };
         };
@@ -100,7 +100,7 @@ public static class Competition
     public static void StartCompetition(){
         currentCategory = 0;
         currentTeam = 0;
-        for (int i = 0; i < PlayerPrefs.GetInt("teams", 1); i++){
+        for (int i = 0; i < PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1); i++){
             scores[i] = new List<int>();
         }
     }
@@ -120,26 +120,26 @@ public static class Competition
     }
 
     public static void SetNextGame(){
-        if (currentTeam < PlayerPrefs.GetInt("teams", 1)-1)
+        if (currentTeam < PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1)-1)
             currentTeam++;
         else {
             currentTeam = 0;
             currentCategory++;
             Debug.Log("Equipo " + currentTeam + " juega. Numero de categoria " + currentCategory);
             if ((currentCategory == categories.Count) || (gameType != 1)) {
-                SceneManager.LoadScene("FinalResults");
+                SceneManager.LoadScene(Const.SCENE_FINALRESULTS);
                 return;
             }
         }
         MusicPlayer.StopMusic();
-        SceneManager.LoadScene("Presentation");
+        SceneManager.LoadScene(Const.SCENE_PRESENT);
     }
 
     public static bool AddTeam(int n){
-        int cur_teams = PlayerPrefs.GetInt("teams", 1)+n;
+        int cur_teams = PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1)+n;
         if ((cur_teams > max_teams) || (cur_teams < 1))
             return false;
-        PlayerPrefs.SetInt("teams", cur_teams);
+        PlayerPrefs.SetInt(Const.PREF_TEAM_COUNT, cur_teams);
         for (int i = 0; i < n; i++){
             teamNames.Add("Equipo " + (i+1));
         }
@@ -147,8 +147,8 @@ public static class Competition
     }
 
     public static string GetNextTeamName(){
-        if (PlayerPrefs.GetInt("teams", 1)==1)
-            return "que adivines";
+        if (PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1)==1)
+            return Const.NOTEAM;
         return teamNames[currentTeam];
     }
 

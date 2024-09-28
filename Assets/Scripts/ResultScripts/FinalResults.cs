@@ -20,7 +20,7 @@ public class FinalResults : MonoBehaviour
     }
 
     private void WriteScreen(){
-        if (PlayerPrefs.GetInt("teams", 1) == 1) // Single-player game
+        if (PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1) == 1) // Single-player game
             WriteText("¡Fin del juego!", "Puntaje", $"{scores[0]}");
         else {
             if (tiedGame)
@@ -75,7 +75,7 @@ public class FinalResults : MonoBehaviour
         winnerIndex = -1;
         winnerScore = -1;
         tiedGame = false;
-        for (int i = 0; i < PlayerPrefs.GetInt("teams", 1); i++){
+        for (int i = 0; i < PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1); i++){
             int newScore = CountScore(i);
             scores.Add(newScore);
             if (newScore > winnerScore){

@@ -17,8 +17,8 @@ public class CategorySelect : MonoBehaviour
         Config.MenuConfig();
         
         // teams get last used named, or default values if first time
-        Competition.SetTeamName(0, PlayerPrefs.GetString("Team1", "Equipo 1"));
-        Competition.SetTeamName(1, PlayerPrefs.GetString("Team2", "Equipo 2"));
+        Competition.SetTeamName(0, PlayerPrefs.GetString(Const.PREF_TEAM1, Const.DEFAULT_TEAM1));
+        Competition.SetTeamName(1, PlayerPrefs.GetString(Const.PREF_TEAM2, Const.DEFAULT_TEAM2));
 
         // creates icons for custom categories saved
         string savePath = Application.persistentDataPath + "/customCategories";

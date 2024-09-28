@@ -11,10 +11,4 @@ public class CanvasActivator : MonoBehaviour
     {
         gameObject.SetActive(activeOnCustom == Config.customMenu);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

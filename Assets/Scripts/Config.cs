@@ -57,7 +57,7 @@ public class Config : MonoBehaviour
                 PlayerPrefs.SetInt("roundDuration", (int) value);
                 return;
             case "waitTimer":
-                PlayerPrefs.SetFloat("answerWaitDuration", value);
+                PlayerPrefs.SetFloat(Const.PREF_WAITDURATION, value);
                 return;
             case "quality":
                 PlayerPrefs.SetInt("quality", (int) value);
@@ -68,13 +68,13 @@ public class Config : MonoBehaviour
     public static void SetScreenControls(bool newValue){
         int newInt = 0;
         if (newValue) newInt++;
-        PlayerPrefs.SetInt("showScreenButtons", newInt);
+        PlayerPrefs.SetInt(Const.PREF_SHOWSCREENBUTTONS, newInt);
     }
 
     public static void SetMotionControls(bool newValue){
         int newInt = 0;
         if (newValue) newInt++;
-        PlayerPrefs.SetInt("useMotionControls", newInt);
+        PlayerPrefs.SetInt(Const.PREF_USEMOTIONCONTROLS, newInt);
     }
 
     public static float GetValue(string parameter){
@@ -88,7 +88,7 @@ public class Config : MonoBehaviour
                 return PlayerPrefs.GetInt("roundDuration", 60);
             case "waitTimer":
                 Config.WriteTimer("WaitTimeLabel");
-                return PlayerPrefs.GetFloat("answerWaitDuration", 1f);
+                return PlayerPrefs.GetFloat(Const.PREF_WAITDURATION, 1f);
             case "quality":
                 Config.WriteTimer("QualityLabel");
                 return PlayerPrefs.GetInt("quality", 2);
@@ -102,7 +102,7 @@ public class Config : MonoBehaviour
                 GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetInt("roundDuration", 60).ToString();
                 break;
             case "WaitTimeLabel":
-                GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = (Mathf.Round(PlayerPrefs.GetFloat("answerWaitDuration", 1f) * 10.0f) * 0.1f ).ToString();
+                GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = (Mathf.Round(PlayerPrefs.GetFloat(Const.PREF_WAITDURATION, 1f) * 10.0f) * 0.1f ).ToString();
                 break;
             case "QualityLabel":
                 GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = QualitySliderController.ValueNames(PlayerPrefs.GetInt("quality", 2));

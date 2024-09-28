@@ -1,0 +1,32 @@
+public static class Const
+{
+    public enum GameModes
+    {
+        QuickPlay,
+        Competition,
+        MashUp,
+        Default
+    };
+    public const string
+    // PlayerPrefs
+        PREF_SHOWSCREENBUTTONS = "showScreenButtons",
+        PREF_USEMOTIONCONTROLS = "useMotionControls",
+        PREF_WAITDURATION = "answerWaitDuration",
+        PREF_TEAM_COUNT = "teams",
+        PREF_TEAM1 = "Team1",
+        PREF_TEAM2 = "Team2",
+    // Mash-Up category values
+        MASHUP_NAME = "Mash-Up",
+        MASHUP_DESC = "¡Pueden tocar enunciados de cualquiera de las categorías seleccionadas!",
+        MASHUP_ICON = "pregunta",
+    // Other strings
+        NOTEAM = "que adivines",
+        DEFAULT_TEAM1 = "Equipo 1",
+        DEFAULT_TEAM2 = "Equipo 2",
+    // Scenes
+        SCENE_MAINMENU = "MainMenu",
+        SCENE_PRESENT = "Presentation",
+        SCENE_CHARADES = "Round",
+        SCENE_FINALRESULTS = "FinalResults"
+    ;
+}
