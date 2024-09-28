@@ -13,7 +13,6 @@ public class DeleteablePrompt : MonoBehaviour
         prompt.text = value;
     }
     public void RemovePrompt(){
-        string currentScene = SceneManager.GetActiveScene().name;
         GameObject.Find("CategoryCreator").GetComponent<CategoryCreator>().RemoveQuestion(prompt.text);
         Destroy(gameObject);
     }
