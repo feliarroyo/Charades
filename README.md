@@ -1,14 +1,40 @@
 # Charades
 
+## Game Types
+- Quick Play / Partida rápida (id: 0): Only one category is selected.
+- Competitive / Competición (id: 1): Multiple categories, played in succession.
+- Mash-Up (id: 2): Multiple categories mashed together in a single round.
+
 ## Scenes
 
-- Menu: Shows the main menu of the game.
+- MainMenu: Shows the main menu of the game.
 - CategorySelect: Where the categories played are chosen.
-- GameBegin: Countdown before a round starts.
-- Game: Scene where a round unfolds.
-- GameEnd: Where the player is shown their score and guesses.
+- Presentation: Shows an overview of the category about to be played.
+- Countdown: Countdown before a round begins.
+- CharadesGameplay: Scene where a round unfolds.
+- RoundResults: Shows the score and prompt list from a particular round.
+- FinalResults: Shows the final score for each player.
+- CustomCreator: Category creator for the Charades game type.
 
 ## Scripts
+
+### SFXManager
+Script in charge of playing sound effects. Made using the Singleton design pattern.
+
+### SoundEffectManager
+Used whenever a single sound effect needs to be played.
+
+### MainMenu Scripts
+- SetVersionText: Used to write the version in the bottom part of the screen.
+- ScrollingBackground: Scrolls BG image.
+- DefaultSliderMenu: Used to set slider values in the Options submenu.
+
+## Bugs to fix
+- Canvas are mismatched in CustomCreator.
+- CustomCreator does not react properly.
+- Sliders don't update properly when returning to Main Menu. This is caused due to interacting with the SFXManager, which stays loaded.
+- Music and SFX values aren't loaded until entering Options
+- Pause triggers a point on PC version.
 
 - Category
 - CategoryButton
