@@ -19,14 +19,19 @@ public static class Const
         MASHUP_NAME = "Mash-Up",
         MASHUP_DESC = "¡Pueden tocar enunciados de cualquiera de las categorías seleccionadas!",
         MASHUP_ICON = "pregunta",
-    // Other strings
+    // Gameplay strings
+        CORRECT = "Bien",
+        SKIP = "Paso",
+        TIME_OVER = "¡Tiempo!",
         NOTEAM = "que adivines",
         DEFAULT_TEAM1 = "Equipo 1",
         DEFAULT_TEAM2 = "Equipo 2",
+        DEFAULT_ICON = "default",
     // Scenes
         SCENE_MAINMENU = "MainMenu",
         SCENE_PRESENT = "Presentation",
         SCENE_CHARADES = "Round",
+        SCENE_ROUNDRESULTS = "RoundResults",
         SCENE_FINALRESULTS = "FinalResults"
     ;
 }

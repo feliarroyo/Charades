@@ -98,12 +98,12 @@ public class RoundGameplay : MonoBehaviour
         Score.answers.Add((prompt_text.text, givePoint));
         if (givePoint){
             cam.backgroundColor = Color.green;
-            prompt_text.text = "Bien";
+            prompt_text.text = Const.CORRECT;
             sounds[0].PlayClip();
         }
         else{
             cam.backgroundColor = Color.red;
-            prompt_text.text = "Paso";
+            prompt_text.text = Const.SKIP;
             sounds[1].PlayClip();
         }
         float answerWait = PlayerPrefs.GetFloat(Const.PREF_WAITDURATION, 1f);
@@ -131,24 +131,19 @@ public class RoundGameplay : MonoBehaviour
                 string nextCat = currentMashUpCategory.category;
                 if (mashupPrompts[nextCat].Count == 0){ // if no more questions, restart prompt pool
                     mashupPrompts[nextCat] = new(currentMashUpCategory.questions);
-                    Debug.Log("Come in!");
                 }   
                 if (!isGameOver){
                     isActive = true;
                     cam.backgroundColor = DefaultColor;
-                    Debug.Log("After Prompt Count: " + mashupPrompts[nextCat].Count);
                     prompt_text.text = mashupPrompts[nextCat][Random.Range(0, mashupPrompts[nextCat].Count)];
                 }
                 break;
             default:
-                if (prompts.Count == 0){ // if no more questions, restart prompt pool
+                if (prompts.Count == 0) // if no more questions, restart prompt pool
                     prompts = new(current_category.questions);
-                    Debug.Log("Session restarted has this # of prompts: " + prompts.Count);
-                }   
                 if (!isGameOver){
                     isActive = true;
                     cam.backgroundColor = DefaultColor;
-                    Debug.Log("It's not over! # of prompts: " + prompts.Count);
                     prompt_text.text = prompts[Random.Range(0, prompts.Count)];
                 }
                 break;
@@ -179,12 +174,12 @@ public class RoundGameplay : MonoBehaviour
             Score.answers.Add((prompt_text.text, false));
             RemovePromptFromPool();
         }
-        prompt_text.text = "¡Tiempo!";
+        prompt_text.text = Const.TIME_OVER;
         sounds[2].PlayClip();
         Score.score = score;
         RecordUsedPrompts();
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("RoundResults");
+        SceneManager.LoadScene(Const.SCENE_ROUNDRESULTS);
     }
 
     private void RecordUsedPrompts(){

@@ -31,6 +31,15 @@ public class CategoryCreator : MonoBehaviour
     public static bool isInitializing = true;
     public static bool changeCanvas = false;
 
+    // Warnings
+    private const string 
+        WARNING_EMPTYPROMPT = "No se puede agregar un enunciado vacío.",
+        WARNING_REPEATPROMPT = "Este enunciado ya fue agregado.",
+        WARNING_EMPTYTITLE = "Debes ponerle un nombre a la categoría.",
+        WARNING_ZEROPROMPTS = "La categoría no tiene suficientes enunciados.",
+        WARNING_EMPTYDESC = "La categoría no tiene una descripción."
+    ;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +58,7 @@ public class CategoryCreator : MonoBehaviour
     private void IconInstantiate()
     {
         UnityEngine.Object[] iconArray = Resources.LoadAll("", typeof(Sprite));
-        iconName = "default";
+        iconName = Const.DEFAULT_ICON;
             foreach (UnityEngine.Object icon in iconArray)
                 {
                     if ((originalCategory != null) && (icon.name == originalCategory.iconName))
@@ -114,7 +123,7 @@ public class CategoryCreator : MonoBehaviour
             AddToQuestionList(newQuestion);
         }
         else
-            StartCoroutine(ShowWarningText("No se puede agregar un enunciado vacío."));
+            StartCoroutine(ShowWarningText(WARNING_EMPTYPROMPT));
         promptInputField.text = "";
     }
 
@@ -127,20 +136,17 @@ public class CategoryCreator : MonoBehaviour
             promptcount_text.text = questions.Count.ToString();
             promptcount_text2.text = questions.Count.ToString();
         }
-        else
-            StartCoroutine(ShowWarningText("No hay un enunciado \"" + prompt + "\" en esta categoría."));
     }
 
     public void AddToQuestionList(string prompt)
     {
         if (questions.Contains(prompt))
         {
-            StartCoroutine(ShowWarningText("Este enunciado ya fue agregado."));
+            StartCoroutine(ShowWarningText(WARNING_REPEATPROMPT));
             return;
         }
         questions.Add(prompt);
         promptcount_text.text = questions.Count.ToString();
-        Debug.Log("Question: \"" + prompt + "\" added.");
         GameObject newQuestion = Instantiate(promptPrefab, promptParent.transform);
         newQuestion.GetComponentInChildren<DeleteablePrompt>().SetValue(prompt); // set name;
         newQuestion.GetComponentInChildren<DeleteablePrompt>().EnableDeleting(!DeleteablePromptController.canDelete); // set cross on/off
@@ -163,17 +169,17 @@ public class CategoryCreator : MonoBehaviour
         // check custom category names
         if (category.Length <= 1)
         {
-            StartCoroutine(ShowWarningText("Debes ponerle un nombre a la categoría."));
+            StartCoroutine(ShowWarningText(WARNING_EMPTYTITLE));
             return false;
         }
         if (questions.Count == 0)
         {
-            StartCoroutine(ShowWarningText("La categoría no tiene suficientes enunciados."));
+            StartCoroutine(ShowWarningText(WARNING_ZEROPROMPTS));
             return false;
         }
         if (description.Length <= 1)
         {
-            StartCoroutine(ShowWarningText("La categoría no tiene una descripción."));
+            StartCoroutine(ShowWarningText(WARNING_EMPTYDESC));
             return false;
         }
         return true;
@@ -197,8 +203,7 @@ public class CategoryCreator : MonoBehaviour
             return;
         }
         successSound.PlayClip();
-        Debug.Log("category: " + category + " description: " + description + " icon: " + iconName + "\nquestions" + questions);
-        Category newCustomCategory = new Category()
+        Category newCustomCategory = new()
         {
             category = this.category,
             description = this.description,
@@ -210,7 +215,6 @@ public class CategoryCreator : MonoBehaviour
         CreateCustomDirectory(savePath);
         string origPath = savePath;
         savePath += "/" + category.Replace(' ', '_') + ".json";
-        Debug.Log(savePath);
         if (!Config.creatingCategory)
             origPath += "/" + origFileName + ".json";
         else
@@ -276,10 +280,9 @@ public class CategoryCreator : MonoBehaviour
         switch (Config.creatingCategory)
         {
             case true:
-                return ((questions.Count == 0) && (description.Length <= 1) && (category.Length <= 1));
+                return (questions.Count == 0) && (description.Length <= 1) && (category.Length <= 1);
             case false:
-                return (!wereChangesMade);
-
+                return !wereChangesMade;
         }
     }
 

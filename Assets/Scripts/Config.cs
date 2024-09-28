@@ -59,9 +59,6 @@ public class Config : MonoBehaviour
             case "waitTimer":
                 PlayerPrefs.SetFloat(Const.PREF_WAITDURATION, value);
                 return;
-            case "quality":
-                PlayerPrefs.SetInt("quality", (int) value);
-                return;
         }
     }
 
@@ -84,14 +81,11 @@ public class Config : MonoBehaviour
             case "sound":
                 return PlayerPrefs.GetFloat("soundVolume", 0.5f);
             case "timer":
-                Config.WriteTimer("TimeLabel");
+                WriteTimer("TimeLabel");
                 return PlayerPrefs.GetInt("roundDuration", 60);
             case "waitTimer":
-                Config.WriteTimer("WaitTimeLabel");
+                WriteTimer("WaitTimeLabel");
                 return PlayerPrefs.GetFloat(Const.PREF_WAITDURATION, 1f);
-            case "quality":
-                Config.WriteTimer("QualityLabel");
-                return PlayerPrefs.GetInt("quality", 2);
         }
         return -1f;
     }
@@ -103,9 +97,6 @@ public class Config : MonoBehaviour
                 break;
             case "WaitTimeLabel":
                 GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = (Mathf.Round(PlayerPrefs.GetFloat(Const.PREF_WAITDURATION, 1f) * 10.0f) * 0.1f ).ToString();
-                break;
-            case "QualityLabel":
-                GameObject.Find(name).GetComponent<TextMeshProUGUI>().text = QualitySliderController.ValueNames(PlayerPrefs.GetInt("quality", 2));
                 break;
         }
     }
