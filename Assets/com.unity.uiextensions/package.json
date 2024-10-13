@@ -31,5 +31,8 @@
       "path": "Examples~"
     }
   ],
-  "license": "BSD3"
+  "license": "BSD3",
+  "dependencies": {
+    "com.unity.uiextensions": "file:"
+  }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class RoundResults : MonoBehaviour
@@ -25,11 +26,16 @@ public class RoundResults : MonoBehaviour
         // Returns a list of prompts shown; skipped prompts shown in grey
         string answers = "";
         foreach (var a in Score.answers){
+            // Format according to if it was answered correctly or not
             if (a.Item2 == true)
                 answers +="<color=\"white\">";
             else
                 answers +="<color=\"grey\">";
-            answers += a.Item1 + "\n";
+            // Truncate longer prompts
+            if (a.Item1.Length > 40)
+                answers += a.Item1.Truncate(40) + "\n";
+            else
+                answers += a.Item1 + "\n";
         }
         return answers;
     }

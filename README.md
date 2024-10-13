@@ -16,6 +16,19 @@
 - FinalResults: Shows the final score for each player.
 - CustomCreator: Category creator for the Charades game type.
 
+## Sounds
+Made using Chiptone.
+- blip1: Category selection / Countdown
+- blip2: Countdown finish
+- coin1: Forward button selection
+- coin2: Correct prompt
+- hurt1: Return button
+- hurt2: Clear categories
+- hurt3: Skip prompt
+- 1up1: Play button
+- 1up2: Round clear
+- lose1, boom1, boom2 (currently unused)
+
 ## Scripts
 
 ### SFXManager

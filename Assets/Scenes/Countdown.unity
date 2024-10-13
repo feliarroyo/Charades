@@ -680,8 +680,8 @@ MonoBehaviour:
   timerText: {fileID: 1808871574}
   hasEndSound: 1
   hasTickSound: 1
-  tickSound: {fileID: 8300000, guid: df245b4c8e44caf4aa4a36b6cbe622f4, type: 3}
-  endSound: {fileID: 8300000, guid: 499079f925e5c4a40bea6b37b7d9d8c2, type: 3}
+  tickSound: {fileID: 8300000, guid: f396262626030144d97e97d81a69de73, type: 3}
+  endSound: {fileID: 8300000, guid: 9952fe7b3c4f0b64f810019a124fe1bd, type: 3}
 --- !u!114 &1808871574
 MonoBehaviour:
   m_ObjectHideFlags: 0

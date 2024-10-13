@@ -22,12 +22,12 @@ public class Pause : MonoBehaviour
 
     public void PauseGame(){
         // Pauses if not paused and vice versa
-        gameObject.GetComponent<SoundEffectPlayer>().PlayClip();
         if (isPaused){
             Time.timeScale = 1;
             PauseUI.SetActive(false);
             }
         else{
+            gameObject.GetComponent<SoundEffectPlayer>().PlayClip();
             Time.timeScale = 0;
             PauseUI.SetActive(true);
         }
