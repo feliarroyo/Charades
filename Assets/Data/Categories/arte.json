@@ -1,7 +1,7 @@
 {
     "category": "Arte",
     "description": "Adivina obras de arte y artistas de todos los tiempos.",
-    "iconName": "paleta",
+    "iconName": "pincel",
     "questions": [
         "Vincent van Gogh",
         "Jacques-Louis David",

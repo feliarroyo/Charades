@@ -1,7 +1,7 @@
 {
   "category": "Tabla periódica",
   "description": "¡Adivina los elementos de la tabla periódica!",
-  "iconName": "sustancias",
+  "iconName": "sustancia",
   "questions": [
     "Actinio",
     "Aluminio",
