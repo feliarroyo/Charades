@@ -25,7 +25,7 @@ public class CategoryButton : MonoBehaviour
         unselectedColor = SetColor(unselectedColor, Color.white);
         selectedColor = SetColor(selectedColor, Color.green);
         // Initialize color value depending on previous game state and game type
-        if ((Competition.ContainsCategory(category)) && (Competition.gameType != 0))
+        if (Competition.ContainsCategory(category) && (Competition.gameType != 0))
             buttonImage.colors = selectedColor;
         else
             buttonImage.colors = unselectedColor;

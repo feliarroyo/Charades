@@ -23,7 +23,7 @@ public static class Competition
     public static List<Category> lastGameCategories = new();
 
     public static void AddCategory(Category cat){
-        switch (Competition.gameType){
+        switch (gameType){
             case 0:
                 categoryQP = cat;
                 break;
