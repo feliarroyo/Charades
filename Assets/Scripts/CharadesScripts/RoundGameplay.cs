@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class RoundGameplay : MonoBehaviour
 {
-    protected static Color DefaultColor = new(0.1921569f,0.3019608f,0.4745098f,1f);
+    
     public int score;
     public static Camera cam;
     public static List<string> prompts;
@@ -24,6 +24,11 @@ public class RoundGameplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        InitializeComponents();
+        InitializePrompts();
+    }
+
+    private void InitializeComponents(){
         Config.GameplayConfig();
         Pause.isPaused = false;
         isGameOver = false;
@@ -33,22 +38,18 @@ public class RoundGameplay : MonoBehaviour
         prompt_text = GameObject.Find("Prompt").GetComponent<TextMeshProUGUI>();
         hits_text = GameObject.Find("Points").GetComponent<TextMeshProUGUI>();
         score = 0;
-        InitializePrompts();
         timer = GameObject.Find("Time").GetComponent<Timer>();
-        Debug.Log("New Duration: " + PlayerPrefs.GetInt("roundDuration"));
         timer.SetTime(PlayerPrefs.GetInt("roundDuration", 60));
     }
-
     private void InitializePrompts(){
         switch (Competition.gameType){
-            case 2:
+            case Const.GameModes.MashUp:
                 mashupPrompts = Competition.GetMashUpPrompts();
                 GetNewPrompt();
                 break;
             default:
                 current_category = Competition.GetCategory();
                 prompts = Competition.GetPrompts(current_category);
-                Debug.Log("Current session has this # of prompts: " + prompts.Count);
                 GetNewPrompt();
                 break;
         }
@@ -115,7 +116,7 @@ public class RoundGameplay : MonoBehaviour
 
     private void RemovePromptFromPool(){
         switch (Competition.gameType){
-            case 2:
+            case Const.GameModes.MashUp:
                 mashupPrompts[currentMashUpCategory.category].Remove(prompt_text.text);
                 break;
             default:
@@ -126,7 +127,7 @@ public class RoundGameplay : MonoBehaviour
 
     private void GetNewPrompt(){
         switch (Competition.gameType){
-            case 2:
+            case Const.GameModes.MashUp:
                 currentMashUpCategory = Competition.GetRandomMashUpCategory();
                 string nextCat = currentMashUpCategory.category;
                 if (mashupPrompts[nextCat].Count == 0){ // if no more questions, restart prompt pool
@@ -134,7 +135,7 @@ public class RoundGameplay : MonoBehaviour
                 }   
                 if (!isGameOver){
                     isActive = true;
-                    cam.backgroundColor = DefaultColor;
+                    cam.backgroundColor = Const.DefaultColor;
                     prompt_text.text = mashupPrompts[nextCat][Random.Range(0, mashupPrompts[nextCat].Count)];
                 }
                 break;
@@ -143,7 +144,7 @@ public class RoundGameplay : MonoBehaviour
                     prompts = new(current_category.questions);
                 if (!isGameOver){
                     isActive = true;
-                    cam.backgroundColor = DefaultColor;
+                    cam.backgroundColor = Const.DefaultColor;
                     prompt_text.text = prompts[Random.Range(0, prompts.Count)];
                 }
                 break;
@@ -184,7 +185,7 @@ public class RoundGameplay : MonoBehaviour
 
     private void RecordUsedPrompts(){
         switch (Competition.gameType){
-            case 2:
+            case Const.GameModes.MashUp:
                 foreach (string c in mashupPrompts.Keys){
                     Competition.sessionCategories[c] = mashupPrompts[c];
                 }

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public static class Const
 {
     public enum GameModes
@@ -34,4 +36,5 @@ public static class Const
         SCENE_ROUNDRESULTS = "RoundResults",
         SCENE_FINALRESULTS = "FinalResults"
     ;
+    public static Color DefaultColor = new(0.1921569f,0.3019608f,0.4745098f,1f);
 }

@@ -15,9 +15,4 @@ public class Preloader : MonoBehaviour
     public void ReadyScene(){
         preloader.loadPreloaded();
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public static class Competition
 {
-    public static int gameType = 0;
+    public static Const.GameModes gameType = Const.GameModes.QuickPlay;
 
     // keeps track of the prompts of each category used in a session
     // in order to avoid repeating them when playing a category repeatedly
@@ -56,11 +56,11 @@ public static class Competition
 
     public static Category GetCategory(){
         switch (gameType){
-            case 0:
+            case Const.GameModes.QuickPlay:
                 return categoryQP;
-            case 1:
+            case Const.GameModes.Competition:
                 return categories[currentCategory];
-            case 2:
+            case Const.GameModes.MashUp:
             default:
                 if (categories.Count == 1) // with only one category uses standard presentation
                     return categories[0];
@@ -75,11 +75,8 @@ public static class Competition
 
     // Gets a prompt list from the session records, to avoid repeated prompts
     public static List<string> GetPrompts(Category c){
-        Debug.Log("Session categories: " + sessionCategories);
-        if (!sessionCategories.ContainsKey(c.category)){
+        if (!sessionCategories.ContainsKey(c.category))
             sessionCategories[c.category] = new(c.questions);
-            Debug.Log("New category for the session! Initializing new session category");
-        }
         return sessionCategories[c.category];
         
     }
@@ -125,8 +122,7 @@ public static class Competition
         else {
             currentTeam = 0;
             currentCategory++;
-            Debug.Log("Equipo " + currentTeam + " juega. Numero de categoria " + currentCategory);
-            if ((currentCategory == categories.Count) || (gameType != 1)) {
+            if ((currentCategory == categories.Count) || (gameType != Const.GameModes.Competition)) {
                 SceneManager.LoadScene(Const.SCENE_FINALRESULTS);
                 return;
             }
@@ -153,16 +149,11 @@ public static class Competition
     }
 
     public static void SetTeamName(int i, string name){
-        try {
-            teamNames[i] = name;
-            PlayerPrefs.SetString("Team" + (i+1), name);
-        }
-        catch (Exception e){
-            Debug.Log(e);
-        }
+        teamNames[i] = name;
+        PlayerPrefs.SetString("Team" + (i+1), name);
     }
 
-    public static void SetGameType(int id){
+    public static void SetGameType(Const.GameModes id){
         gameType = id;
     }
 }

@@ -64,7 +64,6 @@ public class CategoryCreator : MonoBehaviour
                     if ((originalCategory != null) && (icon.name == originalCategory.iconName))
                         SetImage(icon.name, (Sprite) icon);
                     GameObject newGameObject = Instantiate(iconButtonPrefab, iconParent.transform);
-                    Debug.Log(icon.name);
                     newGameObject.GetComponent<Icon>().SetSprite(icon.name, (Sprite)icon);
                 }
     }

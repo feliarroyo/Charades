@@ -19,10 +19,4 @@ public class CustomCategoryLoader : MonoBehaviour
             newGameObject.GetComponentInChildren<CategoryButton>().SetSingleSelect();
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

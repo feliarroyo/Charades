@@ -7,11 +7,6 @@ public class Pause : MonoBehaviour
     public static bool isPaused = false;
     public GameObject PauseUI;
     public SceneLoader sceneLoader;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

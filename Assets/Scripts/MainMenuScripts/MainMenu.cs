@@ -11,10 +11,4 @@ public class MainMenu : MonoBehaviour
     {
         versionText.text = 'v' + Application.version;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

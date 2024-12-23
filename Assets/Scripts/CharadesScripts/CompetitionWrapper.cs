@@ -55,7 +55,11 @@ public class CompetitionWrapper : MonoBehaviour
         }
     }
 
-    public void SetGameType(int gameType){
+    public void SetGameType(Const.GameModes gameType){
         Competition.SetGameType(gameType);
+    }
+
+    public void SetGameType(int gameType){
+        Competition.SetGameType((Const.GameModes) gameType);
     }
 }
