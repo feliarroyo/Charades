@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1067906903476673170, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
       propertyPath: m_Name
-      value: AddPromptButton
+      value: AddPromptButton Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3509243681261844657, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -150,6 +150,22 @@ PrefabInstance:
     - target: {fileID: 3509243682435617926, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
       propertyPath: m_text
       value: Agregar enunciado
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509243682435617926, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509243682435617926, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
+      propertyPath: m_margin.w
+      value: 9.362215
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509243682435617926, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
+      propertyPath: m_margin.y
+      value: 4.248934
+      objectReference: {fileID: 0}
+    - target: {fileID: 3509243682435617926, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3509243682435617926, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
       propertyPath: m_fontColor32.rgba

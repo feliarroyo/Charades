@@ -59,6 +59,9 @@ public class Config : MonoBehaviour
             case "waitTimer":
                 PlayerPrefs.SetFloat(Const.PREF_WAITDURATION, value);
                 return;
+            case Const.MASHUP_ROUND_COUNT:
+                PlayerPrefs.SetInt(Const.MASHUP_ROUND_COUNT, (int) value);
+                return;
         }
     }
 

@@ -20,7 +20,7 @@ public class CategorySelect : MonoBehaviour
         Competition.SetTeamName(0, PlayerPrefs.GetString(Const.PREF_TEAM1, Const.DEFAULT_TEAM1));
         Competition.SetTeamName(1, PlayerPrefs.GetString(Const.PREF_TEAM2, Const.DEFAULT_TEAM2));
 
-        // creates icons for custom categories saved
+        // creates buttons for custom categories saved in AppData
         string savePath = Application.persistentDataPath + "/customCategories";
         CategoryCreator.CreateCustomDirectory(savePath);
         foreach (string file in Directory.GetFiles(savePath,"*.json")){

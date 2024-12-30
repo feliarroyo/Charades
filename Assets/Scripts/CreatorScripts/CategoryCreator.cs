@@ -9,8 +9,7 @@ using UnityEngine.UI;
 
 public class CategoryCreator : MonoBehaviour
 {
-    public TextMeshProUGUI category_text, desc_text, question_text, warning_text, questionlist_text, promptcount_text, promptcount_text2;
-    public TMP_Dropdown iconDropdown;
+    public TextMeshProUGUI category_text, desc_text, question_text, warning_text, promptcount_text, promptcount_text2;
     public static string iconName;
     public static Image iconImage;
     protected string category, description;

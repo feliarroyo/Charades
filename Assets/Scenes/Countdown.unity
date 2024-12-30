@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: def9c2e6654217a4fb035b2df1cb4f30, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 60d412b43ae9e4940998b9a8f64e87c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -532,7 +532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0252d036632b02049afbf42a566ab416, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c1f2de008cc1974c9bacfb3d989580f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -704,8 +704,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 44327c6b9386fcd408916804de0a419f, type: 2}
-  m_sharedMaterial: {fileID: 8879610365256406112, guid: 44327c6b9386fcd408916804de0a419f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d020044390be1f409c19e1e51180279, type: 2}
+  m_sharedMaterial: {fileID: 8219537204201258613, guid: 7d020044390be1f409c19e1e51180279, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -729,12 +729,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 60
+  m_fontSize: 144
+  m_fontSizeBase: 144
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 104
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

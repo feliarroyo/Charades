@@ -14,7 +14,7 @@ PrefabInstance:
     - target: {fileID: 6144615688965575287, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 15042727b9bdbce4abea0cb587b11686, type: 3}
+      objectReference: {fileID: 21300000, guid: 6879cf4c003705844b1efc0e44caf19f, type: 3}
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: CategoryCreatorButton

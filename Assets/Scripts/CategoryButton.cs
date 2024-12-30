@@ -4,6 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
+using System;
+using JetBrains.Annotations;
 
 public class CategoryButton : MonoBehaviour
 {
@@ -14,6 +17,13 @@ public class CategoryButton : MonoBehaviour
     private Category category;
     private bool singleSelect;
     private ColorBlock unselectedColor, selectedColor;
+
+    // Competition Position Mark
+    public GameObject mark;
+    public TextMeshProUGUI markText;
+    private int position;
+    private static readonly List<CategoryButton> selectedCatButtons = new();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,28 +35,53 @@ public class CategoryButton : MonoBehaviour
         unselectedColor = SetColor(unselectedColor, Color.white);
         selectedColor = SetColor(selectedColor, Color.green);
         // Initialize color value depending on previous game state and game type
-        if (Competition.ContainsCategory(category) && (Competition.gameType != 0))
-            buttonImage.colors = selectedColor;
+        if (Competition.ContainsCategory(category) && (Competition.gameType != Const.GameModes.QuickPlay))
+            SetCategory_selected();
         else
             buttonImage.colors = unselectedColor;
         
     }
 
     public void SetCategory() {
-        if (!singleSelect)
-            Competition.AddCategory(category);
+        if (!singleSelect){
+            bool isBeingAdded = Competition.AddCategory(category);
+            if (Competition.gameType == Const.GameModes.Competition){
+                mark.SetActive(isBeingAdded);
+                if (isBeingAdded){
+                    position = Competition.GetCurrentCategoryPosition();
+                    markText.text = position.ToString();
+                    Debug.Log(category.category + " tiene posición " + position);
+                    selectedCatButtons.Add(this);
+                    Debug.Log("Hay seleccionadas #cat:" + selectedCatButtons.Count);
+                }
+                else {
+                    selectedCatButtons.Remove(this);
+                    for (int i = position-1; i < selectedCatButtons.Count; i++){
+                        CategoryButton cb = selectedCatButtons[i];
+                        cb.position--;
+                        cb.markText.text = cb.position.ToString();
+                    }
+                }
+            }
+        }
         switch (Competition.gameType){
-            case 0:
+            case Const.GameModes.QuickPlay:
                 Competition.StartCompetition();
                 SceneManager.LoadScene(Const.SCENE_PRESENT);
+                return;
+            case Const.GameModes.Competition:
                 break;
             default:
-                if (buttonImage.colors.Equals(unselectedColor))
-                    buttonImage.colors = selectedColor;
-                else
-                    buttonImage.colors = unselectedColor;
                 break;
         }
+        ChangeButtonColors();
+    }
+
+    private void ChangeButtonColors(){
+        if (buttonImage.colors.Equals(unselectedColor))
+            buttonImage.colors = selectedColor;
+        else
+            buttonImage.colors = unselectedColor;
     }
 
     public void SetCategoryAsEdit() {
@@ -58,7 +93,17 @@ public class CategoryButton : MonoBehaviour
     }
 
     public void SetCategory_unselected(){
+        selectedCatButtons.Remove(this);
         buttonImage.colors = unselectedColor;
+        mark.SetActive(false);
+    }
+
+    public void SetCategory_selected(){
+        buttonImage.colors = selectedColor;
+        if (Competition.gameType == Const.GameModes.Competition) {
+            mark.SetActive(true);
+            markText.text = (Competition.GetCategoryPosition(category) + 1).ToString();
+        }
     }
 
     private ColorBlock SetColor(ColorBlock cb, Color color){

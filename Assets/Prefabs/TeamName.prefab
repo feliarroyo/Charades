@@ -387,8 +387,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Equipo 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 44327c6b9386fcd408916804de0a419f, type: 2}
-  m_sharedMaterial: {fileID: 8879610365256406112, guid: 44327c6b9386fcd408916804de0a419f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7d020044390be1f409c19e1e51180279, type: 2}
+  m_sharedMaterial: {fileID: 8219537204201258613, guid: 7d020044390be1f409c19e1e51180279, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
+  m_fontSize: 120
   m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 0
@@ -523,8 +523,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nombre del equipo
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 77209e5932994af48a6a8721161852de, type: 2}
-  m_sharedMaterial: {fileID: -3924109897920968110, guid: 77209e5932994af48a6a8721161852de, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
+  m_sharedMaterial: {fileID: -8760612746462281966, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -548,15 +548,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.2
+  m_fontSize: 84
   m_fontSizeBase: 14
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 2
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -678,7 +678,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u200B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 77209e5932994af48a6a8721161852de, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9ac0bf18db33d914698de43a0436ac2b, type: 2}
   m_sharedMaterial: {fileID: -3924109897920968110, guid: 77209e5932994af48a6a8721161852de, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -703,10 +703,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 96
   m_fontSizeBase: 14
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0

@@ -21,6 +21,7 @@ public static class Const
         MASHUP_NAME = "Mash-Up",
         MASHUP_DESC = "¡Pueden tocar enunciados de cualquiera de las categorías seleccionadas!",
         MASHUP_ICON = "pregunta",
+        MASHUP_ROUND_COUNT = "mashupRoundCount",
     // Gameplay strings
         CORRECT = "Bien",
         SKIP = "Paso",

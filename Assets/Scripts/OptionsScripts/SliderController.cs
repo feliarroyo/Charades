@@ -26,7 +26,7 @@ public class SliderController : MonoBehaviour
     }
 
     public void IncreaseValueFloat(){
-        slider.value = slider.value+0.1f;
+        slider.value += 0.1f;
     }
 
     public void DecreaseValue(){
@@ -34,6 +34,6 @@ public class SliderController : MonoBehaviour
     }
 
     public void DecreaseValueFloat(){
-        slider.value = slider.value-0.1f;
+        slider.value -= 0.1f;
     }
 }

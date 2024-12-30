@@ -22,19 +22,20 @@ public static class Competition
 
     public static List<Category> lastGameCategories = new();
 
-    public static void AddCategory(Category cat){
+    public static bool AddCategory(Category cat){
         switch (gameType){
-            case 0:
+            case Const.GameModes.QuickPlay:
                 categoryQP = cat;
-                break;
+                return true;
             default:
+                bool res = !categories.Contains(cat);
                 if (!categories.Contains(cat))
                     categories.Add(cat);
                 else
                     categories.Remove(cat);
                 if (cleanCatButton != null)
                     cleanCatButton.SetActive(categories.Count > 0);
-                break;
+                return res;
         }
     }
 
@@ -46,6 +47,10 @@ public static class Competition
 
     public static bool ContainsCategory(Category cat){
         return categories.Contains(cat);
+    }
+
+    public static int GetCategoryPosition(Category cat){
+        return categories.FindIndex(a => a.Equals(cat));
     }
 
     public static void RemoveCategory(Category cat){
@@ -97,6 +102,7 @@ public static class Competition
     public static void StartCompetition(){
         currentCategory = 0;
         currentTeam = 0;
+        
         for (int i = 0; i < PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1); i++){
             scores[i] = new List<int>();
         }
@@ -109,7 +115,7 @@ public static class Competition
 
     public static bool HasCategories(){
         switch (Competition.gameType){
-            case 0:
+            case Const.GameModes.QuickPlay:
                 return true;
             default:
                 return categories.Count != 0;
@@ -122,13 +128,22 @@ public static class Competition
         else {
             currentTeam = 0;
             currentCategory++;
-            if ((currentCategory == categories.Count) || (gameType != Const.GameModes.Competition)) {
+            if (IsGameOver()) {
                 SceneManager.LoadScene(Const.SCENE_FINALRESULTS);
                 return;
             }
         }
         MusicPlayer.StopMusic();
         SceneManager.LoadScene(Const.SCENE_PRESENT);
+    }
+
+    public static bool IsGameOver(){
+        return gameType switch
+        {
+            Const.GameModes.Competition => currentCategory == categories.Count,
+            Const.GameModes.MashUp => currentCategory == PlayerPrefs.GetInt(Const.MASHUP_ROUND_COUNT, 1),
+            _ => true,
+        };
     }
 
     public static bool AddTeam(int n){
@@ -155,5 +170,9 @@ public static class Competition
 
     public static void SetGameType(Const.GameModes id){
         gameType = id;
+    }
+
+    public static int GetCurrentCategoryPosition(){
+        return categories.Count;
     }
 }
