@@ -22,7 +22,6 @@ public class CategoryButton : MonoBehaviour
     public GameObject mark;
     public TextMeshProUGUI markText;
     private int position;
-    private static readonly List<CategoryButton> selectedCatButtons = new();
 
     // Start is called before the first frame update
     void Start()
@@ -39,9 +38,7 @@ public class CategoryButton : MonoBehaviour
             SetCategory_selected();
         else
             buttonImage.colors = unselectedColor;
-        
     }
-
     public void SetCategory() {
         if (!singleSelect){
             bool isBeingAdded = Competition.AddCategory(category);
@@ -51,13 +48,14 @@ public class CategoryButton : MonoBehaviour
                     position = Competition.GetCurrentCategoryPosition();
                     markText.text = position.ToString();
                     Debug.Log(category.category + " tiene posición " + position);
-                    selectedCatButtons.Add(this);
-                    Debug.Log("Hay seleccionadas #cat:" + selectedCatButtons.Count);
+                    CategorySelect.selectedCatButtons.Add(this);
+                    Debug.Log("Hay seleccionadas #cat:" + CategorySelect.selectedCatButtons.Count);
                 }
                 else {
-                    selectedCatButtons.Remove(this);
-                    for (int i = position-1; i < selectedCatButtons.Count; i++){
-                        CategoryButton cb = selectedCatButtons[i];
+                    CategorySelect.selectedCatButtons.Remove(this);
+                    for (int i = position-1; i < CategorySelect.selectedCatButtons.Count; i++){
+                        Debug.Log("I iteration:" + i + " Position " + position);
+                        CategoryButton cb = CategorySelect.selectedCatButtons[i];
                         cb.position--;
                         cb.markText.text = cb.position.ToString();
                     }
@@ -93,7 +91,7 @@ public class CategoryButton : MonoBehaviour
     }
 
     public void SetCategory_unselected(){
-        selectedCatButtons.Remove(this);
+        CategorySelect.selectedCatButtons.Remove(this);
         buttonImage.colors = unselectedColor;
         mark.SetActive(false);
     }
@@ -102,6 +100,9 @@ public class CategoryButton : MonoBehaviour
         buttonImage.colors = selectedColor;
         if (Competition.gameType == Const.GameModes.Competition) {
             mark.SetActive(true);
+            position = Competition.GetCategoryPosition(category)+1;
+            Debug.Log(category.category + " Position:" + position);
+            CategorySelect.selectedCatButtons[position-1]=this;
             markText.text = (Competition.GetCategoryPosition(category) + 1).ToString();
         }
     }

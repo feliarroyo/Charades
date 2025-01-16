@@ -10,6 +10,7 @@ public class CategorySelect : MonoBehaviour
     // custom categories attributes
     public GameObject categoryButtonPrefab;
     public GameObject customParent;
+    public static List<CategoryButton> selectedCatButtons = new();
 
     // Start is called before the first frame update
     void Start()
