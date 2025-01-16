@@ -33,6 +33,7 @@ public static class Const
     // Scenes
         SCENE_MAINMENU = "MainMenu",
         SCENE_PRESENT = "Presentation",
+        SCENE_CATSELECT = "CategorySelect",
         SCENE_CHARADES = "Round",
         SCENE_ROUNDRESULTS = "RoundResults",
         SCENE_FINALRESULTS = "FinalResults"

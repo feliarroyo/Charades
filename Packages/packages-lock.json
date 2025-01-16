@@ -294,6 +294,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.yasirkula.nativeshare": {
+      "version": "https://github.com/yasirkula/UnityNativeShare.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "99559c82d9ef7fa2e2c588b91b1995f117f754b2"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

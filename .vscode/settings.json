@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Charades.sln"
+    "dotnet.defaultSolution": "Charades.sln",
+    "dotnet.preferCSharpExtension": true
 }

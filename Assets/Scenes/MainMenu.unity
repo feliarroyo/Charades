@@ -565,7 +565,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -8.050049, y: 180}
+  m_AnchoredPosition: {x: -8.049988, y: 180}
   m_SizeDelta: {x: -412.7, y: 122.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89140737
@@ -917,7 +917,7 @@ GameObject:
   - component: {fileID: 94303104}
   - component: {fileID: 94303103}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TeamButtonLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3988,7 +3988,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 452.30765, y: -1556.6725}
+  m_AnchoredPosition: {x: 1021.6218, y: -1556.6725}
   m_SizeDelta: {x: 1141.6, y: 445.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &528084033
@@ -4054,7 +4054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 452.30765, y: -746.4454}
+  m_AnchoredPosition: {x: 1021.6218, y: -746.4454}
   m_SizeDelta: {x: 280, y: 338.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &533951281
@@ -6056,7 +6056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -8, y: 265}
+  m_AnchoredPosition: {x: -7.999939, y: 265}
   m_SizeDelta: {x: -412.6, y: 97.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &803633340
@@ -11610,7 +11610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509243681261844662, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 452.30765
+      value: 1021.6218
       objectReference: {fileID: 0}
     - target: {fileID: 3509243681261844662, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
       propertyPath: m_AnchoredPosition.y

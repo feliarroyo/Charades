@@ -16,8 +16,7 @@ public class CategoryCreator : MonoBehaviour
     protected List<string> questions;
     public SceneLoader sceneLoader;
     public SoundEffectPlayer successSound, failSound;
-    public GameObject promptPrefab;
-    public GameObject promptParent;
+    public GameObject promptPrefab, promptParent;
     public GameObject iconButtonPrefab, iconParent;
     public static int warningsRunning = 0;
     public GameObject UnsavedUI, DeleteUI, DeleteCategoryButton, PromptUI, IconUI;
@@ -201,13 +200,7 @@ public class CategoryCreator : MonoBehaviour
             return;
         }
         successSound.PlayClip();
-        Category newCustomCategory = new()
-        {
-            category = this.category,
-            description = this.description,
-            iconName = CategoryCreator.iconName,
-            questions = this.questions
-        };
+        Category newCustomCategory = new() { category = this.category, description = this.description, iconName = CategoryCreator.iconName, questions = this.questions };
         string categoryString = JsonUtility.ToJson(newCustomCategory);
         string savePath = Application.persistentDataPath + "/customCategories";
         CreateCustomDirectory(savePath);
@@ -270,6 +263,12 @@ public class CategoryCreator : MonoBehaviour
 
     public void ShowIconCanvas(bool setActive){
         IconUI.SetActive(setActive);
+    }
+
+    public void ExportFiles(){
+        string filePath = Application.persistentDataPath + "/customCategories/" + origFileName + ".json";
+        //NativeFilePicker.Permission permission = NativeFilePicker.ExportFile( filePath, ( success ) => Debug.Log( "File exported: " + success ) );
+        new NativeShare().AddFile(filePath).SetSubject( "Charadas - Categoría personalizada").SetText("Puedes agregar la categoría a Charadas en la sección de Crear categorías, pulsando el botón de Importar categoría y seleccionando el archivo.").Share();
     }
 
     // Checks if it should ask the player if they're sure about leaving without changes

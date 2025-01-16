@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class CustomCategoryLoader : MonoBehaviour
 {
@@ -18,5 +19,20 @@ public class CustomCategoryLoader : MonoBehaviour
             newGameObject.GetComponentInChildren<CategoryButton>().jsonCategory = new TextAsset(reader.ReadToEnd());
             newGameObject.GetComponentInChildren<CategoryButton>().SetSingleSelect();
         }
+    }
+
+    public void ImportCategory(){
+        NativeFilePicker.Permission permission = NativeFilePicker.PickFile( ( path ) =>
+			{
+				if( path == null )
+					Debug.Log( "Operation cancelled" );
+				else {
+					Debug.Log( "Picked file: " + path );
+                    string savePath = Application.persistentDataPath + "/customCategories/" + Path.GetFileName(path);
+                    Debug.Log( "Destination file: " + savePath);
+                    File.Copy(path, savePath, true);
+                    SceneManager.LoadScene("CategorySelect");
+                }
+			} );
     }
 }

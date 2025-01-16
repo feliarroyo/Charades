@@ -1,5 +1,5 @@
 {
-    "name": "NativeShare.Editor",
+    "name": "NativeFilePicker.Editor",
     "references": [],
     "includePlatforms": [
         "Editor"
