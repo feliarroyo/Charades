@@ -19,6 +19,6 @@ public class ButtonScheme : MonoBehaviour
     void OnMouseDown(){
         if ((Application.platform == RuntimePlatform.WindowsPlayer) || (Application.platform == RuntimePlatform.WindowsEditor))
             return;
-        GameObject.Find("GameLogic").GetComponent<RoundGameplay>().Pass(passType);
+        GameObject.Find("GameLogic").GetComponent<RoundGameplay>().AnswerPrompt(passType);
     }
 }

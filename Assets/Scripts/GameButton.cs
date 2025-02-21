@@ -10,6 +10,6 @@ public class GameButton : MonoBehaviour
     }
 
     public void SetCurrentEditMode(){
-        Config.creatingCategory = setsCustom;
+        Config.creatingNewCategory = setsCustom;
     }
 }

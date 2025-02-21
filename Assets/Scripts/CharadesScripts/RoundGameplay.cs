@@ -3,56 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.AdaptivePerformance.Google.Android;
 
+/// <summary>
+/// This class manages elements related to gameplay within a single round.
+/// </summary>
 public class RoundGameplay : MonoBehaviour
 {
     
-    public int score;
-    public static Camera cam;
-    public static List<string> prompts;
-    protected static bool isActive;
-    public TextMeshProUGUI prompt_text, hits_text; //, gyro_test;
+    public static Camera cam; // Camera's background color is changed depending on game status
+    public static IPromptPool prompts;
+    
+    private bool isPromptOnScreen = true; // used to prevent multiple scoring/skipping at once
+    public TextMeshProUGUI mainText; // contains text used for prompts and game changes
+    public TextMeshProUGUI hitsText; // contains text showing points obtained
+    // public TextMeshProUGUI gyroTest;
     public SoundEffectPlayer[] sounds; // 0 = correct, 1 = pass prompt, 2 = finish
-    public static Category current_category;
     public Timer timer;
-    public bool isGameOver;
-
-    // Mash-Up only
-    public static Dictionary<string, List<string> > mashupPrompts;
-    public static Category currentMashUpCategory;
+    public bool isRoundOver = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        InitializeComponents();
-        InitializePrompts();
-    }
-
-    private void InitializeComponents(){
         Config.GameplayConfig();
         Pause.isPaused = false;
-        isGameOver = false;
-        Score.answers.Clear();
-        isActive = true;
+        Score.ClearScore();
         cam = FindObjectOfType<Camera>().GetComponent<Camera>();
-        prompt_text = GameObject.Find("Prompt").GetComponent<TextMeshProUGUI>();
-        hits_text = GameObject.Find("Points").GetComponent<TextMeshProUGUI>();
-        score = 0;
+        mainText = GameObject.Find("Prompt").GetComponent<TextMeshProUGUI>();
+        hitsText = GameObject.Find("Points").GetComponent<TextMeshProUGUI>();
         timer = GameObject.Find("Time").GetComponent<Timer>();
-        timer.SetTime(PlayerPrefs.GetInt("roundDuration", 60));
-    }
-    private void InitializePrompts(){
-        switch (Competition.gameType){
-            case Const.GameModes.MashUp:
-                mashupPrompts = Competition.GetMashUpPrompts();
-                GetNewPrompt();
-                break;
-            default:
-                current_category = Competition.GetCategory();
-                prompts = Competition.GetPrompts(current_category);
-                GetNewPrompt();
-                break;
-        }
+        timer.SetTime(PlayerPrefs.GetInt(Const.PREF_ROUNDDURATION, 60));
+        prompts = Competition.GetPromptPool();
+        prompts.InitializePrompts();
+        GetNewPrompt();
     }
 
     // Update is called once per frame
@@ -63,136 +46,137 @@ public class RoundGameplay : MonoBehaviour
         else if (timer.TimeIsUp())
             StartCoroutine(EndGame());
         
-        // Each frame, we check the tilting of the phone. If tilted enough up, it gives the point. In the opposite case, it does not.
-        Vector3 inclinacion = new(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
-        //gyro_test.text = inclinacion.ToString();
-        if ((Application.platform == RuntimePlatform.WindowsPlayer) || (Application.platform == RuntimePlatform.WindowsEditor)){
-            if (Input.GetButton("Pass"))
-                Pass(true);
-            else if (Input.GetButton("Fail"))
-                Pass(false);
+        if (!isPromptOnScreen | isRoundOver){
+            return;
         }
-        if (PlayerPrefs.GetInt(Const.PREF_USEMOTIONCONTROLS, 1) != 1)
-            return;
-        if ((inclinacion.x > 0.3f) || (inclinacion.x < -0.3f) || (inclinacion.z > 0.9f) || (inclinacion.z < -0.9f))
-            return;
-        else if (inclinacion.z > 0.7f)
-            Pass(true);
-        else if (inclinacion.z < -0.7f)
-            Pass(false);
+
+        // Windows/Editor controls
+        #if UNITY_EDITOR
+        if (Input.GetButton("Pass"))
+            AnswerPrompt(true);
+        else if (Input.GetButton("Fail"))
+            AnswerPrompt(false);
+        #endif
+
+        // Android controls
+        #if UNITY_ANDROID
+        if (PlayerPrefs.GetInt(Const.PREF_USEMOTIONCONTROLS, 1) == 1)
+            CheckInclination();
+        #endif
     }
 
-    public void Pass(bool givePoint){
-        // Changes the text of the prompt and gives a point on TRUE.
-        if (!isActive | Pause.isPaused | isGameOver)
+    /// <summary>
+    /// Checks how tilted is the device, and answers/skips the prompt at certain values.
+    /// </summary>
+    private void CheckInclination(){
+        Vector3 tilting = new(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
+        // gyroTest.text = tilting.ToString();
+        if ((tilting.x > 0.3f) || (tilting.x < -0.3f) || (tilting.z > 0.9f) || (tilting.z < -0.9f))
             return;
-        if (givePoint)
-            UpdateScore();
-        isActive = false;
+        else if (tilting.z > 0.7f)
+            AnswerPrompt(true);
+        else if (tilting.z < -0.7f)
+            AnswerPrompt(false);
+    }
+
+    /// <summary>
+    /// Changes the text of the prompt and gives a point if needed.
+    /// </summary>
+    /// <param name="givePoint">Determines if a point should be assigned to the score or not.</param>
+    public void AnswerPrompt(bool givePoint){
+        isPromptOnScreen = false;
+        if (givePoint) {
+            IncreaseScore();
+        }
         StartCoroutine(ChangeScreen(givePoint));
     }
 
+    /// <summary>
+    /// Removes the current prompt from the prompt pool, and return a new word within the pile.
+    /// </summary>
+    /// <param name="givePoint">Determines if a point should be assigned to the score or not.</param>
     private IEnumerator ChangeScreen(bool givePoint = false)
-    // remove current word from the pool, and return a new word within the pile
     {
-        RemovePromptFromPool();
-        Score.answers.Add((prompt_text.text, givePoint));
+        RemovePromptFromPool(givePoint);
         if (givePoint){
-            cam.backgroundColor = Color.green;
-            prompt_text.text = Const.CORRECT;
-            sounds[0].PlayClip();
+            SetScreen(Color.green, Const.CORRECT, sounds[0]);
         }
         else{
-            cam.backgroundColor = Color.red;
-            prompt_text.text = Const.SKIP;
-            sounds[1].PlayClip();
+            SetScreen(Color.red, Const.SKIP, sounds[1]);
         }
         float answerWait = PlayerPrefs.GetFloat(Const.PREF_WAITDURATION, 1f);
         yield return new WaitForSeconds(0.5f);
-        hits_text.color = new Color(255, 255, 255, 255);
+        hitsText.color = Color.white;
         yield return new WaitForSeconds(answerWait - 0.5f);
-        this.GetNewPrompt();
+        GetNewPrompt();
     }
 
-    private void RemovePromptFromPool(){
-        switch (Competition.gameType){
-            case Const.GameModes.MashUp:
-                mashupPrompts[currentMashUpCategory.category].Remove(prompt_text.text);
-                break;
-            default:
-                prompts.Remove(prompt_text.text);
-                break;
-        }
+    /// <summary>
+    /// Defines what to show on screen, including background color, main text, and sound to play if any.
+    /// </summary>
+    /// <param name="bgColor">Color to set on the background of the camera.</param>
+    /// <param name="text">Text to display in the center of the screen.</param>
+    /// <param name="sound">Sound to play, can be omitted if no sound will play.</param>
+    private void SetScreen(Color bgColor, string text, SoundEffectPlayer sound = null){
+        cam.backgroundColor = bgColor;
+        mainText.text = text;
+        if (sound != null)
+            sound.PlayClip();
     }
 
+    /// <summary>
+    /// Registers score to show in results, and removes the current prompt from the prompt pool, to avoid repeating prompts whenever possible.
+    /// </summary>
+    /// <param name="wasAnswered">Indicates if the answer is registered as answered or skipped.</param>
+    private void RemovePromptFromPool(bool wasAnswered){
+        Score.answers.Add((mainText.text, wasAnswered));
+        prompts.RemovePrompt(mainText.text);
+    }
+
+    /// <summary>
+    /// Gets a new prompt to show on-screen after answering. 
+    /// </summary>
     private void GetNewPrompt(){
-        switch (Competition.gameType){
-            case Const.GameModes.MashUp:
-                currentMashUpCategory = Competition.GetRandomMashUpCategory();
-                string nextCat = currentMashUpCategory.category;
-                if (mashupPrompts[nextCat].Count == 0){ // if no more questions, restart prompt pool
-                    mashupPrompts[nextCat] = new(currentMashUpCategory.questions);
-                }   
-                if (!isGameOver){
-                    isActive = true;
-                    cam.backgroundColor = Const.DefaultColor;
-                    prompt_text.text = mashupPrompts[nextCat][Random.Range(0, mashupPrompts[nextCat].Count)];
-                }
-                break;
-            default:
-                if (prompts.Count == 0) // if no more questions, restart prompt pool
-                    prompts = new(current_category.questions);
-                if (!isGameOver){
-                    isActive = true;
-                    cam.backgroundColor = Const.DefaultColor;
-                    prompt_text.text = prompts[Random.Range(0, prompts.Count)];
-                }
-                break;
+        prompts.RestartPoolIfEmpty();
+        if (!isRoundOver){
+            isPromptOnScreen = true;
+            SetScreen(Const.DefaultBGColor, prompts.GetNewPrompt());
         }
     }
 
-    private void UpdateScore()
-    // remove current word from the pool, and return a new word within the pile
+    /// <summary>
+    /// Increases round score by 1, showing it in the screen counter.
+    /// </summary>
+    private void IncreaseScore() 
     {
-        score++;
-        hits_text.color = new Color(255, 187, 0, 255);
-        if (score == 1) 
-            hits_text.text = "1 acierto";
-        else 
-            hits_text.text = score + " aciertos";
+        Score.score++;
+        hitsText.color = Const.CorrectTextColor;
+        hitsText.text = Score.GetScoreText();
     }
 
+    /// <summary>
+    /// Ends the game.
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator EndGame(){
-        isGameOver = true;
-        if (PlayerPrefs.GetInt(Const.PREF_SHOWSCREENBUTTONS, 1) == 1) {
-            GameObject.Find("Pause Button").SetActive(false);
-            GameObject.Find("Hit Button").SetActive(false);
-            GameObject.Find("Pass Button").SetActive(false);
-        }
+        HideButtons();
+        isRoundOver = true;
         Pause.isPaused = true;
-        cam.backgroundColor = Color.magenta;
-        if (isActive){
-            Score.answers.Add((prompt_text.text, false));
-            RemovePromptFromPool();
+        if (isPromptOnScreen) {
+            RemovePromptFromPool(false);
         }
-        prompt_text.text = Const.TIME_OVER;
-        sounds[2].PlayClip();
-        Score.score = score;
-        RecordUsedPrompts();
+        SetScreen(Color.magenta, Const.TIME_OVER, sounds[2]);
+        prompts.RecordUsedPrompts();
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(Const.SCENE_ROUNDRESULTS);
     }
 
-    private void RecordUsedPrompts(){
-        switch (Competition.gameType){
-            case Const.GameModes.MashUp:
-                foreach (string c in mashupPrompts.Keys){
-                    Competition.sessionCategories[c] = mashupPrompts[c];
-                }
-                break;
-            default:
-                Competition.sessionCategories[current_category.category] = prompts;
-                break;
+    /// <summary>
+    /// Disables buttons shown on-screen.
+    /// </summary>
+    private void HideButtons(){
+        foreach (GameObject go in GameObject.FindGameObjectsWithTag("Button")){
+            go.SetActive(false);
         }
     }
 }

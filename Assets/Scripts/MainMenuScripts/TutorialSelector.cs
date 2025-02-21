@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// This class manages the How To Play related functions.
+/// </summary>
 public class TutorialSelector : MonoBehaviour
 {
     private static string[] labels = new string[11]{
@@ -19,9 +22,9 @@ public class TutorialSelector : MonoBehaviour
         "OPCIONES",
         "CATEGORÍAS PERSONALIZADAS"
     };
-    public List<GameObject> tutorialPanels = new List<GameObject>();
+    public List<GameObject> tutorialPanels = new();
     public int currentLabel = 0;
-    public TextMeshProUGUI text_space;
+    public TextMeshProUGUI titleText;
    
     // Start is called before the first frame update
     void Start()
@@ -29,24 +32,28 @@ public class TutorialSelector : MonoBehaviour
         ShowTutorialText(0);
     }
 
+    /// <summary>
+    /// Shows the text for the slide number passed as parameter.
+    /// </summary>
+    /// <param name="i">Number of slide to show.</param>
     private void ShowTutorialText(int i){
         tutorialPanels[currentLabel].SetActive(false);
         tutorialPanels[i].SetActive(true);
-        text_space.text = labels[i];
+        titleText.text = labels[i];
         currentLabel = i;
     }
 
+    /// <summary>
+    /// Goes to the slide following the current one.
+    /// </summary>
     public void NextTutorialText(){
-        if (currentLabel+1 < labels.Length)
-            ShowTutorialText(currentLabel+1);
-        else
-            ShowTutorialText(0);
+        ShowTutorialText((currentLabel+1 < labels.Length)? currentLabel+1 : 0);
     }
 
+    /// <summary>
+    /// Goes to the slide previous to the current one.
+    /// </summary>
     public void PreviousTutorialText(){
-        if (currentLabel == 0)
-            ShowTutorialText(labels.Length-1);
-        else
-            ShowTutorialText(currentLabel-1);
+        ShowTutorialText((currentLabel == 0)? labels.Length-1 : currentLabel-1);
     }
 }

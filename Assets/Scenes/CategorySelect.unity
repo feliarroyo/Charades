@@ -9048,6 +9048,7 @@ GameObject:
   - component: {fileID: 753790390}
   - component: {fileID: 753790391}
   - component: {fileID: 753790392}
+  - component: {fileID: 753790393}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -9097,7 +9098,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03494e463109154f92d66a72e5a77d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 753790390}
   categoryButtonPrefab: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
   customParent: {fileID: 554380730}
 --- !u!114 &753790389
@@ -9170,6 +9170,18 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!114 &753790393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753790384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d49975578b721e34e98df22118634f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &756456383
 GameObject:
   m_ObjectHideFlags: 0
@@ -9903,10 +9915,9 @@ GameObject:
   - component: {fileID: 835424971}
   - component: {fileID: 835424970}
   - component: {fileID: 835424973}
-  - component: {fileID: 835424974}
   m_Layer: 5
   m_Name: Jugar
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9990,7 +10001,31 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 4032244362066357084, guid: 694a27315b91a9d4abd4be1e190ff278, type: 3}
         m_TargetAssemblyTypeName: CompetitionWrapper, Assembly-CSharp
-        m_MethodName: LoadSceneIfCategories
+        m_MethodName: StoreCategories
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Presentation
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 835424973}
+        m_TargetAssemblyTypeName: SoundEffectPlayer, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 753790393}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10051,18 +10086,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 95f9a8e60c9f91940aaceb08cc2f47cc, type: 3}
---- !u!114 &835424974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835424968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e598afbaf2b3e704ca3a56701f16492f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &844767965
 GameObject:
   m_ObjectHideFlags: 0
@@ -10334,10 +10357,9 @@ GameObject:
   - component: {fileID: 873085650}
   - component: {fileID: 873085649}
   - component: {fileID: 873085653}
-  - component: {fileID: 873085654}
   m_Layer: 5
   m_Name: Limpiar
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10494,18 +10516,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 4b73af10366094a4da521186490c3879, type: 3}
---- !u!114 &873085654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873085647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cd1b2cfd62548340a9779a4b7cb36fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &909953000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19937,7 +19947,6 @@ GameObject:
   - component: {fileID: 1967148929}
   - component: {fileID: 1967148928}
   - component: {fileID: 1967148927}
-  - component: {fileID: 1967148930}
   - component: {fileID: 1967148931}
   m_Layer: 5
   m_Name: Volver
@@ -20023,7 +20032,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1967148930}
+      - m_Target: {fileID: 753790393}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 5
@@ -20073,18 +20082,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967148925}
   m_CullTransparentMesh: 1
---- !u!114 &1967148930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967148925}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d49975578b721e34e98df22118634f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1967148931
 MonoBehaviour:
   m_ObjectHideFlags: 0

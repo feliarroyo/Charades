@@ -24,15 +24,11 @@ public class CompetitionWrapper : MonoBehaviour
         Competition.StartCompetition();
     }
 
-    public void LoadSceneIfCategories(string sceneName){
-        // loads scene only if there is at least one category loaded
-        if (Competition.HasCategories()){
-            SceneManager.LoadScene(sceneName);
-            Competition.lastGameCategories = Competition.categories;
-            GameObject.Find("Jugar").GetComponent<SoundEffectPlayer>().PlayClip();
-            return;
-        }
-        GameObject.Find("Volver").GetComponent<SoundEffectPlayer>().PlayClip();
+    /// <summary>
+    /// Stores current categories selected to remember the selection for next time the menu is entered.
+    /// </summary>
+    public void StoreCategories(){
+        Competition.lastGameCategories = Competition.categories;
     }
 
     public void LoadNextScene(string sceneName){

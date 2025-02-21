@@ -13,7 +13,7 @@ public class CustomSelector : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        switch (Config.creatingCategory){
+        switch (Config.creatingNewCategory){
             case false:
                 text_space.text = labels[1];
                 return;

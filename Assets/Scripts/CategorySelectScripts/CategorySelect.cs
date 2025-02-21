@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
+/// <summary>
+/// This class sets up the CategorySelect scene. This includes storing selected CategoryButtons and creating custom buttons.
+/// </summary>
 public class CategorySelect : MonoBehaviour
 {
-    public MusicPlayer music;
-
     // custom categories attributes
     public GameObject categoryButtonPrefab;
     public GameObject customParent;
@@ -20,14 +21,9 @@ public class CategorySelect : MonoBehaviour
         // teams get last used named, or default values if first time
         Competition.SetTeamName(0, PlayerPrefs.GetString(Const.PREF_TEAM1, Const.DEFAULT_TEAM1));
         Competition.SetTeamName(1, PlayerPrefs.GetString(Const.PREF_TEAM2, Const.DEFAULT_TEAM2));
-
+        Competition.multipleCategoryButtons = new List<GameObject>(GameObject.FindGameObjectsWithTag("Button"));
+        Competition.ShowMultipleCategoryButtons(Competition.HasCategories());
         // creates buttons for custom categories saved in AppData
-        string savePath = Application.persistentDataPath + "/customCategories";
-        CategoryCreator.CreateCustomDirectory(savePath);
-        foreach (string file in Directory.GetFiles(savePath,"*.json")){
-            StreamReader reader = new StreamReader(file);
-            GameObject newGameObject = Instantiate(categoryButtonPrefab, customParent.transform);
-            newGameObject.GetComponentInChildren<CategoryButton>().jsonCategory = new TextAsset(reader.ReadToEnd());
-        }
+        CustomCategoryLoader.CreateCustomCategoryButtons(categoryButtonPrefab, customParent);
     }
 }

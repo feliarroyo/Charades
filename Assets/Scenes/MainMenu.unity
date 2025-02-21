@@ -541,6 +541,7 @@ GameObject:
   - component: {fileID: 89140736}
   - component: {fileID: 89140738}
   - component: {fileID: 89140737}
+  - component: {fileID: 89140739}
   m_Layer: 5
   m_Name: Version Number
   m_TagString: Untagged
@@ -565,7 +566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -8.049988, y: 180}
+  m_AnchoredPosition: {x: -8.050049, y: 180}
   m_SizeDelta: {x: -412.7, y: 122.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89140737
@@ -665,6 +666,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89140735}
   m_CullTransparentMesh: 1
+--- !u!114 &89140739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89140735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca6dd4bbb7b2164cbd8aa3666c08c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &92326228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1099,8 +1112,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=yellow><link="https://berryarray.itch.io/chess-pieces-16x16-one-bit">Chess
-    Pieces 16x16 One-bit</link></color> by BerryArray
+  m_text: '<color=yellow><link="https://berryarray.itch.io/chess-pieces-16x16-one-bit">Chess
+    Pieces 16x16 One-bit</link></color>
+
+    BerryArray'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7d020044390be1f409c19e1e51180279, type: 2}
   m_sharedMaterial: {fileID: 8219537204201258613, guid: 7d020044390be1f409c19e1e51180279, type: 2}
@@ -2658,7 +2673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1615322705085973212, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DecreaseValueFloat
+      value: DecreaseValue
       objectReference: {fileID: 0}
     - target: {fileID: 1884908920021447532, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_Value
@@ -2746,7 +2761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4159705801805214572, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: IncreaseValueFloat
+      value: IncreaseValue
       objectReference: {fileID: 0}
     - target: {fileID: 4849947977705928750, guid: 6f51a95275690cc4f939e536c9c682ec, type: 3}
       propertyPath: m_RootOrder
@@ -3246,7 +3261,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "<color=yellow><link=\"https://greatdocbrown.itch.io/coins-gems-etc\r\">Coins
-    & Gems & Chests & More</link></color> by greatdocbrown\r"
+    & Gems & Chests & More</link></color>\ngreatdocbrown\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7d020044390be1f409c19e1e51180279, type: 2}
   m_sharedMaterial: {fileID: 8219537204201258613, guid: 7d020044390be1f409c19e1e51180279, type: 2}
@@ -5459,8 +5474,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=yellow><link="https://merchant-shade.itch.io/16x16-mini-world-sprites">Free
-    16x16 Mini World Sprites</link></color> by Shade, octoshrimpy
+  m_text: '<color=yellow><link="https://merchant-shade.itch.io/16x16-mini-world-sprites">Free
+    16x16 Mini World Sprites</link></color>
+
+    Shade & octoshrimpy'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7d020044390be1f409c19e1e51180279, type: 2}
   m_sharedMaterial: {fileID: 8219537204201258613, guid: 7d020044390be1f409c19e1e51180279, type: 2}
@@ -5637,7 +5654,6 @@ GameObject:
   - component: {fileID: 753790386}
   - component: {fileID: 753790389}
   - component: {fileID: 753790388}
-  - component: {fileID: 753790390}
   - component: {fileID: 753790392}
   - component: {fileID: 753790391}
   - component: {fileID: 753790393}
@@ -5705,19 +5721,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 4741e3f66351d324296bd1465094f3b7, type: 3}
---- !u!114 &753790390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753790384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ca6dd4bbb7b2164cbd8aa3666c08c14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  versionText: {fileID: 89140737}
 --- !u!114 &753790391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5743,6 +5746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preloader: {fileID: 753790391}
+  nextScene: CategorySelect
 --- !u!114 &753790393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6094,7 +6098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -7.999939, y: 265}
+  m_AnchoredPosition: {x: -8, y: 265}
   m_SizeDelta: {x: -412.6, y: 97.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &803633340
@@ -6805,11 +6809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e3e61c0ae7e784288795f0101d9075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text_space: {fileID: 94303103}
-  button_image: {fileID: 872513201}
-  button_sprites:
-  - {fileID: 21300000, guid: 113392a08e51a1d44963b21147beab6f, type: 3}
-  - {fileID: 21300000, guid: cb27beb2f08c7b44f842e83db5609715, type: 3}
+  textSpace: {fileID: 0}
+  buttonImage: {fileID: 0}
+  buttonSprites: []
   teamSpaces:
   - {fileID: 1160630213}
   - {fileID: 900764616}
@@ -9558,10 +9560,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<size=72>Desarrollo</size>\nFelipe Arroyo\r\n\r\n<size=72>Testing\r</size>\nAlex
     Tassi\r\n\n<size=72>M\xFAsica\r</size>\n<color=red><link=\"https://tallbeard.itch.io/music-loop-bundle\">Three
-    Red Hearts: Prepare to Dev</link></color> by Abstraction\n\n<size=72>Sonidos:\r</size>\nCreados
-    usando <color=green>ChipTone</color>\n\n<size=72>Fuentes:\r</size>\n<color=yellow><link=\"https://managore.itch.io/m6x11\">m6x11plus</link></color>
-    by Daniel Linssen\n\n<color=yellow><link=\"https://datagoblin.itch.io/monogram\">Monogram</link></color>
-    by datagoblin\n\n<size=72>Sprites:</size>\nFelipe Arroyo\n"
+    Red Hearts: Prepare to Dev</link></color>\nAbstraction\n\n<size=72>Sonidos:\r</size>\nCreados
+    usando <color=green>ChipTone</color>\n\n<size=72>Fuentes:\r</size>\n<color=yellow><link=\"https://managore.itch.io/m6x11\">m6x11plus</link></color>\nDaniel
+    Linssen\n\n<color=yellow><link=\"https://datagoblin.itch.io/monogram\">Monogram</link></color>\ndatagoblin\n\n<size=72>Sprites:</size>\nFelipe
+    Arroyo\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7d020044390be1f409c19e1e51180279, type: 2}
   m_sharedMaterial: {fileID: 8219537204201258613, guid: 7d020044390be1f409c19e1e51180279, type: 2}
@@ -9939,8 +9941,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <color=yellow><link="https://merchant-shade.itch.io/16x16-puny-characters">Puny
-    Characters</link></color> by Shade
+  m_text: '<color=yellow><link="https://merchant-shade.itch.io/16x16-puny-characters">Puny
+    Characters</link></color> (Template)
+
+    Shade'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7d020044390be1f409c19e1e51180279, type: 2}
   m_sharedMaterial: {fileID: 8219537204201258613, guid: 7d020044390be1f409c19e1e51180279, type: 2}
@@ -10972,7 +10976,7 @@ MonoBehaviour:
   - {fileID: 956212902}
   - {fileID: 836824882}
   currentLabel: 0
-  text_space: {fileID: 1022164333}
+  titleText: {fileID: 0}
 --- !u!1 &1640490141
 GameObject:
   m_ObjectHideFlags: 0

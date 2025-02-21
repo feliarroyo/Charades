@@ -6,7 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class Category : IEquatable<Category>
 {
-    public string category;
+    public string title;
     public string description;
     public List<string> questions;
     public string iconName;
@@ -14,6 +14,6 @@ public class Category : IEquatable<Category>
     public bool Equals(Category c) {
         if (c == null)
             return false;
-        return c.category.Equals(category);
+        return c.title.Equals(title);
     }
 }

@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.Analytics;
-using System;
-using JetBrains.Annotations;
 
+/// <summary>
+/// This class contains the behavior related to the buttons used for each category.
+/// </summary>
 public class CategoryButton : MonoBehaviour
 {
     public TextMeshProUGUI categoryName;
@@ -16,7 +14,8 @@ public class CategoryButton : MonoBehaviour
     public Image categoryImage;
     private Category category;
     private bool singleSelect;
-    private ColorBlock unselectedColor, selectedColor;
+    private ColorBlock unselectedColor;
+    private ColorBlock selectedColor;
 
     // Competition Position Mark
     public GameObject mark;
@@ -26,19 +25,25 @@ public class CategoryButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Loads category data from file
-        category = JSONReader.GetCategory(jsonCategory);
-        categoryName.text = category.category;
-        categoryImage.sprite = Resources.Load<Sprite>(category.iconName);
+        LoadCategoryInfo();
         // Define colors for different states
         unselectedColor = SetColor(unselectedColor, Color.white);
         selectedColor = SetColor(selectedColor, Color.green);
         // Initialize color value depending on previous game state and game type
-        if (Competition.ContainsCategory(category) && (Competition.gameType != Const.GameModes.QuickPlay))
+        if (Competition.ContainsCategory(category) && (Competition.gameType != Const.GameModes.QuickPlay)){
             SetCategory_selected();
-        else
+        }
+        else {
             buttonImage.colors = unselectedColor;
+        }
     }
+
+    private void LoadCategoryInfo(){
+        category = JSONReader.GetCategory(jsonCategory);
+        categoryName.text = category.title;
+        categoryImage.sprite = Resources.Load<Sprite>(category.iconName);
+    }
+    
     public void SetCategory() {
         if (!singleSelect){
             bool isBeingAdded = Competition.AddCategory(category);
@@ -47,7 +52,7 @@ public class CategoryButton : MonoBehaviour
                 if (isBeingAdded){
                     position = Competition.GetCurrentCategoryPosition();
                     markText.text = position.ToString();
-                    Debug.Log(category.category + " tiene posición " + position);
+                    Debug.Log(category.title + " tiene posición " + position);
                     CategorySelect.selectedCatButtons.Add(this);
                     Debug.Log("Hay seleccionadas #cat:" + CategorySelect.selectedCatButtons.Count);
                 }
@@ -75,6 +80,9 @@ public class CategoryButton : MonoBehaviour
         ChangeButtonColors();
     }
 
+    /// <summary>
+    /// Change the color of the button, from selected to unselected and vice versa.
+    /// </summary>
     private void ChangeButtonColors(){
         if (buttonImage.colors.Equals(unselectedColor))
             buttonImage.colors = selectedColor;
@@ -101,7 +109,7 @@ public class CategoryButton : MonoBehaviour
         if (Competition.gameType == Const.GameModes.Competition) {
             mark.SetActive(true);
             position = Competition.GetCategoryPosition(category)+1;
-            Debug.Log(category.category + " Position:" + position);
+            Debug.Log(category.title + " Position:" + position);
             CategorySelect.selectedCatButtons[position-1]=this;
             markText.text = (Competition.GetCategoryPosition(category) + 1).ToString();
         }
