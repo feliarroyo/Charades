@@ -12,6 +12,8 @@ using UnityEngine.UI;
 /// </summary>
 public class CategoryCreator : MonoBehaviour
 {
+    public static CategoryCreator creator; // Singleton
+    
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI descriptionText;
     public TextMeshProUGUI PromptText;
@@ -56,6 +58,7 @@ public class CategoryCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        creator = this;
         InitializeValues();
         IconInstantiate();
     }
@@ -79,7 +82,7 @@ public class CategoryCreator : MonoBehaviour
                     SetImage(icon.name, (Sprite) icon);
                 }
                 GameObject newIconButton = Instantiate(iconButtonPrefab, iconParent.transform);
-                newIconButton.GetComponent<Icon>().SetSprite(icon.name, (Sprite)icon);
+                newIconButton.GetComponent<IconButton>().SetSprite(icon.name, (Sprite)icon);
             }
     }
 

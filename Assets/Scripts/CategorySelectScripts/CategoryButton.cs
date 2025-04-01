@@ -8,10 +8,10 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class CategoryButton : MonoBehaviour
 {
-    public TextMeshProUGUI categoryName;
-    public Button buttonImage;
-    public TextAsset jsonCategory;
-    public Image categoryImage;
+    public TextMeshProUGUI categoryName; // text space for the name
+    public Button buttonComponent; // button image
+    public TextAsset jsonCategory; // json file containing all information
+    public Image categoryImage; // category symbol on the button
     private Category category;
     private bool singleSelect;
     private ColorBlock unselectedColor;
@@ -34,7 +34,7 @@ public class CategoryButton : MonoBehaviour
             SetCategory_selected();
         }
         else {
-            buttonImage.colors = unselectedColor;
+            buttonComponent.colors = unselectedColor;
         }
     }
 
@@ -84,10 +84,10 @@ public class CategoryButton : MonoBehaviour
     /// Change the color of the button, from selected to unselected and vice versa.
     /// </summary>
     private void ChangeButtonColors(){
-        if (buttonImage.colors.Equals(unselectedColor))
-            buttonImage.colors = selectedColor;
+        if (buttonComponent.colors.Equals(unselectedColor))
+            buttonComponent.colors = selectedColor;
         else
-            buttonImage.colors = unselectedColor;
+            buttonComponent.colors = unselectedColor;
     }
 
     public void SetCategoryAsEdit() {
@@ -100,12 +100,12 @@ public class CategoryButton : MonoBehaviour
 
     public void SetCategory_unselected(){
         CategorySelect.selectedCatButtons.Remove(this);
-        buttonImage.colors = unselectedColor;
+        buttonComponent.colors = unselectedColor;
         mark.SetActive(false);
     }
 
     public void SetCategory_selected(){
-        buttonImage.colors = selectedColor;
+        buttonComponent.colors = selectedColor;
         if (Competition.gameType == Const.GameModes.Competition) {
             mark.SetActive(true);
             position = Competition.GetCategoryPosition(category)+1;
@@ -115,11 +115,15 @@ public class CategoryButton : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="cb"></param>
+    /// <param name="color"></param>
     private ColorBlock SetColor(ColorBlock cb, Color color){
-        cb = buttonImage.colors;
+        cb = buttonComponent.colors;
         cb.normalColor = color;
         cb.selectedColor = color;
-        //cb.highlightedColor = color;
         return cb;
     }
 }

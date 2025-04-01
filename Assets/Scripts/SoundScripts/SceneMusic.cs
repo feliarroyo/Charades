@@ -8,10 +8,10 @@ public class SceneMusic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!GameObject.Find("Music").GetComponent<AudioSource>().clip.Equals(bgMusic.clip))
-        {
-            bgMusic.PlayTrack();
-            GameObject.Find("Music").GetComponent<AudioSource>().Play();
-        }
+        //if (!GameObject.Find("Music").GetComponent<AudioSource>().clip.Equals(bgMusic.clip))
+        //{
+          //  bgMusic.PlayTrack();
+        //    GameObject.Find("Music").GetComponent<AudioSource>().Play();
+      //  }
     }
 }

@@ -13,18 +13,19 @@ public class RoundGameplay : MonoBehaviour
     
     public static Camera cam; // Camera's background color is changed depending on game status
     public static IPromptPool prompts;
-    
-    private bool isPromptOnScreen = true; // used to prevent multiple scoring/skipping at once
+    private static bool isPromptOnScreen = true; // used to prevent multiple scoring/skipping at once
     public TextMeshProUGUI mainText; // contains text used for prompts and game changes
     public TextMeshProUGUI hitsText; // contains text showing points obtained
     // public TextMeshProUGUI gyroTest;
     public SoundEffectPlayer[] sounds; // 0 = correct, 1 = pass prompt, 2 = finish
     public Timer timer;
     public bool isRoundOver = false;
+    public static RoundGameplay round;
 
     // Start is called before the first frame update
     void Start()
     {
+        round = this;
         Config.GameplayConfig();
         Pause.isPaused = false;
         Score.ClearScore();

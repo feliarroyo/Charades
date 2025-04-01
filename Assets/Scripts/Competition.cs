@@ -22,6 +22,12 @@ public static class Competition
 
     public static List<Category> lastGameCategories = new();
 
+    /// <summary>
+    /// Adds a category to be played in the current game session. 
+    /// If the category has been already added, removes it instead.
+    /// </summary>
+    /// <param name="cat">Category to be added/removed.</param>
+    /// <returns>True if the category has been added, and False if it's been removed.</returns>
     public static bool AddCategory(Category cat){
         switch (gameType){
             case Const.GameModes.QuickPlay:
@@ -46,12 +52,20 @@ public static class Competition
         ShowMultipleCategoryButtons(false);
     }
 
+    /// <summary>
+    /// Used to show/hide elements that should only be active when there are multiple categories
+    /// selected at once. (f.e. Clean Categories and Play Buttons)
+    /// </summary>
+    /// <param name="show">Whether to show or hide these UI elements.</param>
     public static void ShowMultipleCategoryButtons(bool show){
         foreach (GameObject go in multipleCategoryButtons){
             go.SetActive(show);
         }
     }
 
+    /// <summary>
+    /// Checks if a category is in use or not.
+    /// </summary>
     /// <param name="cat">Category checked if selected.</param>
     /// <returns>Whether the category parameter is currently selected/in use or not.</returns>
     public static bool ContainsCategory(Category cat){
@@ -103,6 +117,9 @@ public static class Competition
         
     }
 
+    /// <summary>
+    /// Sets up competition values to begin a session.
+    /// </summary>
     public static void StartCompetition(){
         currentCategory = 0;
         currentTeam = 0;
@@ -112,6 +129,10 @@ public static class Competition
         }
     }
 
+    /// <summary>
+    /// Register the score passed as parameter for the current team playing, and moves to the next round.
+    /// </summary>
+    /// <param name="score"></param>
     public static void RegisterScore(int score){
         scores[currentTeam].Add(score);
         SetNextGame();
@@ -125,6 +146,9 @@ public static class Competition
         };
     }
 
+    /// <summary>
+    /// Sets up the next round, with the next team and/or category to be played.
+    /// </summary>
     public static void SetNextGame(){
         if (currentTeam < PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1)-1)
             currentTeam++;
@@ -140,6 +164,10 @@ public static class Competition
         SceneManager.LoadScene(Const.SCENE_PRESENT);
     }
 
+    /// <summary>
+    /// Used to determine if there are any more rounds left to play.
+    /// </summary>
+    /// <returns>True if the game is over, and False if there are rounds left to play.</returns>
     public static bool IsGameOver(){
         return gameType switch
         {

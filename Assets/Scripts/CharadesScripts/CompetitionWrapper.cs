@@ -36,6 +36,10 @@ public class CompetitionWrapper : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    /// <summary>
+    /// Sets team name for the parameter giving (with first team being i=0).
+    /// </summary>
+    /// <param name="i">Team index number to set name</param>
     public void SetTeamName(int i){
         TMP_InputField input = GetComponent<TMP_InputField>();
         Competition.SetTeamName(i, input.text);

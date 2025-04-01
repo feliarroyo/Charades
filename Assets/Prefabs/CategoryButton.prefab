@@ -225,10 +225,10 @@ GameObject:
   - component: {fileID: 6658161952963734987}
   - component: {fileID: 6658161952963734990}
   - component: {fileID: 6658161952963734989}
-  - component: {fileID: 6658161952963734988}
   - component: {fileID: 6658161952963734991}
   - component: {fileID: 8059813871360953303}
   - component: {fileID: 4845955393690333533}
+  - component: {fileID: 5515468622653441543}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -296,7 +296,50 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6658161952963734988
+--- !u!114 &6658161952963734991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658161952963734986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d49975578b721e34e98df22118634f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8059813871360953303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658161952963734986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a77f79cdac89214c95a0ed1a389987e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  categoryName: {fileID: 3200011650523168855}
+  buttonComponent: {fileID: 5515468622653441543}
+  jsonCategory: {fileID: 4900000, guid: 5b5e22f4df9dd9244a29c4bde8500357, type: 3}
+  categoryImage: {fileID: 6144615688965575287}
+  mark: {fileID: 5679205147108177416}
+  markText: {fileID: 7014807551700628892}
+--- !u!114 &4845955393690333533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6658161952963734986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: f396262626030144d97e97d81a69de73, type: 3}
+--- !u!114 &5515468622653441543
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -318,10 +361,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 0.44705883, a: 1}
-    m_PressedColor: {r: 0, g: 0.6132076, b: 0.49002466, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_DisabledColor: {r: 1, g: 0, b: 0.90185595, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -364,49 +407,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6658161952963734991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6658161952963734986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d49975578b721e34e98df22118634f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8059813871360953303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6658161952963734986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a77f79cdac89214c95a0ed1a389987e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  categoryName: {fileID: 3200011650523168855}
-  buttonImage: {fileID: 6658161952963734988}
-  jsonCategory: {fileID: 4900000, guid: 5b5e22f4df9dd9244a29c4bde8500357, type: 3}
-  categoryImage: {fileID: 6144615688965575287}
-  mark: {fileID: 5679205147108177416}
-  markText: {fileID: 7014807551700628892}
---- !u!114 &4845955393690333533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6658161952963734986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: f396262626030144d97e97d81a69de73, type: 3}
 --- !u!1 &6658161954136392185
 GameObject:
   m_ObjectHideFlags: 0

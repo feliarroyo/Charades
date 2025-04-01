@@ -70,20 +70,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-Assets/Data/Categories/imr.json
-Assets/Data/Categories/imr.json.meta
-Assets/Data/Categories/undertalers.json
-Assets/Data/Categories/undertalers.png
-Assets/Data/Categories/undertalers.json.meta
-Assets/Data/Categories/undertalers.png.meta
 Assets/licenses.txt
 Assets/licenses.txt.meta
-Assets/Images/undertalers.png
-Assets/Images/undertalers.png.meta
 Sources/*
-Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
-Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
-Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
-Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset
-Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset
-Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+
+# Keystore
+user.keystore

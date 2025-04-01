@@ -9,7 +9,7 @@ using TMPro;
 /// </summary>
 public class TeamSelector : MonoBehaviour
 {
-    private static readonly string[] labels = new string[2]{"Modo equipos: No", "Modo equipos: Sí"};
+    private static readonly string[] labels = new string[2]{"Modo equipos: Sí", "Modo equipos: No"};
     public TextMeshProUGUI textSpace;
     public Image buttonImage;
     public Sprite[] buttonSprites;

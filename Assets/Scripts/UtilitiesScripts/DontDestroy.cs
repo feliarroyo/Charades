@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Class used to avoid destroying GameObjects between scenes.
+/// <summary>
+/// Class used to avoid destroying GameObjects between scenes.
+/// </summary>
 public class DontDestroy : MonoBehaviour
 {
     public static HashSet<string> instances = new();
