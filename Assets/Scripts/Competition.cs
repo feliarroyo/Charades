@@ -18,10 +18,16 @@ public static class Competition
     public static int currentCategory = 0;
     public static int currentTeam = 0;
     private const int max_teams = 4;
-    public static GameObject cleanCatButton = null;
+    public static List<GameObject> multipleCategoryButtons = new();
 
     public static List<Category> lastGameCategories = new();
 
+    /// <summary>
+    /// Adds a category to be played in the current game session. 
+    /// If the category has been already added, removes it instead.
+    /// </summary>
+    /// <param name="cat">Category to be added/removed.</param>
+    /// <returns>True if the category has been added, and False if it's been removed.</returns>
     public static bool AddCategory(Category cat){
         switch (gameType){
             case Const.GameModes.QuickPlay:
@@ -33,32 +39,56 @@ public static class Competition
                     categories.Add(cat);
                 else
                     categories.Remove(cat);
-                if (cleanCatButton != null)
-                    cleanCatButton.SetActive(categories.Count > 0);
+                ShowMultipleCategoryButtons(categories.Count > 0);
                 return res;
         }
     }
 
+    /// <summary>
+    /// Unselects all categories currently selected.
+    /// </summary>
     public static void ClearCategories(){
         categories.Clear();
-        cleanCatButton = GameObject.Find("Limpiar");
-        cleanCatButton.SetActive(false);
+        ShowMultipleCategoryButtons(false);
     }
 
+    /// <summary>
+    /// Used to show/hide elements that should only be active when there are multiple categories
+    /// selected at once. (f.e. Clean Categories and Play Buttons)
+    /// </summary>
+    /// <param name="show">Whether to show or hide these UI elements.</param>
+    public static void ShowMultipleCategoryButtons(bool show){
+        foreach (GameObject go in multipleCategoryButtons){
+            go.SetActive(show);
+        }
+    }
+
+    /// <summary>
+    /// Checks if a category is in use or not.
+    /// </summary>
+    /// <param name="cat">Category checked if selected.</param>
+    /// <returns>Whether the category parameter is currently selected/in use or not.</returns>
     public static bool ContainsCategory(Category cat){
         return categories.Contains(cat);
     }
 
+    /// <param name="cat">Category which position is checked.</param>
+    /// <returns>The position within the category array in which the category is placed.</returns>
     public static int GetCategoryPosition(Category cat){
         return categories.FindIndex(a => a.Equals(cat));
     }
 
+    /// <summary>
+    /// Removes category from selection, if currently selected.
+    /// </summary>
+    /// <param name="cat">Category to remove from selection.</param>
     public static void RemoveCategory(Category cat){
         if (ContainsCategory(cat)) {
             categories.Remove(cat);
         }
     }
 
+    /// <returns>Category that will be played in the current round.</returns>
     public static Category GetCategory(){
         switch (gameType){
             case Const.GameModes.QuickPlay:
@@ -67,10 +97,10 @@ public static class Competition
                 return categories[currentCategory];
             case Const.GameModes.MashUp:
             default:
-                if (categories.Count == 1) // with only one category uses standard presentation
+                if (categories.Count == 1) // one category = standard presentation
                     return categories[0];
                 return new Category(){
-                    category=Const.MASHUP_NAME,
+                    title=Const.MASHUP_NAME,
                     description=Const.MASHUP_DESC,
                     iconName=Const.MASHUP_ICON,
                     questions=new()
@@ -78,27 +108,18 @@ public static class Competition
         };
     }
 
-    // Gets a prompt list from the session records, to avoid repeated prompts
+    /// <param name="c">Category from which retrieve session records.</param>
+    /// <returns>A prompt list from the session records of the category parameter, to avoid repeated prompts.</returns>
     public static List<string> GetPrompts(Category c){
-        if (!sessionCategories.ContainsKey(c.category))
-            sessionCategories[c.category] = new(c.questions);
-        return sessionCategories[c.category];
+        if (!sessionCategories.ContainsKey(c.title))
+            sessionCategories[c.title] = new(c.questions);
+        return sessionCategories[c.title];
         
     }
-    
-    public static Dictionary<string, List<string> > GetMashUpPrompts(){
-        Dictionary<string, List<string> > res = new();
-        foreach (Category c in categories)
-            res[c.category] = GetPrompts(c);
-        return res;
-    }
 
-    public static Category GetRandomMashUpCategory(){
-        Category nextCategory = categories[UnityEngine.Random.Range(0, categories.Count)];
-        return nextCategory;
-
-    }
-
+    /// <summary>
+    /// Sets up competition values to begin a session.
+    /// </summary>
     public static void StartCompetition(){
         currentCategory = 0;
         currentTeam = 0;
@@ -108,20 +129,26 @@ public static class Competition
         }
     }
 
+    /// <summary>
+    /// Register the score passed as parameter for the current team playing, and moves to the next round.
+    /// </summary>
+    /// <param name="score"></param>
     public static void RegisterScore(int score){
         scores[currentTeam].Add(score);
         SetNextGame();
     }
 
     public static bool HasCategories(){
-        switch (Competition.gameType){
-            case Const.GameModes.QuickPlay:
-                return true;
-            default:
-                return categories.Count != 0;
-        }
+        return gameType switch
+        {
+            Const.GameModes.QuickPlay => true,
+            _ => categories.Count != 0,
+        };
     }
 
+    /// <summary>
+    /// Sets up the next round, with the next team and/or category to be played.
+    /// </summary>
     public static void SetNextGame(){
         if (currentTeam < PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1)-1)
             currentTeam++;
@@ -137,6 +164,10 @@ public static class Competition
         SceneManager.LoadScene(Const.SCENE_PRESENT);
     }
 
+    /// <summary>
+    /// Used to determine if there are any more rounds left to play.
+    /// </summary>
+    /// <returns>True if the game is over, and False if there are rounds left to play.</returns>
     public static bool IsGameOver(){
         return gameType switch
         {
@@ -174,5 +205,15 @@ public static class Competition
 
     public static int GetCurrentCategoryPosition(){
         return categories.Count;
+    }
+
+    /// <returns>Prompt pool according to the current game mode.</returns>
+    internal static IPromptPool GetPromptPool()
+    {
+        return gameType switch
+        {
+            Const.GameModes.MashUp => new MashUpPool(),
+            _ => new DefaultPool(),
+        };
     }
 }

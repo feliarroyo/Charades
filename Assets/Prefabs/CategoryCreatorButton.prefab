@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fed0b454cf2648448e24b974c8fd208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  setsCustom: 1
+  triggersVariant: 1
 --- !u!114 &5742550321162605710 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6658161952963734991, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}

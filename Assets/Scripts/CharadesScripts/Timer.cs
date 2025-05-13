@@ -11,7 +11,8 @@ public class Timer : MonoBehaviour
     private float timeLeft;
     public bool timerOn;
     public TextMeshProUGUI timerText;
-    public bool hasEndSound = false, hasTickSound = false;
+    public bool hasEndSound = false;
+    public bool hasTickSound = false;
     public AudioClip tickSound, endSound;
     private AudioSource soundPlayer;
 

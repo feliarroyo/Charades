@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class Presentation : MonoBehaviour
 {
-    public TextMeshProUGUI team_text, title_text, desc_text;
+    public TextMeshProUGUI team_text;
+    public TextMeshProUGUI title_text;
+    public TextMeshProUGUI desc_text;
     public Category current_category;
     public Image categoryImage;
 
@@ -20,7 +22,7 @@ public class Presentation : MonoBehaviour
 
     private void LoadCurrentCategory(){
         current_category = Competition.GetCategory();
-        title_text.text = current_category.category;
+        title_text.text = current_category.title;
         desc_text.text = current_category.description;
         categoryImage.sprite = Resources.Load<Sprite>(current_category.iconName);
     }

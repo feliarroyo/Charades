@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 141045918}
   m_Layer: 5
   m_Name: Pass Button
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,15 +242,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b883870f68ebc642ade7fb63fbbf1cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  prompt_text: {fileID: 1933946656}
-  hits_text: {fileID: 1393202157}
+  mainText: {fileID: 0}
+  hitsText: {fileID: 0}
   sounds:
   - {fileID: 222939320}
   - {fileID: 222939319}
   - {fileID: 222939318}
   timer: {fileID: 0}
-  isGameOver: 0
+  isRoundOver: 0
 --- !u!4 &222939317
 Transform:
   m_ObjectHideFlags: 0
@@ -1040,7 +1039,7 @@ GameObject:
   - component: {fileID: 1330686728}
   m_Layer: 5
   m_Name: Hit Button
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2162,7 +2161,7 @@ GameObject:
   - component: {fileID: 1997148638}
   m_Layer: 5
   m_Name: Pause Button
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2185,7 +2184,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -415, y: 173}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1997148634
 CanvasRenderer:

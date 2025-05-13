@@ -8,15 +8,19 @@ public class Pause : MonoBehaviour
     public GameObject PauseUI;
     public SceneLoader sceneLoader;
 
+    #if UNITY_STANDALONE_WINDOWS
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
             PauseGame();
     }
+    #endif
 
+    /// <summary>
+    /// Pauses the game if not paused, and vice versa.
+    /// </summary>
     public void PauseGame(){
-        // Pauses if not paused and vice versa
         if (isPaused){
             Time.timeScale = 1;
             PauseUI.SetActive(false);
@@ -29,18 +33,20 @@ public class Pause : MonoBehaviour
         isPaused = !isPaused;
     }
 
+    /// <summary>
+    /// Same as PauseGame, but only affects time, used for transitions.
+    /// </summary>
+    /// <param name="nextScene">Scene to transition to.</param>
     public void UnpauseToTransition(string nextScene){
-        // same as PauseGame, but only affects time. For use in transitions only
-        if (isPaused)
-            Time.timeScale = 1;
-        else
-            Time.timeScale = 0;
+        Time.timeScale = isPaused? 1 : 0;
         isPaused = !isPaused;
         sceneLoader.LoadScene(nextScene);
     }
 
+    /// <summary>
+    /// When the pause button clicked, pause the game.
+    /// </summary>
     void OnMouseDown(){
-        // When clicked, pause the game
         PauseGame();
     }
 }

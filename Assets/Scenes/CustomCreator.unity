@@ -3359,12 +3359,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2654248af3ab0414fae44cb072080a7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  category_text: {fileID: 1366757213}
-  desc_text: {fileID: 6281978828886820004}
-  question_text: {fileID: 6281978829746479848}
-  warning_text: {fileID: 1886325360}
-  promptcount_text: {fileID: 1889510470}
-  promptcount_text2: {fileID: 1812213578}
+  titleText: {fileID: 1366757213}
+  descriptionText: {fileID: 6281978828886820004}
+  PromptText: {fileID: 6281978829746479848}
+  WarningText: {fileID: 1886325360}
+  PromptCounter_Main: {fileID: 1889510470}
+  PromptCounter_List: {fileID: 1812213578}
   sceneLoader: {fileID: 964153556}
   successSound: {fileID: 964153558}
   failSound: {fileID: 964153558}
@@ -5187,7 +5187,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 324637094822789807, guid: e0ec670c83623e04d84a9410967269e1, type: 3}
       propertyPath: m_Name
-      value: CategoryName
+      value: TitleName
       objectReference: {fileID: 0}
     - target: {fileID: 2148649166884776938, guid: e0ec670c83623e04d84a9410967269e1, type: 3}
       propertyPath: m_Text
@@ -5260,6 +5260,10 @@ PrefabInstance:
     - target: {fileID: 2513048305041004147, guid: e0ec670c83623e04d84a9410967269e1, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923546765577713146, guid: e0ec670c83623e04d84a9410967269e1, type: 3}
+      propertyPath: m_Name
+      value: TitleText
       objectReference: {fileID: 0}
     - target: {fileID: 4206669023139473654, guid: e0ec670c83623e04d84a9410967269e1, type: 3}
       propertyPath: m_Pivot.x
@@ -7779,7 +7783,7 @@ GameObject:
   - component: {fileID: 7955054238964131778}
   - component: {fileID: 6281978828886820004}
   m_Layer: 5
-  m_Name: Text
+  m_Name: DescriptionText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7797,7 +7801,7 @@ GameObject:
   - component: {fileID: 7955054238884610446}
   - component: {fileID: 6281978829746479848}
   m_Layer: 5
-  m_Name: Text
+  m_Name: PromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -24,15 +24,11 @@ public class CompetitionWrapper : MonoBehaviour
         Competition.StartCompetition();
     }
 
-    public void LoadSceneIfCategories(string sceneName){
-        // loads scene only if there is at least one category loaded
-        if (Competition.HasCategories()){
-            SceneManager.LoadScene(sceneName);
-            Competition.lastGameCategories = Competition.categories;
-            GameObject.Find("Jugar").GetComponent<SoundEffectPlayer>().PlayClip();
-            return;
-        }
-        GameObject.Find("Volver").GetComponent<SoundEffectPlayer>().PlayClip();
+    /// <summary>
+    /// Stores current categories selected to remember the selection for next time the menu is entered.
+    /// </summary>
+    public void StoreCategories(){
+        Competition.lastGameCategories = Competition.categories;
     }
 
     public void LoadNextScene(string sceneName){
@@ -40,6 +36,10 @@ public class CompetitionWrapper : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    /// <summary>
+    /// Sets team name for the parameter giving (with first team being i=0).
+    /// </summary>
+    /// <param name="i">Team index number to set name</param>
     public void SetTeamName(int i){
         TMP_InputField input = GetComponent<TMP_InputField>();
         Competition.SetTeamName(i, input.text);

@@ -6,7 +6,10 @@ using UnityEngine;
 
 public class FinalResults : MonoBehaviour
 {
-    public TextMeshProUGUI winner_team_text, name_text, score_text, changeCatText;
+    public TextMeshProUGUI winner_team_text;
+    public TextMeshProUGUI name_text;
+    public TextMeshProUGUI score_text;
+    public TextMeshProUGUI changeCatText;
     private List<int> scores;
     private bool tiedGame;
     private int winnerIndex, winnerScore;

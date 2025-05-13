@@ -7,8 +7,10 @@ using UnityEngine;
 
 public class RoundResults : MonoBehaviour
 {
-    public TextMeshProUGUI score_text, answers_text;
+    public TextMeshProUGUI score_text;
+    public TextMeshProUGUI answers_text;
     public MusicPlayer music;
+
     // Start is called before the first frame update
     void Start()
     {

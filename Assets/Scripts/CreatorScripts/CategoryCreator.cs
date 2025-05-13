@@ -7,26 +7,43 @@ using Unity.VisualScripting;
 using System;
 using UnityEngine.UI;
 
+/// <summary>
+/// This class contains everything related to the creation of categories, and their modification in the Category Editor.
+/// </summary>
 public class CategoryCreator : MonoBehaviour
 {
-    public TextMeshProUGUI category_text, desc_text, question_text, warning_text, promptcount_text, promptcount_text2;
+    public static CategoryCreator creator; // Singleton
+    
+    public TextMeshProUGUI titleText;
+    public TextMeshProUGUI descriptionText;
+    public TextMeshProUGUI PromptText;
+    public TextMeshProUGUI WarningText;
+    public TextMeshProUGUI PromptCounter_Main;
+    public TextMeshProUGUI PromptCounter_List;
     public static string iconName;
     public static Image iconImage;
-    protected string category, description;
+    protected string categoryTitle;
+    protected string description;
     protected List<string> questions;
     public SceneLoader sceneLoader;
-    public SoundEffectPlayer successSound, failSound;
-    public GameObject promptPrefab, promptParent;
-    public GameObject iconButtonPrefab, iconParent;
+    public SoundEffectPlayer successSound;
+    public SoundEffectPlayer  failSound;
+    public GameObject promptPrefab;
+    public GameObject promptParent;
+    public GameObject iconButtonPrefab;
+    public GameObject iconParent; // GameObject in which icon buttons are placed as children.
     public static int warningsRunning = 0;
-    public GameObject UnsavedUI, DeleteUI, DeleteCategoryButton, PromptUI, IconUI;
+    public GameObject UnsavedUI;
+    public GameObject DeleteUI;
+    public GameObject DeleteCategoryButton;
+    public GameObject PromptUI;
+    public GameObject IconUI;
     public TMP_InputField promptInputField;
 
     // Editor mode related
     public static Category originalCategory;
     public string origFileName;
     public bool wereChangesMade = false;
-    public static bool isInitializing = true;
     public static bool changeCanvas = false;
 
     // Warnings
@@ -41,8 +58,7 @@ public class CategoryCreator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        iconImage = GameObject.Find("iconImage").GetComponent<Image>();
-        //if (questions == null)
+        creator = this;
         InitializeValues();
         IconInstantiate();
     }
@@ -53,53 +69,56 @@ public class CategoryCreator : MonoBehaviour
         changeCanvas = false;
     }
 
+    /// <summary>
+    /// Sets icon selected, and adds an icon button in the icon select sub-screen for every icon available.
+    /// </summary>
     private void IconInstantiate()
     {
         UnityEngine.Object[] iconArray = Resources.LoadAll("", typeof(Sprite));
         iconName = Const.DEFAULT_ICON;
-            foreach (UnityEngine.Object icon in iconArray)
-                {
-                    if ((originalCategory != null) && (icon.name == originalCategory.iconName))
-                        SetImage(icon.name, (Sprite) icon);
-                    GameObject newGameObject = Instantiate(iconButtonPrefab, iconParent.transform);
-                    newGameObject.GetComponent<Icon>().SetSprite(icon.name, (Sprite)icon);
+        foreach (UnityEngine.Object icon in iconArray)
+            {
+                if ((originalCategory != null) && (icon.name == originalCategory.iconName)) {
+                    SetImage(icon.name, (Sprite) icon);
                 }
+                GameObject newIconButton = Instantiate(iconButtonPrefab, iconParent.transform);
+                newIconButton.GetComponent<IconButton>().SetSprite(icon.name, (Sprite)icon);
+            }
     }
 
     public void InitializeValues()
     {
-        questions = new List<string>();
+        iconImage = GameObject.Find("iconImage").GetComponent<Image>();
+        questions = new();
         UnityEngine.Object[] iconArray = Resources.LoadAll("", typeof(Sprite));
-        List<TMP_Dropdown.OptionData> iconList = new();
-        switch (Config.creatingCategory)
+        warningsRunning = 0;
+        DeleteablePromptController.canDelete = false;
+        switch (Config.creatingNewCategory)
         {
             case true:
-                category = "";
+                categoryTitle = "";
                 description = "";
                 DeleteCategoryButton.SetActive(false);
-                warningsRunning = 0;
-                promptcount_text.text = "0";
-                promptcount_text2.text = "0";
+                PromptCounter_Main.text = "0";
+                PromptCounter_List.text = "0";
                 break;
             case false:
-                isInitializing = true;
-                category = originalCategory.category;
-                description = originalCategory.description;
+                SetText(categoryTitle, originalCategory.title, titleText);
+                SetText(description, originalCategory.description, descriptionText);
                 DeleteCategoryButton.SetActive(true);
-                category_text.transform.parent.transform.parent.GetComponent<TMP_InputField>().text = originalCategory.category;
-                desc_text.transform.parent.transform.parent.GetComponent<TMP_InputField>().text = originalCategory.description;
-                DeleteablePromptController.canDelete = true;
-                foreach (string s in originalCategory.questions)
-                {
-                    AddToQuestionList(s);
-                }
-                origFileName = originalCategory.category.Replace(' ', '_');
+                AddToQuestionList(originalCategory.questions);
+                origFileName = originalCategory.title.Replace(' ', '_');
                 // TBA: put option in opened file as selected option
                 wereChangesMade = false;
-                isInitializing = false;
                 break;
         }
     }
+
+    private void SetText(string textDestination, string textSource, TextMeshProUGUI textGO){
+        textDestination = textSource;
+        textGO.transform.parent.transform.parent.GetComponent<TMP_InputField>().text = textSource;
+    }
+
     public static void SetImage(string name, Image image)
     {
         iconName = name;
@@ -111,9 +130,10 @@ public class CategoryCreator : MonoBehaviour
         iconName = name;
         iconImage.sprite = sprite;
     }
+
     public void AddQuestion()
     {
-        string newQuestion = question_text.text;
+        string newQuestion = PromptText.text;
         if (newQuestion.Length > 1)
         {
             wereChangesMade = true;
@@ -130,11 +150,15 @@ public class CategoryCreator : MonoBehaviour
         {
             questions.Remove(prompt);
             wereChangesMade = true;
-            promptcount_text.text = questions.Count.ToString();
-            promptcount_text2.text = questions.Count.ToString();
+            PromptCounter_Main.text = questions.Count.ToString();
+            PromptCounter_List.text = questions.Count.ToString();
         }
     }
 
+    /// <summary>
+    /// Adds the prompt passed as a parameter to the category, as long as it's not a repeated one.
+    /// </summary>
+    /// <param name="prompt">Prompt to be added to the category.</param>
     public void AddToQuestionList(string prompt)
     {
         if (questions.Contains(prompt))
@@ -143,28 +167,53 @@ public class CategoryCreator : MonoBehaviour
             return;
         }
         questions.Add(prompt);
-        promptcount_text.text = questions.Count.ToString();
+        PromptCounter_Main.text = questions.Count.ToString();
         GameObject newQuestion = Instantiate(promptPrefab, promptParent.transform);
         newQuestion.GetComponentInChildren<DeleteablePrompt>().SetValue(prompt); // set name;
         newQuestion.GetComponentInChildren<DeleteablePrompt>().EnableDeleting(!DeleteablePromptController.canDelete); // set cross on/off
     }
 
+    /// <summary>
+    /// Adds the content of an entire list to the prompt list.
+    /// </summary>
+    /// <param name="promptList">List of strings to be added as prompts.</param>
+    public void AddToQuestionList(List<string> promptList){
+        questions.AddRange(promptList);
+        PromptCounter_Main.text = questions.Count.ToString();
+        GameObject newQuestion = Instantiate(promptPrefab, promptParent.transform);
+        foreach (string prompt in questions){
+            newQuestion.GetComponentInChildren<DeleteablePrompt>().SetValue(prompt); // set name;
+            newQuestion.GetComponentInChildren<DeleteablePrompt>().EnableDeleting(!DeleteablePromptController.canDelete); // set cross on/off
+        }
+    }
+
+    /// <summary>
+    /// Changes the category name according to what is written in the corresponding text space.
+    /// </summary>
     public void SetName()
     {
-        category = category_text.text;
+        categoryTitle = titleText.text;
         wereChangesMade = true;
     }
 
+    /// <summary>
+    /// Changes description according to what is written in the corresponding text space.
+    /// </summary>
     public void SetDescription()
     {
-        description = desc_text.text;
+        description = descriptionText.text;
         wereChangesMade = true;
     }
 
-    public bool isCategoryAllowed()
+    /// <summary>
+    /// Determines if the category meets the requirements to be allowed: Having a title, a description and at least a prompt. 
+    /// If not, informs about it on screen.
+    /// </summary>
+    /// <returns>Returns true if the category is allowed to be saved.</returns>
+    public bool IsCategoryAllowed()
     {
         // check custom category names
-        if (category.Length <= 1)
+        if (categoryTitle.Length <= 1)
         {
             StartCoroutine(ShowWarningText(WARNING_EMPTYTITLE));
             return false;
@@ -182,38 +231,43 @@ public class CategoryCreator : MonoBehaviour
         return true;
     }
 
-    public static void CreateCustomDirectory(string savePath)
+    /// <summary>
+    /// If not previously created, creates a folder to store custom categories.
+    /// </summary>
+    /// <param name="savePath"></param>
+    public static void CreateCustomDirectory()
     {
 
-        if (!Directory.Exists(savePath))
+        if (!Directory.Exists(Const.customDirectory))
         {
-            Directory.CreateDirectory(savePath);
+            Directory.CreateDirectory(Const.customDirectory);
         }
     }
 
-    // Creates json file of the new category.
+    /// <summary>
+    /// Creates a .JSON file of the new category, and returns to the last scene opened if successful.
+    /// </summary>
     public void CreateFile()
     {
-        if (!isCategoryAllowed())
+        if (!IsCategoryAllowed())
         {
             failSound.PlayClip();
             return;
         }
         successSound.PlayClip();
-        Category newCustomCategory = new() { category = this.category, description = this.description, iconName = CategoryCreator.iconName, questions = this.questions };
+        Category newCustomCategory = new() { title = categoryTitle, description = description, iconName = iconName, questions = questions };
         string categoryString = JsonUtility.ToJson(newCustomCategory);
-        string savePath = Application.persistentDataPath + "/customCategories";
-        CreateCustomDirectory(savePath);
-        string origPath = savePath;
-        savePath += "/" + category.Replace(' ', '_') + ".json";
-        if (!Config.creatingCategory)
+        CreateCustomDirectory();
+        string origPath = Const.customDirectory;
+        string savePath = Const.customDirectory + "/" + categoryTitle.Replace(' ', '_') + ".json";
+        if (!Config.creatingNewCategory)
             origPath += "/" + origFileName + ".json";
         else
             origPath = savePath;
-        using StreamWriter streamWriter = new StreamWriter(origPath);
+        using StreamWriter streamWriter = new(origPath);
         streamWriter.Write(categoryString);
         streamWriter.Close();
-        if (!Config.creatingCategory)
+        if (!Config.creatingNewCategory)
             File.Move(origPath, savePath);
         sceneLoader.LoadLastScene();
     }
@@ -230,21 +284,27 @@ public class CategoryCreator : MonoBehaviour
     IEnumerator ShowWarningText(string warning)
     {
         warningsRunning++;
-        warning_text.enabled = true;
-        warning_text.text = warning;
+        WarningText.enabled = true;
+        WarningText.text = warning;
         yield return new WaitForSeconds(3f);
         warningsRunning--;
         if (warningsRunning == 0)
-            warning_text.enabled = false;
+            WarningText.enabled = false;
     }
 
-    // Warns player about deleting data
+    /// <summary>
+    /// Warns player about deleting data
+    /// </summary>
+    /// <param name="yes"></param>ta
     public void YouSure(bool yes)
     {
         DeleteUI.SetActive(yes);
     }
 
-    // Warns player about unsaved changes if needed; if not, loads last scene
+    /// <summary>
+    /// Warns player about unsaved changes if needed; if not, loads last scene
+    /// </summary>
+    /// <param name="yes"></param>
     public void YouSureUnsaved(bool yes)
     {
         if (NoNeedToAsk())
@@ -257,10 +317,14 @@ public class CategoryCreator : MonoBehaviour
 
     public void ShowCanvas(bool setActive){
         PromptUI.SetActive(setActive);
-        promptcount_text.text = questions.Count.ToString();
-        promptcount_text2.text = questions.Count.ToString();
+        PromptCounter_Main.text = questions.Count.ToString();
+        PromptCounter_List.text = questions.Count.ToString();
     }
 
+    /// <summary>
+    /// Enables/Disables the icon selection screen.
+    /// </summary>
+    /// <param name="setActive"></param>
     public void ShowIconCanvas(bool setActive){
         IconUI.SetActive(setActive);
     }
@@ -271,18 +335,19 @@ public class CategoryCreator : MonoBehaviour
         new NativeShare().AddFile(filePath).SetSubject( "Charadas - Categoría personalizada").SetText("Puedes agregar la categoría a Charadas en la sección de Crear categorías, pulsando el botón de Importar categoría y seleccionando el archivo.").Share();
     }
 
-    // Checks if it should ask the player if they're sure about leaving without changes
+    /// <summary>
+    /// Checks if it should ask the player if they're sure about leaving without changes.
+    /// </summary>
+    /// <returns>True if there's no need to show a popup about leaving the category creator.</returns>
     private bool NoNeedToAsk()
     {
-        switch (Config.creatingCategory)
-        {
-            case true:
-                return (questions.Count == 0) && (description.Length <= 1) && (category.Length <= 1);
-            case false:
-                return !wereChangesMade;
-        }
+        return Config.creatingNewCategory? ((questions.Count == 0) && (description.Length <= 1) && (categoryTitle.Length <= 1))
+            : !wereChangesMade;
     }
 
+    /// <summary>
+    /// Used to indicate if changes were made from the original data in the category.
+    /// </summary>
     public void SetChangesWereMade(bool wereChangesMade)
     {
         this.wereChangesMade = wereChangesMade;
