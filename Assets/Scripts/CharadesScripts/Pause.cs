@@ -8,14 +8,15 @@ public class Pause : MonoBehaviour
     public GameObject PauseUI;
     public SceneLoader sceneLoader;
 
-    #if UNITY_STANDALONE_WINDOWS
+    
     // Update is called once per frame
     void Update()
     {
+        #if UNITY_STANDALONE_WIN || UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Escape))
             PauseGame();
+        #endif
     }
-    #endif
 
     /// <summary>
     /// Pauses the game if not paused, and vice versa.

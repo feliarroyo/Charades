@@ -2325,7 +2325,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 12
   m_Viewport: {fileID: 1479205238}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -10843,7 +10843,7 @@ MonoBehaviour:
   - {fileID: 956212902}
   - {fileID: 836824882}
   currentLabel: 0
-  titleText: {fileID: 0}
+  titleText: {fileID: 1022164333}
 --- !u!1 &1640490141
 GameObject:
   m_ObjectHideFlags: 0

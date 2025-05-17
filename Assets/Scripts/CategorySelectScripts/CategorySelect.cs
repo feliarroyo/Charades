@@ -22,7 +22,9 @@ public class CategorySelect : MonoBehaviour
         Competition.SetTeamName(0, PlayerPrefs.GetString(Const.PREF_TEAM1, Const.DEFAULT_TEAM1));
         Competition.SetTeamName(1, PlayerPrefs.GetString(Const.PREF_TEAM2, Const.DEFAULT_TEAM2));
         Competition.multipleCategoryButtons = new List<GameObject>(GameObject.FindGameObjectsWithTag("Button"));
-        Competition.ShowMultipleCategoryButtons(Competition.HasCategories());
+        Competition.ShowMultipleCategoryButtons(
+            Competition.gameType != Const.GameModes.QuickPlay && Competition.HasCategories()
+        );
         // creates buttons for custom categories saved in AppData
         CustomCategoryLoader.CreateCustomCategoryButtons(categoryButtonPrefab, customParent);
     }

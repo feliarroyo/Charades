@@ -52,7 +52,7 @@ public class RoundGameplay : MonoBehaviour
         }
 
         // Windows/Editor controls
-        #if UNITY_EDITOR
+        #if UNITY_EDITOR || UNITY_STANDALONE_WIN
         if (Input.GetButton("Pass"))
             AnswerPrompt(true);
         else if (Input.GetButton("Fail"))

@@ -103,8 +103,8 @@ public class CategoryCreator : MonoBehaviour
                 PromptCounter_List.text = "0";
                 break;
             case false:
-                SetText(categoryTitle, originalCategory.title, titleText);
-                SetText(description, originalCategory.description, descriptionText);
+                categoryTitle = SetText(originalCategory.title, titleText);
+                description = SetText(originalCategory.description, descriptionText);
                 DeleteCategoryButton.SetActive(true);
                 AddToQuestionList(originalCategory.questions);
                 origFileName = originalCategory.title.Replace(' ', '_');
@@ -114,9 +114,9 @@ public class CategoryCreator : MonoBehaviour
         }
     }
 
-    private void SetText(string textDestination, string textSource, TextMeshProUGUI textGO){
-        textDestination = textSource;
+    private string SetText(string textSource, TextMeshProUGUI textGO){
         textGO.transform.parent.transform.parent.GetComponent<TMP_InputField>().text = textSource;
+        return textSource;
     }
 
     public static void SetImage(string name, Image image)
@@ -170,7 +170,7 @@ public class CategoryCreator : MonoBehaviour
         PromptCounter_Main.text = questions.Count.ToString();
         GameObject newQuestion = Instantiate(promptPrefab, promptParent.transform);
         newQuestion.GetComponentInChildren<DeleteablePrompt>().SetValue(prompt); // set name;
-        newQuestion.GetComponentInChildren<DeleteablePrompt>().EnableDeleting(!DeleteablePromptController.canDelete); // set cross on/off
+        newQuestion.GetComponentInChildren<DeleteablePrompt>().EnableDeleting(DeleteablePromptController.canDelete); // set cross on/off
     }
 
     /// <summary>
@@ -183,7 +183,7 @@ public class CategoryCreator : MonoBehaviour
         GameObject newQuestion = Instantiate(promptPrefab, promptParent.transform);
         foreach (string prompt in questions){
             newQuestion.GetComponentInChildren<DeleteablePrompt>().SetValue(prompt); // set name;
-            newQuestion.GetComponentInChildren<DeleteablePrompt>().EnableDeleting(!DeleteablePromptController.canDelete); // set cross on/off
+            newQuestion.GetComponentInChildren<DeleteablePrompt>().EnableDeleting(DeleteablePromptController.canDelete); // set cross on/off
         }
     }
 

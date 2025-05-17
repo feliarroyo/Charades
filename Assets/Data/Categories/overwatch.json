@@ -5,6 +5,7 @@
   "questions": [
     "D.Va",
     "Doomfist",
+    "Hazard",
     "Junker Queen",
     "Mauga",
     "Orisa",
@@ -19,6 +20,7 @@
     "Bastion",
     "Cassidy (McCree)",
     "Echo",
+    "Freja",
     "Genji",
     "Hanzo",
     "Junkrat",
@@ -31,11 +33,13 @@
     "Symmetra",
     "Torbjorn",
     "Tracer",
+    "Venture",
     "Widowmaker",
     "Ana",
     "Baptiste",
     "Brigitte",
     "Illari",
+    "Juno",
     "Kiriko",
     "Lifeweaver",
     "Lúcio",
@@ -80,7 +84,13 @@
     "Suravasa",
     "New Junk City",
     "New Queen Street",
+    "Península Antártica",
     "Blackwatch",
+    "Samoa",
+    "Runasapi",
+    "Esperanza",
+    "Hanaoka",
+    "Trono de Anubis",
     "Talon",
     "Vishkar",
     "Clan Shimada",
@@ -90,7 +100,6 @@
     "MEKA",
     "Hammond",
     "B.O.B.",
-    "Venture",
-    "Juno"
+    "Estadio"
   ]
 }

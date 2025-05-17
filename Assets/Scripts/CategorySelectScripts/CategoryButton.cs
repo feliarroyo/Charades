@@ -91,7 +91,7 @@ public class CategoryButton : MonoBehaviour
     }
 
     public void SetCategoryAsEdit() {
-        CategoryCreator.originalCategory = this.category;
+        CategoryCreator.originalCategory = category;
     }
 
     public void SetSingleSelect(){
@@ -125,5 +125,9 @@ public class CategoryButton : MonoBehaviour
         cb.normalColor = color;
         cb.selectedColor = color;
         return cb;
+    }
+
+    public string GetFileName(){
+        return category.title.Replace(' ', '_');
     }
 }

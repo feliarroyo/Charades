@@ -9,16 +9,16 @@ public class DeleteablePromptController : MonoBehaviour
     public static bool canDelete;
     public TextMeshProUGUI buttonText;
     public void SetDeleteablePrompts() {
+        canDelete = !canDelete;
         foreach (DeleteablePrompt p in promptContainer.GetComponentsInChildren<DeleteablePrompt>(true)){
             p.EnableDeleting(canDelete);
         }
-        canDelete = !canDelete;
         switch (canDelete) {
             case true:
-                buttonText.text = "Borrar enunciados";
+                buttonText.text = "Dejar de borrar";
                 return;
             case false:
-                buttonText.text = "Dejar de borrar";
+                buttonText.text = "Borrar enunciados";
                 return;
         }
     }
@@ -26,7 +26,7 @@ public class DeleteablePromptController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canDelete = true;
+        canDelete = false;
     }
 
 }

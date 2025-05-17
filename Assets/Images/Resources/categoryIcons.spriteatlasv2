@@ -94,6 +94,7 @@ SpriteAtlasAsset:
     - {fileID: 2800000, guid: 143869d606da2994ca0c5efcb03ef367, type: 3}
     - {fileID: 2800000, guid: 981eb8bb4cb2f7b4682674cef05d4f80, type: 3}
     - {fileID: 2800000, guid: d067edeae3c4aa545903e682e6e15078, type: 3}
+    - {fileID: 2800000, guid: cd24d2f4ff0c24148a6a1d279fbd0031, type: 3}
     - {fileID: 2800000, guid: 35a9ffc7ff9b8d945bbf5e0bde29270b, type: 3}
     - {fileID: 2800000, guid: 2c8c1ff503049ea469262b0a97cf2ba4, type: 3}
     - {fileID: 2800000, guid: ab3889826d445494e938c65b330a833c, type: 3}
@@ -116,6 +117,7 @@ SpriteAtlasAsset:
     - {fileID: 2800000, guid: 6ac342e5065c97e43a8bad69043689ca, type: 3}
     - {fileID: 2800000, guid: 2dfed2b120ae66148bc532059407ae35, type: 3}
     - {fileID: 2800000, guid: 28f00ef8540fc2e4d9aed9d2de852d7d, type: 3}
+    - {fileID: 2800000, guid: 87fc9647afe2afd438691f970083f871, type: 3}
     - {fileID: 2800000, guid: ffe0a2c2543ff714087c703df308e004, type: 3}
     - {fileID: 2800000, guid: 6f229913d38888a469ee9035a37ba9c4, type: 3}
     - {fileID: 2800000, guid: 30d7392d2c71ddf4d9510c9843c97370, type: 3}
@@ -124,12 +126,15 @@ SpriteAtlasAsset:
     - {fileID: 2800000, guid: bec77d8be53d6fd4b87748e6cf105edb, type: 3}
     - {fileID: 2800000, guid: bbd37d39e5c62ad439e42dff2d65a7ad, type: 3}
     - {fileID: 2800000, guid: 54a9fe628dacff94999a970b96bf6621, type: 3}
+    - {fileID: 2800000, guid: ed1baf96b88c11242be26dec6a08ee67, type: 3}
     - {fileID: 2800000, guid: 5315e61349140bd4facba7058742624c, type: 3}
     - {fileID: 2800000, guid: de4c54913af28514b8eb030f47d63c67, type: 3}
     - {fileID: 2800000, guid: e8bcdecd46377e94aba029ca1913e5f8, type: 3}
     - {fileID: 2800000, guid: 202135366fd5aea488616ac61378528b, type: 3}
     - {fileID: 2800000, guid: 584d0b7a99818904ab215628e590d341, type: 3}
+    - {fileID: 2800000, guid: dd6baaa6d180b064a840153ef6f241a6, type: 3}
     - {fileID: 2800000, guid: 78295a19c098a4f4eaa6372295ad8285, type: 3}
+    - {fileID: 2800000, guid: e188038c985a72c4fb63ae3c6ce040a5, type: 3}
     - {fileID: 2800000, guid: b0106241d6ccaf64299af7335ea81f0d, type: 3}
     - {fileID: 2800000, guid: 27d358a139cb82e4d999d0838ed3d01a, type: 3}
     - {fileID: 2800000, guid: bd26faf931eaabd4a998883f8e5d5ef8, type: 3}
@@ -141,8 +146,10 @@ SpriteAtlasAsset:
     - {fileID: 2800000, guid: a5e49cf6038567a43b5c932394058a0d, type: 3}
     - {fileID: 2800000, guid: f6d6cb5f5cbcb9346a94c7a9a5a7c20d, type: 3}
     - {fileID: 2800000, guid: 4e4777fe1ad7f7a4ba5cae7cf153decf, type: 3}
+    - {fileID: 2800000, guid: 075f74d5d02a5b64699b67e2fb45e9b0, type: 3}
     - {fileID: 2800000, guid: d3f3b6398e7b6624181b9afafce21c56, type: 3}
     - {fileID: 2800000, guid: 94b76ddad7f7d874386af8bea64e4664, type: 3}
+    - {fileID: 2800000, guid: 2ef08d1cb36d584439389c2a1b298f58, type: 3}
     - {fileID: 2800000, guid: f2b0fde1b85b0ad4d9d911e817c9b086, type: 3}
     - {fileID: 2800000, guid: 95fa387a363384e408545f0f869a57ed, type: 3}
     - {fileID: 2800000, guid: 5f88e9e470210554cbf1a3305dee2f1f, type: 3}
@@ -173,6 +180,7 @@ SpriteAtlasAsset:
     - {fileID: 2800000, guid: 11ef584c7d0193b48a0abf9d6ae84d1e, type: 3}
     - {fileID: 2800000, guid: 9876e5f42952ccc47b13d5b16425ec92, type: 3}
     - {fileID: 2800000, guid: 5e35039a3887f434a99dd6f9068c3633, type: 3}
+    - {fileID: 2800000, guid: 7f6bf3a00db17c5499ad90c6d189d5cc, type: 3}
     - {fileID: 2800000, guid: 5b2b6c0e14d836a428b2b8675e75e31b, type: 3}
     - {fileID: 2800000, guid: 2b28aa9dbfcce4946bb3a8488a32e99d, type: 3}
     - {fileID: 2800000, guid: 813511f84c47c8045af9fb13aab3f44e, type: 3}
@@ -183,8 +191,7 @@ SpriteAtlasAsset:
     - {fileID: 2800000, guid: f8177bd10d65b474fbe3657a7b21c726, type: 3}
     - {fileID: 2800000, guid: c2fe3d74444e8f34abb5351ab2b9a77c, type: 3}
     - {fileID: 2800000, guid: f13b22aa54f9e0d4eb4240b866709290, type: 3}
-    - {fileID: 2800000, guid: dd6baaa6d180b064a840153ef6f241a6, type: 3}
-    - {fileID: 2800000, guid: e188038c985a72c4fb63ae3c6ce040a5, type: 3}
+    - {fileID: 2800000, guid: 5074a76305ad7f74db6aca6b432b3dc5, type: 3}
     bindAsDefault: 1
     isAtlasV2: 1
     cachedData: {fileID: 0}
