@@ -35,6 +35,7 @@ public class CustomCategoryLoader : MonoBehaviour
             StreamReader reader = new(file);
             GameObject newGameObject = Instantiate(prefab, parent.transform);
             newGameObject.GetComponentInChildren<CategoryButton>().jsonCategory = new TextAsset(reader.ReadToEnd());
+            newGameObject.GetComponentInChildren<CategoryButton>().customFilePath = file;
             if (singleSelect)
                 newGameObject.GetComponentInChildren<CategoryButton>().SetSingleSelect();
         }

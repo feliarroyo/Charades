@@ -4,6 +4,6 @@ Como jugar
 2. Elige número de equipos y sus nombres
 3. Por turnos, un miembro del equipo debe colocar el teléfono mirando al frente
 4. Hay que tratar de adivinar la mayor cantidad de enunciados posible hasta que se acabe el tiempo.
-5. Si el jugador adivina, debe inclinar el teléfono hacia abajo o tocar el lado derecho de la pantalla para sumar un punto.
+5. Si el jugador adiviná, debe inclinar el teléfono hacia abajo o tocar el lado derecho de la pantalla para sumar un punto.
 6. Se puede cambiar de enunciado inclinando el teléfono hacia arriba o presionar lado izquierdo de la pantalla
 7. Cuando todos los equipos terminen de jugar todas las categorías, gana el equipo con más puntos en total.

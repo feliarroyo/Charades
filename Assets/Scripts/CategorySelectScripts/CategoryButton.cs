@@ -21,6 +21,7 @@ public class CategoryButton : MonoBehaviour
     public GameObject mark;
     public TextMeshProUGUI markText;
     private int position;
+    public string customFilePath = "";
 
     // Start is called before the first frame update
     void Start()
@@ -92,6 +93,7 @@ public class CategoryButton : MonoBehaviour
 
     public void SetCategoryAsEdit() {
         CategoryCreator.originalCategory = category;
+        CategoryCreator.origFilePath = customFilePath;
     }
 
     public void SetSingleSelect(){

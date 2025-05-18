@@ -1,6 +1,6 @@
 {
   "title": "Sonidos",
-  "description": "A actuar y hacer gestos: ¡Esto es dígalo con mimica!",
+  "description": "Fijate cómo hacés para hacerte entender sólo con sonidos...",
   "iconName": "volumen",
   "questions": [
     "Vaca",
@@ -62,6 +62,7 @@
     "Ronquido",
     "Pokémon",
     "Netflix",
+    "Tren",
     "Enojo"
   ]
 }

@@ -42,7 +42,7 @@ public class CategoryCreator : MonoBehaviour
 
     // Editor mode related
     public static Category originalCategory;
-    public string origFileName;
+    public static string origFilePath;
     public bool wereChangesMade = false;
     public static bool changeCanvas = false;
 
@@ -107,7 +107,6 @@ public class CategoryCreator : MonoBehaviour
                 description = SetText(originalCategory.description, descriptionText);
                 DeleteCategoryButton.SetActive(true);
                 AddToQuestionList(originalCategory.questions);
-                origFileName = originalCategory.title.Replace(' ', '_');
                 // TBA: put option in opened file as selected option
                 wereChangesMade = false;
                 break;
@@ -258,10 +257,10 @@ public class CategoryCreator : MonoBehaviour
         Category newCustomCategory = new() { title = categoryTitle, description = description, iconName = iconName, questions = questions };
         string categoryString = JsonUtility.ToJson(newCustomCategory);
         CreateCustomDirectory();
-        string origPath = Const.customDirectory;
+        string origPath;
         string savePath = Const.customDirectory + "/" + categoryTitle.Replace(' ', '_') + ".json";
         if (!Config.creatingNewCategory)
-            origPath += "/" + origFileName + ".json";
+            origPath = origFilePath;
         else
             origPath = savePath;
         using StreamWriter streamWriter = new(origPath);
@@ -276,8 +275,7 @@ public class CategoryCreator : MonoBehaviour
     public void DeleteFile()
     {
         Competition.RemoveCategory(originalCategory);
-        string filePath = Application.persistentDataPath + "/customCategories/" + origFileName + ".json";
-        File.Delete(filePath);
+        File.Delete(origFilePath);
         sceneLoader.LoadLastScene();
     }
 
@@ -330,7 +328,7 @@ public class CategoryCreator : MonoBehaviour
     }
 
     public void ExportFiles(){
-        string filePath = Application.persistentDataPath + "/customCategories/" + origFileName + ".json";
+        string filePath = origFilePath;
         //NativeFilePicker.Permission permission = NativeFilePicker.ExportFile( filePath, ( success ) => Debug.Log( "File exported: " + success ) );
         new NativeShare().AddFile(filePath).SetSubject( "Charadas - Categoría personalizada").SetText("Puedes agregar la categoría a Charadas en la sección de Crear categorías, pulsando el botón de Importar categoría y seleccionando el archivo.").Share();
     }

@@ -1,6 +1,7 @@
 {
     "title": "Studio Ghibli​",
-    "description": "Adivina películas y directores del prolífico estudio de películas animadas japonesas.​",
+    "description": "Adiviná películas y directores del prolífico estudio de películas animadas japonesas.​",
+    "iconName": "gato",
     "questions": [
         "Nausicaa del Valle del Viento​",
         "El castillo en el cielo​",
@@ -39,6 +40,5 @@
         "Sophie Hatter",
         "Howl",
         "Calcifer"
-    ],
-    "iconName": "gato"
+    ]
 }

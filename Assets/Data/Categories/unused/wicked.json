@@ -1,6 +1,7 @@
 {
     "title": "Wicked​",
-    "description": "Adivina personajes, canciones, lugares y actores de la obra de Broadway acerca del origen de la infame bruja.​",
+    "description": "Adiviná personajes, canciones, lugares y actores de la obra de Broadway acerca del origen de la infame bruja.​",
+    "iconName": "fuegos_artificiales",
     "questions": [
         "Elphaba Thropp​",
         "Nessarose Thropp​",
@@ -35,6 +36,5 @@
         "Jonathan Bailey​",
         "Michelle Yeoh​",
         "Jeff Goldblum​"
-    ],
-    "iconName": "fuegos_artificiales"
+    ]
 }

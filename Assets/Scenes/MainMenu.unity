@@ -1236,9 +1236,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Las categor\xEDas por jugar se eligen tocando el bot\xF3n correspondiente.\r\nEn
-    <color=yellow>Partida R\xE1pida</color>, el juego comienza una vez elegida.\nEn
-    los otros modos, se debe presionar el bot\xF3n \u201CJugar\u201D una vez que
-    se eligieron todas las categor\xEDas para empezar.\r\n(en <color=yellow>Competici\xF3n</color>,
+    <color=yellow>Partida R\xE1pida</color>, el juego comienza una vez elegida la
+    categor\xEDa.\nEn los otros modos, se debe presionar el bot\xF3n \u201CJugar\u201D
+    una vez que se eligieron todas las categor\xEDas para empezar.\r\n(en <color=yellow>Competici\xF3n</color>,
     se juegan en el orden que fueron ingresadas)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ac0bf18db33d914698de43a0436ac2b, type: 2}
@@ -1454,7 +1454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Juega una <color=yellow>\xFAnica</color> categor\xEDa"
+  m_text: "Se juega una <color=yellow>\xFAnica</color> categor\xEDa"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
   m_sharedMaterial: {fileID: -8760612746462281966, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
@@ -3717,7 +3717,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Juega m\xFAltiples categor\xEDas <color=yellow>en secuencia</color>"
+  m_text: "Se juegan m\xFAltiples categor\xEDas <color=yellow>en secuencia</color>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
   m_sharedMaterial: {fileID: -8760612746462281966, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
@@ -3855,8 +3855,8 @@ MonoBehaviour:
   m_text: "Durante la ronda aparecer\xE1n enunciados de la categor\xEDa correspondiente
     y, con ayuda de tus compa\xF1eros, tendr\xE1s que tratar de adivinar la mayor
     cantidad de enunciados posibles antes de que se acabe el tiempo.\r\nSi alg\xFAn
-    enunciado fuera demasiado complicado, puedes elegir <color=red>pasar</color>
-    de \xE9l para probar con otro distinto.\r"
+    enunciado fuera demasiado complicado, puedes elegir <color=red>pasarlo</color>
+    para probar con otro distinto.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ac0bf18db33d914698de43a0436ac2b, type: 2}
   m_sharedMaterial: {fileID: -3924109897920968110, guid: 77209e5932994af48a6a8721161852de, type: 2}
@@ -4006,7 +4006,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1021.6218, y: -1556.6725}
+  m_AnchoredPosition: {x: 452.30765, y: -1556.6725}
   m_SizeDelta: {x: 1141.6, y: 445.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &528084033
@@ -4072,7 +4072,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1021.6218, y: -746.4454}
+  m_AnchoredPosition: {x: 452.30765, y: -746.4454}
   m_SizeDelta: {x: 280, y: 338.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &533951281
@@ -4994,9 +4994,9 @@ MonoBehaviour:
   m_text: "Charadas soporta dos alternativas de control:\r\n1. <color=yellow>Sensor
     t\xE1ctil:</color> Inclina el dispositivo hacia arriba para pasar, y para abajo
     cuando adivinas.\r\n2. <color=yellow>Pantalla:</color> En el lado inferior de
-    la pantalla, pulsa con la izquierda para pasar, y con la derecha cuando adivinas.\r\nEn
-    las opciones puede elegirse qu\xE9 opci\xF3n quiere utilizarse (o incluso ambas
-    en simult\xE1neo).\r"
+    la pantalla, apret\xE1 con la mano izquierda para pasar, y con la derecha cuando
+    adivin\xE1s.\r\nEn las opciones se puede elegir qu\xE9 opci\xF3n utilizar (o
+    incluso ambas en simult\xE1neo).\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ac0bf18db33d914698de43a0436ac2b, type: 2}
   m_sharedMaterial: {fileID: -3924109897920968110, guid: 77209e5932994af48a6a8721161852de, type: 2}
@@ -5824,10 +5824,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Hay <u>tres</u> modos de juego:\r\n- <color=yellow>Partida r\xE1pida:</color>
-    Juega una \xFAnica categor\xEDa\r\n- <color=yellow>Competici\xF3n:</color> Elige
-    varias categor\xEDas que se juegan en secuencia\r\n- <color=yellow>Mash-Up:</color>
-    Elige varias categor\xEDas y juega una ronda con una mezcla de todos sus enunciados\r\nTodos
-    los modos permiten jugar en equipo.\r"
+    Se juega una \xFAnica categor\xEDa\r\n- <color=yellow>Competici\xF3n:</color>
+    Se eligen varias categor\xEDas que se juegan en secuencia\r\n- <color=yellow>Mash-Up:</color>
+    Se eligen varias categor\xEDas y se juega una ronda con una mezcla de todos sus
+    enunciados\r\nTodos los modos permiten jugar en equipo.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ac0bf18db33d914698de43a0436ac2b, type: 2}
   m_sharedMaterial: {fileID: -3924109897920968110, guid: 77209e5932994af48a6a8721161852de, type: 2}
@@ -5962,7 +5962,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Juega una ronda con enunciados de <color=yellow>m\xFAltiples</color> categor\xEDas"
+  m_text: "Se juega una ronda con enunciados de <color=yellow>m\xFAltiples</color>
+    categor\xEDas"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
   m_sharedMaterial: {fileID: -8760612746462281966, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
@@ -11462,7 +11463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3509243681261844662, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1021.6218
+      value: 452.30765
       objectReference: {fileID: 0}
     - target: {fileID: 3509243681261844662, guid: bcd1a0d468e11dd4ea335104c73f050b, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -11894,7 +11895,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "El juego permite la creaci\xF3n de categor\xEDas personalizadas, de la
+  m_text: "El juego permite la creaci\xF3n de categor\xEDas personalizadas, con la
     misma estructura que las otras categor\xEDas que hay en el juego.\r\nLas categor\xEDas
     personalizadas deben tener un t\xEDtulo, descripci\xF3n y al menos un enunciado.
     Adem\xE1s, pueden utilizar como \xEDcono a cualquiera de los sprites que hay

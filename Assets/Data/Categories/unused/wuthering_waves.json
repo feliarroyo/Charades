@@ -1,6 +1,7 @@
 {
     "title": "Wuthering Waves",
     "description": "Genshin pero mejor (creo?)",
+    "iconName": "gema",
     "questions": [
         "Aalto",
         "Baizhi",
@@ -34,6 +35,5 @@
         "Havoc",
         "Fusion",
         "Spectro"
-    ],
-    "iconName": "gema"
+    ]
 }
