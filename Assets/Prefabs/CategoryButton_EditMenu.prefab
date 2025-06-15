@@ -1,5 +1,55 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7937488216561563825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4647033624581504189}
+  - component: {fileID: 8807769978042258510}
+  m_Layer: 5
+  m_Name: FailSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4647033624581504189
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7937488216561563825}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4196790309159527520}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8807769978042258510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7937488216561563825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3788ec583724e4fade0864131c0ed5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: d62fb3b2554b32148b2fe90a6a4c3b2f, type: 3}
 --- !u!1001 &7375618050267077747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -337,6 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa0224fb30312a4e9d9c9289f0a8475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  failSound: {fileID: 8807769978042258510}
 --- !u!114 &4196790309093142972 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6658161952963734991, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
@@ -348,3 +399,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49975578b721e34e98df22118634f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &4196790309159527520 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+  m_PrefabInstance: {fileID: 7375618050267077747}
+  m_PrefabAsset: {fileID: 0}

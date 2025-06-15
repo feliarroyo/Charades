@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class CustomCategoryButtonLogic : MonoBehaviour
 {
-    
+    public SoundEffectPlayer failSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,34 +20,51 @@ public class CustomCategoryButtonLogic : MonoBehaviour
 
     public void OnClick()
     {
-        if (CustomCategoryLoader.isExporting)
+        switch (CustomCategoryLoader.status)
         {
-            ExportFiles();
+            case CustomCategoryLoader.Status.Delete:
+                DeleteFile();
+                break;
+            case CustomCategoryLoader.Status.Export:
+                ExportFiles();
+                break;
+            case CustomCategoryLoader.Status.Edit:
+            default:
+                GetComponent<SoundEffectPlayer>().PlayClip();
+                GetComponent<CategoryButton>().SetCategoryAsEdit();
+                GetComponent<TriggerMenuVariant>().SetCurrentEditMode();
+                GetComponent<SceneLoader>().LoadScene("CustomCreator");
+                break;
         }
-        else {
-            GetComponent<SoundEffectPlayer>().PlayClip();
-            GetComponent<CategoryButton>().SetCategoryAsEdit();
-            GetComponent<TriggerMenuVariant>().SetCurrentEditMode();
-            GetComponent<SceneLoader>().LoadScene("CustomCreator");
-        }
-
     }
 
     public void ExportFiles()
     {
         string origFileName = GetComponent<CategoryButton>().GetFileName();
         string filePath = Application.persistentDataPath + "/customCategories/" + origFileName + ".json";
-        #if UNITY_STANDALONE_WIN || UNITY_EDITOR
-                ShowCustomFolder(filePath);
-        #endif
-        #if UNITY_ANDROID
+    #if UNITY_STANDALONE_WIN || UNITY_EDITOR
+        ShowCustomFolder(filePath);
+    #endif
+    #if UNITY_ANDROID
             //NativeFilePicker.Permission permission = NativeFilePicker.ExportFile( filePath, ( success ) => Debug.Log( "File exported: " + success ) );
             new NativeShare().AddFile(filePath).SetSubject("Charadas - Categoría personalizada").SetText("Puedes agregar la categoría a Charadas en la sección de Crear categorías, pulsando el botón de Importar categoría y seleccionando el archivo.").Share();
-        #endif
+    #endif
     }
 
-    public void ShowCustomFolder(string filePath){
+    // Used to delete a category's json file when it is removed.
+    public void DeleteFile()
+    {
+        failSound.PlayClip();
+        string origFileName = GetComponent<CategoryButton>().GetFileName();
+        string filePath = Application.persistentDataPath + "/customCategories/" + origFileName + ".json";
+        GetComponent<CategoryButton>().RemoveCategory();
+        File.Delete(filePath);
+        GetComponent<SceneLoader>().LoadScene("CategorySelect");
+    }
+
+    public void ShowCustomFolder(string filePath)
+    {
         filePath = filePath.Replace(@"/", @"\");   // explorer doesn't like front slashes
-        System.Diagnostics.Process.Start("explorer.exe", "/select,"+filePath);
+        System.Diagnostics.Process.Start("explorer.exe", "/select," + filePath);
     }
 }

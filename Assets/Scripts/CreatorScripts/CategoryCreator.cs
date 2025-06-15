@@ -34,8 +34,6 @@ public class CategoryCreator : MonoBehaviour
     public GameObject iconParent; // GameObject in which icon buttons are placed as children.
     public static int warningsRunning = 0;
     public GameObject UnsavedUI;
-    public GameObject DeleteUI;
-    public GameObject DeleteCategoryButton;
     public GameObject PromptUI;
     public GameObject IconUI;
     public TMP_InputField promptInputField;
@@ -98,14 +96,12 @@ public class CategoryCreator : MonoBehaviour
             case true:
                 categoryTitle = "";
                 description = "";
-                DeleteCategoryButton.SetActive(false);
                 PromptCounter_Main.text = "0";
                 PromptCounter_List.text = "0";
                 break;
             case false:
                 categoryTitle = SetText(originalCategory.title, titleText);
                 description = SetText(originalCategory.description, descriptionText);
-                DeleteCategoryButton.SetActive(true);
                 AddToQuestionList(originalCategory.questions);
                 // TBA: put option in opened file as selected option
                 wereChangesMade = false;
@@ -179,8 +175,8 @@ public class CategoryCreator : MonoBehaviour
     public void AddToQuestionList(List<string> promptList){
         questions.AddRange(promptList);
         PromptCounter_Main.text = questions.Count.ToString();
-        GameObject newQuestion = Instantiate(promptPrefab, promptParent.transform);
         foreach (string prompt in questions){
+            GameObject newQuestion = Instantiate(promptPrefab, promptParent.transform);
             newQuestion.GetComponentInChildren<DeleteablePrompt>().SetValue(prompt); // set name;
             newQuestion.GetComponentInChildren<DeleteablePrompt>().EnableDeleting(DeleteablePromptController.canDelete); // set cross on/off
         }
@@ -288,15 +284,6 @@ public class CategoryCreator : MonoBehaviour
         warningsRunning--;
         if (warningsRunning == 0)
             WarningText.enabled = false;
-    }
-
-    /// <summary>
-    /// Warns player about deleting data
-    /// </summary>
-    /// <param name="yes"></param>ta
-    public void YouSure(bool yes)
-    {
-        DeleteUI.SetActive(yes);
     }
 
     /// <summary>

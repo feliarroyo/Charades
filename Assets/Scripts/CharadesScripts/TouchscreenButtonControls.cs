@@ -22,7 +22,7 @@ public class TouchscreenButtonControls : MonoBehaviour
     /// </summary>
     void OnMouseDown(){
         #if UNITY_ANDROID
-        if (Pause.isPaused)
+        if (Pause.isPaused || !RoundGameplay.isPromptOnScreen)
             return;
         RoundGameplay.round.AnswerPrompt(passType);
         #endif

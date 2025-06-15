@@ -3,28 +3,36 @@ using System.IO;
 using UnityEngine.SceneManagement;
 using UnityEditor;
 using TMPro;
+using UnityEngine.Analytics;
 
 /// <summary>
 /// This class loads custom categories detected in the category selection screen.
 /// </summary>
 public class CustomCategoryLoader : MonoBehaviour
 {
+    public enum Status
+    {
+        Edit,
+        Export,
+        Delete
+    };
     public GameObject categoryButtonPrefab;
     public GameObject customParent;
 
-    public static bool isExporting;
+    public static Status status;
     public TextMeshProUGUI exportButtonLabel;
     public TextMeshProUGUI importButtonLabel;
+    public TextMeshProUGUI deleteButtonLabel;
     public TextMeshProUGUI titleLabel;
 
     // Start is called before the first frame update
     void Start()
     {
-        isExporting = false;
+        status = Status.Edit;
         CreateCustomCategoryButtons(categoryButtonPrefab, customParent, true);
-        #if UNITY_STANDALONE_WIN || UNITY_EDITOR
-            importButtonLabel.text = "Ver directorio";
-        #endif
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR
+        importButtonLabel.text = "Ver directorio";
+#endif
     }
 
     public static void CreateCustomCategoryButtons(GameObject prefab, GameObject parent, bool singleSelect = false)
@@ -46,11 +54,11 @@ public class CustomCategoryLoader : MonoBehaviour
     /// </summary>
     public void ImportCategory()
     {
-        #if UNITY_STANDALONE_WIN || UNITY_EDITOR
-            string filePath = Application.persistentDataPath + "/customCategories";
-            ShowCustomFolder(filePath);
-        #endif
-        #if UNITY_ANDROID
+#if UNITY_STANDALONE_WIN || UNITY_EDITOR
+        string filePath = Application.persistentDataPath + "/customCategories";
+        ShowCustomFolder(filePath);
+#endif
+#if UNITY_ANDROID
         NativeFilePicker.Permission permission = NativeFilePicker.PickFile((path) =>
             {
                 if (path != null && path.EndsWith(".json"))
@@ -65,7 +73,7 @@ public class CustomCategoryLoader : MonoBehaviour
                 }
 
             });
-        #endif
+#endif
     }
 
     public void ShowCustomFolder(string filePath)
@@ -76,8 +84,39 @@ public class CustomCategoryLoader : MonoBehaviour
 
     public void SetExportMode()
     {
-        isExporting = !isExporting;
-        exportButtonLabel.text = isExporting ? "Editar categorías" : "Compartir categoría";
-        titleLabel.text = isExporting ? "Selecciona la categoría que quieras compartir" : "Creador de categorías";
+        switch (status)
+        {
+            case Status.Export:
+                status = Status.Edit;
+                exportButtonLabel.text = "Compartir categoría";
+                titleLabel.text = "Creador de categorías";
+                break;
+            default:
+                if (status == Status.Delete)
+                    deleteButtonLabel.text = "Borrar categoría";
+                status = Status.Export;
+                exportButtonLabel.text = "Editar categorías";
+                titleLabel.text = "Selecciona la categoría que quieras compartir";
+                break;
+        }
+    }
+
+    public void SetDeleteMode()
+    {
+        switch (status)
+        {
+            case Status.Delete:
+                status = Status.Edit;
+                deleteButtonLabel.text = "Borrar categoría";
+                titleLabel.text = "Creador de categorías";
+                break;
+            default:
+                if (status == Status.Export)
+                    exportButtonLabel.text = "Compartir categoría";
+                status = Status.Delete;
+                deleteButtonLabel.text = "Editar categorías";
+                titleLabel.text = "Selecciona la categoría que quieras borrar";
+                break;
+        }
     }
 }

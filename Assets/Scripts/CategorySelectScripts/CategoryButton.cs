@@ -42,7 +42,9 @@ public class CategoryButton : MonoBehaviour
     private void LoadCategoryInfo(){
         category = JSONReader.GetCategory(jsonCategory);
         categoryName.text = category.title;
-        categoryImage.sprite = Resources.Load<Sprite>(category.iconName);
+        Sprite categorySprite = Resources.Load<Sprite>(category.iconName);
+        categoryImage.sprite = Resources.Load<Sprite>(categorySprite == null? "default" : category.iconName);
+        
     }
     
     public void SetCategory() {
@@ -115,6 +117,10 @@ public class CategoryButton : MonoBehaviour
             CategorySelect.selectedCatButtons[position-1]=this;
             markText.text = (Competition.GetCategoryPosition(category) + 1).ToString();
         }
+    }
+
+    public void RemoveCategory(){
+        Competition.RemoveCategory(category);
     }
 
     /// <summary>

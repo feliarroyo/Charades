@@ -1,7 +1,7 @@
 {
   "title": "Arcane",
   "description": "Adiviná personajes y elementos de la serie de Netflix basada en League of Legends.",
-  "iconName": "ping",
+  "iconName": "letra_a_dorada",
   "questions": [
     "Caitlyn Kiramman",
     "Heimerdinger",
@@ -29,6 +29,7 @@
     "Maddie Nolen",
     "Hextech",
     "Hexcore",
+    "Grayson",
     "Casa Kiramman",
     "Casa Medarda",
     "Cassandra Kiramman",
@@ -37,11 +38,20 @@
     "Ejecutor (Enforcer)",
     "Isha",
     "Sky Young",
-    "Pastelito (Cupcake)",
-    "Shimmer",
+    "Bombón/Pastelito (Cupcake)",
+    "Brillo (Shimmer)",
     "La Rosa Negra",
     "Enemy",
     "The Line",
-    "Ma Meilleure Ennemie"
+    "Ma Meilleure Ennemie",
+    "Paint the Town Blue",
+    "Heavy is the Crown",
+    "Gira la rueda (Spin the Wheel)",
+    "LeBlanc",
+    "Firelights",
+    "Puente del Progreso",
+    "Día del Progreso",
+    "Barones químicos (Chem-Barons)",
+    "Runa salvaje"
   ]
 }

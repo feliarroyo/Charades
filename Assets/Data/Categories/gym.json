@@ -1,6 +1,6 @@
 {
-    "title": "Ejercicios de gimnasio",
-    "description": "Adiviná diversos ejercicios de musculación, estiramiento y resistencia.",
+    "title": "Gimnasio",
+    "description": "Adiviná diversos ejercicios de musculación, estiramiento y resistencia, así como objetos para entrenar.",
     "iconName": "pesa",
     "questions": [
         "Press plano",
@@ -38,6 +38,9 @@
         "Tríceps francés",
         "Barra Z",
         "Barra W",
+        "Mancuerna",
+        "Pelota Fit",
+        "Rueda abdominal",
         "Tríceps trasnuca",
         "Psoas",
         "Oblícuos",
@@ -52,6 +55,5 @@
         "Sentadilla Goblet",
         "Pectoralera",
         "Hip Thrust"
-
     ]
 }

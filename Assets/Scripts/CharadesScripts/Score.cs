@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -21,5 +22,9 @@ public class Score : MonoBehaviour
     /// <returns>Text string according to the score currently obtained.</returns>
     public static string GetScoreText(){
         return (score == 1)? "1 acierto" : score + " aciertos";
+    }
+
+    public static int GetSkipCount(){
+        return answers.Count(ans => ans.Item2 == false);
     }
 }

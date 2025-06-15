@@ -9,6 +9,7 @@ public class RoundResults : MonoBehaviour
 {
     public TextMeshProUGUI score_text;
     public TextMeshProUGUI answers_text;
+    public TextMeshProUGUI skips_text;
     public MusicPlayer music;
 
     // Start is called before the first frame update
@@ -18,6 +19,8 @@ public class RoundResults : MonoBehaviour
         Config.MenuConfig();
         answers_text.text = FillInAnswers();
         score_text.text = FillInScore();
+        int skips = Score.GetSkipCount();
+        skips_text.text = skips == 0? "" : "(" + skips + " sin responder)";
     }
 
     public void ContinueGame(){

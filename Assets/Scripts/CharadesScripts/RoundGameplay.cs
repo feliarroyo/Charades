@@ -13,7 +13,7 @@ public class RoundGameplay : MonoBehaviour
     
     public static Camera cam; // Camera's background color is changed depending on game status
     public static IPromptPool prompts;
-    private static bool isPromptOnScreen = true; // used to prevent multiple scoring/skipping at once
+    public static bool isPromptOnScreen = true; // used to prevent multiple scoring/skipping at once
     public TextMeshProUGUI mainText; // contains text used for prompts and game changes
     public TextMeshProUGUI hitsText; // contains text showing points obtained
     // public TextMeshProUGUI gyroTest;
