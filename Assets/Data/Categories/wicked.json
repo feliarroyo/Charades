@@ -1,7 +1,7 @@
 {
     "title": "Wicked​",
     "description": "Adiviná personajes, canciones, lugares y actores de la obra de Broadway acerca del origen de la infame bruja.​",
-    "iconName": "fuegos_artificiales",
+    "iconName": "sombrero_bruja",
     "questions": [
         "Elphaba Thropp​",
         "Nessarose Thropp​",
@@ -20,6 +20,7 @@
         "Ciudad Esmeralda​",
         "Pfannee​",
         "Dorothy Gale​",
+        "El espantapájaros",
         "\"No One Mourns The Wicked\"​",
         "\"Dear Old Shiz\"​",
         "\"The Wizard and I\"​",
@@ -35,6 +36,16 @@
         "Cynthia Erivo​",
         "Jonathan Bailey​",
         "Michelle Yeoh​",
-        "Jeff Goldblum​"
+        "Jeff Goldblum​",
+        "\"Thank Goodness\"​",
+        "\"The Wicked Witch of the East\"​",
+        "\"Wonderful\"​",
+        "\"As Long As You're Mine\"​",
+        "\"No Good Deed\"​",
+        "\"March of the Witch Hunters\"​",
+        "\"For Good\"​",
+        "\"Finale\"​",
+        "Idina Menzel",
+        "Kristin Chenoweth"
     ]
 }
