@@ -11,14 +11,21 @@
 </p>
 
 Charades is a party game developed in Unity for Android devices (with support for PC versions as well).
-## Features:
+
+## Features
+
 - Play the classic game about guessing a word or thing with help of one or more friends in over 100 different categories: from classics such as Animals to more specific categories, such as characters from a video game.
 - Multiple control schemes for mobile devices: Answer using either the gyroscope or your phone's touchscreen (or both)
 - Three game modes: Play a quick round in a single category, a selection of rounds in a row, or even mashup many categories in a single chaotic round.
 - Built-in 1v1 team mode. Compete head-to-head to see which team gets more points.
 - Custom category support, with a built-in creator within the app. You can load and share categories easily.
 
-## Notes:
+## How to install
+1. Go to the [Releases](https://github.com/feliarroyo/Charades/releases) section.
+2. Download the corresponding Assets file (ending in .apk for Android; in .7z for Windows)
+3. Android: Open the downloaded APK file to install the app. / Windows: Extract the 7z file, and open the .exe executable file contained inside.
+
+## Notes
 - The game makes use of music tracks from [Three Red Hearts: Prepare to Dev](https://tallbeard.itch.io/three-red-hearts-prepare-to-dev) by [Abstraction](https://abstractionmusic.com/).
 - Sound effects created using [ChipTone](https://sfbgames.itch.io/chiptone), by Tom Vian.
 - The fonts used in the game are [m6x11plus](https://managore.itch.io/m6x11) by Daniel Linssen, and [monogram](https://datagoblin.itch.io/monogram) by datagoblin.
