@@ -1,10 +1,13 @@
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/feliarroyo/Charades/blob/main/README.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/feliarroyo/Charades/blob/main/ReadmeElements/README-es.md)
+
 <p align=center>
-  <img src="./ReadmeElements/Banner.png">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Banner.png">
 </p>
 <p align=center>
-  <img src="./ReadmeElements/MainMenu.gif" width="30%">
-  <img src="./ReadmeElements/CategoryList.gif" width="30%">
-  <img src="./ReadmeElements/Gameplay.gif" width="30%">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/MainMenu.gif" width="30%">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/CategoryList.gif" width="30%">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Gameplay.gif" width="30%">
 </p>
 
 Charadas es un juego casual desarrollado en Unity para dispositivos Android (con soporte para versiones de PC).
