@@ -13,7 +13,7 @@ Charades is a party game developed in Unity for Android devices (with support fo
 - Multiple control schemes for mobile devices: Answer using either the gyroscope or your phone's touchscreen (or both)
 - Three game modes: Play a quick round in a single category, a selection of rounds in a row, or even mashup many categories in a single chaotic round.
 - Built-in 1v1 team mode. Compete head-to-head to see which team gets more points.
-- Custom category support, with a built-in creator within the app. You can load and share categories easily.
+- Custom category support, with a built-in creator within the app. You can load and share categories easily (share them [here](https://github.com/feliarroyo/Charades/discussions) to include them in a future version!).
 
 ## How to install
 1. Go to the [Releases](https://github.com/feliarroyo/Charades/releases) section.
