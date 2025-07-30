@@ -1,6 +1,6 @@
 {
   "title": "Marvel vs. Capcom",
-  "description": "Adiviná héroes y villanos del famoso crossover.",
+  "description": "Adiviná héroes y villanos de la famosa saga de crossovers.",
   "iconName": "crossover",
   "questions": [
     "Capitán América",
@@ -107,10 +107,6 @@
     "Shadow",
     "Mech Zangief",
     "Shadow Lady",
-    "Nonimaro",
-    "X-Men vs. Street Fighter",
-    "Marvel Super Heroes vs. Street Fighter",
-    "Hyper Combo",
-    "Asistente (Assist)"
+    "Nonimaro"
   ]
 }
