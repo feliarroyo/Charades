@@ -13,7 +13,7 @@ Charadas es un juego casual desarrollado en Unity para dispositivos Android (con
 - Múltiples modos de control en dispositivos móviles: Contesta usando el giroscopio o la pantalla táctil (o ambos)
 - Tres modos de juego: Juega una partida rápida con una sola categoría, una selección de categorías en sucesión, o incluso combina varias categorías en una única y caótica ronda.
 - Modo equipos incorporado: Compite para ver qué equipo consigue más puntos.
-- Soporte para categorías personalizadas, con creador incluido en la aplicación. Se pueden cargar y compartir categorías con facilidad.
+- Soporte para categorías personalizadas, con creador incluido en la aplicación. Se pueden cargar y compartir categorías con facilidad (comparte tus creaciones [aquí](https://github.com/feliarroyo/Charades/discussions), ¡quizá sean agregadas en una próxima versión!).
 
 ## Instalación
 1. Ve a la sección de [Releases](https://github.com/feliarroyo/Charades/releases).
