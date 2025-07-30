@@ -4,11 +4,6 @@
 <p align=center>
   <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Banner.png">
 </p>
-<p align=center>
-  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/MainMenu.gif" width="30%">
-  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/CategoryList.gif" width="30%">
-  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Gameplay.gif" width="30%">
-</p>
 
 Charades is a party game developed in Unity for Android devices (with support for PC versions as well).
 
