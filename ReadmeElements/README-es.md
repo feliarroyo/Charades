@@ -1,21 +1,31 @@
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/feliarroyo/Charades/blob/main/README.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/feliarroyo/Charades/blob/main/ReadmeElements/README-es.md)
+
 <p align=center>
-  <img src="./ReadmeElements/Banner.png">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Banner.png">
 </p>
 <p align=center>
-  <img src="./ReadmeElements/MainMenu.gif" width="30%">
-  <img src="./ReadmeElements/CategoryList.gif" width="30%">
-  <img src="./ReadmeElements/Gameplay.gif" width="30%">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/MainMenu.gif" width="30%">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/CategoryList.gif" width="30%">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Gameplay.gif" width="30%">
 </p>
 
 Charadas es un juego casual desarrollado en Unity para dispositivos Android (con soporte para versiones de PC).
-## Características:
+
+## Características
+
 - Juega al clásico juego de adivinar una palabra o el nombre de algo con ayuda de uno o más amigos, a través de más de 100 categorías: desde clásicos como "Animales" hasta categorías más específicas, como personajes de algún videojuego en particular.
 - Múltiples modos de control en dispositivos móviles: Contesta usando el giroscopio o la pantalla táctil (o ambos)
 - Tres modos de juego: Juega una partida rápida con una sola categoría, una selección de categorías en sucesión, o incluso combina varias categorías en una única y caótica ronda.
 - Modo equipos incorporado: Compite para ver qué equipo consigue más puntos.
 - Soporte para categorías personalizadas, con creador incluido en la aplicación. Se pueden cargar y compartir categorías con facilidad.
 
-## Aclaraciones:
+## Instalación
+1. Ve a la sección de [Releases](https://github.com/feliarroyo/Charades/releases).
+2. Descarga el archivo de assets correspondiente (el finalizado en .apk para Android; y el .7z para Windows)
+3. En Android: Abre el archivo APK correspondiente para instalar la aplicación. / En Windows: Extrae el fichero 7Z, y abre el archivo .exe que contiene dentro.
+
+## Aclaraciones
 - El juego utiliza canciones del álbum [Three Red Hearts: Prepare to Dev](https://tallbeard.itch.io/three-red-hearts-prepare-to-dev) by [Abstraction](https://abstractionmusic.com/).
 - Efectos de sonido creados con la herramienta [ChipTone](https://sfbgames.itch.io/chiptone), de Tom Vian.
 - Las fuentes utilizadas en el juego son [m6x11plus](https://managore.itch.io/m6x11) de Daniel Linssen, y [monogram](https://datagoblin.itch.io/monogram) de datagoblin.
