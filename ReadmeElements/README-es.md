@@ -4,11 +4,6 @@
 <p align=center>
   <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Banner.png">
 </p>
-<p align=center>
-  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/MainMenu.gif" width="30%">
-  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/CategoryList.gif" width="30%">
-  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Gameplay.gif" width="30%">
-</p>
 
 Charadas es un juego casual desarrollado en Unity para dispositivos Android (con soporte para versiones de PC).
 
