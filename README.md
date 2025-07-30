@@ -35,4 +35,4 @@ Charades is a party game developed in Unity for Android devices (with support fo
   - [Coins & Gems & Chests & More](https://greatdocbrown.itch.io/coins-gems-etc) by greatdocbrown
   - [Chess Pieces 16x16 One-bit](https://berryarray.itch.io/chess-pieces-16x16-one-bit) by BerryArray
 - Everything listed beforehand has a CC0 License.
-- UI currently in Spanish only.
+- The entire game is currently in Spanish only.
