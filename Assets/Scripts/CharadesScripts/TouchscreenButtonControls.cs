@@ -21,10 +21,8 @@ public class TouchscreenButtonControls : MonoBehaviour
     /// On Android, answer the prompt on touch.
     /// </summary>
     void OnMouseDown(){
-        #if UNITY_ANDROID
         if (Pause.isPaused || !RoundGameplay.isPromptOnScreen)
             return;
         RoundGameplay.round.AnswerPrompt(passType);
-        #endif
     }
 }

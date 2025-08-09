@@ -75,12 +75,17 @@ public class Config : MonoBehaviour
         PlayerPrefs.SetInt(Const.PREF_SHOWSCREENBUTTONS, setActive? 1 : 0);
     }
 
+    public static void SetClickControls(bool setActive){
+        PlayerPrefs.SetInt(Const.PREF_USE_CLICK_CONTROLS, setActive ? 1 : 0);
+    }
+    
     /// <summary>
     /// Enable/Disable motion controls in gameplay.
     /// </summary>
     /// <param name="setActive">Whether to activate tilting controls or not.</param>
-    public static void SetMotionControls(bool setActive){
-        PlayerPrefs.SetInt(Const.PREF_USEMOTIONCONTROLS, setActive? 1 : 0);
+    public static void SetMotionControls(bool setActive)
+    {
+        PlayerPrefs.SetInt(Const.PREF_USEMOTIONCONTROLS, setActive ? 1 : 0);
     }
 
     /// <param name="parameter">String representing a player preference data.</param>

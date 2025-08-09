@@ -14,6 +14,7 @@ public static class Const
     };
     // PlayerPrefs
     public const string PREF_SHOWSCREENBUTTONS = "showScreenButtons";
+    public const string PREF_USE_CLICK_CONTROLS = "useClickControls";
     public const string PREF_USEMOTIONCONTROLS = "useMotionControls";
     public const string PREF_MUSICVOLUME = "musicVolume";
     public const string PREF_SOUNDVOLUME = "soundVolume";

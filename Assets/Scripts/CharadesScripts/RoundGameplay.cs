@@ -37,6 +37,22 @@ public class RoundGameplay : MonoBehaviour
         prompts = Competition.GetPromptPool();
         prompts.InitializePrompts();
         GetNewPrompt();
+
+        bool noUseButtons = false;
+        #if UNITY_ANDROID
+        noUseButtons = PlayerPrefs.GetInt(Const.PREF_USEMOTIONCONTROLS, 0) == 1;
+        #endif
+
+        #if UNITY_EDITOR || UNITY_STANDALONE_WIN
+        noUseButtons = PlayerPrefs.GetInt(Const.PREF_USE_CLICK_CONTROLS, 0) == 1;
+        #endif
+        if (noUseButtons)
+        {
+            GameObject go = GameObject.Find("Hit Button");
+            go.SetActive(false);
+            go = GameObject.Find("Pass Button");
+            go.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -53,10 +69,23 @@ public class RoundGameplay : MonoBehaviour
 
         // Windows/Editor controls
         #if UNITY_EDITOR || UNITY_STANDALONE_WIN
-        if (Input.GetButton("Pass"))
-            AnswerPrompt(true);
-        else if (Input.GetButton("Fail"))
-            AnswerPrompt(false);
+        if (PlayerPrefs.GetInt(Const.PREF_USE_CLICK_CONTROLS, 0) == 1)
+        {
+            // Click izquierdo = acertar
+            if (Input.GetMouseButtonDown(0))
+                AnswerPrompt(true);
+
+            // Click derecho = pasar
+            else if (Input.GetMouseButtonDown(1))
+                AnswerPrompt(false);
+        }
+        else if (PlayerPrefs.GetInt(Const.PREF_SHOWSCREENBUTTONS, 1) == 1)
+        {
+            if (Input.GetButton("Pass"))
+                AnswerPrompt(true);
+            else if (Input.GetButton("Fail"))
+                AnswerPrompt(false);
+        }
         #endif
 
         // Android controls
