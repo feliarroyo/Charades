@@ -1,0 +1,480 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: String Table Collection_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 38dababf3a65eef4083d7e59b7cdeff0, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 210004680704
+    m_Localized: 'Jugar
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331010351104
+    m_Localized: "Crear categor\xEDas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662314229760
+    m_Localized: "C\xF3mo jugar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 735525806080
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 770653102080
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 849921253376
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 978904489984
+    m_Localized: "Partida r\xE1pida"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007044075520
+    m_Localized: "Se juega una <color=yellow>\xFAnica</color> categor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1129505169408
+    m_Localized: "Se juegan m\xFAltiples categor\xEDas <color=yellow>en secuencia</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1385391267840
+    m_Localized: "Se juega una ronda con enunciados de <color=yellow>m\xFAltiples</color>
+      categor\xEDas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1603297943552
+    m_Localized: "Competici\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1829689696256
+    m_Localized: "Modo equipos: S\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1885960478720
+    m_Localized: Equipo 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1917858160640
+    m_Localized: Nombre del equipo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1951014133760
+    m_Localized: Nombre del equipo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1972027596800
+    m_Localized: Equipo 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2101140856832
+    m_Localized: Nombre del equipo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2190336925696
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2299426578432
+    m_Localized: "M\xDASICA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2324940529664
+    m_Localized: SONIDO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2619552636928
+    m_Localized: "DURACI\xD3N"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2688997728256
+    m_Localized: T. ESPERA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2758488956928
+    m_Localized: '#RONDAS MASH-UP'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3338900938752
+    m_Localized: 'Controles:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3425639145472
+    m_Localized: Botones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3466378420224
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3863448985600
+    m_Localized: Charadas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3901726203904
+    m_Localized: "<color=green>Charadas</color> es un juego donde una persona tiene
+      que adivinar enunciados que se muestran en la pantalla sin verlos, mientras
+      otros tratan de darle pistas acerca de qu\xE9 se trata."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4273995849728
+    m_Localized: "Hay <u>tres</u> modos de juego:\r\n- <color=yellow>Partida r\xE1pida:</color>
+      Se juega una \xFAnica categor\xEDa\r\n- <color=yellow>Competici\xF3n:</color>
+      Se eligen varias categor\xEDas que se juegan en secuencia\r\n- <color=yellow>Mash-Up:</color>
+      Se eligen varias categor\xEDas y se juega una ronda con una mezcla de todos
+      sus enunciados\r\nTodos los modos permiten jugar en equipo.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4727358169088
+    m_Localized: "Las categor\xEDas por jugar se eligen tocando el bot\xF3n correspondiente.\r\nEn
+      <color=yellow>Partida R\xE1pida</color>, el juego comienza una vez elegida
+      la categor\xEDa.\nEn los otros modos, se debe presionar el bot\xF3n \u201CJugar\u201D
+      una vez que se eligieron todas las categor\xEDas para empezar.\r\n(en <color=yellow>Competici\xF3n</color>,
+      se juegan en el orden que fueron ingresadas)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5368721776640
+    m_Localized: "Antes de cada ronda, se muestra la categor\xEDa que se va a jugar
+      junto a una peque\xF1a descripci\xF3n.\r\nEs particularmente importante en
+      Competici\xF3n, para saber qu\xE9 categor\xEDa se va a jugar y a qu\xE9 equipo
+      le toca jugar.\r\nCuando el jugador est\xE1 listo, debe presionar en \u201CJugar\u201D
+      para comenzar.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5772717137920
+    m_Localized: "Cada ronda comienza con un contador para que el jugador coloque
+      su celular correctamente. En este momento, qui\xE9n est\xE9 adivinando debe
+      colocar el dispositivo en <color=yellow>orientaci\xF3n horizontal</color> de
+      forma que \xE9ste no vea lo que dice, pero los dem\xE1s s\xED.\r\n(El sentido
+      se ajusta autom\xE1ticamente, lo importante es que est\xE9 horizontal)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6374188720128
+    m_Localized: "Durante la ronda aparecer\xE1n enunciados de la categor\xEDa correspondiente
+      y, con ayuda de tus compa\xF1eros, tendr\xE1s que tratar de adivinar la mayor
+      cantidad de enunciados posibles antes de que se acabe el tiempo.\r\nSi alg\xFAn
+      enunciado fuera demasiado complicado, puedes elegir <color=red>pasarlo</color>
+      para probar con otro distinto.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6816452911104
+    m_Localized: "Charadas soporta dos alternativas de control:\r\n1. <color=yellow>Sensor
+      t\xE1ctil:</color> Inclina el dispositivo hacia arriba para pasar, y para abajo
+      cuando adivinas.\r\n2. <color=yellow>Pantalla:</color> En el lado inferior
+      de la pantalla, apret\xE1 con la mano izquierda para pasar, y con la derecha
+      cuando adivin\xE1s.\r\nEn las opciones se puede elegir qu\xE9 opci\xF3n utilizar
+      (o incluso ambas en simult\xE1neo).\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7449159475200
+    m_Localized: "Cuando se acaba el tiempo, se muestra el puntaje obtenido y los
+      enunciados encontrados durante la ronda (los acertados se listan en blanco).\r\nCada
+      enunciado correcto <color=green>suma un punto</color>.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7745981980672
+    m_Localized: "En Competici\xF3n, la partida termina cuando todas las categor\xEDas
+      seleccionadas fueron jugadas.\r\nEn Partida R\xE1pida y Mash-Up, por defecto
+      se juega una \xFAnica ronda (una por cada equipo cuando hay equipos).\r\nSe
+      muestran los puntajes finales de la sesi\xF3n y, en la modalidad de equipos,
+      se declara un equipo ganador.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8303971213312
+    m_Localized: "En el men\xFA de opciones se pueden personalizar algunos par\xE1metros
+      de juego, como el <color=yellow>volumen</color> de los efectos de sonido y
+      la m\xFAsica, el tipo de <color=yellow>controles</color> utilizado, el <color=yellow>tiempo</color>
+      de la ronda y de la pausa entre cada par de enunciados."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8814686445568
+    m_Localized: "El juego permite la creaci\xF3n de categor\xEDas personalizadas,
+      con la misma estructura que las otras categor\xEDas que hay en el juego.\r\nLas
+      categor\xEDas personalizadas deben tener un t\xEDtulo, descripci\xF3n y al
+      menos un enunciado. Adem\xE1s, pueden utilizar como \xEDcono a cualquiera de
+      los sprites que hay en el juego.\r\nUna vez creada una categor\xEDa, estar\xE1
+      disponible para utilizar en la subsecci\xF3n <color=yellow>Personalizadas</color>
+      al final de la lista de categor\xEDas. A su vez, puede editarse en cualquier
+      momento en el men\xFA de categor\xEDas personalizadas.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9531388141568
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9742122557440
+    m_Localized: "<size=72>Desarrollo</size>\nFelipe Arroyo\r\n\r\n<size=72>Testing\r</size>\nAlex
+      Tassi\r\n\n<size=72>M\xFAsica\r</size>\n<color=red><link=\"https://tallbeard.itch.io/music-loop-bundle\">Three
+      Red Hearts: Prepare to Dev</link></color>\nAbstraction\n\n<size=72>Sonidos:\r</size>\nCreados
+      usando <color=green>ChipTone</color>\n\n<size=72>Fuentes:\r</size>\n<color=yellow><link=\"https://managore.itch.io/m6x11\">m6x11plus</link></color>\nDaniel
+      Linssen\n\n<color=yellow><link=\"https://datagoblin.itch.io/monogram\">Monogram</link></color>\ndatagoblin\n\n<size=72>Sprites:</size>\nFelipe
+      Arroyo\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9917171834880
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10008251146240
+    m_Localized: Favoritas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10054094888960
+    m_Localized: "Cl\xE1sicos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10102509740032
+    m_Localized: Comidas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10121971310592
+    m_Localized: Deportes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10143848800256
+    m_Localized: "Series y pel\xEDculas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10167261405184
+    m_Localized: Caricaturas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10194121728000
+    m_Localized: Manga y anime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10220495511552
+    m_Localized: "Superh\xE9roes"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10241299259392
+    m_Localized: "M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10262480494592
+    m_Localized: Juegos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10275969376256
+    m_Localized: Personalizadas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10330356916224
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10349726212096
+    m_Localized: "Limpiar categor\xEDas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10473978273792
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10586989600768
+    m_Localized: "Creador de categor\xEDas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10711463960576
+    m_Localized: "Crear categor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10791877156864
+    m_Localized: "Crear categor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10844503089152
+    m_Localized: "Compartir categor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10982835429376
+    m_Localized: "Importar categor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11023331434496
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11042621038592
+    m_Localized: "Borrar categor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11150251073536
+    m_Localized: '<color=green>Equipo 1</color>
+
+      Equipo 2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11185881686016
+    m_Localized: Volver a jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11203770392576
+    m_Localized: "Cambiar categor\xEDas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11235047317504
+    m_Localized: "Ir al men\xFA principal"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11379050356736
+    m_Localized: "\xA1Equipo 1 gana!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11733007671296
+    m_Localized: 'Resultado:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11799499972608
+    m_Localized: X aciertos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11821805281280
+    m_Localized: (Y sin responder)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11845993832448
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11984695271424
+    m_Localized: "\xA1Es el turno del equipo 1!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12076231761920
+    m_Localized: "CATEGOR\xCDA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12091570331648
+    m_Localized: "Esta es una descripci\xF3n de prueba."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12126693433344
+    m_Localized: Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12294666919936
+    m_Localized: 'Nombre: '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12392801050624
+    m_Localized: "Descripci\xF3n:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12440985214976
+    m_Localized: "Texto de presentaci\xF3n de categor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12489672695808
+    m_Localized: 'Enunciado:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12517866807296
+    m_Localized: "Enunciado a a\xF1adir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12546555846656
+    m_Localized: 'Cantidad de enunciados:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12605901053952
+    m_Localized: "Cambiar \xEDcono"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12673475485696
+    m_Localized: "CREADOR DE CATEGOR\xCDAS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12760851226624
+    m_Localized: Agregar enunciado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12797870153728
+    m_Localized: Ver enunciados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12930166890496
+    m_Localized: "Crear categor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13024534536192
+    m_Localized: 'Cantidad de enunciados:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13102338875392
+    m_Localized: Regresar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13123373309952
+    m_Localized: Borrar enunciados
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13232295190528
+    m_Localized: Regresar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13293225844736
+    m_Localized: "\xBFEst\xE1s seguro?\nNo se guardar\xE1n los cambios."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13354068418560
+    m_Localized: Salir sin guardar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13447714643968
+    m_Localized: Seguir editando
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13593189883904
+    m_Localized: "\xBFEst\xE1s seguro?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13633417453568
+    m_Localized: "Borrar categor\xEDa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13671799529472
+    m_Localized: Volver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13877349785600
+    m_Localized: PAUSA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13895414652928
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13910769999872
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13963983134720
+    m_Localized: 0 aciertos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14015149449216
+    m_Localized: Bajo la misma estrella
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

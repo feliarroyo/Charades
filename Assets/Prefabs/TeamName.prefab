@@ -466,6 +466,7 @@ GameObject:
   - component: {fileID: 1383189594152531497}
   - component: {fileID: 4226732846144791393}
   - component: {fileID: 2144493993446744899}
+  - component: {fileID: 5542758943029852664}
   m_Layer: 5
   m_Name: Placeholder
   m_TagString: Untagged
@@ -521,7 +522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nombre del equipo
+  m_text: Team Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
   m_sharedMaterial: {fileID: -8760612746462281966, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
@@ -610,6 +611,44 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &5542758943029852664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3816665819341454440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 5848738243194126735
+  references:
+    version: 2
+    RefIds:
+    - rid: 5848738243194126735
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 4226732846144791393}
+        m_TrackedProperties:
+          items:
+          - rid: 5848738243194126736
+        m_UpdateType: 0
+    - rid: 5848738243194126736
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:38dababf3a65eef4083d7e59b7cdeff0
+          m_TableEntryReference:
+            m_KeyId: 1951014133760
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1 &3923546765577713146
 GameObject:
   m_ObjectHideFlags: 0

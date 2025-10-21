@@ -1,0 +1,489 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: String Table Collection_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 38dababf3a65eef4083d7e59b7cdeff0, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 210004680704
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331010351104
+    m_Localized: Category Creator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662314229760
+    m_Localized: How To Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 735525806080
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 770653102080
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 849921253376
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 978904489984
+    m_Localized: Quick Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007044075520
+    m_Localized: Play with a <color=yellow>single</color> category
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1129505169408
+    m_Localized: Play with multiple categories <color=yellow>in a row</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1385391267840
+    m_Localized: Play with multiple categories <color=yellow>simultaneously</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1603297943552
+    m_Localized: Competition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1829689696256
+    m_Localized: 'Teams: Enabled'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1885960478720
+    m_Localized: Team 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1917858160640
+    m_Localized: Team Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1951014133760
+    m_Localized: Category title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1972027596800
+    m_Localized: Team 2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2101140856832
+    m_Localized: Team Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2190336925696
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2299426578432
+    m_Localized: MUSIC VOL.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2324940529664
+    m_Localized: SFX VOL.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2619552636928
+    m_Localized: ROUND TIME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2688997728256
+    m_Localized: WAIT TIME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2758488956928
+    m_Localized: MASH-UP ROUNDS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3338900938752
+    m_Localized: 'Control Scheme:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3425639145472
+    m_Localized: Buttons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3466378420224
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3863448985600
+    m_Localized: Charades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3901726203904
+    m_Localized: <color=green>Charades</color> is a game where one player has to
+      guess the prompts shown on screen without seeing them, while the rest tries
+      to give them hints about which is it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4273995849728
+    m_Localized: 'There are <u>three</u> game modes:
+
+      - <color=yellow>Quick
+      Play:</color> Play with only one category
+
+      - <color=yellow>Competition:</color>
+      Choose multiple categories, which are played in sequence
+
+      - <color=yellow>Mash-Up:</color>
+      Choose multiple categories, and play rounds featuring all their prompts.
+
+      Every
+      mode can be played in teams.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4727358169088
+    m_Localized: "Categories can be chosen pressing on their respective button.\nIn
+      <color=yellow>Quick Play</color>, the game begins once the category is selected.\nIn
+      other modes, the \u201CPlay\u201D button must be pressed once every category
+      has been chosen to begin.\n(in <color=yellow>Competition</color> mode, they
+      are played in the selection order)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5368721776640
+    m_Localized: 'Before each round, the category to be played is shown alongside
+      a brief description.
+
+      This is particularly important in Competition,
+      to know which category will be played and which team''s turn is it to guess.
+
+      When
+      the player is ready, they must press on "Play" to begin.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5772717137920
+    m_Localized: 'Each round begins with a countdown so that the player can place
+      their device properly. They should place it <color=yellow>horizontally</color>,
+      so that they cannot see what''s being displayed, but the rest do.
+
+      (The
+      screen adjusts automatically, what matters is that it is placed horizontally)'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6374188720128
+    m_Localized: "During the round, prompts of the corresponding category will appear
+      and, with the help of those watching the screen, you'll have to guess as many
+      prompts as possible before time runs out.\nIf a prompt seems too difficult,
+      you can <color=red>skip</color> to replace it with a different one.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6816452911104
+    m_Localized: "Charades allows two different control schemes:\r\n1. <color=yellow>Gyroscope:</color>
+      Tilt the screen upwards to skip, and downwards when you guess the prompt correctly.\n2.
+      <color=yellow>Touchscreen:</color> On the lower part of the screen, touch with
+      the left hand to skip, and with the right hand when you get it right.\nYou
+      can choose which alternative to use in the Options menu (or even both at once)\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7449159475200
+    m_Localized: "When time runs out, the player is shown the score obtained, and
+      the prompts seen during the round (those guessed correctly are in white)\nEvery
+      correct guess <color=green>adds 1 point</color>.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7745981980672
+    m_Localized: "In Competition, the game ends when every category selected has
+      been played.\nIn Quick Play and Mash-Up, a single round is played (one for
+      each team, if teams are enabled).\r\nThe scoreboard is shown at the end of
+      the match and, when Teams are enabled, one is declared the winner.\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8303971213312
+    m_Localized: The Options menu allows the player to change the music and SFX <color=yellow>volume</color>,
+      the <color=yellow>control scheme</color> used, <color=yellow>round duration</color>
+      and wait time between prompts, among other things.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8814686445568
+    m_Localized: 'The game allows the creation of Custom Prompts, with the same features
+      as the other categories included in the game.
+
+      They must have a title,
+      a description and at least 1 prompt. Their icon can be any of the ones used
+      for the other categories in the game.
+
+      Once a category has been created,
+      it will be available to play in the <color=yellow>Custom</color> section at
+      the end of the list of categories. Its content can be edited at any time in
+      the Category Creator menu.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9531388141568
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9742122557440
+    m_Localized: "Felipe Arroyo\r\n\r\n<size=72>Testing\r</size>\nAlex Tassi\r\n\n<size=72>Music\r</size>\n<color=red><link=\"https://tallbeard.itch.io/music-loop-bundle\">Three
+      Red Hearts: Prepare to Dev</link></color>\nAbstraction\n\n<size=72>Sound Effects:\r</size>\nCreados
+      usando <color=green>ChipTone</color>\n\n<size=72>Fonts:\r</size>\n<color=yellow><link=\"https://managore.itch.io/m6x11\">m6x11plus</link></color>\nDaniel
+      Linssen\n\n<color=yellow><link=\"https://datagoblin.itch.io/monogram\">Monogram</link></color>\ndatagoblin\n\n<size=72>Sprites:</size>\nFelipe
+      Arroyo\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9917171834880
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10008251146240
+    m_Localized: Favorites
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10054094888960
+    m_Localized: Classics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10102509740032
+    m_Localized: Food
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10121971310592
+    m_Localized: Sports
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10143848800256
+    m_Localized: TV & Film
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10167261405184
+    m_Localized: Cartoons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10194121728000
+    m_Localized: Anime & Manga
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10220495511552
+    m_Localized: Superheroes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10241299259392
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10262480494592
+    m_Localized: Games
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10275969376256
+    m_Localized: Custom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10330356916224
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10349726212096
+    m_Localized: Clear Selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10473978273792
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10586989600768
+    m_Localized: Category Creator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10711463960576
+    m_Localized: Create Categor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10791877156864
+    m_Localized: Create Categor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10844503089152
+    m_Localized: Share Category
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10982835429376
+    m_Localized: Import Category
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11023331434496
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11042621038592
+    m_Localized: Delete Category
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11150251073536
+    m_Localized: '<color=green>Team 1</color>
+
+      Team 2'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11185881686016
+    m_Localized: Play Again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11203770392576
+    m_Localized: Change Categories
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11235047317504
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11379050356736
+    m_Localized: Team 1 Wins!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11733007671296
+    m_Localized: 'Results:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11799499972608
+    m_Localized: X points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11821805281280
+    m_Localized: (Y skipped)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11845993832448
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11984695271424
+    m_Localized: It is Team 1's turn!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12076231761920
+    m_Localized: CATEGORY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12091570331648
+    m_Localized: This is a test description.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12126693433344
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12294666919936
+    m_Localized: 'Title:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12392801050624
+    m_Localized: 'Description:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12440985214976
+    m_Localized: Category's presentation text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12489672695808
+    m_Localized: 'Prompt:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12517866807296
+    m_Localized: Prompt to add
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12546555846656
+    m_Localized: 'Prompt Count:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12605901053952
+    m_Localized: Change Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12673475485696
+    m_Localized: CATEGORY CREATOR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12760851226624
+    m_Localized: Add Prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12797870153728
+    m_Localized: 'Check
+
+      Prompt List'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12930166890496
+    m_Localized: Create Category
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13024534536192
+    m_Localized: 'Prompt Count:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13102338875392
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13123373309952
+    m_Localized: Delete Prompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13232295190528
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13293225844736
+    m_Localized: "\xBFAre you sure?\nChanges will not be saved."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13354068418560
+    m_Localized: Quit Without Saving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13447714643968
+    m_Localized: Continue Editing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13593189883904
+    m_Localized: "\xBFAre you sure?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13633417453568
+    m_Localized: Delete Category
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13671799529472
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13877349785600
+    m_Localized: PAUSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13895414652928
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13910769999872
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13963983134720
+    m_Localized: 0 points
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14015149449216
+    m_Localized: The Fault in Our Stars
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
