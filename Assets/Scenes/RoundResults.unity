@@ -161,7 +161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (Y sin responder)
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7d020044390be1f409c19e1e51180279, type: 2}
   m_sharedMaterial: {fileID: 8219537204201258613, guid: 7d020044390be1f409c19e1e51180279, type: 2}
@@ -271,19 +271,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjects:
-  - rid: 5848738243194126959
+  - rid: 8464436563817267209
   references:
     version: 2
     RefIds:
-    - rid: 5848738243194126959
+    - rid: 8464436563817267209
       type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
       data:
         m_Target: {fileID: 241942637}
         m_TrackedProperties:
           items:
-          - rid: 5848738243194126960
+          - rid: 8464436563817267210
         m_UpdateType: 0
-    - rid: 5848738243194126960
+    - rid: 8464436563817267210
       type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
       data:
         m_Localized:
@@ -1059,8 +1059,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -15.98999, y: -0.000467723}
-  m_SizeDelta: {x: 800, y: 0}
+  m_AnchoredPosition: {x: 0.0015869141, y: -0.000467723}
+  m_SizeDelta: {x: 900, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1088409807
 MonoBehaviour:
@@ -1082,8 +1082,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<color=\"white\">Titanic\n<color=\"grey\">Chicas pesadas\n<color=\"white\">Pok\xE9mon\n<color=\"grey\">Kirby\n<color=\"white\">Ll\xE1mame
-    por tu nombre\n<color=\"white\">Titanic\n<color=\"grey\">Chicas pesadas\n<color=\"white\">Pok\xE9mon\n<color=\"grey\">Kirby\n<color=\"white\">Ll\xE1mame
+  m_text: "<color=\"white\">Titanic\n<color=\"grey\">Chicas pesadas\n<color=\"white\">Pok\xE9mon\n<color=\"grey\">Kirby\n<color=\"white\">Rodney/Aloyse
+    Everheart Elizabeth Otto Wolfgang Hypatia Gunther Galen Gary Cooper Von Roddenstein\u200B\n<color=\"white\">Titanic\n<color=\"grey\">Chicas
+    pesadas\n<color=\"white\">Pok\xE9mon\n<color=\"grey\">Kirby\n<color=\"white\">Ll\xE1mame
     por tu nombre\n<color=\"white\">Titanic\n<color=\"grey\">Chicas pesadas\n<color=\"white\">Pok\xE9mon\n<color=\"grey\">Kirby\n<color=\"white\">Ll\xE1mame
     por tu nombre\n<color=\"white\">Titanic\n<color=\"grey\">Chicas pesadas\n<color=\"white\">Pok\xE9mon\n<color=\"grey\">Kirby\n<color=\"white\">Ll\xE1mame
     por tu nombre\n<color=\"white\">Titanic\n<color=\"grey\">Chicas pesadas\n<color=\"white\">Pok\xE9mon\n<color=\"grey\">Kirby\n<color=\"white\">Ll\xE1mame
@@ -1127,11 +1128,11 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -10
   m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
+  m_paragraphSpacing: 30
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
+  m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 5
   m_linkedTextComponent: {fileID: 0}
@@ -1151,7 +1152,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 3.3086855, y: 9.334514, z: 2.753647, w: 5.876098}
+  m_margin: {x: 0.01089505, y: 0.6013786, z: -0.16474889, w: 5.876098}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1216,7 +1217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -449.9999, y: 700}
+  m_AnchoredPosition: {x: -449.99988, y: 699.99994}
   m_SizeDelta: {x: 900, y: 1400}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1124634203
@@ -1281,7 +1282,6 @@ GameObject:
   - component: {fileID: 1272891161}
   - component: {fileID: 1272891163}
   - component: {fileID: 1272891162}
-  - component: {fileID: 1272891164}
   m_Layer: 5
   m_Name: Hits
   m_TagString: Untagged
@@ -1406,44 +1406,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272891160}
   m_CullTransparentMesh: 1
---- !u!114 &1272891164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272891160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 5848738243194126957
-  references:
-    version: 2
-    RefIds:
-    - rid: 5848738243194126957
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 1272891162}
-        m_TrackedProperties:
-          items:
-          - rid: 5848738243194126958
-        m_UpdateType: 0
-    - rid: 5848738243194126958
-      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_Localized:
-          m_TableReference:
-            m_TableCollectionName: GUID:38dababf3a65eef4083d7e59b7cdeff0
-          m_TableEntryReference:
-            m_KeyId: 11799499972608
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        m_PropertyPath: m_text
 --- !u!1 &1586770804
 GameObject:
   m_ObjectHideFlags: 0

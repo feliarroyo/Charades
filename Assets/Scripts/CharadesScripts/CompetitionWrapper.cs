@@ -15,7 +15,9 @@ public class CompetitionWrapper : MonoBehaviour
 
     public void ClearCategories(){
         Competition.ClearCategories();
-        foreach (CategoryButton cg in FindObjectsOfType<CategoryButton>()) {
+        Competition.ShowMultipleCategoryButtons(false);
+        foreach (CategoryButton cg in FindObjectsOfType<CategoryButton>())
+        {
             cg.SetCategory_unselected();
         }
     }

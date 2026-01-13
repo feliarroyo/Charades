@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: es
   m_SharedData: {fileID: 11400000, guid: 38dababf3a65eef4083d7e59b7cdeff0, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 8464436551449837616
   m_TableData:
   - m_Id: 210004680704
     m_Localized: 'Jugar
@@ -65,8 +66,8 @@ MonoBehaviour:
     m_Localized: "Competici\xF3n"
     m_Metadata:
       m_Items: []
-  - m_Id: 1829689696256
-    m_Localized: "Modo equipos: S\xED"
+  - m_Id: 7244727418167296
+    m_Localized: No borrar
     m_Metadata:
       m_Items: []
   - m_Id: 1885960478720
@@ -77,16 +78,8 @@ MonoBehaviour:
     m_Localized: Nombre del equipo
     m_Metadata:
       m_Items: []
-  - m_Id: 1951014133760
-    m_Localized: Nombre del equipo
-    m_Metadata:
-      m_Items: []
   - m_Id: 1972027596800
     m_Localized: Equipo 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2101140856832
-    m_Localized: Nombre del equipo
     m_Metadata:
       m_Items: []
   - m_Id: 2190336925696
@@ -117,71 +110,39 @@ MonoBehaviour:
     m_Localized: 'Controles:'
     m_Metadata:
       m_Items: []
-  - m_Id: 3425639145472
-    m_Localized: Botones
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3466378420224
-    m_Localized: Volver
-    m_Metadata:
-      m_Items: []
   - m_Id: 3863448985600
     m_Localized: Charadas
     m_Metadata:
       m_Items: []
   - m_Id: 3901726203904
-    m_Localized: "<color=green>Charadas</color> es un juego donde una persona tiene
-      que adivinar enunciados que se muestran en la pantalla sin verlos, mientras
-      otros tratan de darle pistas acerca de qu\xE9 se trata."
+    m_Localized: El resto debe ayudarte a adivinarlo.
     m_Metadata:
       m_Items: []
   - m_Id: 4273995849728
-    m_Localized: "Hay <u>tres</u> modos de juego:\r\n- <color=yellow>Partida r\xE1pida:</color>
-      Se juega una \xFAnica categor\xEDa\r\n- <color=yellow>Competici\xF3n:</color>
-      Se eligen varias categor\xEDas que se juegan en secuencia\r\n- <color=yellow>Mash-Up:</color>
-      Se eligen varias categor\xEDas y se juega una ronda con una mezcla de todos
-      sus enunciados\r\nTodos los modos permiten jugar en equipo.\r"
+    m_Localized: "Eleg\xED un modo de juego y si jugar en equipos."
     m_Metadata:
       m_Items: []
   - m_Id: 4727358169088
-    m_Localized: "Las categor\xEDas por jugar se eligen tocando el bot\xF3n correspondiente.\r\nEn
-      <color=yellow>Partida R\xE1pida</color>, el juego comienza una vez elegida
-      la categor\xEDa.\nEn los otros modos, se debe presionar el bot\xF3n \u201CJugar\u201D
-      una vez que se eligieron todas las categor\xEDas para empezar.\r\n(en <color=yellow>Competici\xF3n</color>,
-      se juegan en el orden que fueron ingresadas)"
+    m_Localized: "Luego de pulsar Jugar, coloc\xE1 el celular <color=yellow>en horizontal</color>"
     m_Metadata:
       m_Items: []
   - m_Id: 5368721776640
-    m_Localized: "Antes de cada ronda, se muestra la categor\xEDa que se va a jugar
-      junto a una peque\xF1a descripci\xF3n.\r\nEs particularmente importante en
-      Competici\xF3n, para saber qu\xE9 categor\xEDa se va a jugar y a qu\xE9 equipo
-      le toca jugar.\r\nCuando el jugador est\xE1 listo, debe presionar en \u201CJugar\u201D
-      para comenzar.\r"
+    m_Localized: "Aparecer\xE1n enunciados en pantalla relacionados a la categor\xEDa"
     m_Metadata:
       m_Items: []
   - m_Id: 5772717137920
-    m_Localized: "Cada ronda comienza con un contador para que el jugador coloque
-      su celular correctamente. En este momento, qui\xE9n est\xE9 adivinando debe
-      colocar el dispositivo en <color=yellow>orientaci\xF3n horizontal</color> de
-      forma que \xE9ste no vea lo que dice, pero los dem\xE1s s\xED.\r\n(El sentido
-      se ajusta autom\xE1ticamente, lo importante es que est\xE9 horizontal)"
+    m_Localized: "Con <color=yellow>pantalla t\xE1ctil</color>:\nPresion\xE1 con
+      la izquierda para <color=red>pasar</color>\nPresion\xE1 con la derecha para
+      <color=green>puntuar</color>"
     m_Metadata:
       m_Items: []
   - m_Id: 6374188720128
-    m_Localized: "Durante la ronda aparecer\xE1n enunciados de la categor\xEDa correspondiente
-      y, con ayuda de tus compa\xF1eros, tendr\xE1s que tratar de adivinar la mayor
-      cantidad de enunciados posibles antes de que se acabe el tiempo.\r\nSi alg\xFAn
-      enunciado fuera demasiado complicado, puedes elegir <color=red>pasarlo</color>
-      para probar con otro distinto.\r"
+    m_Localized: "Cuando se acaba el tiempo, pod\xE9s ver los enunciados de la ronda
+      y tu puntaje."
     m_Metadata:
       m_Items: []
   - m_Id: 6816452911104
-    m_Localized: "Charadas soporta dos alternativas de control:\r\n1. <color=yellow>Sensor
-      t\xE1ctil:</color> Inclina el dispositivo hacia arriba para pasar, y para abajo
-      cuando adivinas.\r\n2. <color=yellow>Pantalla:</color> En el lado inferior
-      de la pantalla, apret\xE1 con la mano izquierda para pasar, y con la derecha
-      cuando adivin\xE1s.\r\nEn las opciones se puede elegir qu\xE9 opci\xF3n utilizar
-      (o incluso ambas en simult\xE1neo).\r"
+    m_Localized: "\xA1Configur\xE1 el juego a tu gusto en el men\xFA de opciones!"
     m_Metadata:
       m_Items: []
   - m_Id: 7449159475200
@@ -216,10 +177,6 @@ MonoBehaviour:
       momento en el men\xFA de categor\xEDas personalizadas.\r"
     m_Metadata:
       m_Items: []
-  - m_Id: 9531388141568
-    m_Localized: Volver
-    m_Metadata:
-      m_Items: []
   - m_Id: 9742122557440
     m_Localized: "<size=72>Desarrollo</size>\nFelipe Arroyo\r\n\r\n<size=72>Testing\r</size>\nAlex
       Tassi\r\n\n<size=72>M\xFAsica\r</size>\n<color=red><link=\"https://tallbeard.itch.io/music-loop-bundle\">Three
@@ -227,10 +184,6 @@ MonoBehaviour:
       usando <color=green>ChipTone</color>\n\n<size=72>Fuentes:\r</size>\n<color=yellow><link=\"https://managore.itch.io/m6x11\">m6x11plus</link></color>\nDaniel
       Linssen\n\n<color=yellow><link=\"https://datagoblin.itch.io/monogram\">Monogram</link></color>\ndatagoblin\n\n<size=72>Sprites:</size>\nFelipe
       Arroyo\n"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 9917171834880
-    m_Localized: Volver
     m_Metadata:
       m_Items: []
   - m_Id: 10008251146240
@@ -277,10 +230,6 @@ MonoBehaviour:
     m_Localized: Personalizadas
     m_Metadata:
       m_Items: []
-  - m_Id: 10330356916224
-    m_Localized: Volver
-    m_Metadata:
-      m_Items: []
   - m_Id: 10349726212096
     m_Localized: "Limpiar categor\xEDas"
     m_Metadata:
@@ -297,20 +246,12 @@ MonoBehaviour:
     m_Localized: "Crear categor\xEDa"
     m_Metadata:
       m_Items: []
-  - m_Id: 10791877156864
-    m_Localized: "Crear categor\xEDa"
-    m_Metadata:
-      m_Items: []
   - m_Id: 10844503089152
     m_Localized: "Compartir categor\xEDa"
     m_Metadata:
       m_Items: []
   - m_Id: 10982835429376
     m_Localized: "Importar categor\xEDa"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11023331434496
-    m_Localized: Volver
     m_Metadata:
       m_Items: []
   - m_Id: 11042621038592
@@ -336,39 +277,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11379050356736
-    m_Localized: "\xA1Equipo 1 gana!"
+    m_Localized: "\xA1{0} gana!"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8464436551449837616
   - m_Id: 11733007671296
     m_Localized: 'Resultado:'
     m_Metadata:
       m_Items: []
   - m_Id: 11799499972608
-    m_Localized: X aciertos
+    m_Localized: '{0} aciertos'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8464436551449837616
   - m_Id: 11821805281280
-    m_Localized: (Y sin responder)
+    m_Localized: ({0} sin responder)
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8464436551449837616
   - m_Id: 11845993832448
     m_Localized: Continuar
     m_Metadata:
       m_Items: []
   - m_Id: 11984695271424
-    m_Localized: "\xA1Es el turno del equipo 1!"
+    m_Localized: "\xA1Es el turno de {0}!"
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8464436551449837616
   - m_Id: 12076231761920
     m_Localized: "CATEGOR\xCDA"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12091570331648
-    m_Localized: "Esta es una descripci\xF3n de prueba."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12126693433344
-    m_Localized: Jugar
     m_Metadata:
       m_Items: []
   - m_Id: 12294666919936
@@ -399,8 +336,8 @@ MonoBehaviour:
     m_Localized: "Cambiar \xEDcono"
     m_Metadata:
       m_Items: []
-  - m_Id: 12673475485696
-    m_Localized: "CREADOR DE CATEGOR\xCDAS"
+  - m_Id: 7243044684374016
+    m_Localized: "Nombre de la categor\xEDa"
     m_Metadata:
       m_Items: []
   - m_Id: 12760851226624
@@ -411,24 +348,12 @@ MonoBehaviour:
     m_Localized: Ver enunciados
     m_Metadata:
       m_Items: []
-  - m_Id: 12930166890496
-    m_Localized: "Crear categor\xEDa"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 13024534536192
-    m_Localized: 'Cantidad de enunciados:'
-    m_Metadata:
-      m_Items: []
   - m_Id: 13102338875392
     m_Localized: Regresar
     m_Metadata:
       m_Items: []
   - m_Id: 13123373309952
     m_Localized: Borrar enunciados
-    m_Metadata:
-      m_Items: []
-  - m_Id: 13232295190528
-    m_Localized: Regresar
     m_Metadata:
       m_Items: []
   - m_Id: 13293225844736
@@ -447,34 +372,96 @@ MonoBehaviour:
     m_Localized: "\xBFEst\xE1s seguro?"
     m_Metadata:
       m_Items: []
-  - m_Id: 13633417453568
-    m_Localized: "Borrar categor\xEDa"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 13671799529472
-    m_Localized: Volver
-    m_Metadata:
-      m_Items: []
   - m_Id: 13877349785600
     m_Localized: PAUSA
     m_Metadata:
       m_Items: []
-  - m_Id: 13895414652928
-    m_Localized: Continuar
-    m_Metadata:
-      m_Items: []
-  - m_Id: 13910769999872
-    m_Localized: Salir
-    m_Metadata:
-      m_Items: []
   - m_Id: 13963983134720
-    m_Localized: 0 aciertos
+    m_Localized: '{0} {0:plural:punto|puntos}'
+    m_Metadata:
+      m_Items:
+      - rid: 8464436551449837616
+  - m_Id: 6984393222594560
+    m_Localized: 'Modo equipos: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 8464436551449837616
+  - m_Id: 6986584511553536
+    m_Localized: "S\xED"
     m_Metadata:
       m_Items: []
-  - m_Id: 14015149449216
-    m_Localized: Bajo la misma estrella
+  - m_Id: 6986694557507584
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7597304584413184
+    m_Localized: "\xA1Adivin\xE1 los enunciados en pantalla sin verlos!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7598026315079680
+    m_Localized: "Eleg\xED la o las categor\xEDas a utilizar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7598412576923648
+    m_Localized: "Cuando te toca, le\xE9 la descripci\xF3n y puls\xE1 <color=yellow>Jugar</color>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7613342281703424
+    m_Localized: "El resto puede ver, <color=red>\xA1vos no!</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614172930056192
+    m_Localized: "Si <color=yellow>adivin\xE1s</color>, segu\xED con otro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614159382454272
+    m_Localized: "(pod\xE9s <color=red>saltearlos</color> si son dif\xEDciles)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614140076072960
+    m_Localized: "\xA1Intent\xE1 adivinar los enunciados!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614614976143360
+    m_Localized: "Con <color=yellow>giroscopio</color>:\nInclin\xE1 hacia arriba
+      para <color=red>pasar</color>\nInclin\xE1 hacia abajo para <color=green>puntuar</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614628850900992
+    m_Localized: "(Eleg\xED el m\xE9todo de control usado en el men\xFA de Opciones)"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616514589007872
+    m_Localized: "Una vez jugadas todas las categor\xEDas, se muestran los puntajes
+      finales"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616537607348224
+    m_Localized: "Si se jug\xF3 por equipos, se declara un <color=yellow>ganador</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616899936493568
+    m_Localized: "\xA1Cre\xE1 m\xE1s categor\xEDas con el <color=yellow>creador de
+      categor\xEDas</color>!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616885516476416
+    m_Localized: "Las categor\xEDas personalizadas aparecen al final del men\xFA
+      de categor\xEDas"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8024569503883264
+    m_Localized: "\xA1Adivin\xE1 platillos, ingredientes y postres!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9560127543779328
+    m_Localized: Enunciado
     m_Metadata:
       m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 8464436551449837616
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0020413eb30c00000020817ac00a000000200149bb0a000000204164590a0000002001c544d0180000208167e60a0000

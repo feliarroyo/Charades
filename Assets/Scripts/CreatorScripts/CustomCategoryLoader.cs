@@ -42,10 +42,11 @@ public class CustomCategoryLoader : MonoBehaviour
         {
             StreamReader reader = new(file);
             GameObject newGameObject = Instantiate(prefab, parent.transform);
-            newGameObject.GetComponentInChildren<CategoryButton>().jsonCategory = new TextAsset(reader.ReadToEnd());
-            newGameObject.GetComponentInChildren<CategoryButton>().customFilePath = file;
+            newGameObject.GetComponentInChildren<CategoryButton_Custom>().jsonCategoryName = Path.GetFileNameWithoutExtension(file);
+            newGameObject.GetComponentInChildren<CategoryButton_Custom>().jsonCategory = new TextAsset(reader.ReadToEnd());
+            newGameObject.GetComponentInChildren<CategoryButton_Custom>().customFilePath = file;
             if (singleSelect)
-                newGameObject.GetComponentInChildren<CategoryButton>().SetSingleSelect();
+                newGameObject.GetComponentInChildren<CategoryButton_Custom>().SetSingleSelect();
         }
     }
 

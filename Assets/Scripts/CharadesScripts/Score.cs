@@ -21,7 +21,14 @@ public class Score : MonoBehaviour
 
     /// <returns>Text string according to the score currently obtained.</returns>
     public static string GetScoreText(){
-        return (score == 1)? "1 acierto" : score + " aciertos";
+        if (Const.EnglishLocaleActive())
+        {
+            return (score == 1) ? "1 point" : score + " points";
+        }
+        else
+        {
+            return (score == 1) ? "1 acierto" : score + " aciertos";
+        }
     }
 
     public static int GetSkipCount(){

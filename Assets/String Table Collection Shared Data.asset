@@ -15,430 +15,410 @@ MonoBehaviour:
   m_TableCollectionName: String Table Collection
   m_TableCollectionNameGuidString: 38dababf3a65eef4083d7e59b7cdeff0
   m_Entries:
-  - m_Id: 210004680704
-    m_Key: MainMenu/Canvas/MainMenu/MainMenuButtons/Play Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 331010351104
-    m_Key: MainMenu/Canvas/MainMenu/MainMenuButtons/Creator Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 662314229760
-    m_Key: MainMenu/Canvas/MainMenu/MainMenuButtons/Tutorial Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 735525806080
-    m_Key: MainMenu/Canvas/MainMenu/MainMenuButtons/Options Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 770653102080
-    m_Key: MainMenu/Canvas/MainMenu/MainMenuButtons/Credits Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 849921253376
-    m_Key: MainMenu/Canvas/MainMenu/MainMenuButtons/Quit Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 978904489984
-    m_Key: MainMenu/Canvas/PlaySubmenu/Play SubMenuButtons/Quickplay/Quickplay Button/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1007044075520
-    m_Key: MainMenu/Canvas/PlaySubmenu/Play SubMenuButtons/Quickplay/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1129505169408
-    m_Key: MainMenu/Canvas/PlaySubmenu/Play SubMenuButtons/Competition/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1385391267840
-    m_Key: MainMenu/Canvas/PlaySubmenu/Play SubMenuButtons/Mash-Up/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1603297943552
-    m_Key: MainMenu/Canvas/PlaySubmenu/Play SubMenuButtons/Competition/Competition
-      Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1829689696256
-    m_Key: MainMenu/Canvas/PlaySubmenu/TeamAttributes/Teams Label/TeamButtonLabel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1885960478720
-    m_Key: MainMenu/Canvas/PlaySubmenu/TeamAttributes/TeamNames/TeamName1/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1917858160640
-    m_Key: MainMenu/Canvas/PlaySubmenu/TeamAttributes/TeamNames/TeamName1/InputField
-      (TMP)/Text Area/Placeholder
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1951014133760
-    m_Key: TeamName/InputField (TMP)/Text Area/Placeholder
-    m_Metadata:
-      m_Items: []
-  - m_Id: 1972027596800
-    m_Key: MainMenu/Canvas/PlaySubmenu/TeamAttributes/TeamNames/TeamName2/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2101140856832
-    m_Key: MainMenu/Canvas/PlaySubmenu/TeamAttributes/TeamNames/TeamName2/InputField
-      (TMP)/Text Area/Placeholder
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2190336925696
-    m_Key: MainMenu/Canvas/PlaySubmenu/Return Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2299426578432
-    m_Key: MainMenu/Canvas/OptionsSubmenu/Options/Sliders/Music Slider/Label
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2324940529664
-    m_Key: MainMenu/Canvas/OptionsSubmenu/Options/Sliders/Sound Slider/Label
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2619552636928
-    m_Key: MainMenu/Canvas/OptionsSubmenu/Options/Sliders/Time Slider/Label
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2688997728256
-    m_Key: MainMenu/Canvas/OptionsSubmenu/Options/Sliders/Wait Slider/Label
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2758488956928
-    m_Key: MainMenu/Canvas/OptionsSubmenu/Options/Sliders/MashUp Slider/Label
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3338900938752
-    m_Key: MainMenu/Canvas/OptionsSubmenu/Options/Controls Label/Controles
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3425639145472
-    m_Key: MainMenu/Canvas/OptionsSubmenu/Options/Controls Label/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3466378420224
-    m_Key: MainMenu/Canvas/OptionsSubmenu/Return Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3863448985600
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialNavButtons/TutLabel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3901726203904
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Game/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4273995849728
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Modes/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4727358169088
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Categories/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5368721776640
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Presentation/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5772717137920
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Countdown/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6374188720128
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Round/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6816452911104
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Controls/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7449159475200
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Score/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 7745981980672
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_GameEnd/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 8303971213312
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Options/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 8814686445568
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/TutorialSpace_Custom/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 9531388141568
-    m_Key: MainMenu/Canvas/TutorialSubmenu/TutorialSpace/Return Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 9742122557440
-    m_Key: MainMenu/Canvas/CreditsSubmenu/Scroll View/Viewport/Content/Text Credits
-    m_Metadata:
-      m_Items: []
-  - m_Id: 9917171834880
-    m_Key: MainMenu/Canvas/CreditsSubmenu/Return Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10008251146240
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Favoritos_Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10054094888960
-    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos_Text"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10102509740032
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Comida_Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10121971310592
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Deportes_Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10143848800256
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
-      y pelis Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10167261405184
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas_Text
+  - m_Id: 12760851226624
+    m_Key: addPrompt
     m_Metadata:
       m_Items: []
   - m_Id: 10194121728000
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime_Text
+    m_Key: anime
     m_Metadata:
       m_Items: []
-  - m_Id: 10220495511552
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Superheroes_Text
+  - m_Id: 10167261405184
+    m_Key: cartoons
     m_Metadata:
       m_Items: []
-  - m_Id: 10241299259392
-    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica_Text"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10262480494592
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos_Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10275969376256
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Personalizadas_Text
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10330356916224
-    m_Key: CategorySelect/Canvas/Buttons/Volver/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10349726212096
-    m_Key: CategorySelect/Canvas/Buttons/Limpiar/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10473978273792
-    m_Key: CategorySelect/Canvas/Buttons/Jugar/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10586989600768
-    m_Key: CategorySelect/CustomCanvas/Title
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10711463960576
-    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Personalizadas/CategoryCreatorButton/Name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10791877156864
-    m_Key: CategoryCreatorButton/Prefab Mode in Context/CategoryCreatorButton/Name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10844503089152
-    m_Key: CategorySelect/CustomCanvas/Buttons/Upper Buttons/ShareCategoryButton/ExportCategoryLabel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10982835429376
-    m_Key: CategorySelect/CustomCanvas/Buttons/Upper Buttons/ImportCategoryButton/ImportButtonLabel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11023331434496
-    m_Key: CategorySelect/CustomCanvas/Buttons/Lower Buttons/ReturnButton_Custom/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11042621038592
-    m_Key: CategorySelect/CustomCanvas/Buttons/Lower Buttons/DeleteCategoryButton/DeleteButtonLabel
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11150251073536
-    m_Key: FinalResults/Canvas/Scores/Names
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11185881686016
-    m_Key: FinalResults/Canvas/Buttons/Play Again Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11203770392576
-    m_Key: FinalResults/Canvas/Buttons/Change Categories Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11235047317504
-    m_Key: FinalResults/Canvas/Buttons/Main Menu Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11379050356736
-    m_Key: FinalResults/Canvas/Winner
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11733007671296
-    m_Key: RoundResults/Canvas/Title
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11799499972608
-    m_Key: RoundResults/Canvas/Hits
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11821805281280
-    m_Key: RoundResults/Canvas/Skips
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11845993832448
-    m_Key: RoundResults/Canvas/Return Button/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11984695271424
-    m_Key: Presentation/Canvas/Category Panel/Return/Team Announcement
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12076231761920
-    m_Key: Presentation/Canvas/Category Panel/Category/CategoryContent/Title
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12091570331648
-    m_Key: Presentation/Canvas/Category Panel/Category/CategoryContent/Description
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12126693433344
-    m_Key: Presentation/Canvas/Category Panel/Jugar/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12294666919936
-    m_Key: CustomCreator/Canvas/TitleName/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12392801050624
-    m_Key: CustomCreator/Canvas/DescName/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12440985214976
-    m_Key: CustomCreator/Canvas/DescName/InputField (TMP)/Text Area/Placeholder
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12489672695808
-    m_Key: CustomCreator/Canvas/PromptName/Text (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12517866807296
-    m_Key: CustomCreator/Canvas/PromptName/InputField (TMP)/Text Area/Placeholder
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12546555846656
-    m_Key: CustomCreator/Canvas/PromptCount/PromptHeader
+  - m_Id: 331010351104
+    m_Key: categoryCreator
     m_Metadata:
       m_Items: []
   - m_Id: 12605901053952
-    m_Key: CustomCreator/Canvas/FinalOptions/Icon/IconChoices/CheckIconsButton/Text
-      (TMP)
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12673475485696
-    m_Key: CustomCreator/Canvas/Header/Title
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12760851226624
-    m_Key: CustomCreator/Canvas/FinalOptions/Icon/FinalOptions/AddPromptButton/Text
-      (TMP)
+    m_Key: categoryCreatorChangeIcon
     m_Metadata:
       m_Items: []
   - m_Id: 12797870153728
-    m_Key: CustomCreator/Canvas/FinalOptions/Icon/FinalOptions/CheckPromptsButton/Text
-      (TMP)
+    m_Key: categoryCreatorCheckPrompts
     m_Metadata:
       m_Items: []
-  - m_Id: 12930166890496
-    m_Key: CustomCreator/Canvas/FinalOptions/Icon/FinalOptions/EndButton/Text (TMP)
+  - m_Id: 12392801050624
+    m_Key: categoryCreatorDesc
     m_Metadata:
       m_Items: []
-  - m_Id: 13024534536192
-    m_Key: CustomCreator/PromptCanvas/PromptPanel/PromptCountAlt/PromptHeader
+  - m_Id: 12440985214976
+    m_Key: categoryCreatorDescPlaceholder
     m_Metadata:
       m_Items: []
-  - m_Id: 13102338875392
-    m_Key: CustomCreator/PromptCanvas/PromptPanel/PromptButtons/ReturnButton/Text
-      (TMP)
+  - m_Id: 10586989600768
+    m_Key: categoryCreatorHeader
     m_Metadata:
       m_Items: []
-  - m_Id: 13123373309952
-    m_Key: CustomCreator/PromptCanvas/PromptPanel/PromptButtons/DeletePromptsButton
-      Variant/Text (TMP)
+  - m_Id: 12294666919936
+    m_Key: categoryCreatorName
     m_Metadata:
       m_Items: []
-  - m_Id: 13232295190528
-    m_Key: CustomCreator/IconCanvas/IconPanel/IconUIButtons/ReturnButton/Text (TMP)
+  - m_Id: 12489672695808
+    m_Key: categoryCreatorPrompt
     m_Metadata:
       m_Items: []
-  - m_Id: 13293225844736
-    m_Key: CustomCreator/UnsavedCanvas/UnsavedPanel/UnsavedTitle
+  - m_Id: 12546555846656
+    m_Key: categoryCreatorPromptCount
     m_Metadata:
       m_Items: []
-  - m_Id: 13354068418560
-    m_Key: CustomCreator/UnsavedCanvas/UnsavedPanel/UnsavedCategory/Text (TMP)
+  - m_Id: 12517866807296
+    m_Key: categoryCreatorPromptPlaceholder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11203770392576
+    m_Key: changeCategoriesButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3863448985600
+    m_Key: charades
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10054094888960
+    m_Key: classics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10349726212096
+    m_Key: clearCategories
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1603297943552
+    m_Key: p
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1129505169408
+    m_Key: competitionDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11845993832448
+    m_Key: continueButton
     m_Metadata:
       m_Items: []
   - m_Id: 13447714643968
-    m_Key: CustomCreator/UnsavedCanvas/UnsavedPanel/UnsavedReturnButton/Text (TMP)
+    m_Key: continueEditing
     m_Metadata:
       m_Items: []
-  - m_Id: 13593189883904
-    m_Key: CustomCreator/DeleteCanvas/PausePanel/PauseTitle
+  - m_Id: 3338900938752
+    m_Key: controlSchemeLabel
     m_Metadata:
       m_Items: []
-  - m_Id: 13633417453568
-    m_Key: CustomCreator/DeleteCanvas/PausePanel/DeleteCategory/Text (TMP)
+  - m_Id: 10711463960576
+    m_Key: createCategoryButton
     m_Metadata:
       m_Items: []
-  - m_Id: 13671799529472
-    m_Key: CustomCreator/DeleteCanvas/PausePanel/QuitButton/Text (TMP)
+  - m_Id: 770653102080
+    m_Key: credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9742122557440
+    m_Key: 'credits
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10275969376256
+    m_Key: custom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11042621038592
+    m_Key: deleteCategoryButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13123373309952
+    m_Key: deletePrompt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10008251146240
+    m_Key: favorites
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11150251073536
+    m_Key: finalScoreboard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10102509740032
+    m_Key: food
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10262480494592
+    m_Key: games
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11799499972608
+    m_Key: hitsResults
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10982835429376
+    m_Key: importCategoryButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1385391267840
+    m_Key: mashupDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10241299259392
+    m_Key: music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2299426578432
+    m_Key: musicVolume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 735525806080
+    m_Key: options
     m_Metadata:
       m_Items: []
   - m_Id: 13877349785600
-    m_Key: Round/PauseCanvas/PausePanel/PauseTitle
+    m_Key: pause
     m_Metadata:
       m_Items: []
-  - m_Id: 13895414652928
-    m_Key: Round/PauseCanvas/PausePanel/ResumeButton/Text (TMP)
+  - m_Id: 11185881686016
+    m_Key: playAgain
     m_Metadata:
       m_Items: []
-  - m_Id: 13910769999872
-    m_Key: Round/PauseCanvas/PausePanel/QuitButton/Text (TMP)
+  - m_Id: 210004680704
+    m_Key: play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 978904489984
+    m_Key: quickplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1007044075520
+    m_Key: quickplayDesc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 849921253376
+    m_Key: quitButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13354068418560
+    m_Key: quitWithoutSaving
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11733007671296
+    m_Key: resultsTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13102338875392
+    m_Key: returnAlt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2190336925696
+    m_Key: return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11235047317504
+    m_Key: goToMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2758488956928
+    m_Key: roundOption
     m_Metadata:
       m_Items: []
   - m_Id: 13963983134720
-    m_Key: Round/Canvas/Points
+    m_Key: scoreboard
     m_Metadata:
       m_Items: []
-  - m_Id: 14015149449216
-    m_Key: Round/Canvas/Prompt
+  - m_Id: 2324940529664
+    m_Key: sfxOption
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10844503089152
+    m_Key: shareCategoryButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11821805281280
+    m_Key: skipResults
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10121971310592
+    m_Key: sports
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10473978273792
+    m_Key: startGame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10220495511552
+    m_Key: superheroes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1885960478720
+    m_Key: team1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1972027596800
+    m_Key: team2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6984393222594560
+    m_Key: teamModeLabel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1917858160640
+    m_Key: teamPlaceholder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6986694557507584
+    m_Key: teamsDisabled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6986584511553536
+    m_Key: teamsEnabled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11984695271424
+    m_Key: teamTurn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12076231761920
+    m_Key: testTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2619552636928
+    m_Key: timeOption
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662314229760
+    m_Key: tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3901726203904
+    m_Key: tutorialText0_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4273995849728
+    m_Key: tutorialText1_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8814686445568
+    m_Key: tutorialText10
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4727358169088
+    m_Key: tutorialText2_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5368721776640
+    m_Key: tutorialText3_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5772717137920
+    m_Key: tutorialText4_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6374188720128
+    m_Key: tutorialText5_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6816452911104
+    m_Key: tutorialText6_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7449159475200
+    m_Key: tutorialText07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7745981980672
+    m_Key: tutorialText08
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8303971213312
+    m_Key: tutorialText09
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10143848800256
+    m_Key: tvAndFilm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13293225844736
+    m_Key: unsavedWarning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2688997728256
+    m_Key: waitOption
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11379050356736
+    m_Key: winnerTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13593189883904
+    m_Key: youSure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7242860009168896
+    m_Key: categoryCreatorNam
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7243044684374016
+    m_Key: categoryCreatorNamePlaceholder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7244727418167296
+    m_Key: doNotDelete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7597304584413184
+    m_Key: tutorialText0_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7598026315079680
+    m_Key: tutorialText1_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7598412576923648
+    m_Key: tutorialText1_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7613342281703424
+    m_Key: tutorialText2_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614140076072960
+    m_Key: tutorialText3_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614159382454272
+    m_Key: tutorialText3_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614172930056192
+    m_Key: tutorialText3_3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614614976143360
+    m_Key: tutorialText4_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614628850900992
+    m_Key: tutorialText4_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616514589007872
+    m_Key: tutorialText5_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616537607348224
+    m_Key: tutorialText5_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616885516476416
+    m_Key: tutorialText6_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616899936493568
+    m_Key: tutorialText6_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8024569503883264
+    m_Key: categoryDescExample
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9560127543779328
+    m_Key: promptName
     m_Metadata:
       m_Items: []
   m_Metadata:

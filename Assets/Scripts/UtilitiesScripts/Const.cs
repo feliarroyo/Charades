@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 
 /// <summary>
 /// This class contains constants used through the entire code.
@@ -25,15 +26,24 @@ public static class Const
     // Mash-Up category values
     public const string MASHUP_NAME = "Mash-Up";
     public const string MASHUP_DESC = "¡Pueden tocar enunciados de cualquiera de las categorías seleccionadas!";
+    public const string MASHUP_DESC_EN = "Prompts from any of the selected categories can show up!";
     public const string MASHUP_ICON = "pregunta";
     public const string MASHUP_ROUND_COUNT = "mashupRoundCount";
     // Gameplay strings
     public const string CORRECT = "Bien";
+    public const string CORRECT_EN = "Correct";
     public const string SKIP = "Paso";
+    public const string SKIP_EN = "Skip";
     public const string TIME_OVER = "¡Tiempo!";
+    public const string TIME_OVER_EN = "Time's up!";
     public const string NOTEAM = "que adivines";
+    public const string NOTEAM_EN = "Prepare yourself";
+    public const string DEFAULT_TEAM_PREFIX = "Equipo ";
+    public const string DEFAULT_TEAM_PREFIX_EN = "Team ";
     public const string DEFAULT_TEAM1 = "Equipo 1";
     public const string DEFAULT_TEAM2 = "Equipo 2";
+    public const string DEFAULT_TEAM1_EN = "Team 1";
+    public const string DEFAULT_TEAM2_EN = "Team 2";
     public const string DEFAULT_ICON = "default";
     // Scenes
     public const string SCENE_MAINMENU = "MainMenu";
@@ -45,6 +55,11 @@ public static class Const
     public static string customDirectory = Application.persistentDataPath + "/customCategories";
     public static Color DefaultBGColor = new(0.1921569f, 0.3019608f, 0.4745098f, 1f);
     public static Color CorrectTextColor = new(255, 187, 0, 255);
-    public static Color TeamsEnabledTextColor = new(0.67f,0.286f,0.023f,1f);
-    public static Color TeamsDisabledTextColor = new(0.4f,0.4f,0.4f,1f);
+    public static Color TeamsEnabledTextColor = new(0.67f, 0.286f, 0.023f, 1f);
+    public static Color TeamsDisabledTextColor = new(0.4f, 0.4f, 0.4f, 1f);
+
+    public static bool EnglishLocaleActive()
+    {
+        return LocalizationSettings.SelectedLocale != null && LocalizationSettings.SelectedLocale.Identifier.Code == "en";
+    }
 }

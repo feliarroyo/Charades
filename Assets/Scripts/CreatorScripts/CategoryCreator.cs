@@ -45,12 +45,17 @@ public class CategoryCreator : MonoBehaviour
     public static bool changeCanvas = false;
 
     // Warnings
-    private const string 
+    private const string
         WARNING_EMPTYPROMPT = "No se puede agregar un enunciado vacío.",
+        WARNING_EMPTYPROMPT_EN = "Empty prompts cannot be added.",
         WARNING_REPEATPROMPT = "Este enunciado ya fue agregado.",
+        WARNING_REPEATPROMPT_EN = "This prompt has already been added.",
         WARNING_EMPTYTITLE = "Debes ponerle un nombre a la categoría.",
+        WARNING_EMPTYTITLE_EN = "The category must be named.",
         WARNING_ZEROPROMPTS = "La categoría no tiene suficientes enunciados.",
-        WARNING_EMPTYDESC = "La categoría no tiene una descripción."
+        WARNING_ZEROPROMPTS_EN = "The category does not have enough prompts.",
+        WARNING_EMPTYDESC = "La categoría no tiene una descripción.",
+        WARNING_EMPTYDESC_EN = "The category must have a description."
     ;
 
     // Start is called before the first frame update
@@ -135,7 +140,7 @@ public class CategoryCreator : MonoBehaviour
             AddToQuestionList(newQuestion);
         }
         else
-            StartCoroutine(ShowWarningText(WARNING_EMPTYPROMPT));
+            StartCoroutine(ShowWarningText(Const.EnglishLocaleActive() ? WARNING_EMPTYPROMPT_EN : WARNING_EMPTYPROMPT));
         promptInputField.text = "";
     }
 
@@ -158,7 +163,7 @@ public class CategoryCreator : MonoBehaviour
     {
         if (questions.Contains(prompt))
         {
-            StartCoroutine(ShowWarningText(WARNING_REPEATPROMPT));
+            StartCoroutine(ShowWarningText(Const.EnglishLocaleActive() ? WARNING_REPEATPROMPT_EN : WARNING_REPEATPROMPT));
             return;
         }
         questions.Add(prompt);
@@ -210,17 +215,17 @@ public class CategoryCreator : MonoBehaviour
         // check custom category names
         if (categoryTitle.Length <= 1)
         {
-            StartCoroutine(ShowWarningText(WARNING_EMPTYTITLE));
+            StartCoroutine(ShowWarningText(Const.EnglishLocaleActive() ? WARNING_EMPTYTITLE_EN : WARNING_EMPTYTITLE));
             return false;
         }
         if (questions.Count == 0)
         {
-            StartCoroutine(ShowWarningText(WARNING_ZEROPROMPTS));
+            StartCoroutine(ShowWarningText(Const.EnglishLocaleActive() ? WARNING_ZEROPROMPTS_EN : WARNING_ZEROPROMPTS));
             return false;
         }
         if (description.Length <= 1)
         {
-            StartCoroutine(ShowWarningText(WARNING_EMPTYDESC));
+            StartCoroutine(ShowWarningText(Const.EnglishLocaleActive() ? WARNING_EMPTYDESC_EN : WARNING_EMPTYDESC));
             return false;
         }
         return true;

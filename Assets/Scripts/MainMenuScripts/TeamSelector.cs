@@ -1,54 +1,96 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using System.Collections;
 
-/// <summary>
-/// This class contains behavior related to the team selector button.
-/// </summary>
 public class TeamSelector : MonoBehaviour
 {
-    private static readonly string[] labels = new string[2]{"Modo equipos: Sí", "Modo equipos: No"};
-    public TextMeshProUGUI textSpace;
-    public Image buttonImage;
-    public Sprite[] buttonSprites;
+    private static readonly string[] labels = { "Sí", "No", "Enabled", "Disabled" };
 
-    public GameObject[] teamSpaces;
-   
-    // Start is called before the first frame update
-    void Start()
+    [Header("UI Elements")]
+    [SerializeField] private TextMeshProUGUI textSpace;
+    [SerializeField] private Image buttonImage;
+    [SerializeField] private Sprite[] buttonSprites;
+    [SerializeField] private GameObject[] teamSpaces;
+
+    [Header("Localization")]
+    [SerializeField] private LocalizedString localizedLabel;
+
+    private void OnEnable()
     {
-        ShowTeamsUI(PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1)!=1);
+        // Subscribe
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+        localizedLabel.StringChanged += UpdateText;
+
+        // Force update
+        StartCoroutine(DelayedRefresh());
     }
 
-    /// <summary>
-    /// Sets button color according to whether teams mode is enabled or not.
-    /// </summary>
-    public void ChangeTextColor(){
-        textSpace.color = (PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1) > 1)? 
-            Const.TeamsEnabledTextColor : Const.TeamsDisabledTextColor;
+    private IEnumerator DelayedRefresh()
+    {
+        yield return null; // wait 1 frame
+
+        localizedLabel.RefreshString();
+        ShowTeamsUI(PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1) != 1);
     }
 
-    /// <summary>
-    /// Disables teams if they are enabled, and viceversa.
-    /// </summary>
-    public void ChangeTeams(){
-        PlayerPrefs.SetInt(Const.PREF_TEAM_COUNT, (PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1)==1)? 2 : 1);
-        ShowTeamsUI(PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1)!=1);
+    private void OnDisable()
+    {
+        // Unsubscribe
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+        localizedLabel.StringChanged -= UpdateText;
     }
 
-    /// <summary>
-    /// Shows or hides Team-related UI.
-    /// </summary>
-    /// <param name="show">Whether to show or hide UI.</param>
-    private void ShowTeamsUI(bool show){
-        textSpace.text = labels[show? 0 : 1];
-        buttonImage.sprite = buttonSprites[show? 0 : 1];
-        foreach (GameObject go in teamSpaces) {
-            go.SetActive(show);
-        }
+    private void Start()
+    {
+        ShowTeamsUI(PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1) != 1);
+    }
+
+    private void UpdateText(string value)
+    {
+        textSpace.text = value;
+    }
+
+    private void OnLocaleChanged(Locale _)
+    {
+        ShowTeamsUI(PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1) != 1);
+    }
+
+    private void UpdateLabel(string label)
+    {
+        localizedLabel.Arguments = new object[] { label };
+        localizedLabel.RefreshString();
+    }
+
+    public void ChangeTeams()
+    {
+        int current = PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1);
+        PlayerPrefs.SetInt(Const.PREF_TEAM_COUNT, current == 1 ? 2 : 1);
+
+        ShowTeamsUI(PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1) != 1);
+    }
+
+    private void ShowTeamsUI(bool enabled)
+    {
+        if (Const.EnglishLocaleActive())
+            UpdateLabel(enabled ? labels[2] : labels[3]);
+        else
+            UpdateLabel(enabled ? labels[0] : labels[1]);
+
+        buttonImage.sprite = buttonSprites[enabled ? 0 : 1];
+
+        foreach (var go in teamSpaces)
+            go.SetActive(enabled);
+
         ChangeTextColor();
     }
 
+    public void ChangeTextColor()
+    {
+        textSpace.color = (PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1) > 1)
+            ? Const.TeamsEnabledTextColor
+            : Const.TeamsDisabledTextColor;
+    }
 }

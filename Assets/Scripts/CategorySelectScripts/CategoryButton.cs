@@ -2,6 +2,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization;
 
 /// <summary>
 /// This class contains the behavior related to the buttons used for each category.
@@ -11,36 +13,42 @@ public class CategoryButton : MonoBehaviour
     public TextMeshProUGUI categoryName; // text space for the name
     public Button buttonComponent; // button image
     public TextAsset jsonCategory; // json file containing all information
+    public string jsonCategoryName;
     public Image categoryImage; // category symbol on the button
-    private Category category;
-    private bool singleSelect;
-    private ColorBlock unselectedColor;
-    private ColorBlock selectedColor;
+    protected Category category;
+    protected bool singleSelect;
+    protected ColorBlock unselectedColor;
+    protected ColorBlock selectedColor;
 
     // Competition Position Mark
     public GameObject mark;
     public TextMeshProUGUI markText;
-    private int position;
+    protected int position;
     public string customFilePath = "";
 
     // Start is called before the first frame update
-    void Start()
+    async void Start()
     {
+        await LocalizationSettings.InitializationOperation.Task;
         LoadCategoryInfo();
         // Define colors for different states
         unselectedColor = SetColor(unselectedColor, Color.white);
         selectedColor = SetColor(selectedColor, Color.green);
         // Initialize color value depending on previous game state and game type
-        if (Competition.ContainsCategory(category) && (Competition.gameType != Const.GameModes.QuickPlay)){
+        if (Competition.ContainsCategory(category) && (Competition.gameType != Const.GameModes.QuickPlay))
+        {
             SetCategory_selected();
         }
-        else {
+        else
+        {
             buttonComponent.colors = unselectedColor;
         }
+        Debug.Log("At the end, JSON is now: " + jsonCategory.name);
     }
 
-    private void LoadCategoryInfo(){
-        category = JSONReader.GetCategory(jsonCategory);
+    protected virtual void LoadCategoryInfo(){
+        category = CategoryDatabase.Get(jsonCategoryName);
+        //category = JSONReader.GetCategory(jsonCategory);
         categoryName.text = category.title;
         Sprite categorySprite = Resources.Load<Sprite>(category.iconName);
         categoryImage.sprite = Resources.Load<Sprite>(categorySprite == null? "default" : category.iconName);

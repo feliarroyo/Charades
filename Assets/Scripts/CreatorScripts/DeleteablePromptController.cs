@@ -15,10 +15,10 @@ public class DeleteablePromptController : MonoBehaviour
         }
         switch (canDelete) {
             case true:
-                buttonText.text = "Dejar de borrar";
+                buttonText.text = Const.EnglishLocaleActive()? "Stop deleting" : "Dejar de borrar";
                 return;
             case false:
-                buttonText.text = "Borrar enunciados";
+                buttonText.text = Const.EnglishLocaleActive()? "Delete prompts" : "Borrar enunciados";
                 return;
         }
     }

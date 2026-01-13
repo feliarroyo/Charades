@@ -11,6 +11,7 @@ public class RoundResults : MonoBehaviour
     public TextMeshProUGUI answers_text;
     public TextMeshProUGUI skips_text;
     public MusicPlayer music;
+    private string hit_string;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +19,10 @@ public class RoundResults : MonoBehaviour
         music.PlayTrack();
         Config.MenuConfig();
         answers_text.text = FillInAnswers();
+        hit_string = Const.EnglishLocaleActive() ? " point" : " acierto";
         score_text.text = FillInScore();
         int skips = Score.GetSkipCount();
-        skips_text.text = skips == 0? "" : "(" + skips + " sin responder)";
+        skips_text.text = skips == 0? "" : "(" + skips + (Const.EnglishLocaleActive() ? " unanswered)" : " sin responder)");
     }
 
     public void ContinueGame(){
@@ -37,17 +39,17 @@ public class RoundResults : MonoBehaviour
             else
                 answers +="<color=\"grey\">";
             // Truncate longer prompts
-            if (a.Item1.Length > 40)
-                answers += a.Item1.Truncate(40) + "\n";
-            else
-                answers += a.Item1 + "\n";
+            // if (a.Item1.Length > 40)
+            //     answers += a.Item1.Truncate(40) + "\n";
+            // else
+            answers += a.Item1 + "\n";
         }
         return answers;
     }
 
     private string FillInScore(){
         // returns score string
-        string score = Score.score.ToString() + " acierto";
+        string score = Score.score.ToString() + hit_string;
         if (Score.score != 1)
             score += "s";
         return score;

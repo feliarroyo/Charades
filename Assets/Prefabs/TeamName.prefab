@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 5445091509659340093}
   - component: {fileID: 3107827401745433913}
   - component: {fileID: 2148649166884776938}
+  - component: {fileID: 7003719803241847237}
   - component: {fileID: 4911320475210204635}
   m_Layer: 5
   m_Name: InputField (TMP)
@@ -254,6 +255,19 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
+--- !u!114 &7003719803241847237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626470383502752102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b83031064c1365f4db3425071fdb037b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamIndex: 1
 --- !u!114 &4911320475210204635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,7 +536,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Team Name
+  m_text: Nombre del equipo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
   m_sharedMaterial: {fileID: -8760612746462281966, guid: ae84e16e82b3d3643acf65f53bc34600, type: 2}
@@ -643,7 +657,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:38dababf3a65eef4083d7e59b7cdeff0
           m_TableEntryReference:
-            m_KeyId: 1951014133760
+            m_KeyId: 1917858160640
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -718,7 +732,7 @@ MonoBehaviour:
   m_text: "\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ac0bf18db33d914698de43a0436ac2b, type: 2}
-  m_sharedMaterial: {fileID: -3924109897920968110, guid: 77209e5932994af48a6a8721161852de, type: 2}
+  m_sharedMaterial: {fileID: -6739000999234464215, guid: 9ac0bf18db33d914698de43a0436ac2b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

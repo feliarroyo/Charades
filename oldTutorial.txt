@@ -1,0 +1,94 @@
+PAG 1:
+¡Adiviná los enunciados en pantalla sin verlos! // Guess the prompts on screen without seeing them!
+¡El resto debe ayudarte!    // The others must help you!
+Sprites: Persona sosteniendo celu, otros diciendo cosas
+
+PAG 2:
+Elegí un modo de juego y si se juega en equipos. // Choose a game mode and whether to play in teams
+Elegí la o las categorías a utilizar // Choose the category/categories to be used
+Cuando te toca, leé la descripción y pulsá Jugar // When you're up, read the description and press Start
+Sprite: manito tocando botón de categoría // Mini descripción (iconito manzana/comida/lo que comés)
+
+PAG 3:
+Luego de pulsar Jugar, colocá el celular en horizontal // After pressing Start, place the phone horizontally
+El resto puede ver, ¡vos no! // The others should be able to see the screen, not you!
+Sprites: parecidos o iguales a pag 1 (quizá ejemplo de cómo no sostenerlo)
+
+PAG 4:
+Aparecerán enunciados en pantalla relacionados a la categoría // Prompts will appear on-screen related to the category
+¡Intentá adivinar los enunciados! // Try to guess the prompts!
+(podés saltearlos si son difíciles) // (you can skip prompts if they're too difficult)
+Si adivinás, seguí con otro // When you guess correctly, move on to the next one
+Sprite: Celularcito pasando y acertando enunciado
+
+PAG 5:
+Con pantalla táctil: Presioná con la izquierda para pasar, presioná con la derecha para puntuar // Using Touchscreen: Left hand press to skip, right hand press to score
+Con giroscopio: Incliná hacia arriba para pasar, incliná hacia abajo para puntuar // Using Gyroscope: Tilt upwards to skip, Tilt downwards to score
+(Elegí el método de control usado en el menú de Opciones) // (Choose control scheme used in Options menu)
+Sprite: Celular inclinado arriba y abajo, celular con manito presionando botoncitos 
+
+PAG 6:
+Cuando se acaba el tiempo, podés ver los enunciados de la ronda y tu puntaje // When time's up, check the round's prompts and your score.
+Una vez jugadas todas las categorías, se muestran los puntajes finales // Once all categories have been played, the final scoreboard is shown
+Si se jugó por equipos, se declara un ganador // In Team Mode, a winner is declared
+Sprite: Trofeo, algún puntaje falso de ejemplo
+
+PAG 7:
+¡Configurá el juego a tu gusto en el menú de opciones! // Customize the game at your heart's content in Options!
+¡Creá más categorías con el creador de categorías! // Use the Category Creator to make even more categories!
+Las categorías personalizadas aparecen al final del menú de categorías // Your creations will appear at the end of the category selection
+Sprite: Botón del creador de categorías 
+
+---------------------------
+
+CHARADAS:
+<color=green>Charadas</color> es un juego donde una persona tiene que adivinar enunciados que se muestran en la pantalla sin verlos, mientras otros tratan de darle pistas acerca de qué se trata.
+
+MODOS:
+Hay <u>tres</u> modos de juego:
+- <color=yellow>Partida rápida:</color> Se juega una única categoría
+- <color=yellow>Competición:</color> Se eligen varias categorías que se juegan en secuencia
+- <color=yellow>Mash-Up:</color> Se eligen varias categorías y se juega una ronda con una mezcla de todos sus enunciados
+Todos los modos permiten jugar en equipo.
+
+CATEGORÍAS:
+Las categorías por jugar se eligen tocando el botón correspondiente.
+En <color=yellow>Partida Rápida</color>, el juego comienza una vez elegida la categoría.
+En los otros modos, se debe presionar el botón “Jugar” una vez que se eligieron todas las categorías para empezar.
+(en <color=yellow>Competición</color>, se juegan en el orden que fueron ingresadas)
+
+PRESENTACIÓN:
+Antes de cada ronda, se muestra la categoría que se va a jugar junto a una pequeña descripción.
+Es particularmente importante en Competición, para saber qué categoría se va a jugar y a qué equipo le toca jugar.
+Cuando el jugador está listo, debe presionar en “Jugar” para comenzar.
+
+CONTADOR:
+Cada ronda comienza con un contador para que el jugador coloque su celular correctamente. En este momento, quién esté adivinando debe colocar el dispositivo en <color=yellow>orientación horizontal</color> de forma que éste no vea lo que dice, pero los demás sí.
+(El sentido se ajusta automáticamente, lo importante es que esté horizontal)
+
+RONDA:
+Durante la ronda aparecerán enunciados de la categoría correspondiente y, con ayuda de tus compañeros, tendrás que tratar de adivinar la mayor cantidad de enunciados posibles antes de que se acabe el tiempo.
+Si algún enunciado fuera demasiado complicado, puedes elegir <color=red>pasarlo</color> para probar con otro distinto.
+
+CONTROLES:
+Charadas soporta dos alternativas de control:
+1. <color=yellow>Sensor táctil:</color> Inclina el dispositivo hacia arriba para pasar, y para abajo cuando adivinas.
+2. <color=yellow>Pantalla:</color> En el lado inferior de la pantalla, apretá con la mano izquierda para pasar, y con la derecha cuando adivinás.
+En las opciones se puede elegir qué opción utilizar (o incluso ambas en simultáneo).
+
+PUNTAJE:
+Cuando se acaba el tiempo, se muestra el puntaje obtenido y los enunciados encontrados durante la ronda (los acertados se listan en blanco).
+Cada enunciado correcto <color=green>suma un punto</color>.
+
+FIN DEL JUEGO:
+En Competición, la partida termina cuando todas las categorías seleccionadas fueron jugadas.
+En Partida Rápida y Mash-Up, por defecto se juega una única ronda (una por cada equipo cuando hay equipos).
+Se muestran los puntajes finales de la sesión y, en la modalidad de equipos, se declara un equipo ganador.
+
+OPCIONES:
+En el menú de opciones se pueden personalizar algunos parámetros de juego, como el <color=yellow>volumen</color> de los efectos de sonido y la música, el tipo de <color=yellow>controles</color> utilizado, el <color=yellow>tiempo</color> de la ronda y de la pausa entre cada par de enunciados.
+
+CATEGORÍAS PERSONALIZADAS:
+El juego permite la creación de categorías personalizadas, con la misma estructura que las otras categorías que hay en el juego.
+Las categorías personalizadas deben tener un título, descripción y al menos un enunciado. Además, pueden utilizar como ícono a cualquiera de los sprites que hay en el juego.
+Una vez creada una categoría, estará disponible para utilizar en la subsección <color=yellow>Personalizadas</color> al final de la lista de categorías. A su vez, puede editarse en cualquier momento en el menú de categorías personalizadas.

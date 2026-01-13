@@ -368,6 +368,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 5aecff6edc12b2f42a7de83e0ab4f8d8, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582392886206464
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &12535948 stripped
@@ -486,6 +494,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 9c1d84b1a42871646922123c455a3851, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584873619890176
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &18973200 stripped
@@ -604,6 +620,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 3820363f8948abd4ea234e3d5d1c6d5f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582957858955264
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &33220559 stripped
@@ -621,6 +645,10 @@ PrefabInstance:
     - target: {fileID: 4593550356756363542, guid: 3d02b9ffd1b8f8b4e9dcead6e307d3a6, type: 3}
       propertyPath: m_text
       value: "Crear categor\xEDa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593550356756363542, guid: 3d02b9ffd1b8f8b4e9dcead6e307d3a6, type: 3}
+      propertyPath: m_fontSize
+      value: 7.95
       objectReference: {fileID: 0}
     - target: {fileID: 5742550321096212818, guid: 3d02b9ffd1b8f8b4e9dcead6e307d3a6, type: 3}
       propertyPath: m_Pivot.x
@@ -828,6 +856,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 498b5c32979cd574c97b29ee9fbf3d84, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585398578978816
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &48519836 stripped
@@ -857,6 +893,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: "M\xEDmica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -946,6 +986,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 30152f0af7b84814abd7f13524290c57, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581634212110336
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &72179604 stripped
@@ -1064,6 +1112,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b40e810a878bf4d4188796f379681f84, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585449099370496
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &79136602 stripped
@@ -1182,6 +1238,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 7d000f5da8cdb464aac6402bfa35c781, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583601634287616
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &86930625 stripped
@@ -1300,6 +1364,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: e03fc9094abd1cb4fb2b97fe925d25f3, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585081003057152
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &89315683 stripped
@@ -1418,6 +1490,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b47b3d5018e681d4e85f1bfe9490ae5f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585341217677312
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &93659657 stripped
@@ -1536,6 +1616,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 250dd9ff5088f264684a6b4d0338483b, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583429122564096
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &94862049 stripped
@@ -1654,6 +1742,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 74f0a642cc52d2a4d8a480b57d20e37d, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584317048332288
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &103158557 stripped
@@ -1772,6 +1868,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 2a8b450aec2462640bcb053f8d49209f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585098434584576
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &112824176 stripped
@@ -1843,7 +1947,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -864.7724}
+  m_AnchoredPosition: {x: 0, y: -902.4878}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.9336282}
 --- !u!222 &117473989
@@ -2543,6 +2647,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 61e2496eee06bb941bb1b6796f65204a, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584081714323456
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &150469705 stripped
@@ -2792,6 +2904,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 7dafcfa5bea7e64469ee0ed57db410ec, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582049821499392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &158182788 stripped
@@ -2825,6 +2945,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Celular
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -2914,6 +3038,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: d700fa9cce15549479466fba5a82c52c, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581768014602240
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &159981074 stripped
@@ -2943,6 +3075,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Profesiones
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -3032,6 +3168,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: d381134caf0099446bf89baef4033513, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581724955877376
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &166320284 stripped
@@ -3154,6 +3298,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: ddcbf9f758d80dc46ae0386842493316, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584259934494720
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &184198756 stripped
@@ -3170,11 +3322,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4593550356756363542, guid: 3d02b9ffd1b8f8b4e9dcead6e307d3a6, type: 3}
       propertyPath: m_text
-      value: Create Catego
+      value: Create Category
       objectReference: {fileID: 0}
     - target: {fileID: 4593550356756363542, guid: 3d02b9ffd1b8f8b4e9dcead6e307d3a6, type: 3}
       propertyPath: m_fontSize
-      value: 795
+      value: 7.95
       objectReference: {fileID: 0}
     - target: {fileID: 5742550321096212818, guid: 3d02b9ffd1b8f8b4e9dcead6e307d3a6, type: 3}
       propertyPath: m_Pivot.x
@@ -3448,6 +3600,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 188a1cdf31d21684a85316489baa0c33, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584245766135808
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &199650397 stripped
@@ -3777,6 +3937,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 976b7053573ac1a44bceba6c75dfdcf5, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583654226665472
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &211913355 stripped
@@ -3806,6 +3974,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Literatura
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -3895,6 +4067,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 86cb808cdfa060342a5ac5f69ff92c15, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581586321547264
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &214047365 stripped
@@ -4013,6 +4193,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 93fbd4916de3b5e4dab43d8b8e9f80c8, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584186072801280
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &217811845 stripped
@@ -4131,6 +4319,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: e144865bc0d418b41a6cdece1186974d, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582445281452032
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &225399297 stripped
@@ -4249,6 +4445,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 1c29faa898af5f847ae048b35975e0e3, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582119467917312
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &246085449 stripped
@@ -4278,6 +4482,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Arte
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -4367,6 +4575,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 3714b616b27c0b3468f20c85facc18c4, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581475138936832
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &246560205 stripped
@@ -4489,6 +4705,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: f4525aa25b110ba48985be8fbe06bc16, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582069064966144
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &259024348 stripped
@@ -4607,6 +4831,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 2277f4dcee55d524bb3853706a019991, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582602576240640
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &261835896 stripped
@@ -4986,6 +5218,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: d6821a866a253c847b5f2890026436eb, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585493546409984
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &276779679 stripped
@@ -5104,6 +5344,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 57f465587339e7c4ba9883836b922acc, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584421717188608
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &284003185 stripped
@@ -5222,6 +5470,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: c1110fd3368c9d84380c6b19633ba774, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584836705820672
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &311607416 stripped
@@ -5251,6 +5507,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Sonidos
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -5340,6 +5600,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b9604a7bee296c04ba633015231d34f8, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581752294350848
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &318531508 stripped
@@ -5458,6 +5726,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 906e103fa6a13c944ba5bf3ec0c9f2ab, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584405560729600
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &352789601 stripped
@@ -5576,6 +5852,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b79589eff0e5b5649be7622d8b3fcaca, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583041942167552
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &354054948 stripped
@@ -5687,6 +5971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Far\xE1ndula argentina"
       objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5775,6 +6063,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 52028cbdc4f282043abb3067a7317c45, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581786796695552
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &361016001 stripped
@@ -5893,6 +6189,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 42c0d591afb37784d8aa9e0f98462d87, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583028121935872
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &362749740 stripped
@@ -6011,6 +6315,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 96c10d2a3c9223c48ab3d3edaeb94084, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583350634553344
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &367005278 stripped
@@ -6134,6 +6446,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 28d1a0eb6f23abd41b6b09cde6d30beb, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584168699994112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &368610320 stripped
@@ -6252,6 +6572,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 8dc5ffa9d892da7488f11c8fdabc9420, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582586910515200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &376196406 stripped
@@ -6370,6 +6698,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b4de7bf636038dc43ad642ca75c3652a, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584817449771008
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &381567861 stripped
@@ -6489,6 +6825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gimnasio
       objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6577,6 +6917,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 9343478de219d5c4aa3f3ecf238c9da0, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581806715445248
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &389236892 stripped
@@ -6695,6 +7043,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 354d201bc97c55d42acf32cda3eb5bb0, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582995431530496
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &392252653 stripped
@@ -6813,6 +7169,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 9b9091c1a45bf164cbf680a7ee3f3ca5, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584050286403584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &398576278 stripped
@@ -6931,6 +7295,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: eb241ff31333de543b346bbd0c5bf17d, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584791319257088
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &400149401 stripped
@@ -7106,7 +7478,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:38dababf3a65eef4083d7e59b7cdeff0
           m_TableEntryReference:
-            m_KeyId: 10330356916224
+            m_KeyId: 2190336925696
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -7223,6 +7595,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 834b864dcc3026541bda896f4cd61422, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583412286627840
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &439700418 stripped
@@ -7341,6 +7721,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: d16132d5f9cdaf0489006e9435ce3b0a, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585373392183296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &442965353 stripped
@@ -7765,6 +8153,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 2de1b8f410a72ea4abd36d5e9a39def2, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582288703889408
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &501880052 stripped
@@ -7883,6 +8279,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 34857cfed2b05204a8588d05eb55571b, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582470468247552
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &507816643 stripped
@@ -8005,6 +8409,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 36546aca59e632f478a4b0f34a3c7c9b, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584447990308864
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &531007247 stripped
@@ -8297,6 +8709,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 314279476cdbf96458a8082545d5ed6f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583679304409088
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &539975584 stripped
@@ -8341,7 +8761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -13800}
+  m_AnchoredPosition: {x: 400, y: -13955}
   m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &554380732
@@ -8416,7 +8836,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es
-          value: 0
+          value: 1
         - localeIdentifier:
             m_Code: en
           value: 1
@@ -8427,7 +8847,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es
-          value: 0
+          value: 1
         - localeIdentifier:
             m_Code: en
           value: 1
@@ -8438,7 +8858,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es
-          value: 0
+          value: -13955
         - localeIdentifier:
             m_Code: en
           value: -13955
@@ -8449,7 +8869,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: es
-          value: 0
+          value: 800
         - localeIdentifier:
             m_Code: en
           value: 800
@@ -8564,6 +8984,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 8eea5e96ee4d06a46856582a38007bc5, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583105469095936
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &557159247 stripped
@@ -8593,6 +9021,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Marcas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -8682,6 +9114,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: ee423a0ecb8496741ae3650498df48d3, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581614666653696
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &559699808 stripped
@@ -8865,6 +9305,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 8e67dc7a5c3d58941af7e3e49f1424fc, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583946301218816
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &590859843 stripped
@@ -8983,6 +9431,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: a21e03f95f38ea34399d5fc7976e8f66, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584857417293824
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &594778595 stripped
@@ -9016,6 +9472,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Historia argentina
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -9105,6 +9565,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 5754fa18c9ec6d149b98bd112262d291, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581823438135296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &595300089 stripped
@@ -9223,6 +9691,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 02e651fc3c03a0c4d88d5367836beb54, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582134441582592
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &596065328 stripped
@@ -9341,6 +9817,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 040897f9ce0b07f43bb87f9168a21f4c, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582010021748736
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &610645227 stripped
@@ -9459,6 +9943,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: a2d747d116a30894d90dbd2985a6f974, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583623562108928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &611935469 stripped
@@ -9492,6 +9984,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Verano
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -9581,6 +10077,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 07a395e1deb5eda43bcdbc1b1234f72e, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581946792615936
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &619457907 stripped
@@ -9699,6 +10203,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 6fb34901febe019419a2541a518fb010, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582028011118592
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &621900119 stripped
@@ -9817,6 +10329,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 59c58ec47a1c7b34a9d72b2ba971c9eb, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585535820800000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &631242035 stripped
@@ -10109,6 +10629,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: c6c9dbb289eaec443a8fd5487677fd46, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581376065282048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &644440255 stripped
@@ -10227,6 +10755,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 8cb1f1d2ccd8c134ca144cae5adbddd7, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582618493624320
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &644647284 stripped
@@ -10349,6 +10885,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: f9c4d43ca20ad2f41a459edb5e7402a2, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582153324339200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &653457514 stripped
@@ -10467,6 +11011,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 539a409ad8acb56499f265ec45bfd7c2, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582535773560832
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &658824019 stripped
@@ -10666,6 +11218,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 2fb4875bfa391264eadf7df72c56101f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582175159885824
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &678395495 stripped
@@ -11132,6 +11692,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 32b80994f55ae98459522ba7f1c38e44, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582977299554304
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &693884077 stripped
@@ -11165,6 +11733,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Streamers argentinos
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -11254,6 +11826,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: fae90f05f072c04488da9cd86d6fd2df, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581902274273280
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &697424671 stripped
@@ -11372,6 +11952,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 15e0d3254f0793a45ac04d816786774a, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582683022991360
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &717274078 stripped
@@ -11490,6 +12078,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 48720106b76a20547a242159f0bc1889, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584149443944448
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &725242796 stripped
@@ -11608,6 +12204,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: bdc182b3c51f8104d9b37b56b8792d94, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585436826836992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &738805762 stripped
@@ -11726,6 +12330,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 59383da0b5946104b9acbb662401e5cf, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583751442243584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &740933148 stripped
@@ -11844,6 +12456,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: f9f1c9168e5f37a469f7c81b4329c7d6, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584333171236864
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &745319773 stripped
@@ -11962,6 +12582,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 1931f0bc1dd994b47b879e5600ab0204, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582430249066496
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &751199580 stripped
@@ -12112,6 +12740,7 @@ GameObject:
   - component: {fileID: 753790391}
   - component: {fileID: 753790392}
   - component: {fileID: 753790393}
+  - component: {fileID: 753790394}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -12249,6 +12878,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49975578b721e34e98df22118634f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &753790394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753790384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b5cdbf5d155b7248a88ba651282a086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
 --- !u!1 &756456383
 GameObject:
   m_ObjectHideFlags: 0
@@ -12399,6 +13041,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: ad95433baf0ac4f47a30ce5f533b2e83, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585475691257856
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &778359236 stripped
@@ -12608,6 +13258,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: e6958b9dd7e2a914898d8c24fc29311a, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583885789995008
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &794093240 stripped
@@ -12641,6 +13299,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Ingenieria
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -12730,6 +13392,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: dc164f44d228dc744aca64b666833c65, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581839175163904
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &804193827 stripped
@@ -12848,6 +13518,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 5111e534cfa622c4dbd010afd3dfa864, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585184694640640
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &809331851 stripped
@@ -12966,6 +13644,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: ded05dcdb4a4a0842adace3a51998458, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584295707713536
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &809748849 stripped
@@ -13768,6 +14454,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: aa448f3e43c086c4f8f1ab813d8a8a46, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583147508604928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &886189081 stripped
@@ -13861,8 +14555,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 114
-  m_fontSizeBase: 114
+  m_fontSize: 140
+  m_fontSizeBase: 140
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -13943,7 +14637,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:38dababf3a65eef4083d7e59b7cdeff0
           m_TableEntryReference:
-            m_KeyId: 11023331434496
+            m_KeyId: 2190336925696
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -14060,6 +14754,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: cc821001fa0c9bd46b6128144b3d4f40, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585506930434048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &909953001 stripped
@@ -14178,6 +14880,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b4fda8592fd047a4e9f3c463a9662c7f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584367346425856
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &912977102 stripped
@@ -14296,6 +15006,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: eecb42d71ee708f4dbd6519696460b5d, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583446998687744
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &917476025 stripped
@@ -14414,6 +15132,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 6001af9a1dc6d124bb5f4e2a19c23058, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583584978706432
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &925230446 stripped
@@ -14633,6 +15359,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: db6725ad7be1f194eb7a23686d869ee3, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585462231736320
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &961918518 stripped
@@ -14751,6 +15485,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: a29ce8c78d65b8642a940aa30adedd0e, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583091162324992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &984601692 stripped
@@ -15217,6 +15959,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 07f9aff63fb64e044a51dd920b575d0f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583077669249024
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1006822695 stripped
@@ -15521,6 +16271,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b29792da6e170ac4bb94f68a90019124, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585253032435712
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1007633962 stripped
@@ -15639,6 +16397,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 47e79ef306e51f345a495f656d908dc9, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584905651789824
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1023015011 stripped
@@ -15757,6 +16523,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: e9855b52d87a93e47b07fdaba6159eb4, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583977439731712
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1025092113 stripped
@@ -15967,6 +16741,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 321b0894755df804faf204c3f0755663, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583728256131072
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1040652144 stripped
@@ -16089,6 +16871,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 62f5c6a263e28574c9cff8e005a7fcdd, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582568912756736
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1044732768 stripped
@@ -16122,6 +16912,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Cosas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -16211,6 +17005,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: a5c1bac17deecdc448196c904e6aa286, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581564221759488
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1060892018 stripped
@@ -16325,6 +17127,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 250f175debd9ccb4896956f2220a1888, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582900296327168
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1076003285 stripped
@@ -16443,6 +17253,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: ea44c5f47af19e040a501663429b21d6, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584133031632896
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1076131662 stripped
@@ -16561,6 +17379,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b70aa44f4d398c74dbd6e788037f96e1, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582098366373888
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1077684223 stripped
@@ -16679,6 +17505,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 437b5a6c96b16654491dcc921803614a, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585386453245952
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1083132525 stripped
@@ -16797,6 +17631,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 1f34940dbd77bcf438986a820cfb768b, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585325719724032
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1094894548 stripped
@@ -16915,6 +17757,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 250ef72c0fc26bc419afa2364c89947a, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583696693993472
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1095807610 stripped
@@ -17033,6 +17883,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b410630d4e511c240a90b7e582078672, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583547255136256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1115960180 stripped
@@ -17151,6 +18009,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: acd1e34bfa8751a40a3984f3eeea1dc7, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583464891588608
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1131943325 stripped
@@ -17269,6 +18135,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: cc5699d367352dc4781a64e3cae79df2, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585358670176256
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1133883743 stripped
@@ -17387,6 +18261,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: e5b94fc2356fd564193e701d89a829f9, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583391621292032
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1134147065 stripped
@@ -17703,6 +18585,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: cad2b2e416165454c9975106d1984b0d, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585240453718016
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1165113599 stripped
@@ -17825,6 +18715,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: be05ebddaccc0414caaa6d67c688f774, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582306093473792
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1172588148 stripped
@@ -17985,6 +18883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Personajes
       objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -18073,6 +18975,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 7984e5fc402cc8048ab05fa4e7262a60, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581707117502464
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1210314116 stripped
@@ -18191,6 +19101,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: d9779ca5356dace40bdcc014516c301f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585112007352320
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1217343134 stripped
@@ -18309,6 +19227,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: d78f1af2edf3483458704edd6a7087f3, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583767615479808
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1219062699 stripped
@@ -18431,6 +19357,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b303eb0450d43e74cbd6bb0fba9ba234, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582211956514816
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1224645079 stripped
@@ -18549,6 +19483,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: c762fb592fc837f47a2b5b4bb9aae746, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584214589874176
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1245771322 stripped
@@ -18862,6 +19804,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 1d1050e61f270e94193395ed3d0695c1, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583961190998016
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1282851295 stripped
@@ -19328,6 +20278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mitologia griega
       objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -19416,6 +20370,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 426f30f9b20d4db40982d33f49ab58a3, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581878425460736
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1296652975 stripped
@@ -19664,6 +20626,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 8089839e199c6a749a846722e9eeebc0, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582553263808512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1300838738 stripped
@@ -19851,6 +20821,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: d2f9d7ed63a3ac8439ca0d657f5510c6, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582229895553024
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1318921858 stripped
@@ -19969,6 +20947,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: dd11b899278402b43b6d6868cd1272df, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585065458966528
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1351104075 stripped
@@ -20087,6 +21073,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 13cc41493dc7e224b99ee5a48bca99ad, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582256286113792
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1354058783 stripped
@@ -20205,6 +21199,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 90e390c2a3611d947813a31186658fa1, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585035872346112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1370650502 stripped
@@ -20323,6 +21325,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 637716e6e774a9f45ad435b67793cb2b, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583822682497024
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1371630192 stripped
@@ -20441,6 +21451,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 73d502b37b76171428706e2fbeb20911, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585269155340288
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1379876291 stripped
@@ -20559,6 +21577,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 9021f7b81b60f4a43b44ab23978706f3, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583317335973888
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1404773743 stripped
@@ -20677,6 +21703,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 341812f41eccb044c983d4f9d7cd0c66, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584382181679104
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1409028471 stripped
@@ -20864,6 +21898,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 23a2c998b9713324a99c5e1dd3c8592e, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583010606522368
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1433048576 stripped
@@ -20986,6 +22028,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 929ff5ec921930f47ab62e36bd9ce5db, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582943048867840
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1436528643 stripped
@@ -21108,6 +22158,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 40f8671ac171e6f4aacc9bfb866544ab, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582638374625280
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1442614395 stripped
@@ -21226,6 +22284,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 01eea16fd971d9f408a63ad2b3186b4e, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584065432035328
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1443952884 stripped
@@ -21344,6 +22410,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 6e825d75c3d24c54f84444a94f6f9025, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585128394498048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1455266130 stripped
@@ -21462,6 +22536,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 4f7e8807717d6de468e0c983a05d24c5, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583502027956224
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1458482205 stripped
@@ -21580,6 +22662,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 8be959ce2f5345a4ebb59a9bda2dfd11, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583178550648832
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1472714611 stripped
@@ -21694,6 +22784,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 3d1aae32187857f43b7f0cc1a0fae58b, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582867463315456
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1487313379 stripped
@@ -21812,6 +22910,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: ae705feaf543ef8438e2c06413b99992, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583299199803392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1492450040 stripped
@@ -21930,6 +23036,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: a6d5013d7711f2148a3c52d9e9c6e00c, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583863140753408
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1497994783 stripped
@@ -22052,6 +23166,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 6f43651611404c947b347dd0cb1eca26, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582196496310272
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1500707844 stripped
@@ -22170,6 +23292,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: f8b84bdab3eadf0469cc6ec22b166cdf, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584199553294336
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1505145431 stripped
@@ -22288,6 +23418,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 085c86f9f26599f47bcd2001894c5e8f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582413555736576
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1518078384 stripped
@@ -22406,6 +23544,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 7c3604dfafb840546a285a9788063cbb, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584999407067136
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1520998956 stripped
@@ -22524,6 +23670,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 3cd8e979f88da3443a2fa989b78ee101, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584232184979456
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1524040151 stripped
@@ -22553,6 +23707,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Remix
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -22642,6 +23800,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 645a9ae451ad1074cb1c6bb40b589199, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581969366360064
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1527460023 stripped
@@ -22675,6 +23841,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Nombres
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -22764,6 +23934,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: fc7d811932e3bc642bd17f736f12748b, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581656701968384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1529927502 stripped
@@ -22882,6 +24060,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 68578ca110d4f764a9f5189188967c79, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584352842522624
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1540504949 stripped
@@ -23106,6 +24292,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: f185ca4ae15755d4f99ee24955650d92, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583566087561216
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1552447185 stripped
@@ -23224,6 +24418,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: dee635dba7051d24797e1c522cc072bc, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583519526592512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1584844297 stripped
@@ -23342,6 +24544,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 881c1080856029b4894f868c94eb24d7, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583843863732224
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1605542353 stripped
@@ -23460,6 +24670,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 050d131ce2039824281bd6225a9c63fe, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582518488834048
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1607181983 stripped
@@ -23489,6 +24707,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: "Tabla peri\xF3dica"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -23578,6 +24800,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 7b672e80c3445ee4eaaead6bc244c460, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581925468774400
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1613854788 stripped
@@ -23769,6 +24999,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 5beefc107c644514db213858f7c8164b, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585303519272960
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1632597517 stripped
@@ -23963,6 +25201,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: f826efd3240ff764fb220356056c4b37, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585051823284224
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1702379149 stripped
@@ -24077,6 +25323,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 38d71b4ce49e46241818a27625402bf5, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582846902837248
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1704937855 stripped
@@ -24368,6 +25622,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 3d843075aef757040ad20c9f6c5a1c0e, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582666828783616
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1728208887 stripped
@@ -24397,6 +25659,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Paises
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -24486,6 +25752,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: a996368f43a8568498ecdf2d209d5e27, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581684774445056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1732603629 stripped
@@ -24604,6 +25878,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: cd380646cde93424a89dbc119263190d, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583062007717888
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1736042240 stripped
@@ -24895,6 +26177,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: e09e5ba50b3fd1e489e484cc31a88e03, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585411442909184
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1775902286 stripped
@@ -25013,6 +26303,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: fb4fb8dc9b0a5664583aa05185e4b0f1, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583993008988160
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1786220989 stripped
@@ -25131,6 +26429,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 3409ff7eacac44f4bba13496ebfc0222, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582924946251776
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1804528034 stripped
@@ -25249,6 +26555,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 02649ea7bda13eb4e8688d97af244d74, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584889650520064
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1817767566 stripped
@@ -25346,65 +26660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 5848738243194126874
+  m_TrackedObjects: []
   references:
     version: 2
-    RefIds:
-    - rid: 5848738243194126874
-      type: {class: TrackedRectTransform, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 1823592183}
-        m_TrackedProperties:
-          items:
-          - rid: 5848738243194126875
-          - rid: 5848738243194126876
-          - rid: 5848738243194126877
-          - rid: 5848738243194126878
-    - rid: 5848738243194126875
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_AnchorMin.y
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: es
-          value: 0
-        - localeIdentifier:
-            m_Code: en
-          value: 1
-    - rid: 5848738243194126876
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_AnchorMax.y
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: es
-          value: 0
-        - localeIdentifier:
-            m_Code: en
-          value: 1
-    - rid: 5848738243194126877
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_AnchoredPosition.y
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: es
-          value: 0
-        - localeIdentifier:
-            m_Code: en
-          value: -6598
-    - rid: 5848738243194126878
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_SizeDelta.x
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: es
-          value: 0
-        - localeIdentifier:
-            m_Code: en
-          value: 800
+    RefIds: []
 --- !u!1001 &1823882262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25512,6 +26771,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 0f58d441da14d5a4d87523dab6fecfc1, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582884748042240
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1823882263 stripped
@@ -25630,6 +26897,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 6f58109866344004392bd11f689670e1, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583808820322304
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1868388118 stripped
@@ -25667,6 +26942,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Ciudades
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -25756,6 +27035,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: ee5460636f0643f43bf1a0ab4195888a, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581546010091520
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1875999286 stripped
@@ -25924,6 +27211,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 890770d986c920d4a99eafc5331828b8, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582486679232512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1907974425 stripped
@@ -26365,6 +27660,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 82d90891621864545b88cc9f0f3feddf, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584970424426496
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1954155557 stripped
@@ -26483,6 +27786,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 8e64829682141c242baeb497b84f1788, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583163207884800
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1958047711 stripped
@@ -26601,6 +27912,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 1fdac546866dffd4dbc8554edbe8eb48, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583481471672320
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1959207374 stripped
@@ -26879,6 +28198,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 50efc816c8aced441b5015e951e7caa5, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583333362409472
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &1989503681 stripped
@@ -26997,6 +28324,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 899e793f13f64c64081825fa2fbb3989, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583792869384192
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2003448439 stripped
@@ -27115,6 +28450,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 5e8aa190c990eeb428baa3cb1b00c35e, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585424470417408
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2003890387 stripped
@@ -27233,6 +28576,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 07e47279cd95fe4488bdbb2a403c8183, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584116027924480
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2019077024 stripped
@@ -27351,6 +28702,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 4838715b8d8506649998b53f256eb806, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585017178333184
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2019470735 stripped
@@ -27384,6 +28743,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Lunfardo y modismos
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -27473,6 +28836,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: b33d8e4a8cd1a2d4d89d1d13a8072b31, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581858557042688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2023094296 stripped
@@ -27591,6 +28962,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 9a04bcec38bd9fa46b73a96a1d38101f, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583128147697664
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2028990927 stripped
@@ -27778,6 +29157,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 51c1c7a4395e2fb4fbcaaa7ed4cbcf9c, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6582499966787584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2058041601 stripped
@@ -27896,6 +29283,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: dee5461cf0ab92b47a88739200676edd, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6583710891712512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2066767318 stripped
@@ -28014,6 +29409,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: 869056b096a1f6c4c9ad570b85d4f7d8, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585519945359360
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2069139742 stripped
@@ -28959,6 +30362,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: bf6a70ebb20982a4891c456e88f4ea10, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6585280899391488
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2136791238 stripped
@@ -29081,6 +30492,14 @@ PrefabInstance:
       propertyPath: jsonCategory
       value: 
       objectReference: {fileID: 4900000, guid: bd87e6a81951e6c4b826861411bf86a4, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6584097883365376
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
 --- !u!224 &2142323139 stripped
@@ -29114,6 +30533,10 @@ PrefabInstance:
     - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Name
       value: Animales
+      objectReference: {fileID: 0}
+    - target: {fileID: 6658161952895907858, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_Pivot.x
@@ -29198,6 +30621,18 @@ PrefabInstance:
     - target: {fileID: 6658161952895907859, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: jsonCategory
+      value: 
+      objectReference: {fileID: 4900000, guid: 5b5e22f4df9dd9244a29c4bde8500357, type: 3}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableEntryReference.m_KeyId
+      value: 6581421850304512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8059813871360953303, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}
+      propertyPath: localizedJsonCategory.m_TableReference.m_TableCollectionName
+      value: GUID:28bc1c937702b7e49b01e276c25e63fd
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a595461eec1c84ebfa2a3653fcf046, type: 3}

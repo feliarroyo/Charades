@@ -6,10 +6,10 @@ using UnityEngine;
 public class CustomCategoryButtonLogic : MonoBehaviour
 {
     public SoundEffectPlayer failSound;
+    public static CategoryButton catToDelete;
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -23,7 +23,8 @@ public class CustomCategoryButtonLogic : MonoBehaviour
         switch (CustomCategoryLoader.status)
         {
             case CustomCategoryLoader.Status.Delete:
-                DeleteFile();
+                catToDelete = GetComponent<CategoryButton>();
+                GetComponent<SceneLoader>().LoadScene("DeleteCustom");
                 break;
             case CustomCategoryLoader.Status.Export:
                 ExportFiles();
@@ -55,9 +56,10 @@ public class CustomCategoryButtonLogic : MonoBehaviour
     public void DeleteFile()
     {
         failSound.PlayClip();
-        string origFileName = GetComponent<CategoryButton>().GetFileName();
+        string origFileName = catToDelete.GetFileName();
+        catToDelete.jsonCategoryName = null;
         string filePath = Application.persistentDataPath + "/customCategories/" + origFileName + ".json";
-        GetComponent<CategoryButton>().RemoveCategory();
+        catToDelete.RemoveCategory();
         File.Delete(filePath);
         GetComponent<SceneLoader>().LoadScene("CategorySelect");
     }

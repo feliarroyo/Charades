@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 38dababf3a65eef4083d7e59b7cdeff0, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 8464436551449837617
   m_TableData:
   - m_Id: 210004680704
     m_Localized: Play
@@ -62,10 +63,6 @@ MonoBehaviour:
     m_Localized: Competition
     m_Metadata:
       m_Items: []
-  - m_Id: 1829689696256
-    m_Localized: 'Teams: Enabled'
-    m_Metadata:
-      m_Items: []
   - m_Id: 1885960478720
     m_Localized: Team 1
     m_Metadata:
@@ -74,16 +71,8 @@ MonoBehaviour:
     m_Localized: Team Name
     m_Metadata:
       m_Items: []
-  - m_Id: 1951014133760
-    m_Localized: Category title
-    m_Metadata:
-      m_Items: []
   - m_Id: 1972027596800
     m_Localized: Team 2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2101140856832
-    m_Localized: Team Name
     m_Metadata:
       m_Items: []
   - m_Id: 2190336925696
@@ -114,81 +103,41 @@ MonoBehaviour:
     m_Localized: 'Control Scheme:'
     m_Metadata:
       m_Items: []
-  - m_Id: 3425639145472
-    m_Localized: Buttons
-    m_Metadata:
-      m_Items: []
-  - m_Id: 3466378420224
-    m_Localized: Back
-    m_Metadata:
-      m_Items: []
   - m_Id: 3863448985600
     m_Localized: Charades
     m_Metadata:
       m_Items: []
   - m_Id: 3901726203904
-    m_Localized: <color=green>Charades</color> is a game where one player has to
-      guess the prompts shown on screen without seeing them, while the rest tries
-      to give them hints about which is it.
+    m_Localized: The others must help you figure out the prompt.
     m_Metadata:
       m_Items: []
   - m_Id: 4273995849728
-    m_Localized: 'There are <u>three</u> game modes:
-
-      - <color=yellow>Quick
-      Play:</color> Play with only one category
-
-      - <color=yellow>Competition:</color>
-      Choose multiple categories, which are played in sequence
-
-      - <color=yellow>Mash-Up:</color>
-      Choose multiple categories, and play rounds featuring all their prompts.
-
-      Every
-      mode can be played in teams.'
+    m_Localized: Choose a game mode and whether to play in teams
     m_Metadata:
       m_Items: []
   - m_Id: 4727358169088
-    m_Localized: "Categories can be chosen pressing on their respective button.\nIn
-      <color=yellow>Quick Play</color>, the game begins once the category is selected.\nIn
-      other modes, the \u201CPlay\u201D button must be pressed once every category
-      has been chosen to begin.\n(in <color=yellow>Competition</color> mode, they
-      are played in the selection order)"
+    m_Localized: After pressing Start, place the phone <color=yellow>horizontally</color>
     m_Metadata:
       m_Items: []
   - m_Id: 5368721776640
-    m_Localized: 'Before each round, the category to be played is shown alongside
-      a brief description.
-
-      This is particularly important in Competition,
-      to know which category will be played and which team''s turn is it to guess.
-
-      When
-      the player is ready, they must press on "Play" to begin.'
+    m_Localized: Prompts will appear on-screen related to the category
     m_Metadata:
       m_Items: []
   - m_Id: 5772717137920
-    m_Localized: 'Each round begins with a countdown so that the player can place
-      their device properly. They should place it <color=yellow>horizontally</color>,
-      so that they cannot see what''s being displayed, but the rest do.
+    m_Localized: 'Using <color=yellow>Touchscreen</color>:
 
-      (The
-      screen adjusts automatically, what matters is that it is placed horizontally)'
+      Left hand press
+      to <color=red>skip</color>
+
+      Right hand press to <color=green>score</color>'
     m_Metadata:
       m_Items: []
   - m_Id: 6374188720128
-    m_Localized: "During the round, prompts of the corresponding category will appear
-      and, with the help of those watching the screen, you'll have to guess as many
-      prompts as possible before time runs out.\nIf a prompt seems too difficult,
-      you can <color=red>skip</color> to replace it with a different one.\r"
+    m_Localized: When time's up, check the round's prompts and your score.
     m_Metadata:
       m_Items: []
   - m_Id: 6816452911104
-    m_Localized: "Charades allows two different control schemes:\r\n1. <color=yellow>Gyroscope:</color>
-      Tilt the screen upwards to skip, and downwards when you guess the prompt correctly.\n2.
-      <color=yellow>Touchscreen:</color> On the lower part of the screen, touch with
-      the left hand to skip, and with the right hand when you get it right.\nYou
-      can choose which alternative to use in the Options menu (or even both at once)\r"
+    m_Localized: "Customize the game at your heart's content in the Options menu!\r"
     m_Metadata:
       m_Items: []
   - m_Id: 7449159475200
@@ -224,20 +173,12 @@ MonoBehaviour:
       the Category Creator menu.'
     m_Metadata:
       m_Items: []
-  - m_Id: 9531388141568
-    m_Localized: Back
-    m_Metadata:
-      m_Items: []
   - m_Id: 9742122557440
     m_Localized: "Felipe Arroyo\r\n\r\n<size=72>Testing\r</size>\nAlex Tassi\r\n\n<size=72>Music\r</size>\n<color=red><link=\"https://tallbeard.itch.io/music-loop-bundle\">Three
       Red Hearts: Prepare to Dev</link></color>\nAbstraction\n\n<size=72>Sound Effects:\r</size>\nCreados
       usando <color=green>ChipTone</color>\n\n<size=72>Fonts:\r</size>\n<color=yellow><link=\"https://managore.itch.io/m6x11\">m6x11plus</link></color>\nDaniel
       Linssen\n\n<color=yellow><link=\"https://datagoblin.itch.io/monogram\">Monogram</link></color>\ndatagoblin\n\n<size=72>Sprites:</size>\nFelipe
       Arroyo\n"
-    m_Metadata:
-      m_Items: []
-  - m_Id: 9917171834880
-    m_Localized: Back
     m_Metadata:
       m_Items: []
   - m_Id: 10008251146240
@@ -284,10 +225,6 @@ MonoBehaviour:
     m_Localized: Custom
     m_Metadata:
       m_Items: []
-  - m_Id: 10330356916224
-    m_Localized: Back
-    m_Metadata:
-      m_Items: []
   - m_Id: 10349726212096
     m_Localized: Clear Selection
     m_Metadata:
@@ -301,11 +238,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 10711463960576
-    m_Localized: Create Categor
-    m_Metadata:
-      m_Items: []
-  - m_Id: 10791877156864
-    m_Localized: Create Categor
+    m_Localized: Create Category
     m_Metadata:
       m_Items: []
   - m_Id: 10844503089152
@@ -314,10 +247,6 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 10982835429376
     m_Localized: Import Category
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11023331434496
-    m_Localized: Back
     m_Metadata:
       m_Items: []
   - m_Id: 11042621038592
@@ -343,39 +272,35 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 11379050356736
-    m_Localized: Team 1 Wins!
+    m_Localized: '{0} Wins!'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8464436551449837617
   - m_Id: 11733007671296
     m_Localized: 'Results:'
     m_Metadata:
       m_Items: []
   - m_Id: 11799499972608
-    m_Localized: X points
+    m_Localized: '{0} points'
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8464436551449837617
   - m_Id: 11821805281280
-    m_Localized: (Y skipped)
+    m_Localized: ({0} skipped)
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8464436551449837617
   - m_Id: 11845993832448
     m_Localized: Continue
     m_Metadata:
       m_Items: []
   - m_Id: 11984695271424
-    m_Localized: It is Team 1's turn!
+    m_Localized: It's {0}'s turn!
     m_Metadata:
-      m_Items: []
+      m_Items:
+      - rid: 8464436551449837617
   - m_Id: 12076231761920
     m_Localized: CATEGORY
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12091570331648
-    m_Localized: This is a test description.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12126693433344
-    m_Localized: Start
     m_Metadata:
       m_Items: []
   - m_Id: 12294666919936
@@ -406,10 +331,6 @@ MonoBehaviour:
     m_Localized: Change Icon
     m_Metadata:
       m_Items: []
-  - m_Id: 12673475485696
-    m_Localized: CATEGORY CREATOR
-    m_Metadata:
-      m_Items: []
   - m_Id: 12760851226624
     m_Localized: Add Prompt
     m_Metadata:
@@ -420,24 +341,12 @@ MonoBehaviour:
       Prompt List'
     m_Metadata:
       m_Items: []
-  - m_Id: 12930166890496
-    m_Localized: Create Category
-    m_Metadata:
-      m_Items: []
-  - m_Id: 13024534536192
-    m_Localized: 'Prompt Count:'
-    m_Metadata:
-      m_Items: []
   - m_Id: 13102338875392
     m_Localized: Back
     m_Metadata:
       m_Items: []
   - m_Id: 13123373309952
     m_Localized: Delete Prompt
-    m_Metadata:
-      m_Items: []
-  - m_Id: 13232295190528
-    m_Localized: Back
     m_Metadata:
       m_Items: []
   - m_Id: 13293225844736
@@ -456,34 +365,107 @@ MonoBehaviour:
     m_Localized: "\xBFAre you sure?"
     m_Metadata:
       m_Items: []
-  - m_Id: 13633417453568
-    m_Localized: Delete Category
-    m_Metadata:
-      m_Items: []
-  - m_Id: 13671799529472
-    m_Localized: Back
-    m_Metadata:
-      m_Items: []
   - m_Id: 13877349785600
     m_Localized: PAUSE
     m_Metadata:
       m_Items: []
-  - m_Id: 13895414652928
-    m_Localized: Continue
-    m_Metadata:
-      m_Items: []
-  - m_Id: 13910769999872
-    m_Localized: Quit
-    m_Metadata:
-      m_Items: []
   - m_Id: 13963983134720
-    m_Localized: 0 points
+    m_Localized: '{0} {0:plural:point|points}'
+    m_Metadata:
+      m_Items:
+      - rid: 8464436551449837617
+  - m_Id: 6984393222594560
+    m_Localized: 'Team Mode: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 8464436551449837617
+  - m_Id: 6986584511553536
+    m_Localized: Enabled
     m_Metadata:
       m_Items: []
-  - m_Id: 14015149449216
-    m_Localized: The Fault in Our Stars
+  - m_Id: 6986694557507584
+    m_Localized: Disabled
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7243044684374016
+    m_Localized: Category title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7244727418167296
+    m_Localized: Do Not Delete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7597304584413184
+    m_Localized: Guess the prompts on screen without seeing them!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7598026315079680
+    m_Localized: Choose the category/categories to be used
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7598412576923648
+    m_Localized: When you're up, read the description and press <color=yellow>Start</color>.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7613342281703424
+    m_Localized: "The others should be able to see the screen, <color=red>not you!\r</color>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614172930056192
+    m_Localized: When you <color=yellow>guess correctly</color>, move on to the next
+      one
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614159382454272
+    m_Localized: (you can <color=red>skip</color> prompts if they're too difficult)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614140076072960
+    m_Localized: Try to guess the prompts!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614614976143360
+    m_Localized: 'Using <color=yellow>Gyroscope</color>:
+
+      Tilt upwards to <color=red>skip</color>
+
+      Tilt
+      downwards to <color=green>score</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7614628850900992
+    m_Localized: (Choose the control scheme used in the Options menu)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616514589007872
+    m_Localized: Once all categories have been played, the final scoreboard is shown
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616537607348224
+    m_Localized: In Team Mode, a <color=yellow>winner</color> is declared
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616899936493568
+    m_Localized: "Use the <color=yellow>Category Creator</color> to make even more
+      categories!\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7616885516476416
+    m_Localized: Your creations will appear at the end of the category selection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8024569503883264
+    m_Localized: Guess dishes, ingredients and desserts!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9560127543779328
+    m_Localized: Prompt
     m_Metadata:
       m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 8464436551449837617
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0020413eb30c00000020817ac00a000000200149bb0a000000204164590a0000002001c544d0180000208167e60a0000

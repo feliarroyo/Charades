@@ -4,13 +4,15 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.AdaptivePerformance.Google.Android;
+using Unity.VisualScripting;
+using UnityEngine.Localization.Settings;
 
 /// <summary>
 /// This class manages elements related to gameplay within a single round.
 /// </summary>
 public class RoundGameplay : MonoBehaviour
 {
-    
+
     public static Camera cam; // Camera's background color is changed depending on game status
     public static IPromptPool prompts;
     public static bool isPromptOnScreen = true; // used to prevent multiple scoring/skipping at once
@@ -21,6 +23,7 @@ public class RoundGameplay : MonoBehaviour
     public Timer timer;
     public bool isRoundOver = false;
     public static RoundGameplay round;
+    private string correctString, skipString, timeOverString;
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +39,27 @@ public class RoundGameplay : MonoBehaviour
         timer.SetTime(PlayerPrefs.GetInt(Const.PREF_ROUNDDURATION, 60));
         prompts = Competition.GetPromptPool();
         prompts.InitializePrompts();
+        InitializeLocalizeStrings();
         GetNewPrompt();
     }
 
+    private void InitializeLocalizeStrings()
+    {
+        switch (LocalizationSettings.SelectedLocale.Identifier.Code)
+        {
+            case "es":
+                correctString = Const.CORRECT;
+                skipString = Const.SKIP;
+                timeOverString = Const.TIME_OVER;
+                break;
+            case "en":
+            default:
+                correctString = Const.CORRECT_EN;
+                skipString = Const.SKIP_EN;
+                timeOverString = Const.TIME_OVER_EN;
+                break;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -46,30 +67,32 @@ public class RoundGameplay : MonoBehaviour
             return;
         else if (timer.TimeIsUp())
             StartCoroutine(EndGame());
-        
-        if (!isPromptOnScreen | isRoundOver){
+
+        if (!isPromptOnScreen | isRoundOver)
+        {
             return;
         }
 
         // Windows/Editor controls
-        #if UNITY_EDITOR || UNITY_STANDALONE_WIN
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
         if (Input.GetButton("Pass"))
             AnswerPrompt(true);
         else if (Input.GetButton("Fail"))
             AnswerPrompt(false);
-        #endif
+#endif
 
         // Android controls
-        #if UNITY_ANDROID
+#if UNITY_ANDROID
         if (PlayerPrefs.GetInt(Const.PREF_USEMOTIONCONTROLS, 1) == 1)
             CheckInclination();
-        #endif
+#endif
     }
 
     /// <summary>
     /// Checks how tilted is the device, and answers/skips the prompt at certain values.
     /// </summary>
-    private void CheckInclination(){
+    private void CheckInclination()
+    {
         Vector3 tilting = new(Input.acceleration.x, Input.acceleration.y, Input.acceleration.z);
         // gyroTest.text = tilting.ToString();
         if ((tilting.x > 0.3f) || (tilting.x < -0.3f) || (tilting.z > 0.9f) || (tilting.z < -0.9f))
@@ -84,9 +107,11 @@ public class RoundGameplay : MonoBehaviour
     /// Changes the text of the prompt and gives a point if needed.
     /// </summary>
     /// <param name="givePoint">Determines if a point should be assigned to the score or not.</param>
-    public void AnswerPrompt(bool givePoint){
+    public void AnswerPrompt(bool givePoint)
+    {
         isPromptOnScreen = false;
-        if (givePoint) {
+        if (givePoint)
+        {
             IncreaseScore();
         }
         StartCoroutine(ChangeScreen(givePoint));
@@ -99,11 +124,13 @@ public class RoundGameplay : MonoBehaviour
     private IEnumerator ChangeScreen(bool givePoint = false)
     {
         RemovePromptFromPool(givePoint);
-        if (givePoint){
-            SetScreen(Color.green, Const.CORRECT, sounds[0]);
+        if (givePoint)
+        {
+            SetScreen(Color.green, correctString, sounds[0]);
         }
-        else{
-            SetScreen(Color.red, Const.SKIP, sounds[1]);
+        else
+        {
+            SetScreen(Color.red, skipString, sounds[1]);
         }
         float answerWait = PlayerPrefs.GetFloat(Const.PREF_WAITDURATION, 1f);
         yield return new WaitForSeconds(0.5f);
@@ -118,7 +145,8 @@ public class RoundGameplay : MonoBehaviour
     /// <param name="bgColor">Color to set on the background of the camera.</param>
     /// <param name="text">Text to display in the center of the screen.</param>
     /// <param name="sound">Sound to play, can be omitted if no sound will play.</param>
-    private void SetScreen(Color bgColor, string text, SoundEffectPlayer sound = null){
+    private void SetScreen(Color bgColor, string text, SoundEffectPlayer sound = null)
+    {
         cam.backgroundColor = bgColor;
         mainText.text = text;
         if (sound != null)
@@ -129,7 +157,8 @@ public class RoundGameplay : MonoBehaviour
     /// Registers score to show in results, and removes the current prompt from the prompt pool, to avoid repeating prompts whenever possible.
     /// </summary>
     /// <param name="wasAnswered">Indicates if the answer is registered as answered or skipped.</param>
-    private void RemovePromptFromPool(bool wasAnswered){
+    private void RemovePromptFromPool(bool wasAnswered)
+    {
         Score.answers.Add((mainText.text, wasAnswered));
         prompts.RemovePrompt(mainText.text);
     }
@@ -137,9 +166,11 @@ public class RoundGameplay : MonoBehaviour
     /// <summary>
     /// Gets a new prompt to show on-screen after answering. 
     /// </summary>
-    private void GetNewPrompt(){
+    private void GetNewPrompt()
+    {
         prompts.RestartPoolIfEmpty();
-        if (!isRoundOver){
+        if (!isRoundOver)
+        {
             isPromptOnScreen = true;
             SetScreen(Const.DefaultBGColor, prompts.GetNewPrompt());
         }
@@ -148,7 +179,7 @@ public class RoundGameplay : MonoBehaviour
     /// <summary>
     /// Increases round score by 1, showing it in the screen counter.
     /// </summary>
-    private void IncreaseScore() 
+    private void IncreaseScore()
     {
         Score.score++;
         hitsText.color = Const.CorrectTextColor;
@@ -159,14 +190,16 @@ public class RoundGameplay : MonoBehaviour
     /// Ends the game.
     /// </summary>
     /// <returns></returns>
-    public IEnumerator EndGame(){
+    public IEnumerator EndGame()
+    {
         HideButtons();
         isRoundOver = true;
         Pause.isPaused = true;
-        if (isPromptOnScreen) {
+        if (isPromptOnScreen)
+        {
             RemovePromptFromPool(false);
         }
-        SetScreen(Color.magenta, Const.TIME_OVER, sounds[2]);
+        SetScreen(Color.magenta, timeOverString, sounds[2]);
         prompts.RecordUsedPrompts();
         yield return new WaitForSeconds(3f);
         SceneManager.LoadScene(Const.SCENE_ROUNDRESULTS);
@@ -175,8 +208,10 @@ public class RoundGameplay : MonoBehaviour
     /// <summary>
     /// Disables buttons shown on-screen.
     /// </summary>
-    private void HideButtons(){
-        foreach (GameObject go in GameObject.FindGameObjectsWithTag("Button")){
+    private void HideButtons()
+    {
+        foreach (GameObject go in GameObject.FindGameObjectsWithTag("Button"))
+        {
             go.SetActive(false);
         }
     }

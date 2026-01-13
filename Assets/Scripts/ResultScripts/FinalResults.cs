@@ -14,6 +14,8 @@ public class FinalResults : MonoBehaviour
     private bool tiedGame;
     private int winnerIndex, winnerScore;
     private const string changeCategoryName = "Cambiar categorías";
+    private const string changeCategoryName_EN = "Change Categories";
+    private const string changeCategoryName_EN_singular = "Change Category";
 
     // Start is called before the first frame update
     void Start()
@@ -23,22 +25,37 @@ public class FinalResults : MonoBehaviour
     }
 
     private void WriteScreen(){
-        if (PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1) == 1) // Single-player game
-            WriteText("¡Fin del juego!", "Puntaje", $"{scores[0]}");
-        else {
-            if (tiedGame)
-                WriteText("¡Empate!", $"{GetAllTeamNameText()}", $"{GetAllTeamScoreText()}");
+        if (PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1) == 1) { // Single-player game
+            if (Const.EnglishLocaleActive())
+                WriteText("Game Over!", "Score", $"{scores[0]}");
             else
-                WriteText($"¡{Competition.teamNames[winnerIndex]} gana!", $"{GetAllTeamNameText()}",$"{GetAllTeamScoreText()}");
+                WriteText("¡Fin del juego!", "Puntaje", $"{scores[0]}");
+        }
+        else
+        {
+            if (tiedGame)
+                WriteText(Const.EnglishLocaleActive() ? "It's a tie!" : "¡Empate!", $"{GetAllTeamNameText()}", $"{GetAllTeamScoreText()}");
+            else
+                WriteText(GetWinnerTeamHeader(), $"{GetAllTeamNameText()}", $"{GetAllTeamScoreText()}");
         }
         // Change button text on QP
-        changeCatText.text = changeCategoryName;
+        changeCatText.text = Const.EnglishLocaleActive() ? changeCategoryName_EN : changeCategoryName;
         if (Competition.gameType == 0)
-            changeCatText.text = changeCategoryName.TrimEnd('s');
+        {
+            changeCatText.text = Const.EnglishLocaleActive() ? changeCategoryName_EN_singular : changeCategoryName.TrimEnd('s');
+        }
     }
 
+    private string GetWinnerTeamHeader()
+    {
+        if (Const.EnglishLocaleActive())
+            return $"{Competition.teamNames[winnerIndex]} Wins!";
+        else
+            return $"¡{Competition.teamNames[winnerIndex]} gana!";
+    }
     // currently hard-coded for two teams, change for potentially larger numbers of teams.
-    private string GetAllTeamScoreText(){
+    private string GetAllTeamScoreText()
+    {
         if (scores[0] < scores[1])
             return $"{GetTeamScoreText(1)}\n{GetTeamScoreText(0)}";
         else

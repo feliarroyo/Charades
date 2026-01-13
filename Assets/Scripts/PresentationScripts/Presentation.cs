@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class Presentation : MonoBehaviour
@@ -15,9 +16,17 @@ public class Presentation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        team_text.text = "¡Es el turno de " + Competition.GetNextTeamName() + "!";
+        if (Const.EnglishLocaleActive())
+        {
+            if (PlayerPrefs.GetInt(Const.PREF_TEAM_COUNT, 1)==1)
+                team_text.text = Const.NOTEAM_EN + "!";
+            else
+                team_text.text = "It's " + Competition.GetNextTeamName() + "'s turn!";
+        }
+        else
+            team_text.text = "¡Es el turno de " + Competition.GetNextTeamName() + "!";
         // Mash-Up mode (uses standard presentation when only one category is selected)
-        LoadCurrentCategory();
+            LoadCurrentCategory();
     }
 
     private void LoadCurrentCategory(){

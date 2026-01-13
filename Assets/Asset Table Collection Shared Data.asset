@@ -31,9 +31,809 @@ MonoBehaviour:
     m_Key: MainMenu/Canvas/TutorialSubmenu/Title
     m_Metadata:
       m_Items: []
+  - m_Id: 6581376065282048
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Anatom\xEDa/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581421850304512
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Animales/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581475138936832
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Arte/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581546010091520
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Ciudades/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581564221759488
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Cosas/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581586321547264
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Literatura/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581614666653696
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Marcas/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581634212110336
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/M\xEDmica/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581656701968384
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Nombres/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581684774445056
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Paises/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581707117502464
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Personajes/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581724955877376
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Profesiones/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581752294350848
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Sonidos/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581768014602240
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Celular/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581786796695552
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Far\xE1ndula
+      argentina/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581806715445248
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Gimnasio/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581823438135296
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Historia
+      argentina/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581839175163904
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Ingenieria/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581858557042688
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Lunfardo
+      y modismos/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581878425460736
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Mitologia
+      griega/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581902274273280
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Streamers
+      argentinos/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581925468774400
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Tabla
+      peri\xF3dica/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581946792615936
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Verano/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6581969366360064
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Cl\xE1sicos/Remix/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582010021748736
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Comidas/Comidas/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582028011118592
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Comidas/Bebidas
+      alcoh\xF3licas/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582049821499392
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Comidas/Gustos
+      de helado/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582069064966144
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Comidas/Marcas
+      de comida/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582098366373888
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Deportes/Deportes/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582119467917312
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Deportes/F\xFAtbol/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582134441582592
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Deportes/Basquet/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582153324339200
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Deportes/Tenis/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582175159885824
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Deportes/F\xFAtbol
+      argentino/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582196496310272
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Deportes/Boca
+      Juniors/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582211956514816
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Deportes/River
+      Plate/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582229895553024
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Deportes/San
+      Lorenzo/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582256286113792
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Series/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582288703889408
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Peliculas/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582306093473792
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Actores/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582392886206464
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Directores/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582413555736576
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Peliculas premiadas/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582430249066496
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Peliculas de terror/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582445281452032
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Peliculas rom\xE1nticas/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582470468247552
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Netflix/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582486679232512
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Drag Race/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582499966787584
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/LOTR/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582518488834048
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Friends/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582535773560832
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Game of Thrones/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582553263808512
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Glee/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582568912756736
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Gran Hermano/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582586910515200
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Harry Potter/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582602576240640
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Star Wars/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582618493624320
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/The Walking Dead/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582638374625280
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Wicked/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582666828783616
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Series 2024/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582683022991360
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Series
+      y pelis/Peliculas 2024/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582846902837248
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Caricaturas/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582867463315456
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Cartoon
+      Cartoons/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582884748042240
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Nicktoons/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582900296327168
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Peliculas
+      animadas/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582924946251776
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Aliens
+      de Ben 10/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582943048867840
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Arcane/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582957858955264
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Avatar/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582977299554304
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Bob
+      Esponja/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6582995431530496
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Gravity
+      Falls/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583010606522368
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Hora
+      de Aventura/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583028121935872
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Isla
+      del Drama/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583041942167552
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Looney
+      Tunes/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583062007717888
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Los
+      padrinos magicos/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583077669249024
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Los
+      Simpson/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583091162324992
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Madagascar/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583105469095936
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Phineas
+      y Ferb/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583128147697664
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Shrek/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583147508604928
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/South
+      Park/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583163207884800
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Steven
+      Universe/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583178550648832
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Caricaturas/Toy
+      Story/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583299199803392
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Disney/Disney
+      (Series)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583317335973888
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Disney/Disney
+      (Pel\xEDculas)/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583333362409472
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Disney/Disney
+      (Personajes)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583350634553344
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Disney/Disney
+      (Canciones)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583391621292032
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Manga/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583412286627840
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Anime/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583429122564096
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Anime
+      (Cl\xE1sicos)/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583446998687744
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Personajes
+      de Anime/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583464891588608
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Attack
+      on Titan/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583481471672320
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Dragon
+      Ball/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583502027956224
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Naruto/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583519526592512
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/One
+      Piece/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583547255136256
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Haikyuu/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583566087561216
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/JoJos/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583584978706432
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Kyoto
+      Animation/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583601634287616
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Anime/Anime
+      2024/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583623562108928
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Superheroes/Superh\xE9roes/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583654226665472
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Superheroes/Supervillanos/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583679304409088
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Superheroes/Marvel
+      (Pel\xEDculas)/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583696693993472
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Superheroes/Marvel
+      (Comics)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583710891712512
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Superheroes/DC
+      Comics/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583728256131072
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Superheroes/Batman/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583751442243584
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Superheroes/Spiderman/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583767615479808
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Superheroes/Invincible/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583792869384192
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/M\xFAsica
+      en espa\xF1ol/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583808820322304
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Cantantes
+      hispanos/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583822682497024
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/M\xFAsica
+      pop yanki/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583843863732224
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Cantantes
+      yankis/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583863140753408
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/M\xFAsica
+      2024 argentina/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583885789995008
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/M\xFAsica
+      2024 global/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583946301218816
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Rock
+      nacional/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583961190998016
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Instrumentos/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583977439731712
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Beatles/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6583993008988160
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Queen/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584050286403584
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Soda
+      Stereo/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584065432035328
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Charly
+      Garcia/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584081714323456
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Miranda/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584097883365376
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Lali/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584116027924480
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/La
+      Joaqui/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584133031632896
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Bizarrap/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584149443944448
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Taylor
+      Swift/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584168699994112
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Ariana
+      Grande/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584186072801280
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Lady
+      Gaga/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584199553294336
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Katy
+      Perry/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584214589874176
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Charli
+      XCX/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584232184979456
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/MIKA/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584245766135808
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/Carly
+      Rae Jepsen/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584259934494720
+    m_Key: "CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/M\xFAsica/K-Pop/Icon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584295707713536
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Pokemon/Pokemon
+      (G1)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584317048332288
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Pokemon/Pokemon
+      (G1-G3)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584333171236864
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Pokemon/Pokemon
+      (G1-G4)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584352842522624
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Pokemon/Pokemon
+      (Ash)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584367346425856
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Pokemon/Pokemon
+      (GB-GBC)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584382181679104
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Pokemon/Pokemon
+      (GBA-DS)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584405560729600
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Pokemon/Pokemon
+      (3DS-NSW)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584421717188608
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Pokemon/Pokemon
+      (ALL)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584447990308864
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Juegos
+      tradicionales/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584791319257088
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Videojuegos/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584817449771008
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Juegos
+      indie/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584836705820672
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Personajes
+      de Juegos/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584857417293824
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Super
+      Smash Bros./Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584873619890176
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Super
+      Smash Bros. (Escenarios)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584889650520064
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/PlayStation/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584905651789824
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/SEGA/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584970424426496
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Mario/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6584999407067136
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Mario
+      Party/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585017178333184
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Sonic/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585035872346112
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Sonic
+      (Zonas)/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585051823284224
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Ace
+      Attorney/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585065458966528
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Balatro/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585081003057152
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Blizzard/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585098434584576
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Crash
+      Bandicoot/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585112007352320
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Danganronpa/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585128394498048
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Fire
+      Emblem Three Houses/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585184694640640
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Genshin/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585240453718016
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Guilty
+      Gear/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585253032435712
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Hades/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585269155340288
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Isaac/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585280899391488
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Jackbox
+      Games/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585303519272960
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Kirby/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585325719724032
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/League
+      of Legends/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585341217677312
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Objetos
+      LoL/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585358670176256
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Marvel
+      vs. Capcom/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585373392183296
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Minecraft/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585386453245952
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Mortal
+      Kombat/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585398578978816
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Multiversus/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585411442909184
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Overwatch/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585424470417408
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/PvZ/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585436826836992
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Portal/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585449099370496
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Resident
+      Evil/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585462231736320
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Street
+      Fighter/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585475691257856
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/UNDERTALE/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585493546409984
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Worms
+      Armageddon/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585506930434048
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/The
+      Game Awards/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585519945359360
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/Videojuegos
+      2024/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6585535820800000
+    m_Key: CategorySelect/Canvas/Scroll View/Viewport/Category Panel/Categories/Juegos/No
+      lo testeamos/Icon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6589056397942784
+    m_Key: MainMenu/Canvas/MainMenu/Language Selector
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items:
     - rid: 5848738243194126364
+    - rid: 8464436532510720003
   m_KeyGenerator:
     rid: 5848738243194126360
   references:
@@ -63,5 +863,703 @@ MonoBehaviour:
           m_TableCodes:
           - es
           - en
+        - m_KeyId: 6589056397942784
+          m_TableCodes:
+          - es
+          - en
         m_TypeString: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+    - rid: 8464436532510720003
+      type: {class: AssetTypeMetadata, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries:
+        - m_KeyId: 6581376065282048
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581421850304512
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581475138936832
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581546010091520
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581564221759488
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581586321547264
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581614666653696
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581634212110336
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581656701968384
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581684774445056
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581707117502464
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581724955877376
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581752294350848
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581768014602240
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581786796695552
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581806715445248
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581823438135296
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581839175163904
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581858557042688
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581878425460736
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581902274273280
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581925468774400
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581946792615936
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6581969366360064
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582010021748736
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582028011118592
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582049821499392
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582069064966144
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582098366373888
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582119467917312
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582134441582592
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582153324339200
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582175159885824
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582196496310272
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582211956514816
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582229895553024
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582256286113792
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582288703889408
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582306093473792
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582392886206464
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582413555736576
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582430249066496
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582445281452032
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582470468247552
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582486679232512
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582499966787584
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582518488834048
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582535773560832
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582553263808512
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582568912756736
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582586910515200
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582602576240640
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582618493624320
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582638374625280
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582666828783616
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582683022991360
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582846902837248
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582867463315456
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582884748042240
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582900296327168
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582924946251776
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582943048867840
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582957858955264
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582977299554304
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6582995431530496
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583010606522368
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583028121935872
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583041942167552
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583062007717888
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583077669249024
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583091162324992
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583105469095936
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583128147697664
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583147508604928
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583163207884800
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583178550648832
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583299199803392
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583317335973888
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583333362409472
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583350634553344
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583391621292032
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583412286627840
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583429122564096
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583446998687744
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583464891588608
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583481471672320
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583502027956224
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583519526592512
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583547255136256
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583566087561216
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583584978706432
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583601634287616
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583623562108928
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583654226665472
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583679304409088
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583696693993472
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583710891712512
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583728256131072
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583751442243584
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583767615479808
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583792869384192
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583808820322304
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583822682497024
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583843863732224
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583863140753408
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583885789995008
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583946301218816
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583961190998016
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583977439731712
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6583993008988160
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584050286403584
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584065432035328
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584081714323456
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584097883365376
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584116027924480
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584133031632896
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584149443944448
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584168699994112
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584186072801280
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584199553294336
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584214589874176
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584232184979456
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584245766135808
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584259934494720
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584295707713536
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584317048332288
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584333171236864
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584352842522624
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584367346425856
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584382181679104
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584405560729600
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584421717188608
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584447990308864
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584791319257088
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584817449771008
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584836705820672
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584857417293824
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584873619890176
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584889650520064
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584905651789824
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584970424426496
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6584999407067136
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585017178333184
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585035872346112
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585051823284224
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585065458966528
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585081003057152
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585098434584576
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585112007352320
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585128394498048
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585184694640640
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585240453718016
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585253032435712
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585269155340288
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585280899391488
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585303519272960
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585325719724032
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585341217677312
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585358670176256
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585373392183296
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585386453245952
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585398578978816
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585411442909184
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585424470417408
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585436826836992
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585449099370496
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585462231736320
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585475691257856
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585493546409984
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585506930434048
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585519945359360
+          m_TableCodes:
+          - es
+          - en
+        - m_KeyId: 6585535820800000
+          m_TableCodes:
+          - es
+          - en
+        m_TypeString: UnityEngine.TextAsset, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null

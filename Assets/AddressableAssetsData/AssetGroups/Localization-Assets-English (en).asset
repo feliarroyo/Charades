@@ -37,6 +37,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
+  - m_GUID: 56e2edd5fa7cd3b46840fb8e6e67b338
+    m_Address: bandera_usa
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 0310b8826c0953845ae5fefa53b59456, type: 2}
   m_SchemaSet:
