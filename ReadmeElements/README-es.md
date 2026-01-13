@@ -30,4 +30,4 @@ Charadas es un juego casual desarrollado en Unity para dispositivos Android (con
   - [Coins & Gems & Chests & More](https://greatdocbrown.itch.io/coins-gems-etc) by greatdocbrown
   - [Chess Pieces 16x16 One-bit](https://berryarray.itch.io/chess-pieces-16x16-one-bit) by BerryArray
 - Todo lo listado previamente tiene una licencia CC0 o equivalente.
-- Interfaz actualmente sólo en Español.
+- Juego disponible en español y en inglés.
