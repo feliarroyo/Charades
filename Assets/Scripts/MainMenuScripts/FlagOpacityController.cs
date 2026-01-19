@@ -29,6 +29,11 @@ public class FlagOpacityController : MonoBehaviour
 
     }
 
+    public void DebugPrint(string message)
+    {
+        Debug.Log(message);
+    }
+
     private void OnEnable()
     {
         LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;

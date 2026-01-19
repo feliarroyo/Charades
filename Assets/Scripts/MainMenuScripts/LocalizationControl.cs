@@ -1,44 +1,55 @@
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class LocalizationControl : MonoBehaviour
 {
-    private static int currentLocale = 0;
+    private static int currentLocale = -1;
 
-    private void Start()
+    IEnumerator Start()
     {
-        int ID = PlayerPrefs.GetInt("LocaleKey", 0);
-        Debug.Log("ID de start:" + ID);
-        ChangeLocale(ID);
+        yield return LocalizationSettings.InitializationOperation;
+
+        int id = PlayerPrefs.GetInt("LocaleKey", 0);
+        SetLocaleImmediate(id);
         CategoryDatabase.LoadAll();
     }
 
-    public void ChangeLocale(int _localeID)
+    public void ChangeLocale(int localeID)
     {
-        Debug.Log("EN CHANGE: CurrentLocale " + currentLocale + " LocaleID " + _localeID);
-        if (currentLocale == _localeID)
-            return;
-        StartCoroutine(SetLocale(_localeID));
+        StartCoroutine(ChangeLocaleRoutine(localeID));
     }
 
-    IEnumerator SetLocale(int _localeID)
+    IEnumerator ChangeLocaleRoutine(int localeID)
     {
         yield return LocalizationSettings.InitializationOperation;
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[_localeID];
-        PlayerPrefs.SetInt("LocaleKey", _localeID);
-        Debug.Log("EN SET: CurrentLocale " + currentLocale + " LocaleID " + _localeID);
-        if (currentLocale != _localeID)
+        SetLocaleImmediate(localeID);
+    }
+
+    void SetLocaleImmediate(int localeID)
+    {
+        var locales = LocalizationSettings.AvailableLocales.Locales;
+
+        if (localeID < 0 || localeID >= locales.Count)
         {
-            currentLocale = _localeID;
-            Debug.Log("EN IF-SET: CurrentLocale " + currentLocale + " LocaleID " + _localeID);
-            ResetCatSelect();
+            Debug.LogWarning("Invalid locale ID: " + localeID);
+            return;
         }
+
+        if (currentLocale == localeID)
+            return;
+
+        LocalizationSettings.SelectedLocale = locales[localeID];
+        PlayerPrefs.SetInt("LocaleKey", localeID);
+
+        currentLocale = localeID;
+        Debug.Log("Locale set to: " + locales[localeID].Identifier.Code);
+
+        ResetCatSelect();
     }
 
     public void ResetCatSelect()
     {
-        Competition.ClearCategories(); // in order to not use other languages files
+        Competition.ClearCategories();
     }
 }

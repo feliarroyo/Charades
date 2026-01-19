@@ -15,6 +15,7 @@ public class Timer : MonoBehaviour
     public bool hasTickSound = false;
     public AudioClip tickSound, endSound;
     private AudioSource soundPlayer;
+    public bool ShowZero = true;
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +36,12 @@ public class Timer : MonoBehaviour
                 UpdateTimer(timeLeft);
             }
             else {
+                timerOn = false;
                 timerText.color = new Color(255, 255, 255, 255);
                 if (hasEndSound) {
                     soundPlayer.PlayOneShot(endSound);
                 }
                 timeLeft = 0;
-                timerOn = false;
             }
         }
     }
@@ -53,9 +54,14 @@ public class Timer : MonoBehaviour
     void UpdateTimer(float currentTime){
         currentTime += 1;
         float seconds = Mathf.FloorToInt(currentTime % (time + 1));
-        if (hasTickSound && (seconds.ToString() != timerText.text) && (seconds.ToString() != "0") && (seconds <= criticalTime)) 
+        if (hasTickSound && (seconds.ToString() != timerText.text) && (seconds.ToString() != "0") && (seconds <= criticalTime))
+        {
             soundPlayer.PlayOneShot(tickSound);
-        timerText.text = seconds.ToString();
+        }
+        if (ShowZero == true || seconds.ToString() != "0")
+        {
+            timerText.text = seconds.ToString();
+        }
         if (seconds == 5) {
             timerText.color = new Color(1f, 0.39f, 0f, 1f);
         }

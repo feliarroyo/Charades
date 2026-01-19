@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -433,6 +432,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -682,6 +682,7 @@ MonoBehaviour:
   hasTickSound: 1
   tickSound: {fileID: 8300000, guid: f396262626030144d97e97d81a69de73, type: 3}
   endSound: {fileID: 8300000, guid: 9952fe7b3c4f0b64f810019a124fe1bd, type: 3}
+  ShowZero: 0
 --- !u!114 &1808871574
 MonoBehaviour:
   m_ObjectHideFlags: 0

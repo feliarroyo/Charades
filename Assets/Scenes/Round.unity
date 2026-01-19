@@ -1162,6 +1162,7 @@ GameObject:
   - component: {fileID: 1393202156}
   - component: {fileID: 1393202158}
   - component: {fileID: 1393202157}
+  - component: {fileID: 1393202159}
   m_Layer: 5
   m_Name: Points
   m_TagString: Untagged
@@ -1286,6 +1287,44 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393202155}
   m_CullTransparentMesh: 1
+--- !u!114 &1393202159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393202155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 958752479148507136
+  references:
+    version: 2
+    RefIds:
+    - rid: 958752479148507136
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1393202157}
+        m_TrackedProperties:
+          items:
+          - rid: 958752479148507137
+        m_UpdateType: 0
+    - rid: 958752479148507137
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:38dababf3a65eef4083d7e59b7cdeff0
+          m_TableEntryReference:
+            m_KeyId: 30795176716869632
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1 &1395486595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1628,7 +1667,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:38dababf3a65eef4083d7e59b7cdeff0
           m_TableEntryReference:
-            m_KeyId: 2190336925696
+            m_KeyId: 849921253376
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0

@@ -33,7 +33,7 @@ public static class Const
     public const string CORRECT = "Bien";
     public const string CORRECT_EN = "Correct";
     public const string SKIP = "Paso";
-    public const string SKIP_EN = "Skip";
+    public const string SKIP_EN = "Skipped";
     public const string TIME_OVER = "¡Tiempo!";
     public const string TIME_OVER_EN = "Time's up!";
     public const string NOTEAM = "que adivines";
