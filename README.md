@@ -4,7 +4,6 @@
 <p align=center>
   <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Banner.png">
 </p>
-
 Charades is a party game developed in Unity for Android devices (with support for PC versions as well).
 
 ## Features
@@ -31,3 +30,10 @@ Charades is a party game developed in Unity for Android devices (with support fo
   - [Chess Pieces 16x16 One-bit](https://berryarray.itch.io/chess-pieces-16x16-one-bit) by BerryArray
 - Everything listed beforehand has a CC0 License.
 - As of the latest version, the entire game is available in Spanish and English.
+
+## Screenshots / GIFs
+<p>
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/CategoryList.gif">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/MainMenu.gif">
+  <img src="https://raw.githubusercontent.com/feliarroyo/Charades/main/ReadmeElements/Gameplay.gif">
+  </p>
